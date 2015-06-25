@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="ISO-8859-15" standalone="no"?><uc-export clientvers="11.0.0">
+<DOCU name="PCK.AUTOMIC_ORACLE.PUB.DOC">
+<HEADER state="1">
+<Title/>
+<ArchiveKey1/>
+<ArchiveKey2/>
+<OH_SubType/>
+</HEADER>
+<DOCU_Docu state="1" type="text">
+<DOC><![CDATA[The database actions cover basic deployment scenarios around Oracle databases.
+
+You can for example execute arbitrary SQL-scripts on your SQL server(s) like to run your migration scripts, DB schema creation script etc, using the generic runbook functions. The Oracle-runbook functions allow you to execute some basic, recurring tasks during deployments.
+
+=Supported Databases= 
+
+The runbook functions use standard SQL queries executed over a JDBC connection to the database. The following system was tested:
+
+* Oracle 11g
+
+=Setup=
+
+* the JDBC driver jar files are not shipped with the Actions library. Download the appropriate JDBC driver (my-JDBC-driver.jar) matching to your database and put it on the executing agent host.
+
+* define the path to your JDBC driver jar file in the variable 'JDBC Driver JAR URI'
+
+* define the main driver class of your jar file. See your JDBC vendor's documentation for more details. 
+
+* define the connection string in the property 'JDBC Connection String'. See your JDBC vendor's documentation for more details.
+
+=Rollback=
+
+The Oracle Database actions do not have rollbacks defined yet.
+
+
+
+]]></DOC>
+</DOCU_Docu>
+</DOCU>
+</uc-export>

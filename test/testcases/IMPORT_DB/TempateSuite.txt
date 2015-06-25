@@ -1,0 +1,54 @@
+*** Settings ***
+Documentation     NOTE:
+...               add note here
+Suite Setup       Suite Setup
+Force Tags        IMPORT_DB    _template_
+Test Template     Import Db Template
+Resource          ../../resources/keywords.txt
+
+*** Test Cases ***    PATH     INPUT2    RETURN CODE
+Test Case 1           lorem    ipsum     0
+
+Test Case 2           ipsum    lorem     1
+
+*** Keywords ***
+
+Import Db Template
+    [Arguments]    ${path}    ${input2}    ${returnCode}    ${returnStatus}    ${outVara}
+    Init Action    ${ACTION_IMPORT_DB}
+    Action Set    ${PRT_IMPORT_DB_DB_USERNAME}    ${input2}
+    Action Set    ${PRT_IMPORT_DB_DB_PASSWORD}    ${input2}
+    Action Set    ${PRT_IMPORT_DB_DB_SID}    ${input2}
+    Action Set    ${PRT_IMPORT_DB_DB_IMPOPT_FILES}    ${input2}
+    Action Set    ${PRT_IMPORT_DB_DB_IMPMODE_FROMUSERS}    ${input2}
+    Action Set    ${PRT_IMPORT_DB_DB_IMPMODE_TOUSERS}    ${input2}
+    Action Set    ${PRT_IMPORT_DB_DB_IMPMODE_TS_LIST}    ${input2}
+    Action Set    ${PRT_IMPORT_DB_DB_IMPMODE_TRANSP_TS}    ${input2}
+    Action Set    ${PRT_IMPORT_DB_DB_IMPOPT_FILESIZE}    ${input2}
+    Action Set    ${PRT_IMPORT_DB_DB_IMPOPT_VOLSIZE}    ${input2}
+    Action Set    ${PRT_IMPORT_DB_DB_IMP_INVOKE_AS_SYSDBA}    ${input2}
+    Action Set    ${PRT_IMPORT_DB_DB_IMPMODE_FULL}    ${input2}
+    Action Set    ${PRT_IMPORT_DB_DB_IMPMODE_TABLES}    ${input2}
+    Action Set    ${PRT_IMPORT_DB_DB_IMPMODE_TTS_OWNERS}    ${input2}
+    Action Set    ${PRT_IMPORT_DB_DB_IMPMODE_DATAFILES}    ${input2}
+    Action Set    ${PRT_IMPORT_DB_DB_IMPOPT_LOGFILE}    ${input2}
+    Action Set    ${PRT_IMPORT_DB_DB_IMPOPT_RECORDLENGTH}    ${input2}
+    Action Set    ${PRT_IMPORT_DB_DB_IMPOPT_ROWS}    ${input2}
+    Action Set    ${PRT_IMPORT_DB_DB_IMPOPT_COMMIT}    ${input2}
+    Action Set    ${PRT_IMPORT_DB_DB_IMPOPT_BUFFER}    ${input2}
+    Action Set    ${PRT_IMPORT_DB_DB_IMPOPT_IGNORE_ERR}    ${input2}
+    Action Set    ${PRT_IMPORT_DB_DB_IMPOPT_DESTROY}    ${input2}
+    Action Set    ${PRT_IMPORT_DB_DB_IMPOPT_CONSTRAINTS}    ${input2}
+    Action Set    ${PRT_IMPORT_DB_DB_IMPOPT_STREAMS_CONFIG}    ${input2}
+    Action Set    ${PRT_IMPORT_DB_DB_IMPOPT_STREAMS_INST}    ${input2}
+    Action Set    ${PRT_IMPORT_DB_DB_IMPOPT_GRANTS}    ${input2}
+    Action Set    ${PRT_IMPORT_DB_DB_IMPOPT_STATISTICS}    ${input2}
+    Action Set    ${PRT_IMPORT_DB_DB_IMPOPT_RESUMABLE}    ${input2}
+    Action Set    ${PRT_IMPORT_DB_DB_IMPOPT_RESUMABLE_NAME}    ${input2}
+    Action Set    ${PRT_IMPORT_DB_DB_IMPOPT_RSMBL_TIMEOUT}    ${input2}
+    Action Set    ${PRT_IMPORT_DB_DB_IMPOPT_COMPILE}    ${input2}
+    Action Execute
+    Action Report Should Be Found
+    Action Return Code Should Be    ${returnCode}
+    Action Return Status Should Be    ${returnStatus}
+    Action Return Variable Should Be    &UC4RB_OUT_VARA#    ${outVara}

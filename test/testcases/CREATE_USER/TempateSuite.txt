@@ -1,0 +1,43 @@
+*** Settings ***
+Documentation     NOTE:
+...               add note here
+Suite Setup       Suite Setup
+Force Tags        CREATE_USER    _template_
+Test Template     Create User Template
+Resource          ../../resources/keywords.txt
+
+*** Test Cases ***    PATH     INPUT2    RETURN CODE
+Test Case 1           lorem    ipsum     0
+
+Test Case 2           ipsum    lorem     1
+
+*** Keywords ***
+
+Create User Template
+    [Arguments]    ${path}    ${input2}    ${returnCode}    ${returnStatus}    ${outVara}
+    Init Action    ${ACTION_CREATE_USER}
+    Action Set    ${PRT_CREATE_USER_DB_USERNAME}    ${input2}
+    Action Set    ${PRT_CREATE_USER_DB_PASSWORD}    ${input2}
+    Action Set    ${PRT_CREATE_USER_DB_JDBC_CONN_STRING}    ${input2}
+    Action Set    ${PRT_CREATE_USER_DB_DRIVER_JAR}    ${input2}
+    Action Set    ${PRT_CREATE_USER_DB_DRIVER_CLASS}    ${input2}
+    Action Set    ${PRT_CREATE_USER_DB_TNSNAMES_ORA}    ${input2}
+    Action Set    ${PRT_CREATE_USER_DB_CONN_INTRVL}    ${input2}
+    Action Set    ${PRT_CREATE_USER_DB_USER_NAME}    ${input2}
+    Action Set    ${PRT_CREATE_USER_DB_FAIL_USR_EXISTS}    ${input2}
+    Action Set    ${PRT_CREATE_USER_DB_USER_PASSWORD}    ${input2}
+    Action Set    ${PRT_CREATE_USER_DB_IDTFT_EXTERNALLY}    ${input2}
+    Action Set    ${PRT_CREATE_USER_DB_IDTFT_CERT_DN}    ${input2}
+    Action Set    ${PRT_CREATE_USER_DB_IDTFT_GLOBALLY}    ${input2}
+    Action Set    ${PRT_CREATE_USER_DB_IDTFT_DIR_DN}    ${input2}
+    Action Set    ${PRT_CREATE_USER_DB_DEFAULT_TABLESPACE}    ${input2}
+    Action Set    ${PRT_CREATE_USER_DB_TEMP_TABLESPACE}    ${input2}
+    Action Set    ${PRT_CREATE_USER_DB_QUOTA_SPEC}    ${input2}
+    Action Set    ${PRT_CREATE_USER_DB_PROFILE}    ${input2}
+    Action Set    ${PRT_CREATE_USER_DB_PASSWORD_EXPIRE}    ${input2}
+    Action Set    ${PRT_CREATE_USER_DB_ACCOUNT_LOCK}    ${input2}
+    Action Execute
+    Action Report Should Be Found
+    Action Return Code Should Be    ${returnCode}
+    Action Return Status Should Be    ${returnStatus}
+    Action Return Variable Should Be    &UC4RB_OUT_VARA#    ${outVara}

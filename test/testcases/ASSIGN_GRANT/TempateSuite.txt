@@ -1,0 +1,43 @@
+*** Settings ***
+Documentation     NOTE:
+...               add note here
+Suite Setup       Suite Setup
+Force Tags        ASSIGN_GRANT    _template_
+Test Template     Assign Grant Template
+Resource          ../../resources/keywords.txt
+
+*** Test Cases ***    PATH     INPUT2    RETURN CODE
+Test Case 1           lorem    ipsum     0
+
+Test Case 2           ipsum    lorem     1
+
+*** Keywords ***
+
+Assign Grant Template
+    [Arguments]    ${path}    ${input2}    ${returnCode}    ${returnStatus}    ${outVara}
+    Init Action    ${ACTION_ASSIGN_GRANT}
+    Action Set    ${PRT_ASSIGN_GRANT_DB_USERNAME}    ${input2}
+    Action Set    ${PRT_ASSIGN_GRANT_DB_PASSWORD}    ${input2}
+    Action Set    ${PRT_ASSIGN_GRANT_DB_JDBC_CONN_STRING}    ${input2}
+    Action Set    ${PRT_ASSIGN_GRANT_DB_DRIVER_JAR}    ${input2}
+    Action Set    ${PRT_ASSIGN_GRANT_DB_DRIVER_CLASS}    ${input2}
+    Action Set    ${PRT_ASSIGN_GRANT_DB_TNSNAMES_ORA}    ${input2}
+    Action Set    ${PRT_ASSIGN_GRANT_DB_CONN_INTRVL}    ${input2}
+    Action Set    ${PRT_ASSIGN_GRANT_DB_GRANT_SYS_PRIVILEGE}    ${input2}
+    Action Set    ${PRT_ASSIGN_GRANT_DB_GRANT_OBJ_PRIVILEGE}    ${input2}
+    Action Set    ${PRT_ASSIGN_GRANT_DB_GRANT_ROLE_PRIVILEGE}    ${input2}
+    Action Set    ${PRT_ASSIGN_GRANT_DB_GRANT_CUST_ROLE_PRVLG}    ${input2}
+    Action Set    ${PRT_ASSIGN_GRANT_GRANT_ALL_SYS_PRIVILEGES}    ${input2}
+    Action Set    ${PRT_ASSIGN_GRANT_GRANT_ALL_USER_PRVLGS}    ${input2}
+    Action Set    ${PRT_ASSIGN_GRANT_DB_GRANT_ON_SCHM_OBJ}    ${input2}
+    Action Set    ${PRT_ASSIGN_GRANT_DB_GRANT_TO_USER}    ${input2}
+    Action Set    ${PRT_ASSIGN_GRANT_DB_GRANT_TO_ROLE}    ${input2}
+    Action Set    ${PRT_ASSIGN_GRANT_DB_GRANT_TO_PUBLIC}    ${input2}
+    Action Set    ${PRT_ASSIGN_GRANT_DB_WITH_HIERARCHY_OPTION}    ${input2}
+    Action Set    ${PRT_ASSIGN_GRANT_DB_WITH_GRANT_OPTION}    ${input2}
+    Action Set    ${PRT_ASSIGN_GRANT_DB_WITH_ADMIN_OPTION}    ${input2}
+    Action Execute
+    Action Report Should Be Found
+    Action Return Code Should Be    ${returnCode}
+    Action Return Status Should Be    ${returnStatus}
+    Action Return Variable Should Be    &UC4RB_OUT_VARA#    ${outVara}

@@ -1,0 +1,52 @@
+*** Settings ***
+Documentation     NOTE:
+...               add note here
+Suite Setup       Suite Setup
+Force Tags        CREATE_TABLESPACE    _template_
+Test Template     Create Tablespace Template
+Resource          ../../resources/keywords.txt
+
+*** Test Cases ***    PATH     INPUT2    RETURN CODE
+Test Case 1           lorem    ipsum     0
+
+Test Case 2           ipsum    lorem     1
+
+*** Keywords ***
+
+Create Tablespace Template
+    [Arguments]    ${path}    ${input2}    ${returnCode}    ${returnStatus}    ${outVara}
+    Init Action    ${ACTION_CREATE_TABLESPACE}
+    Action Set    ${PRT_CREATE_TABLESPACE_DB_USERNAME}    ${input2}
+    Action Set    ${PRT_CREATE_TABLESPACE_DB_PASSWORD}    ${input2}
+    Action Set    ${PRT_CREATE_TABLESPACE_DB_JDBC_CONN_STRING}    ${input2}
+    Action Set    ${PRT_CREATE_TABLESPACE_DB_DRIVER_JAR}    ${input2}
+    Action Set    ${PRT_CREATE_TABLESPACE_DB_DRIVER_CLASS}    ${input2}
+    Action Set    ${PRT_CREATE_TABLESPACE_DB_TNSNAMES_ORA}    ${input2}
+    Action Set    ${PRT_CREATE_TABLESPACE_DB_CONN_INTRVL}    ${input2}
+    Action Set    ${PRT_CREATE_TABLESPACE_DB_TABLESPACE_NAME}    ${input2}
+    Action Set    ${PRT_CREATE_TABLESPACE_DB_FAIL_IF_TS_EXISTS}    ${input2}
+    Action Set    ${PRT_CREATE_TABLESPACE_DB_TABLESPACE_TYPE}    ${input2}
+    Action Set    ${PRT_CREATE_TABLESPACE_DB_SMALLFILE}    ${input2}
+    Action Set    ${PRT_CREATE_TABLESPACE_DB_PERM_DATAFILE_SPEC}    ${input2}
+    Action Set    ${PRT_CREATE_TABLESPACE_DB_TEMPFILE_SPEC}    ${input2}
+    Action Set    ${PRT_CREATE_TABLESPACE_DB_UNDO_DATAFILE_SPEC}    ${input2}
+    Action Set    ${PRT_CREATE_TABLESPACE_DB_MIN_EXT_SIZE}    ${input2}
+    Action Set    ${PRT_CREATE_TABLESPACE_DB_BLOCK_SIZE}    ${input2}
+    Action Set    ${PRT_CREATE_TABLESPACE_DB_LOGGING}    ${input2}
+    Action Set    ${PRT_CREATE_TABLESPACE_DB_FORCE_LOGGING}    ${input2}
+    Action Set    ${PRT_CREATE_TABLESPACE_DB_DFLT_STRG_CLAUSE}    ${input2}
+    Action Set    ${PRT_CREATE_TABLESPACE_DB_ONLINE}    ${input2}
+    Action Set    ${PRT_CREATE_TABLESPACE_DB_EXT_MGMT_CLAUSE}    ${input2}
+    Action Set    ${PRT_CREATE_TABLESPACE_DB_EXT_MGMT_TYPE}    ${input2}
+    Action Set    ${PRT_CREATE_TABLESPACE_DB_EXT_MGMT_AUTOALLOC}    ${input2}
+    Action Set    ${PRT_CREATE_TABLESPACE_DB_EXT_MGMT_UNIFORM}    ${input2}
+    Action Set    ${PRT_CREATE_TABLESPACE_DB_EXT_UNFRM_MGMT_SIZE}    ${input2}
+    Action Set    ${PRT_CREATE_TABLESPACE_DB_SEGM_SPC_AUTO}    ${input2}
+    Action Set    ${PRT_CREATE_TABLESPACE_DB_RETENTION}    ${input2}
+    Action Set    ${PRT_CREATE_TABLESPACE_DB_TS_GROUP_NAME}    ${input2}
+    Action Set    ${PRT_CREATE_TABLESPACE_TIMESTAMP1}    ${input2}
+    Action Execute
+    Action Report Should Be Found
+    Action Return Code Should Be    ${returnCode}
+    Action Return Status Should Be    ${returnStatus}
+    Action Return Variable Should Be    &UC4RB_OUT_VARA#    ${outVara}

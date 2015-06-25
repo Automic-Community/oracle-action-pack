@@ -1,0 +1,14 @@
+# Package Build Configuration 
+name: PCK.AUTOMIC_ORACLE
+
+source: ae
+  
+# binary object resource mapping will be defined here
+binaries:
+  
+  - object: RESOURCES/LIBS/PCK.AUTOMIC_ORACLE.PRV.STORE
+    resources: 
+      - name: ORACLETOOL.JAR
+        type: BINARY
+        path: tools/oracle-tool/target/oracle-tool.jar
+        version: 1.0.0
