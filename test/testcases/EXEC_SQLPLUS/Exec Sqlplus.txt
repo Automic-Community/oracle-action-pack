@@ -1,0 +1,30 @@
+*** Settings ***
+Documentation     NOTE:
+...               add note here
+Suite Setup       Suite Setup
+Force Tags        EXEC_SQLPLUS    win11    unix11
+Test Template     Exec Sqlplus Template
+Resource          ../../resources/keywords.txt
+
+*** Test Cases ***    PATH     INPUT2    RETURN CODE
+Test Case 1           lorem    ipsum     0
+
+Test Case 2           ipsum    lorem     1
+
+*** Keywords ***
+Exec Sqlplus Template
+    [Arguments]    ${path}    ${input2}    ${returnCode}    ${returnStatus}
+    Init Action    ${ACTION_EXEC_SQLPLUS}
+    Oracle Common Setting
+    Action Set    ${PRT_EXEC_SQLPLUS_DB_SERVICE}    ${service}
+    Action Set    ${PRT_EXEC_SQLPLUS_DB_HOST}    ${host}
+    Action Set    ${PRT_EXEC_SQLPLUS_DB_PORT}    ${port}
+    Action Set    ${PRT_EXEC_SQLPLUS_DB_USER}    ${user}
+    Action Set    ${PRT_EXEC_SQLPLUS_DB_PASS}    ${pass}
+    Action Set    ${PRT_EXEC_SQLPLUS_DB_USE_ADMIN_PRIV}    ${admin_priv}
+    Action Set    ${PRT_EXEC_SQLPLUS_DB_SQLPLUS_FULL_PATH}    ${sqlplus_full_path}
+    Action Set    ${PRT_EXEC_SQLPLUS_DB_COMMAND}    ${command}
+    Action Execute
+    Action Report Should Be Found
+    Action Return Code Should Be    ${returnCode}
+    Action Return Status Should Be    ${returnStatus}

@@ -8,7 +8,7 @@ Library           com.automic.robot.itpa.ItpaLibrary
 Init Action
     [Arguments]    ${actionName}
     Action Create    ${actionName}
-    Action Set    ${PROMPTSET_AGENT}      ${_AGENT}
+    Action Set    ${PROMPTSET_AGENT}    ${_AGENT}
     Action Set    ${PROMPTSET_LOGIN}    ${_LOGIN}
 
 Action Report Should Contain
@@ -48,3 +48,18 @@ Action Return Variable Should Be Equal As Integers
     [Arguments]    ${variableValue}
     ${out}=    Action Get Variable    ${variableName}
     Should Be Equal As Integers    ${out}    ${variableValue}
+
+Init Oracle 11 On Window
+    Action Set    ${PRT_CREATE_USER_DB_USERNAME}    ${input2}
+    Action Set    ${PRT_CREATE_USER_DB_PASSWORD}    ${input2}
+    Action Set    ${PRT_CREATE_USER_DB_JDBC_CONN_STRING}    ${input2}
+    Action Set    ${PRT_CREATE_USER_DB_DRIVER_JAR}    ${input2}
+    Action Set    ${PRT_CREATE_USER_DB_DRIVER_CLASS}    ${input2}
+    Action Set    ${PRT_CREATE_USER_DB_TNSNAMES_ORA}    ${input2}
+    Action Set    ${PRT_CREATE_USER_DB_CONN_INTRVL}    ${input2}
+
+Init Oracle 11 On Unix
+
+Oracle Common Setting
+    Run Keyword If    '${OS}' == 'WIN11'    Init Oracle 11 On Window
+    Run Keyword If    '${OS}' == 'UNIX11'    Init Oracle 11 On Unix

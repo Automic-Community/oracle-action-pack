@@ -1,0 +1,35 @@
+*** Settings ***
+Documentation     NOTE:
+...               add note here
+Suite Setup       Suite Setup
+Force Tags        CREATE_USER    win11    unix11    unix10
+Test Template     Create User Template
+Resource          ../../resources/keywords.txt
+
+*** Test Cases ***    PATH     INPUT2    RETURN CODE
+Test Case 1           lorem    ipsum     0
+
+Test Case 2           ipsum    lorem     1
+
+*** Keywords ***
+Create User Template
+    [Arguments]    ${path}    ${input2}    ${returnCode}    ${returnStatus}
+    Init Action    ${ACTION_CREATE_USER}
+    Oracle Common Setting
+    Action Set    ${PRT_CREATE_USER_DB_USER_NAME}    ${name}
+    Action Set    ${PRT_CREATE_USER_DB_FAIL_USR_EXISTS}    ${fail_if_exist}
+    Action Set    ${PRT_CREATE_USER_DB_USER_PASSWORD}    ${password}
+    Action Set    ${PRT_CREATE_USER_DB_IDTFT_EXTERNALLY}    ${externally}
+    Action Set    ${PRT_CREATE_USER_DB_IDTFT_CERT_DN}    ${cert_dn}
+    Action Set    ${PRT_CREATE_USER_DB_IDTFT_GLOBALLY}    ${globally}
+    Action Set    ${PRT_CREATE_USER_DB_IDTFT_DIR_DN}    ${dir_dn}
+    Action Set    ${PRT_CREATE_USER_DB_DEFAULT_TABLESPACE}    ${default_tablespace}
+    Action Set    ${PRT_CREATE_USER_DB_TEMP_TABLESPACE}    ${temp_tablespace}
+    Action Set    ${PRT_CREATE_USER_DB_QUOTA_SPEC}    ${quota_spec}
+    Action Set    ${PRT_CREATE_USER_DB_PROFILE}    ${user_profile}
+    Action Set    ${PRT_CREATE_USER_DB_PASSWORD_EXPIRE}    ${password_expire}
+    Action Set    ${PRT_CREATE_USER_DB_ACCOUNT_LOCK}    ${account_lock}
+    Action Execute
+    Action Report Should Be Found
+    Action Return Code Should Be    ${returnCode}
+    Action Return Status Should Be    ${returnStatus}

@@ -1,0 +1,35 @@
+*** Settings ***
+Documentation     NOTE:
+...               add note here
+Suite Setup       Suite Setup
+Force Tags        ASSIGN_GRANT    win11    unix11    unix10
+Test Template     Assign Grant Template
+Resource          ../../resources/keywords.txt
+
+*** Test Cases ***    PATH     INPUT2    RETURN CODE
+Test Case 1           lorem    ipsum     0
+
+Test Case 2           ipsum    lorem     1
+
+*** Keywords ***
+Assign Grant Template
+    [Arguments]    ${path}    ${input2}    ${returnCode}    ${returnStatus}
+    Init Action    ${ACTION_ASSIGN_GRANT}
+    Oracle Common Setting
+    Action Set    ${PRT_ASSIGN_GRANT_DB_GRANT_SYS_PRIVILEGE}    ${sys_privilege}
+    Action Set    ${PRT_ASSIGN_GRANT_DB_GRANT_OBJ_PRIVILEGE}    ${obj_privilege}
+    Action Set    ${PRT_ASSIGN_GRANT_DB_GRANT_ROLE_PRIVILEGE}    ${role_privilege}
+    Action Set    ${PRT_ASSIGN_GRANT_DB_GRANT_CUST_ROLE_PRVLG}    ${cust_role_privilege}
+    Action Set    ${PRT_ASSIGN_GRANT_GRANT_ALL_SYS_PRIVILEGES}    ${all_sys_privilege}
+    Action Set    ${PRT_ASSIGN_GRANT_GRANT_ALL_USER_PRVLGS}    ${all_user_privilege}
+    Action Set    ${PRT_ASSIGN_GRANT_DB_GRANT_ON_SCHM_OBJ}    ${grant_to_schm_obj}
+    Action Set    ${PRT_ASSIGN_GRANT_DB_GRANT_TO_USER}    ${grant_to_user}
+    Action Set    ${PRT_ASSIGN_GRANT_DB_GRANT_TO_ROLE}    ${grant_to_role}
+    Action Set    ${PRT_ASSIGN_GRANT_DB_GRANT_TO_PUBLIC}    ${grant_to_public}
+    Action Set    ${PRT_ASSIGN_GRANT_DB_WITH_HIERARCHY_OPTION}    ${hierarchy_option}
+    Action Set    ${PRT_ASSIGN_GRANT_DB_WITH_GRANT_OPTION}    ${grant_option}
+    Action Set    ${PRT_ASSIGN_GRANT_DB_WITH_ADMIN_OPTION}    ${admin_option}
+    Action Execute
+    Action Report Should Be Found
+    Action Return Code Should Be    ${returnCode}
+    Action Return Status Should Be    ${returnStatus}
