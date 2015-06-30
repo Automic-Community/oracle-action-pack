@@ -5,3 +5,9 @@ source: ae
   
 # binary object resource mapping will be defined here
 binaries:
+  - object: RESOURCES/LIBS/PCK.AUTOMIC_ORACLE.PRV.STORE
+    resources: 
+      - name: aratools
+        type: TEXT
+        path: tools/oracletool/resources/ARATools.jar
+        version: 1.0.0
