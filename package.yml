@@ -7,7 +7,7 @@ source: ae
 binaries:
   - object: RESOURCES/LIBS/PCK.AUTOMIC_ORACLE.PRV.STORE
     resources: 
-      - name: aratools
-        type: TEXT
-        path: tools/oracletool/resources/ARATools.jar
+      - name: ORACLETOOL.JAR
+        type: BINARY
+        path: tools/oracle-tool/target/oracle-tool.jar
         version: 1.0.0
