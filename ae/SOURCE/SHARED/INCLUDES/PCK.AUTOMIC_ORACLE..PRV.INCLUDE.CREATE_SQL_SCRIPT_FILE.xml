@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ISO-8859-15" standalone="no"?><uc-export clientvers="11.0.0">
+<JOBI name="PCK.AUTOMIC_ORACLE.PRV.INCLUDE.CREATE_SQL_SCRIPT_FILE">
+<HEADER state="1">
+<Title/>
+<ArchiveKey1/>
+<ArchiveKey2/>
+<OH_SubType/>
+</HEADER>
+<SCRIPT mode="1" state="1">
+<MSCRI><![CDATA[! creates a file
+:INCLUDE PCK.ITPA_SHARED.PRV.INCLUDE.CHANGE_DIRECTORY_TO_AGENT_BIN
+:SET &UC4RB_SQL_FILENAME# = "SQL_Script_&$PROCESSOR_RUNID#.sql"
+:IF &UC4RB_AGENT_OS# = "WINDOWS"
+:  INC PCK.ITPA_SHARED.PRV.INCLUDE.ESCAPE_CHARS@WINDOWS "&UC4RB_ESCAPED_STRING#" = "&UC4RB_SQL_CONTENT#"
+   echo &UC4RB_SQL_CONTENT# >> "&UC4RB_SQL_FILENAME#"
+:ELSE
+  echo "&UC4RB_SQL_CONTENT#" >> "&UC4RB_SQL_FILENAME#"
+:ENDIF]]></MSCRI>
+</SCRIPT>
+<DOCU_Docu state="1" type="text">
+<DOC/>
+</DOCU_Docu>
+</JOBI>
+</uc-export>
