@@ -49,6 +49,7 @@ Action Return Variable Should Be Equal As Integers
     ${out}=    Action Get Variable    ${variableName}
     Should Be Equal As Integers    ${out}    ${variableValue}
 
+<<<<<<< HEAD
 Init Oracle 11 On Window
     Action Set    ${PRT_CREATE_USER_DB_USERNAME}    SYS
     Action Set    ${PRT_CREATE_USER_DB_PASSWORD}    123
@@ -80,3 +81,47 @@ Oracle Common Setting
     Run Keyword If    '${OS}' == 'WIN11'    Init Oracle 11 On Window
     Run Keyword If    '${OS}' == 'UNIX11'    Init Oracle 11 On Unix
     Run Keyword If    '${OS}' == 'UNIX10'    Init Oracle 10 On Unix
+=======
+Oracle Common Setting
+    Action Set    ${PRT_CREATE_USER_DB_USERNAME_LG}    ${DB_USERNAME}
+    Action Set    ${PRT_CREATE_USER_DB_PASSWORD_LG}    ${DB_PASSWORD}
+    Action Set    ${PRT_CREATE_USER_DB_JDBC_CONN_STRING}    ${CONN_STRING}
+    Action Set    ${PRT_CREATE_USER_DB_DRIVER_JAR}    ${JAR}
+    Action Set    ${PRT_CREATE_USER_DB_DRIVER_CLASS}    ${CLASS}
+    Action Set    ${PRT_CREATE_USER_DB_TNSNAMES_ORA}    ${ORA}
+    Action Set    ${PRT_CREATE_USER_DB_CONN_INTRVL}    ${INTRVL}
+
+Create User
+    [Arguments]    ${name}    ${externally}    ${globally}    ${password_expire}    ${account_lock}
+    Init Action    ${ACTION_CREATE_USER}
+    Oracle Common Setting
+    Action Set    ${PRT_CREATE_USER_DB_USER_NAME}    ${name}
+    Action Set    ${PRT_CREATE_USER_DB_FAIL_USR_EXISTS}    NO
+    Action Set    ${PRT_CREATE_USER_DB_USER_PASSWORD}    ${DB_PASSWORD}
+    Action Set    ${PRT_CREATE_USER_DB_IDTFT_EXTERNALLY}    ${externally}
+    Action Set    ${PRT_CREATE_USER_DB_IDTFT_CERT_DN}    ${EMPTY}
+    Action Set    ${PRT_CREATE_USER_DB_IDTFT_GLOBALLY}    ${globally}
+    Action Set    ${PRT_CREATE_USER_DB_IDTFT_DIR_DN}    ${EMPTY}
+    Action Set    ${PRT_CREATE_USER_DB_DEFAULT_TABLESPACE}    ${EMPTY}
+    Action Set    ${PRT_CREATE_USER_DB_TEMP_TABLESPACE}    ${EMPTY}
+    Action Set    ${PRT_CREATE_USER_DB_QUOTA_SPEC}    ${EMPTY}
+    Action Set    ${PRT_CREATE_USER_DB_PROFILE}    ${EMPTY}
+    Action Set    ${PRT_CREATE_USER_DB_PASSWORD_EXPIRE}    ${password_expire}
+    Action Set    ${PRT_CREATE_USER_DB_ACCOUNT_LOCK}    ${account_lock}
+    Action Execute
+    Action Report Should Be Found
+    Action Return Code Should Be    0
+    Action Return Status Should Be    ${ENDED_OK}
+
+Drop User
+    [Arguments]    ${user}    ${cascade}
+    Init Action    ${ACTION_DROP_USER}
+    Oracle Common Setting
+    Action Set    ${PRT_DROP_USER_DB_DROP_USER}    ${user}
+    Action Set    ${PRT_DROP_USER_DB_FAIL_USR_NOT_EXISTS}    NO
+    Action Set    ${PRT_DROP_USER_DB_CASCADE}    ${cascade}
+    Action Execute
+    Action Report Should Be Found
+    Action Return Code Should Be    0
+    Action Return Status Should Be    ${ENDED_OK}
+>>>>>>> 4345a56... Update context about variable and cases about Import, export DB

@@ -1,19 +1,33 @@
 *** Settings ***
 Documentation     NOTE:
 ...               add note here
-Suite Setup       Suite Setup
+Suite Setup       Suite Setup Import
 Force Tags        IMPORT_DB    win11    unix11    unix10
 Test Template     Import Db Template
 Resource          ../../resources/keywords.txt
 
-*** Test Cases ***    PATH     INPUT2    RETURN CODE
-Test Case 1           lorem    ipsum     0
+*** Test Cases ***    DB_USERNAME        DB_PASSWORD       SID       FILES                                                            FROMUSERS    TOUSERS     TS_LIST     TRANSP_TS    FILESIZE    VOLSIZE     AS_SYSDBA    FULL    TABLES               TTS_OWNERS    DATAFILES    LOGFILE    RECORDLENGTH    ROWS    COMMIT    BUFFER    IGNORE_ERR    DESTROY    CONSTRAINTS    CONFIG    INST    GRANTS    STATISTICS    RESUMABLE    RESUMABLE_NAME                                                    RSMBL_TIMEOUT    COMPILE    RETURN CODE    STATUS
+Import DB with a table
+                      ${DB_USERNAME1}    ${DB_PASSWORD}    ${SID}    ${_WORKING_DIR}${/}export1.dmp                                   ${EMPTY}     ${EMPTY}    ${EMPTY}    NO           ${EMPTY}    ${EMPTY}    NO           NO      TEST_FOR_IMPORT      ${EMPTY}      ${EMPTY}     NO         0               YES     NO        0         NO            NO         YES            YES       NO      YES       ALWAYS        NO           User USERNAME (USERID), Session SESSIONID, Instance INSTANCEID    7200             YES        0              ${ENDED_OK}
 
-Test Case 2           ipsum    lorem     1
+Import DB without table
+                      ${DB_USERNAME1}    ${DB_PASSWORD}    ${SID}    ${_WORKING_DIR}${/}export.dmp                                    ${EMPTY}     ${EMPTY}    ${EMPTY}    NO           ${EMPTY}    ${EMPTY}    NO           NO      NO                   ${EMPTY}      ${EMPTY}     NO         0               YES     NO        0         NO            NO         YES            YES       NO      YES       ALWAYS        NO           User USERNAME (USERID), Session SESSIONID, Instance INSTANCEID    7200             YES        0              ${ENDED_OK}
+
+Import DB from multi files
+                      ${DB_USERNAME1}    ${DB_PASSWORD}    ${SID}    ${_WORKING_DIR}${/}export3.dmp,${_WORKING_DIR}${/}export2.dmp    ${EMPTY}     ${EMPTY}    ${EMPTY}    NO           ${EMPTY}    ${EMPTY}    NO           NO      STAFF,CERTIFICATE    ${EMPTY}      ${EMPTY}     NO         0               YES     NO        0         NO            NO         YES            YES       NO      YES       ALWAYS        NO           User USERNAME (USERID), Session SESSIONID, Instance INSTANCEID    7200             YES        0              ${ENDED_OK}
 
 *** Keywords ***
+Suite Setup Import
+    Suite Setup
+    Create User    ${DB_USERNAME1}    NO    YES    NO    NO
+
 Import Db Template
-    [Arguments]    ${path}    ${input2}    ${returnCode}    ${returnStatus}
+    [Arguments]    ${name}    ${pass}    ${sid}    ${files}    ${from_users}    ${to_users}
+    ...    ${file_size}    ${transp_ts}    ${to_list}    ${vol_size}    ${invoke_as_sysdba}    ${full}
+    ...    ${tables}    ${tts_owners}    ${data_files}    ${log_file}    ${record_length}    ${rows}
+    ...    ${commit}    ${buffer}    ${ignore_err}    ${destroy}    ${constraints}    ${config}
+    ...    ${inst}    ${grants}    ${statistics}    ${resumable}    ${resumable_name}    ${timeout}
+    ...    ${compile}    ${returnCode}    ${returnStatus}
     Init Action    ${ACTION_IMPORT_DB}
     Action Set    ${PRT_IMPORT_DB_DB_USERNAME}    ${name}
     Action Set    ${PRT_IMPORT_DB_DB_PASSWORD}    ${pass}
@@ -50,3 +64,6 @@ Import Db Template
     Action Report Should Be Found
     Action Return Code Should Be    ${returnCode}
     Action Return Status Should Be    ${returnStatus}
+
+Suite Teardown
+    Drop User    ${DB_USERNAME1}    YES

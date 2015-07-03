@@ -6,15 +6,23 @@ Force Tags        EXPORT_DB    win11    unix11    unix10
 Test Template     Export Db Template
 Resource          ../../resources/keywords.txt
 
-*** Test Cases ***    PATH     INPUT2    RETURN CODE
-Test Case 1           lorem    ipsum     0
+*** Test Cases ***    USERNAME          PASSWORD          SID       FILES                      TS_LIST     FILESIZE    VOLSIZE     FULL    OWNER_LIST    TABLE_LIST            TRANSP_TS    TTS_FULLCHECK    LOGFILE     RECORDLENGTH    COMPRESS    ROWS    DIRECT    STATISTICS    INDEXES    CONSTRAINTS    GRANTS    TRIGGERS    CONSISTENT    OBJ_CONSISTENT    BUFFER    RESUMABLE    RESUMABLE_NAME                                                    RSMBL_TIMEOUT    RETURN CODE    STATUS
+Export DB             ${DB_USERNAME}    ${DB_PASSWORD}    ${SID}    export3.dmp                ${EMPTY}    ${EMPTY}    ${EMPTY}    NO      ${EMPTY}      TEST_FOR_IMPORT       NO           NO               ${EMPTY}    0               NO          YES     NO        ESTIMATE      YES        YES            YES       YES         NO            NO                0         NO           User USERNAME (USERID), Session SESSIONID, Instance INSTANCEID    7200             0              ${ENDED_OK}
 
-Test Case 2           ipsum    lorem     1
+Export DB multi file
+                      ${DB_USERNAME}    ${DB_PASSWORD}    ${SID}    export2.dmp,export3.dmp    ${EMPTY}    2048        ${EMPTY}    NO      ${EMPTY}      STAFF, CERTIFICATE    NO           NO               ${EMPTY}    0               NO          YES     NO        ESTIMATE      YES        YES            YES       YES         NO            NO                0         NO           User USERNAME (USERID), Session SESSIONID, Instance INSTANCEID    7200             0              ${ENDED_OK}
+
+Test Case 2           ipsum             lorem             1
 
 *** Keywords ***
 Export Db Template
-    [Arguments]    ${path}    ${input2}    ${returnCode}    ${returnStatus}
+    [Arguments]    ${name}    ${password}    ${sid}    ${files}    ${ts_list}    ${filesize}
+    ...    ${volsize}    ${full}    ${owner_list}    ${table_list}    ${transp_ts}    ${tts_fullcheck}
+    ...    ${logfile}    ${record_length}    ${compress}    ${rows}    ${direct}    ${statistics}
+    ...    ${indexes}    ${constraints}    ${grants}    ${triggers}    ${consistent}    ${obj_consistent}
+    ...    ${buffer}    ${resumable}    ${resumable_name}    ${timeout}    ${returnCode}    ${returnStatus}
     Init Action    ${ACTION_EXPORT_DB}
+    Oracle Common Setting
     Action Set    ${PRT_EXPORT_DB_DB_USERNAME}    ${name}
     Action Set    ${PRT_EXPORT_DB_DB_PASSWORD}    ${password}
     Action Set    ${PRT_EXPORT_DB_DB_SID}    ${sid}

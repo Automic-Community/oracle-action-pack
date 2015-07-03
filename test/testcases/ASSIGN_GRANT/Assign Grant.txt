@@ -6,14 +6,16 @@ Force Tags        ASSIGN_GRANT    win11    unix11    unix10
 Test Template     Assign Grant Template
 Resource          ../../resources/keywords.txt
 
-*** Test Cases ***    PATH     INPUT2    RETURN CODE
-Test Case 1           lorem    ipsum     0
+*** Test Cases ***    SYS_PRIVILEGE    OBJ_PRIVILEGE    ROLE_PRIVILEGE    CUST_ROLE_PRVLG    SYS_PRIVILEGES    USER_PRVLGS    SCHM_OBJ    USER         ROLE        PUBLIC    HIERARCHY_OPTION    GRANT_OPTION    ADMIN_OPTION    RETCODE    STATUS
+Assign Grant          ${EMPTY}         ${EMPTY}         ${EMPTY}          ${EMPTY}           NO                YES            ${EMPTY}    DROP_USER    ${EMPTY}    NO        NO                  NO              NO              0          ${ENDED_OK}
 
-Test Case 2           ipsum    lorem     1
+Test Case 2           ipsum            lorem            1
 
 *** Keywords ***
 Assign Grant Template
-    [Arguments]    ${path}    ${input2}    ${returnCode}    ${returnStatus}
+    [Arguments]    ${sys_privilege}    ${obj_privilege}    ${role_privilege}    ${cust_role_privilege}    ${all_sys_privilege}    ${all_user_privilege}
+    ...    ${grant_to_schm_obj}    ${grant_to_user}    ${grant_to_role}    ${grant_to_public}    ${hierarchy_option}    ${grant_option}
+    ...    ${admin_option}    ${returnCode}    ${returnStatus}
     Init Action    ${ACTION_ASSIGN_GRANT}
     Oracle Common Setting
     Action Set    ${PRT_ASSIGN_GRANT_DB_GRANT_SYS_PRIVILEGE}    ${sys_privilege}

@@ -6,21 +6,23 @@ Force Tags        REVOKE_GRANT    win11    unix11    unix10
 Test Template     Revoke Grant Template
 Resource          ../../resources/keywords.txt
 
-*** Test Cases ***    PATH     INPUT2    RETURN CODE
-Test Case 1           lorem    ipsum     0
+*** Test Cases ***    SYS_PRVLGS    OBJ_PRIVILEGE    ROLE_PRIVILEGE    CUST_ROLE_PRVLG    SYS_PRVLGS    USR_PRVLGS    SCHEMA_OBJECT    FROM_USER    FROM_ROLE    FROM_PUBLIC    RETCODE    STATUS
+Revoke Grant          [Timeout]
+                      ${EMPTY}      ${EMPTY}         ${EMPTY}          ${EMPTY}           NO            YES           ${EMPTY}         DROP_USER    ${EMPTY}     NO             0          ${ENDED_OK}
 
-Test Case 2           ipsum    lorem     1
+Test Case 2           ipsum         lorem            1
 
 *** Keywords ***
 Revoke Grant Template
-    [Arguments]    ${path}    ${input2}    ${returnCode}    ${returnStatus}
+    [Arguments]    ${sys_prvlgs}    ${obj_privilege}    ${role_privilege}    ${cust_role_prvlg}    ${all_sys_prvlgs}    ${usr_prvlgs}
+    ...    ${schmea_object}    ${from_user}    ${from_role}    ${from_public}    ${returnCode}    ${returnStatus}
     Init Action    ${ACTION_REVOKE_GRANT}
     Oracle Common Setting
     Action Set    ${PRT_REVOKE_GRANT_DB_REVOKE_SYS_PRVLGS}    ${sys_prvlgs}
     Action Set    ${PRT_REVOKE_GRANT_DB_REVOKE_OBJ_PRIVILEGE}    ${obj_privilege}
     Action Set    ${PRT_REVOKE_GRANT_DB_REVOKE_ROLE_PRIVILEGE}    ${role_privilege}
     Action Set    ${PRT_REVOKE_GRANT_DB_RVK_CUST_ROLE_PRVLG}    ${cust_role_prvlg}
-    Action Set    ${PRT_REVOKE_GRANT_REVOKE_ALL_SYS_PRVLGS}    ${sys_prvlgs}
+    Action Set    ${PRT_REVOKE_GRANT_REVOKE_ALL_SYS_PRVLGS}    ${all_sys_prvlgs}
     Action Set    ${PRT_REVOKE_GRANT_REVOKE_ALL_USR_PRVLGS}    ${usr_prvlgs}
     Action Set    ${PRT_REVOKE_GRANT_DB_RVK_ON_SCHEMA_OBJECT}    ${schmea_object}
     Action Set    ${PRT_REVOKE_GRANT_DB_REVOKE_FROM_USER}    ${from_user}

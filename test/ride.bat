@@ -3,3 +3,4 @@ del .\output\*.html /Q
 del .\output\*.png /Q
 
 open_ride.cmd %cd%
+

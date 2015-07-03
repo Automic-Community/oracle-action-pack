@@ -8,6 +8,8 @@ Resource          actions.txt
 ${_AGENT}         /
 ${_LOGIN}         /
 ${_WORKING_DIR}    /
+${SID}            automic
+${DB_USERNAME1}    itpa
 
 *** Key Words ***
 Suite Setup
@@ -20,6 +22,13 @@ Init Win Server 11
     Set Global Variable    ${_LOGIN}    VVNSAT.LOGIN_ALL
     Set Global Variable    ${_WORKING_DIR}    C:\\automic\\testcases\\PCK.AUTOMIC_ORACLE
     Set Global Variable    ${/}    \\
+    Set Global Variable    ${DB_USERNAME}    SYS
+    Set Global Variable    ${DB_PASSWORD}    123    ${CONN_STRING}
+    Set Global Variable    ${CONN_STRING}    jdbc:oracle:thin:@vvnsat03:1521:TEST
+    Set Global Variable    ${JAR}    C:\automic\Agents\data\ojdbc6.jar
+    Set Global Variable    ${CLASS}    oracle.jdbc.driver.OracleDriver
+    Set Global Variable    ${ORA}    C:\app\Administrator\product\11.2.0\dbhome_1\NETWORK\ADMIN\tnsnames.ora
+    Set Global Variable    ${INTRVL}    10
 
 Init Unix Server 11
     [Documentation]    TODO: Write server description here
@@ -27,6 +36,13 @@ Init Unix Server 11
     Set Global Variable    ${_LOGIN}    VVNSAT.LOGIN_ALL
     Set Global Variable    ${_WORKING_DIR}    /opt/automic/testcases/PCK.AUTOMIC_ORACLE
     Set Global Variable    ${/}    /
+    Set Global Variable    ${DB_USERNAME}    test
+    Set Global Variable    ${DB_PASSWORD}    ventum2011
+    Set Global Variable    ${CONN_STRING}    jdbc:oracle:thin:@172.16.36.70:1521:automic
+    Set Global Variable    ${JAR}    /ojdbc6.jar
+    Set Global Variable    ${CLASS}    oracle.jdbc.driver.OracleDriver
+    Set Global Variable    ${ORA}    /u01/app/oracle/product/11.2.0/db_1/network/admin/tnsnames.ora
+    Set Global Variable    ${INTRVL}    10
 
 Init Unix Server 10
     [Documentation]    TODO: Write server description here
@@ -34,6 +50,8 @@ Init Unix Server 10
     Set Global Variable    ${_LOGIN}    VVNSAT.LOGIN_ALL
     Set Global Variable    ${_WORKING_DIR}    /opt/automic/testcases/PCK.AUTOMIC_ORACLE
     Set Global Variable    ${/}    /
+    Set Global Variable    ${DB_USERNAME}    test
+    Set Global Variable    ${DB_PASSWORD}    ventum2011
 
 Init Server
     [Documentation]    Requirement
