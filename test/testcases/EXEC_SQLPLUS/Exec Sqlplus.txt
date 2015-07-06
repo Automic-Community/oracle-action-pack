@@ -6,16 +6,14 @@ Force Tags        EXEC_SQLPLUS    win11    unix11
 Test Template     Exec Sqlplus Template
 Resource          ../../resources/keywords.txt
 
-*** Test Cases ***    PATH     INPUT2    RETURN CODE
-Test Case 1           lorem    ipsum     0
-
-Test Case 2           ipsum    lorem     1
+*** Test Cases ***    SERVICE    HOST    PORT    USER    PASS    ADMIN PRIV    SQLPLUS FULL PATH    COMMAND    RETURN CODE    RETURN STATUS
+Exec Sqlplus Normal
 
 *** Keywords ***
 Exec Sqlplus Template
-    [Arguments]    ${path}    ${input2}    ${returnCode}    ${returnStatus}
+    [Arguments]    ${service}    ${host}    ${port}    ${user}    ${pass}    ${admin_priv}
+    ...    ${sqlplus_full_path}    ${command}    ${returnCode}    ${returnStatus}
     Init Action    ${ACTION_EXEC_SQLPLUS}
-    Oracle Common Setting
     Action Set    ${PRT_EXEC_SQLPLUS_DB_SERVICE}    ${service}
     Action Set    ${PRT_EXEC_SQLPLUS_DB_HOST}    ${host}
     Action Set    ${PRT_EXEC_SQLPLUS_DB_PORT}    ${port}

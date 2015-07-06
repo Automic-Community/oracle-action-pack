@@ -7,11 +7,29 @@ Test Template     Drop User Template
 Resource          ../../resources/keywords.txt
 
 *** Test Cases ***    USER    FAIL IF NOT EXISTS    CASCADE    RETURN CODE    RETURN STATUS
-Drop User Normal      test    NO                    YES        0              ${ENDED_OK}
+Drop User Normal1     dev1    NO                    YES        0              ${ENDED_OK}
+
+Drop User Normal2     dev1    NO                    NO         0              ${ENDED_OK}
 
 *** Keywords ***
 Drop User Template
     [Arguments]    ${user}    ${fail_if_not_exists}    ${cascade}    ${returnCode}    ${returnStatus}
+    Init Action    ${ACTION_CREATE_USER}
+    Oracle Common Setting
+    Action Set    ${PRT_CREATE_USER_DB_USER_NAME}    ${user}
+    Action Set    ${PRT_CREATE_USER_DB_FAIL_USR_EXISTS}    NO
+    Action Set    ${PRT_CREATE_USER_DB_USER_PASSWORD}    ventum2011
+    Action Set    ${PRT_CREATE_USER_DB_IDTFT_EXTERNALLY}    NO
+    Action Set    ${PRT_CREATE_USER_DB_IDTFT_CERT_DN}    ${EMPTY}
+    Action Set    ${PRT_CREATE_USER_DB_IDTFT_GLOBALLY}    YES
+    Action Set    ${PRT_CREATE_USER_DB_IDTFT_DIR_DN}    ${EMPTY}
+    Action Set    ${PRT_CREATE_USER_DB_DEFAULT_TABLESPACE}    ${EMPTY}
+    Action Set    ${PRT_CREATE_USER_DB_TEMP_TABLESPACE}    ${EMPTY}
+    Action Set    ${PRT_CREATE_USER_DB_QUOTA_SPEC}    ${EMPTY}
+    Action Set    ${PRT_CREATE_USER_DB_PROFILE}    ${EMPTY}
+    Action Set    ${PRT_CREATE_USER_DB_PASSWORD_EXPIRE}    NO
+    Action Set    ${PRT_CREATE_USER_DB_ACCOUNT_LOCK}    NO
+    Action Execute
     Init Action    ${ACTION_DROP_USER}
     Oracle Common Setting
     Action Set    ${PRT_DROP_USER_DB_DROP_USER}    ${user}

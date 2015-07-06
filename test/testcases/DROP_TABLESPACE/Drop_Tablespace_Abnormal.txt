@@ -8,31 +8,22 @@ Resource          ../../resources/keywords.txt
 
 *** Test Cases ***    NAME    FAIL IF NOT EXISTS    DROP CONTENTS    DROP DATAFILES    CASCADE    RETURN CODE    RETURN STATUS
 Drop Tablespace Normal 1
-                      tbs2    NO                    YES              YES               YES        0              ${ENDED_OK}
+                      tbs2    YES                   YES              YES               YES        12             ${ENDED_NOT_OK}
 
 Drop Tablespace Normal 2
-                      tbs2    NO                    NO               NO                NO         0              ${ENDED_OK}
+                      tbs2    YES                   NO               NO                NO         12             ${ENDED_NOT_OK}
 
 *** Keywords ***
 Drop Tablespace Template
     [Arguments]    ${name}    ${fail_if_not_exists}    ${drop_contents}    ${drop_datafiles}    ${cascade_cnstr}    ${returnCode}
     ...    ${returnStatus}
-    Init Action    ${ACTION_CREATE_TABLESPACE}
+    Init Action    ${ACTION_DROP_TABLESPACE}
     Oracle Common Setting
-    Action Set    ${PRT_CREATE_TABLESPACE_DB_TABLESPACE_NAME}    ${name}
-    Action Set    ${PRT_CREATE_TABLESPACE_DB_FAIL_IF_TS_EXISTS}    NO
-    Action Set    ${PRT_CREATE_TABLESPACE_DB_TABLESPACE_TYPE}    Permanent
-    Action Set    ${PRT_CREATE_TABLESPACE_DB_SMALLFILE}    DEFAULT
-    Action Set    ${PRT_CREATE_TABLESPACE_DB_LOGGING}    DEFAULT
-    Action Set    ${PRT_CREATE_TABLESPACE_DB_FORCE_LOGGING}    DEFAULT
-    Action Set    ${PRT_CREATE_TABLESPACE_DB_ONLINE}    YES
-    Action Set    ${PRT_CREATE_TABLESPACE_DB_EXT_MGMT_CLAUSE}    Omit
-    Action Set    ${PRT_CREATE_TABLESPACE_DB_EXT_MGMT_TYPE}    Local
-    Action Set    ${PRT_CREATE_TABLESPACE_DB_EXT_MGMT_AUTOALLOC}    YES
-    Action Set    ${PRT_CREATE_TABLESPACE_DB_EXT_MGMT_UNIFORM}    NO
-    Action Set    ${PRT_CREATE_TABLESPACE_DB_SEGM_SPC_AUTO}    YES
-    Action Set    ${PRT_CREATE_TABLESPACE_DB_RETENTION}    NO
-    Action Set    ${PRT_CREATE_TABLESPACE_DB_PERM_DATAFILE_SPEC}    '/u01/app/oracle/test_datafile2.dbs' size 10m
+    Action Set    ${PRT_DROP_TABLESPACE_DB_DROP_TABLESPACE}    ${name}
+    Action Set    ${PRT_DROP_TABLESPACE_DB_FAIL_TS_NOT_EXISTS}    ${fail_if_not_exists}
+    Action Set    ${PRT_DROP_TABLESPACE_DB_DROP_CONTENTS}    ${drop_contents}
+    Action Set    ${PRT_DROP_TABLESPACE_DB_DROP_DATAFILES}    ${drop_datafiles}
+    Action Set    ${PRT_DROP_TABLESPACE_DB_CASCADE_CNSTR}    ${cascade_cnstr}
     Action Execute
     Init Action    ${ACTION_DROP_TABLESPACE}
     Oracle Common Setting

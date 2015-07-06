@@ -7,7 +7,11 @@ Test Template     Create User Template
 Resource          ../../resources/keywords.txt
 
 *** Test Cases ***    NAME    FAIL_IF_EXIST    PASSWORD      EXTERNALLY    GLOBALLY    PASSWORD_EXPIRE    ACCOUT_LOCK    RETURN CODE    RETURN STATUS
-Create User Normal    dev     NO               ventum2011    NO            YES         NO                 NO             0              ${ENDED_OK}
+Create User Normal1
+                      dev1    NO               ventum2011    NO            YES         NO                 NO             0              ${ENDED_OK}
+
+Create User Normal2
+                      dev2    NO               ventum2011    YES           NO          YES                YES            0              ${ENDED_OK}
 
 *** Keywords ***
 Create User Template
