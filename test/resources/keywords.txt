@@ -49,39 +49,6 @@ Action Return Variable Should Be Equal As Integers
     ${out}=    Action Get Variable    ${variableName}
     Should Be Equal As Integers    ${out}    ${variableValue}
 
-<<<<<<< HEAD
-Init Oracle 11 On Window
-    Action Set    ${PRT_CREATE_USER_DB_USERNAME}    SYS
-    Action Set    ${PRT_CREATE_USER_DB_PASSWORD}    123
-    Action Set    ${PRT_CREATE_USER_DB_JDBC_CONN_STRING}    jdbc:oracle:thin:@vvnsat03:1521:TEST
-    Action Set    ${PRT_CREATE_USER_DB_DRIVER_JAR}    C:\automic\Agents\data\ojdbc6.jar
-    Action Set    ${PRT_CREATE_USER_DB_DRIVER_CLASS}    oracle.jdbc.driver.OracleDriver
-    Action Set    ${PRT_CREATE_USER_DB_TNSNAMES_ORA}    C:\app\Administrator\product\11.2.0\dbhome_1\NETWORK\ADMIN\tnsnames.ora
-    Action Set    ${PRT_CREATE_USER_DB_CONN_INTRVL}    10
-
-Init Oracle 11 On Unix
-    Action Set    ${PRT_CREATE_USER_DB_USERNAME_LG}    test
-    Action Set    ${PRT_CREATE_USER_DB_PASSWORD_LG}    ventum2011
-    Action Set    ${PRT_CREATE_USER_DB_JDBC_CONN_STRING}    jdbc:oracle:thin:@172.16.36.70:1521:automic
-    Action Set    ${PRT_CREATE_USER_DB_DRIVER_JAR}    /ojdbc6.jar
-    Action Set    ${PRT_CREATE_USER_DB_DRIVER_CLASS}    oracle.jdbc.driver.OracleDriver
-    Action Set    ${PRT_CREATE_USER_DB_TNSNAMES_ORA}    /u01/app/oracle/product/11.2.0/db_1/network/admin/tnsnames.ora
-    Action Set    ${PRT_CREATE_USER_DB_CONN_INTRVL}    10
-
-Init Oracle 10 On Unix
-    Action Set    ${PRT_CREATE_USER_DB_USERNAME}    ${input2}
-    Action Set    ${PRT_CREATE_USER_DB_PASSWORD}    ${input2}
-    Action Set    ${PRT_CREATE_USER_DB_JDBC_CONN_STRING}    ${input2}
-    Action Set    ${PRT_CREATE_USER_DB_DRIVER_JAR}    ${input2}
-    Action Set    ${PRT_CREATE_USER_DB_DRIVER_CLASS}    ${input2}
-    Action Set    ${PRT_CREATE_USER_DB_TNSNAMES_ORA}    ${input2}
-    Action Set    ${PRT_CREATE_USER_DB_CONN_INTRVL}    ${input2}
-
-Oracle Common Setting
-    Run Keyword If    '${OS}' == 'WIN11'    Init Oracle 11 On Window
-    Run Keyword If    '${OS}' == 'UNIX11'    Init Oracle 11 On Unix
-    Run Keyword If    '${OS}' == 'UNIX10'    Init Oracle 10 On Unix
-=======
 Oracle Common Setting
     Action Set    ${PRT_CREATE_USER_DB_USERNAME_LG}    ${DB_USERNAME}
     Action Set    ${PRT_CREATE_USER_DB_PASSWORD_LG}    ${DB_PASSWORD}
@@ -124,4 +91,3 @@ Drop User
     Action Report Should Be Found
     Action Return Code Should Be    0
     Action Return Status Should Be    ${ENDED_OK}
->>>>>>> 4345a56... Update context about variable and cases about Import, export DB
