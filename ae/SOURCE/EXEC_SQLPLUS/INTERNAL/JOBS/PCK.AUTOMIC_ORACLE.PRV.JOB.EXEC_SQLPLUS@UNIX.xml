@@ -47,7 +47,7 @@
 <ShellScript>1</ShellScript>
 <Command>0</Command>
 <Priority>0</Priority>
-<Shell/>
+<Shell>-sh</Shell>
 <ShellOptions/>
 <Com/>
 </ATTR_UNIX>
