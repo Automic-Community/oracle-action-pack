@@ -6,11 +6,12 @@ Force Tags        CREATE_TABLESPACE    win11    unix11    unix10
 Test Template     Create Tablespace Template
 Resource          ../../resources/keywords.txt
 
-*** Test Cases ***    NAME                            FAIL_IF_EXISTS    TYPE         SMALL_FILE    LOGGING      FORCE_LOGGING    ONLINE    MGMT_CLAUSE    MGMT_TYPE     MGMT_AUTOALLOC    MGMT_UNIFORM    SPC_AUTO    RETENTION    PERM DATA FILE                                   TEMP DATA FILE                          RETURN CODE    RETURN STATUS
+*** Test Cases ***    NAME    FAIL_IF_EXISTS    TYPE         SMALL_FILE    LOGGING    FORCE_LOGGING    ONLINE    MGMT_CLAUSE    MGMT_TYPE    MGMT_AUTOALLOC    MGMT_UNIFORM    SPC_AUTO    RETENTION    PERM DATA FILE                                   TEMP DATA FILE    RETURN CODE    RETURN STATUS
 Create Table Space Normal 1
-                      tbs2                            NO                Permanent    DEFAULT       DEFAULT      DEFAULT          YES       Omit           Local         YES               NO              YES         NO           '/u01/app/oracle/test_datafile2.dbs' size 10m    ${EMPTY}                                0              ${ENDED_OK}
-                      #Create Table Space Normal 2
-                      tbs3                            NO                Temporary    DEFAULT       SMALLFILE    NO               NO        Generate       Dictionary    NO                YES             NO          YES          ${EMPTY}                                         '/u01/app/oracle/test_datafile3.dbs'    0              ${ENDED_OK}
+                      tbs2    NO                Permanent    DEFAULT       DEFAULT    DEFAULT          YES       Omit           Local        YES               NO              YES         NO           '/u01/app/oracle/test_datafile2.dbs' size 10m    ${EMPTY}          0              ${ENDED_OK}
+
+Create Table Space Normal 2
+                      tbs3    NO                Permanent    DEFAULT       DEFAULT    DEFAULT          YES       Omit           Local        YES               NO              YES         NO           '/u01/app/oracle/test_datafile2.dbs' size 10m    ${EMPTY}          0              ${ENDED_OK}
 
 *** Keywords ***
 Create Tablespace Template

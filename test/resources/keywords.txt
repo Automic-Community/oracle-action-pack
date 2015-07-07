@@ -91,3 +91,12 @@ Drop User
     Action Report Should Be Found
     Action Return Code Should Be    0
     Action Return Status Should Be    ${ENDED_OK}
+
+Drop User With Cascade
+    [Arguments]    ${user}
+    Init Action    ${ACTION_DROP_USER}
+    Oracle Common Setting
+    Action Set    ${PRT_DROP_USER_DB_DROP_USER}    ${user}
+    Action Set    ${PRT_DROP_USER_DB_FAIL_USR_NOT_EXISTS}    NO
+    Action Set    ${PRT_DROP_USER_DB_CASCADE}    YES
+    Action Execute
