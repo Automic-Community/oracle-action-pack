@@ -11,7 +11,7 @@ Create User Abnormal 1
                       dev1    YES              ventum2011    NO            YES         NO                 NO             12             ${ENDED_NOT_OK}
 
 Create User Abnormal 2
-                      dev1    YES              ventum2011    YES           NO          YES                NO             12             ${ENDED_NOT_OK}
+                      dev1    YES              ventum2011    YES           NO          YES                YES            12             ${ENDED_NOT_OK}
 
 *** Keywords ***
 Create User Template

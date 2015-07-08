@@ -7,10 +7,10 @@ Test Template     Create User Template
 Resource          ../../resources/keywords.txt
 
 *** Test Cases ***    NAME    FAIL_IF_EXIST    PASSWORD      EXTERNALLY    GLOBALLY    PASSWORD_EXPIRE    ACCOUT_LOCK    RETURN CODE    RETURN STATUS
-Create User Normal1
+Create User With Default Promptset
                       dev1    NO               ventum2011    NO            YES         NO                 NO             0              ${ENDED_OK}
 
-Create User Normal2
+Create User With No Default Promptset
                       dev2    NO               ventum2011    YES           NO          YES                YES            0              ${ENDED_OK}
 
 *** Keywords ***
@@ -36,3 +36,4 @@ Create User Template
     Action Report Should Be Found
     Action Return Code Should Be    ${returnCode}
     Action Return Status Should Be    ${returnStatus}
+    [Teardown]    Drop User With Cascade    ${name}

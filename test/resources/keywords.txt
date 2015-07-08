@@ -100,3 +100,14 @@ Drop User With Cascade
     Action Set    ${PRT_DROP_USER_DB_FAIL_USR_NOT_EXISTS}    NO
     Action Set    ${PRT_DROP_USER_DB_CASCADE}    YES
     Action Execute
+
+Drop Tablespace
+    [Arguments]    ${name}
+    Init Action    ${ACTION_DROP_TABLESPACE}
+    Oracle Common Setting
+    Action Set    ${PRT_DROP_TABLESPACE_DB_DROP_TABLESPACE}    ${name}
+    Action Set    ${PRT_DROP_TABLESPACE_DB_FAIL_TS_NOT_EXISTS}    NO
+    Action Set    ${PRT_DROP_TABLESPACE_DB_DROP_CONTENTS}    YES
+    Action Set    ${PRT_DROP_TABLESPACE_DB_DROP_DATAFILES}    YES
+    Action Set    ${PRT_DROP_TABLESPACE_DB_CASCADE_CNSTR}    YES
+    Action Execute
