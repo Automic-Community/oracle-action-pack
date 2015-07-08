@@ -12,6 +12,8 @@ ${SID}            automic
 ${DB_USERNAME1}    itpa
 ${DB_FILE_PATH}    /
 ${CONN_STRING}    /
+${ERROR_CODE}     /
+${SQLPLUS_FULL_PATH}    /
 
 *** Key Words ***
 Suite Setup
@@ -32,6 +34,8 @@ Init Win Server 11
     Set Global Variable    ${ORA}    C:\\app\\Administrator\\product\\11.2.0\\dbhome_1\\NETWORK\\ADMIN\\tnsnames.ora
     Set Global Variable    ${INTRVL}    10
     Set Global Variable    ${DB_FILE_PATH}    C:\\automic\\testcases\\PCK.AUTOMIC_ORACLE
+    Set Global Variable    ${ERROR_CODE}    999
+    Set Global Variable    ${SQLPLUS_FULL_PATH}    C:\\app\\Administrator\\product\\11.2.0\\dbhome_1\\BIN\\sqlplus.exe
 
 Init Unix Server 11
     [Documentation]    TODO: Write server description here
@@ -47,6 +51,8 @@ Init Unix Server 11
     Set Global Variable    ${ORA}    /u01/app/oracle/product/11.2.0/db_1/network/admin/tnsnames.ora
     Set Global Variable    ${INTRVL}    10
     Set Global Variable    ${DB_FILE_PATH}    /u01/app/oracle
+    Set Global Variable    ${ERROR_CODE}    12
+    Set Global Variable    ${SQLPLUS_FULL_PATH}    /u01/app/oracle/product/11.2.0/db_1/bin/sqlplus
 
 Init Unix Server 10
     [Documentation]    TODO: Write server description here

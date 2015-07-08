@@ -6,12 +6,12 @@ Force Tags        CREATE_TABLESPACE    win11    unix11    unix10
 Test Template     Create Tablespace Template
 Resource          ../../resources/keywords.txt
 
-*** Test Cases ***    NAME    FAIL_IF_EXISTS    TYPE         SMALL_FILE    LOGGING    FORCE_LOGGING    ONLINE    MGMT_CLAUSE    MGMT_TYPE    MGMT_AUTOALLOC    MGMT_UNIFORM    SPC_AUTO    RETENTION    PERM DATA FILE                                   TEMP DATA FILE    RETURN CODE    RETURN STATUS
+*** Test Cases ***    NAME    FAIL_IF_EXISTS    TYPE         SMALL_FILE    LOGGING    FORCE_LOGGING    ONLINE    MGMT_CLAUSE    MGMT_TYPE    MGMT_AUTOALLOC    MGMT_UNIFORM    SPC_AUTO    RETENTION    PERM DATA FILE                                   TEMP DATA FILE    RETURN CODE      RETURN STATUS
 Create TS Abnormal 1
-                      tbs2    YES               Permanent    DEFAULT       DEFAULT    DEFAULT          YES       Omit           Local        YES               NO              YES         NO           '/u01/app/oracle/test_datafile2.dbs' size 10m    ${EMPTY}          12             ${ENDED_NOT_OK}
+                      tbs2    YES               Permanent    DEFAULT       DEFAULT    DEFAULT          YES       Omit           Local        YES               NO              YES         NO           '/u01/app/oracle/test_datafile2.dbs' size 10m    ${EMPTY}          ${ERROR_CODE}    ${ENDED_NOT_OK}
 
 Create TS Abnormal 2
-                      tbs3    YES               Permanent    DEFAULT       DEFAULT    DEFAULT          YES       Omit           Local        YES               NO              YES         NO           '/u01/app/oracle/test_datafile3.dbs' size 10m    ${EMPTY}          12             ${ENDED_NOT_OK}
+                      tbs3    YES               Permanent    DEFAULT       DEFAULT    DEFAULT          YES       Omit           Local        YES               NO              YES         NO           '/u01/app/oracle/test_datafile3.dbs' size 10m    ${EMPTY}          ${ERROR_CODE}    ${ENDED_NOT_OK}
 
 *** Keywords ***
 Create Tablespace Template
