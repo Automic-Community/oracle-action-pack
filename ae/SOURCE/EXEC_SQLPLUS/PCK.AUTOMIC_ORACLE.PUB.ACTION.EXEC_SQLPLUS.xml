@@ -55,13 +55,13 @@
 <node content="1" id="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXEC_SQLPLUS" name="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXEC_SQLPLUS" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXEC_SQLPLUS">
 <PRPTBOX promptset="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXEC_SQLPLUS">
-<UC4RB_DB_COMMANDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_COMMAND#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXEC_SQLPLUS"/>
-<UC4RB_DB_HOSTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_HOST#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXEC_SQLPLUS"/>
-<UC4RB_DB_PASSs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_PASS#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXEC_SQLPLUS"/>
-<UC4RB_DB_PORTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_PORT#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXEC_SQLPLUS"/>
-<UC4RB_DB_SERVICEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_SERVICE#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXEC_SQLPLUS"/>
-<UC4RB_DB_SQLPLUS_FULL_PATHs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_SQLPLUS_FULL_PATH#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXEC_SQLPLUS"/>
-<UC4RB_DB_USERs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_USER#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXEC_SQLPLUS"/>
+<UC4RB_DB_COMMANDs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_COMMAND#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXEC_SQLPLUS"/>
+<UC4RB_DB_HOSTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_HOST#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXEC_SQLPLUS"/>
+<UC4RB_DB_PASSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_PASS#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXEC_SQLPLUS"/>
+<UC4RB_DB_PORTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_PORT#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXEC_SQLPLUS"/>
+<UC4RB_DB_SERVICEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_SERVICE#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXEC_SQLPLUS"/>
+<UC4RB_DB_SQLPLUS_FULL_PATHs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_SQLPLUS_FULL_PATH#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXEC_SQLPLUS">sqlplus</UC4RB_DB_SQLPLUS_FULL_PATHs.00>
+<UC4RB_DB_USERs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_USER#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXEC_SQLPLUS"/>
 <UC4RB_DB_USE_ADMIN_PRIVs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_USE_ADMIN_PRIV#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXEC_SQLPLUS">No</UC4RB_DB_USE_ADMIN_PRIVs.00>
 </PRPTBOX>
 </PROMPTSET>
@@ -69,8 +69,8 @@
 <node content="1" id="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" name="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">
 <PRPTBOX promptset="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">
-<AGENTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="AGENT#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT"/>
-<LOGINs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="LOGIN#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT"/>
+<AGENTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="AGENT#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT"/>
+<LOGINs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="LOGIN#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT"/>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -120,13 +120,13 @@
 <node content="1" id="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXEC_SQLPLUS" name="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXEC_SQLPLUS" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXEC_SQLPLUS">
 <PRPTBOX promptset="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXEC_SQLPLUS">
-<UC4RB_DB_COMMANDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_COMMAND#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXEC_SQLPLUS"/>
-<UC4RB_DB_HOSTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_HOST#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXEC_SQLPLUS"/>
-<UC4RB_DB_PASSs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_PASS#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXEC_SQLPLUS"/>
-<UC4RB_DB_PORTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_PORT#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXEC_SQLPLUS"/>
-<UC4RB_DB_SERVICEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_SERVICE#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXEC_SQLPLUS"/>
-<UC4RB_DB_SQLPLUS_FULL_PATHs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_SQLPLUS_FULL_PATH#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXEC_SQLPLUS"/>
-<UC4RB_DB_USERs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_USER#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXEC_SQLPLUS"/>
+<UC4RB_DB_COMMANDs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_COMMAND#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXEC_SQLPLUS"/>
+<UC4RB_DB_HOSTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_HOST#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXEC_SQLPLUS"/>
+<UC4RB_DB_PASSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_PASS#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXEC_SQLPLUS"/>
+<UC4RB_DB_PORTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_PORT#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXEC_SQLPLUS"/>
+<UC4RB_DB_SERVICEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_SERVICE#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXEC_SQLPLUS"/>
+<UC4RB_DB_SQLPLUS_FULL_PATHs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_SQLPLUS_FULL_PATH#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXEC_SQLPLUS">sqlplus</UC4RB_DB_SQLPLUS_FULL_PATHs.00>
+<UC4RB_DB_USERs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_USER#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXEC_SQLPLUS"/>
 <UC4RB_DB_USE_ADMIN_PRIVs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_USE_ADMIN_PRIV#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXEC_SQLPLUS">No</UC4RB_DB_USE_ADMIN_PRIVs.00>
 </PRPTBOX>
 </PROMPTSET>
@@ -134,8 +134,8 @@
 <node content="1" id="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" name="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">
 <PRPTBOX promptset="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">
-<AGENTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="AGENT#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT"/>
-<LOGINs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="LOGIN#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT"/>
+<AGENTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="AGENT#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT"/>
+<LOGINs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="LOGIN#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT"/>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -185,13 +185,13 @@
 <node content="1" id="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXEC_SQLPLUS" name="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXEC_SQLPLUS" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXEC_SQLPLUS">
 <PRPTBOX promptset="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXEC_SQLPLUS">
-<UC4RB_DB_COMMANDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_COMMAND#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXEC_SQLPLUS"/>
-<UC4RB_DB_HOSTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_HOST#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXEC_SQLPLUS"/>
-<UC4RB_DB_PASSs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_PASS#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXEC_SQLPLUS"/>
-<UC4RB_DB_PORTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_PORT#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXEC_SQLPLUS"/>
-<UC4RB_DB_SERVICEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_SERVICE#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXEC_SQLPLUS"/>
-<UC4RB_DB_SQLPLUS_FULL_PATHs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_SQLPLUS_FULL_PATH#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXEC_SQLPLUS"/>
-<UC4RB_DB_USERs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_USER#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXEC_SQLPLUS"/>
+<UC4RB_DB_COMMANDs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_COMMAND#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXEC_SQLPLUS"/>
+<UC4RB_DB_HOSTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_HOST#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXEC_SQLPLUS"/>
+<UC4RB_DB_PASSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_PASS#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXEC_SQLPLUS"/>
+<UC4RB_DB_PORTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_PORT#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXEC_SQLPLUS"/>
+<UC4RB_DB_SERVICEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_SERVICE#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXEC_SQLPLUS"/>
+<UC4RB_DB_SQLPLUS_FULL_PATHs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_SQLPLUS_FULL_PATH#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXEC_SQLPLUS">sqlplus</UC4RB_DB_SQLPLUS_FULL_PATHs.00>
+<UC4RB_DB_USERs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_USER#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXEC_SQLPLUS"/>
 <UC4RB_DB_USE_ADMIN_PRIVs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_USE_ADMIN_PRIV#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXEC_SQLPLUS">No</UC4RB_DB_USE_ADMIN_PRIVs.00>
 </PRPTBOX>
 </PROMPTSET>
@@ -199,8 +199,8 @@
 <node content="1" id="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" name="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">
 <PRPTBOX promptset="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">
-<AGENTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="AGENT#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT"/>
-<LOGINs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="LOGIN#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT"/>
+<AGENTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="AGENT#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT"/>
+<LOGINs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="LOGIN#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT"/>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -234,13 +234,13 @@
 <node content="1" id="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXEC_SQLPLUS" name="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXEC_SQLPLUS" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXEC_SQLPLUS">
 <PRPTBOX promptset="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXEC_SQLPLUS">
-<UC4RB_DB_COMMANDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_COMMAND#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXEC_SQLPLUS"/>
-<UC4RB_DB_HOSTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_HOST#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXEC_SQLPLUS"/>
-<UC4RB_DB_PASSs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_PASS#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXEC_SQLPLUS"/>
-<UC4RB_DB_PORTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_PORT#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXEC_SQLPLUS"/>
-<UC4RB_DB_SERVICEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_SERVICE#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXEC_SQLPLUS"/>
-<UC4RB_DB_SQLPLUS_FULL_PATHs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_SQLPLUS_FULL_PATH#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXEC_SQLPLUS"/>
-<UC4RB_DB_USERs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_USER#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXEC_SQLPLUS"/>
+<UC4RB_DB_COMMANDs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_COMMAND#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXEC_SQLPLUS"/>
+<UC4RB_DB_HOSTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_HOST#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXEC_SQLPLUS"/>
+<UC4RB_DB_PASSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_PASS#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXEC_SQLPLUS"/>
+<UC4RB_DB_PORTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_PORT#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXEC_SQLPLUS"/>
+<UC4RB_DB_SERVICEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_SERVICE#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXEC_SQLPLUS"/>
+<UC4RB_DB_SQLPLUS_FULL_PATHs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_SQLPLUS_FULL_PATH#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXEC_SQLPLUS">sqlplus</UC4RB_DB_SQLPLUS_FULL_PATHs.00>
+<UC4RB_DB_USERs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_USER#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXEC_SQLPLUS"/>
 <UC4RB_DB_USE_ADMIN_PRIVs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_USE_ADMIN_PRIV#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXEC_SQLPLUS">No</UC4RB_DB_USE_ADMIN_PRIVs.00>
 </PRPTBOX>
 </PROMPTSET>
@@ -248,8 +248,8 @@
 <node content="1" id="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" name="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">
 <PRPTBOX promptset="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">
-<AGENTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="AGENT#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT"/>
-<LOGINs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="LOGIN#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT"/>
+<AGENTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="AGENT#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT"/>
+<LOGINs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="LOGIN#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT"/>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -313,23 +313,12 @@
 </node>
 <node content="1" id="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXEC_SQLPLUS" name="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXEC_SQLPLUS" parent="PRPTS" type="PROMPTSET">
 <PROMPTSET name="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXEC_SQLPLUS" ontop="1">
-<PRPTBOX promptset="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXEC_SQLPLUS" prptmode="1">
-<UC4RB_DB_SERVICEs.00 altview="0" haslist="0"/>
-<UC4RB_DB_HOSTs.00 altview="0" haslist="0"/>
-<UC4RB_DB_PORTs.00 altview="0" haslist="0"/>
-<UC4RB_DB_USERs.00 altview="0" haslist="0"/>
-<UC4RB_DB_PASSs.00 altview="0" haslist="0"/>
-<UC4RB_DB_SQLPLUS_FULL_PATHs.00 altview="0" haslist="0"/>
-<UC4RB_DB_COMMANDs.00 altview="0" haslist="0"/>
-</PRPTBOX>
+<PRPTBOX promptset="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXEC_SQLPLUS" prptmode="1"/>
 </PROMPTSET>
 </node>
 <node content="1" id="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" name="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" parent="PRPTS" type="PROMPTSET">
 <PROMPTSET name="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" ontop="1">
-<PRPTBOX promptset="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" prptmode="1">
-<AGENTs.00 altview="0" haslist="0"/>
-<LOGINs.00 altview="0" haslist="0"/>
-</PRPTBOX>
+<PRPTBOX promptset="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" prptmode="1"/>
 </PROMPTSET>
 </node>
 </dyntree>
