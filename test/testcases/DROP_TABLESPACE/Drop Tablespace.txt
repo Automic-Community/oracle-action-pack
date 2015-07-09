@@ -13,6 +13,12 @@ Drop Tablespace Normal 1
 Drop Tablespace Normal 2
                       tbs2    NO                    NO               NO                NO         0              ${ENDED_OK}
 
+Drop Tablespace Normal 3
+                      tbs2    NO                    YES              YES               NO         0              ${ENDED_OK}
+
+Drop Tablespace Normal 4
+                      tbs2    NO                    YES              NO                YES        0              ${ENDED_OK}
+
 *** Keywords ***
 Drop Tablespace Template
     [Arguments]    ${name}    ${fail_if_not_exists}    ${drop_contents}    ${drop_datafiles}    ${cascade_cnstr}    ${returnCode}

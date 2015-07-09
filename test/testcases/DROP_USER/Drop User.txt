@@ -11,6 +11,10 @@ Drop User Normal1     dev1    NO                    YES        0              ${
 
 Drop User Normal2     dev1    NO                    NO         0              ${ENDED_OK}
 
+Drop User Normal3     dev1    YES                   NO         0              ${ENDED_OK}
+
+Drop User Normal4     dev1    YES                   YES        0              ${ENDED_OK}
+
 *** Keywords ***
 Drop User Template
     [Arguments]    ${user}    ${fail_if_not_exists}    ${cascade}    ${returnCode}    ${returnStatus}

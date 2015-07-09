@@ -13,6 +13,12 @@ Create User Abnormal 1
 Create User Abnormal 2
                       dev1    YES              ventum2011    YES           NO          YES                YES            12             ${ENDED_NOT_OK}
 
+Create User Abnormal 3
+                      dev1    YES              ventum2011    NO            NO          YES                YES            12             ${ENDED_NOT_OK}
+
+Create User Abnormal 4
+                      dev1    YES              ventum2011    NO            NO          NO                 NO             12             ${ENDED_NOT_OK}
+
 *** Keywords ***
 Create User Template
     [Arguments]    ${name}    ${fail_if_exist}    ${password}    ${externally}    ${globally}    ${password_expire}
