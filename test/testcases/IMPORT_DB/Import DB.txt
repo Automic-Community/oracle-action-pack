@@ -1,26 +1,53 @@
 *** Settings ***
 Documentation     NOTE:
 ...               add note here
-Suite Setup       Suite Setup Import
+Suite Setup       Suite Setup User    ${DB_USERNAME}
+Suite Teardown    Drop User    ${DB_USERNAME}
 Force Tags        IMPORT_DB    win11    unix11    unix10
 Test Template     Import Db Template
 Resource          ../../resources/keywords.txt
 
-*** Test Cases ***    DB_USERNAME        DB_PASSWORD       SID       FILES                                                            FROMUSERS    TOUSERS     TS_LIST     TRANSP_TS    FILESIZE    VOLSIZE     AS_SYSDBA    FULL    TABLES               TTS_OWNERS    DATAFILES    LOGFILE    RECORDLENGTH    ROWS    COMMIT    BUFFER    IGNORE_ERR    DESTROY    CONSTRAINTS    CONFIG    INST    GRANTS    STATISTICS    RESUMABLE    RESUMABLE_NAME                                                    RSMBL_TIMEOUT    COMPILE    RETURN CODE    STATUS
+*** Test Cases ***    DB_USERNAME        DB_PASSWORD        SID                FILES                                                            FROMUSERS                TOUSERS            TS_LIST             TRANSP_TS    FILESIZE    VOLSIZE     AS_SYSDBA    FULL    TABLES               TTS_OWNERS    DATAFILES                   LOGFILE    RECORDLENGTH    ROWS    COMMIT    BUFFER    IGNORE_ERR    DESTROY    CONSTRAINTS    CONFIG    INST    GRANTS    STATISTICS    RESUMABLE    RESUMABLE_NAME                                                    RSMBL_TIMEOUT    COMPILE    RETURN CODE    STATUS
 Import DB with a table
-                      ${DB_USERNAME1}    ${DB_PASSWORD}    ${SID}    ${_WORKING_DIR}${/}export1.dmp                                   ${EMPTY}     ${EMPTY}    ${EMPTY}    NO           ${EMPTY}    ${EMPTY}    NO           NO      TEST_FOR_IMPORT      ${EMPTY}      ${EMPTY}     NO         0               YES     NO        0         NO            NO         YES            YES       NO      YES       ALWAYS        NO           User USERNAME (USERID), Session SESSIONID, Instance INSTANCEID    7200             YES        0              ${ENDED_OK}
+                      ${DB_USERNAME}     ${DB_PASSWORD}     ${SID}             ${_WORKING_DIR}${/}export1.dmp                                   ${EMPTY}                 ${EMPTY}           ${EMPTY}            NO           ${EMPTY}    ${EMPTY}    NO           NO      TEST_FOR_IMPORT      ${EMPTY}      ${EMPTY}                    NO         0               YES     NO        0         NO            NO         YES            YES       NO      YES       ALWAYS        NO           User USERNAME (USERID), Session SESSIONID, Instance INSTANCEID    7200             YES        0              ${ENDED_OK}
 
-Import DB without table
-                      ${DB_USERNAME1}    ${DB_PASSWORD}    ${SID}    ${_WORKING_DIR}${/}export.dmp                                    ${EMPTY}     ${EMPTY}    ${EMPTY}    NO           ${EMPTY}    ${EMPTY}    NO           NO      NO                   ${EMPTY}      ${EMPTY}     NO         0               YES     NO        0         NO            NO         YES            YES       NO      YES       ALWAYS        NO           User USERNAME (USERID), Session SESSIONID, Instance INSTANCEID    7200             YES        0              ${ENDED_OK}
+Import DB with multi table
+                      ${DB_USERNAME}     ${DB_PASSWORD}     ${SID}             ${_WORKING_DIR}${/}export1.dmp                                   ${EMPTY}                 ${EMPTY}           ${EMPTY}            NO           ${EMPTY}    ${EMPTY}    NO           NO      STAFF,CERTIFICATE    ${EMPTY}      ${EMPTY}                    NO         0               YES     NO        0         NO            NO         YES            YES       NO      YES       ALWAYS        NO           User USERNAME (USERID), Session SESSIONID, Instance INSTANCEID    7200             YES        0              ${ENDED_OK}
+
+Import DB             ${DB_USERNAME}     ${DB_PASSWORD}     ${SID}             ${_WORKING_DIR}${/}export.dmp                                    ${EMPTY}                 ${EMPTY}           ${EMPTY}            NO           ${EMPTY}    ${EMPTY}    NO           NO      NO                   ${EMPTY}      ${EMPTY}                    NO         0               YES     NO        0         NO            NO         YES            YES       NO      YES       ALWAYS        NO           User USERNAME (USERID), Session SESSIONID, Instance INSTANCEID    7200             YES        0              ${ENDED_OK}
 
 Import DB from multi files
-                      ${DB_USERNAME1}    ${DB_PASSWORD}    ${SID}    ${_WORKING_DIR}${/}export3.dmp,${_WORKING_DIR}${/}export2.dmp    ${EMPTY}     ${EMPTY}    ${EMPTY}    NO           ${EMPTY}    ${EMPTY}    NO           NO      STAFF,CERTIFICATE    ${EMPTY}      ${EMPTY}     NO         0               YES     NO        0         NO            NO         YES            YES       NO      YES       ALWAYS        NO           User USERNAME (USERID), Session SESSIONID, Instance INSTANCEID    7200             YES        0              ${ENDED_OK}
+                      ${DB_USERNAME}     ${DB_PASSWORD}     ${SID}             ${_WORKING_DIR}${/}export3.dmp,${_WORKING_DIR}${/}export2.dmp    ${EMPTY}                 ${EMPTY}           ${EMPTY}            NO           10MB        ${EMPTY}    NO           NO      STAFF,CERTIFICATE    ${EMPTY}      ${EMPTY}                    NO         0               YES     NO        0         NO            NO         YES            YES       NO      YES       ALWAYS        NO           User USERNAME (USERID), Session SESSIONID, Instance INSTANCEID    7200             YES        0              ${ENDED_OK}
+
+Full import DB        ${DB_USERNAME2}    ${DB_PASSWORD}     ${SID}             ${_WORKING_DIR}${/}export1.dmp                                   ${EMPTY}                 ${EMPTY}           ${EMPTY}            NO           ${EMPTY}    ${EMPTY}    YES          YES     ${EMPTY}             ${EMPTY}      ${EMPTY}                    NO         0               YES     NO        0         NO            NO         YES            YES       NO      YES       ALWAYS        NO           User USERNAME (USERID), Session SESSIONID, Instance INSTANCEID    7200             YES        0              ${ENDED_OK}
+
+Import DB from user to user
+                      ${DB_USERNAME2}    ${DB_PASSWORD}     ${SID}             ${_WORKING_DIR}${/}fullExport.dmp                                ${DB_USERNAME}           user_b             ${EMPTY}            NO           ${EMPTY}    ${EMPTY}    YES          NO      ${EMPTY}             ${EMPTY}      ${EMPTY}                    NO         0               YES     NO        0         NO            NO         YES            YES       NO      YES       ALWAYS        NO           User USERNAME (USERID), Session SESSIONID, Instance INSTANCEID    7200             YES        0              ${ENDED_OK}
+
+Import DB from multi user to an user
+                      ${DB_USERNAME2}    ${DB_PASSWORD}     ${SID}             ${_WORKING_DIR}${/}fullExport.dmp                                ${DB_USERNAME},user_a    user_b             ${EMPTY}            NO           ${EMPTY}    ${EMPTY}    YES          NO      ${EMPTY}             ${EMPTY}      ${EMPTY}                    NO         0               YES     NO        0         NO            NO         YES            YES       NO      YES       ALWAYS        NO           User USERNAME (USERID), Session SESSIONID, Instance INSTANCEID    7200             YES        0              ${ENDED_OK}
+
+Import DB from multi user to an user
+                      ${DB_USERNAME2}    ${DB_PASSWORD}     ${SID}             ${_WORKING_DIR}${/}fullExport.dmp                                ${DB_USERNAME}           user_a,user_b      ${EMPTY}            NO           ${EMPTY}    ${EMPTY}    YES          NO      ${EMPTY}             ${EMPTY}      ${EMPTY}                    NO         0               YES     NO        0         NO            NO         YES            YES       NO      YES       ALWAYS        NO           User USERNAME (USERID), Session SESSIONID, Instance INSTANCEID    7200             YES        0              ${ENDED_OK}
+
+Import DB table space
+                      ${DB_USERNAME2}    ${DB_PASSWORD}     ${SID}             ${_WORKING_DIR}${/}fullExport.dmp                                ${EMPTY}                 ${EMPTY}           TEST                YES          ${EMPTY}    ${EMPTY}    YES          NO      ${EMPTY}             ${EMPTY}      ${EMPTY}                    NO         0               YES     NO        0         NO            NO         YES            YES       NO      YES       ALWAYS        NO           User USERNAME (USERID), Session SESSIONID, Instance INSTANCEID    7200             YES        0              ${ENDED_OK}
+                      [Teardown]         Drop TableSpace    TEST
+
+Import DB multi table space
+                      ${DB_USERNAME2}    ${DB_PASSWORD}     ${SID}             ${_WORKING_DIR}${/}fullExport.dmp                                ${EMPTY}                 ${EMPTY}           TEST,tablespace1    YES          ${EMPTY}    ${EMPTY}    YES          NO      ${EMPTY}             ${EMPTY}      ${EMPTY}                    NO         0               YES     NO        0         NO            NO         YES            YES       NO      YES       ALWAYS        NO           User USERNAME (USERID), Session SESSIONID, Instance INSTANCEID    7200             YES        0              ${ENDED_OK}
+                      [Teardown]         Run Keywords       Drop TableSpace    TEST                                                             AND                      Drop TableSpace    tablespace1
+
+Import DB data files
+                      ${DB_USERNAME}     ${DB_PASSWORD}     ${SID}             ${_WORKING_DIR}${/}fullExport.dmp                                ${EMPTY}                 ${EMPTY}           ${EMPTY}            YES          ${EMPTY}    ${EMPTY}    YES          NO      ${EMPTY}             ${EMPTY}      Test_file.dbf               YES        0               YES     NO        0         NO            NO         YES            YES       NO      YES       ALWAYS        NO           User USERNAME (USERID), Session SESSIONID, Instance INSTANCEID    7200             YES        0              ${ENDED_OK}
+
+Import DB multi data files
+                      ${DB_USERNAME}     ${DB_PASSWORD}     ${SID}             ${_WORKING_DIR}${/}fullExport.dmp                                ${EMPTY}                 ${EMPTY}           ${EMPTY}            YES          ${EMPTY}    ${EMPTY}    YES          NO      ${EMPTY}             ${EMPTY}      Test_file.dbf,file01.dmp    YES        0               YES     NO        0         NO            NO         YES            YES       NO      YES       ALWAYS        NO           User USERNAME (USERID), Session SESSIONID, Instance INSTANCEID    7200             YES        0              ${ENDED_OK}
+
+Import DB, not import rows
+                      ${DB_USERNAME}     ${DB_PASSWORD}     ${SID}             ${_WORKING_DIR}${/}fullExport.dmp                                ${EMPTY}                 ${EMPTY}           ${EMPTY}            YES          ${EMPTY}    ${EMPTY}    NO           NO      STAFF,CERTIFICATE    ${EMPTY}      ${EMPTY}                    YES        0               NO      NO        0         NO            NO         YES            YES       NO      YES       ALWAYS        NO           User USERNAME (USERID), Session SESSIONID, Instance INSTANCEID    7200             YES        0              ${ENDED_OK}
 
 *** Keywords ***
-Suite Setup Import
-    Suite Setup
-    Create User    ${DB_USERNAME1}    NO    YES    NO    NO
-
 Import Db Template
     [Arguments]    ${name}    ${pass}    ${sid}    ${files}    ${from_users}    ${to_users}
     ...    ${file_size}    ${transp_ts}    ${to_list}    ${vol_size}    ${invoke_as_sysdba}    ${full}
@@ -64,6 +91,4 @@ Import Db Template
     Action Report Should Be Found
     Action Return Code Should Be    ${returnCode}
     Action Return Status Should Be    ${returnStatus}
-
-Suite Teardown
-    Drop User    ${DB_USERNAME1}    YES
+    #[Teardown]    Drop User    ${DB_USERNAME1}    YES

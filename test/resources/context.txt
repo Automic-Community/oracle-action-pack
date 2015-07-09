@@ -9,13 +9,17 @@ ${_AGENT}         /
 ${_LOGIN}         /
 ${_WORKING_DIR}    /
 ${SID}            automic
-${DB_USERNAME1}    itpa
 ${DB_FILE_PATH}    /
 ${CONN_STRING}    /
 ${ERROR_CODE}     /
 ${SQLPLUS_FULL_PATH}    /
 ${HOST}           /
 ${USER}           /
+${DB_USERNAME1}    /
+${DB_USERNAME2}    sys
+${USER_NOGRANT}    nogrant
+${ROLE_NOGRANT}    role_nogrant
+${USER_IMPORT}    import
 
 *** Key Words ***
 Suite Setup
@@ -47,7 +51,7 @@ Init Unix Server 11
     Set Global Variable    ${_LOGIN}    VVNSAT.LOGIN_ALL
     Set Global Variable    ${_WORKING_DIR}    /opt/automic/testcases/PCK.AUTOMIC_ORACLE
     Set Global Variable    ${/}    /
-    Set Global Variable    ${DB_USERNAME}    test
+    Set Global Variable    ${DB_USERNAME}    itpa
     Set Global Variable    ${DB_PASSWORD}    ventum2011
     Set Global Variable    ${CONN_STRING}    jdbc:oracle:thin:@172.16.36.70:1521:automic
     Set Global Variable    ${JAR}    /ojdbc6.jar

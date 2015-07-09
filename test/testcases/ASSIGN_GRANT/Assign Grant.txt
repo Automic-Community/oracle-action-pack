@@ -6,10 +6,8 @@ Force Tags        ASSIGN_GRANT    win11    unix11    unix10
 Test Template     Assign Grant Template
 Resource          ../../resources/keywords.txt
 
-*** Test Cases ***    SYS_PRIVILEGE    OBJ_PRIVILEGE    ROLE_PRIVILEGE    CUST_ROLE_PRVLG    SYS_PRIVILEGES    USER_PRVLGS    SCHM_OBJ    USER         ROLE        PUBLIC    HIERARCHY_OPTION    GRANT_OPTION    ADMIN_OPTION    RETCODE    STATUS
-Assign Grant          ${EMPTY}         ${EMPTY}         ${EMPTY}          ${EMPTY}           NO                YES            ${EMPTY}    DROP_USER    ${EMPTY}    NO        NO                  NO              NO              0          ${ENDED_OK}
-
-Test Case 2           ipsum            lorem            1
+*** Test Cases ***    SYS_PRIVILEGE    OBJ_PRIVILEGE    ROLE_PRIVILEGE    CUST_ROLE_PRVLG    SYS_PRIVILEGES    USER_PRVLGS    SCHM_OBJ    USER              ROLE        PUBLIC    HIERARCHY_OPTION    GRANT_OPTION    ADMIN_OPTION    RETCODE    STATUS
+Assign Grant          ${EMPTY}         ${EMPTY}         ${EMPTY}          ${EMPTY}           NO                YES            ${EMPTY}    ${DB_USERNAME}    ${EMPTY}    NO        NO                  NO              NO              0          ${ENDED_OK}
 
 *** Keywords ***
 Assign Grant Template

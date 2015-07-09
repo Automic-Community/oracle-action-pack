@@ -1,0 +1,78 @@
+*** Settings ***
+Documentation     NOTE:
+...               add note here
+Suite Setup       Suite Setup User    ${DB_USERNAME1}
+Force Tags        IMPORT_DB    win11    unix11    unix10
+Test Template     Import Db Template
+Resource          ../../resources/keywords.txt
+
+*** Test Cases ***    DB_USERNAME        DB_PASSWORD       SID       FILES                                FROMUSERS         TOUSERS      TS_LIST      TRANSP_TS    FILESIZE    VOLSIZE     AS_SYSDBA    FULL    TABLES       TTS_OWNERS    DATAFILES    LOGFILE    RECORDLENGTH    ROWS    COMMIT    BUFFER    IGNORE_ERR    DESTROY    CONSTRAINTS    CONFIG    INST    GRANTS    STATISTICS    RESUMABLE    RESUMABLE_NAME                                                    RSMBL_TIMEOUT    COMPILE    RETURN CODE    STATUS
+Normal user fail to import user
+                      ${DB_USERNAME}     ${DB_PASSWORD}    ${SID}    ${_WORKING_DIR}${/}fullExport.dmp    ${DB_USERNAME}    user_b       ${EMPTY}     NO           ${EMPTY}    ${EMPTY}    YES          NO      ${EMPTY}     ${EMPTY}      ${EMPTY}     NO         0               YES     NO        0         NO            NO         YES            YES       NO      YES       ALWAYS        NO           User USERNAME (USERID), Session SESSIONID, Instance INSTANCEID    7200             YES        1              ${ENDED_NOT_OK}
+
+Normal user fail to Full import DB
+                      ${DB_USERNAME}     ${DB_PASSWORD}    ${SID}    ${_WORKING_DIR}${/}export1.dmp       ${EMPTY}          ${EMPTY}     ${EMPTY}     NO           ${EMPTY}    ${EMPTY}    YES          YES     ${EMPTY}     ${EMPTY}      ${EMPTY}     NO         0               YES     NO        0         NO            NO         YES            YES       NO      YES       ALWAYS        NO           User USERNAME (USERID), Session SESSIONID, Instance INSTANCEID    7200             YES        1              ${ENDED_NOT_OK}
+
+Normal user fail to import table space
+                      ${DB_USERNAME}     ${DB_PASSWORD}    ${SID}    ${_WORKING_DIR}${/}fullExport.dmp    ${EMPTY}          ${EMPTY}     TEST         YES          ${EMPTY}    ${EMPTY}    YES          NO      ${EMPTY}     ${EMPTY}      ${EMPTY}     NO         0               YES     NO        0         NO            NO         YES            YES       NO      YES       ALWAYS        NO           User USERNAME (USERID), Session SESSIONID, Instance INSTANCEID    7200             YES        1              ${ENDED_NOT_OK}
+
+Import unexisted table
+                      ${DB_USERNAME}     ${DB_PASSWORD}    ${SID}    ${_WORKING_DIR}${/}export1.dmp       ${EMPTY}          ${EMPTY}     ${EMPTY}     NO           ${EMPTY}    ${EMPTY}    YES          YES     unexisted    ${EMPTY}      ${EMPTY}     NO         0               YES     NO        0         NO            NO         YES            YES       NO      YES       ALWAYS        NO           User USERNAME (USERID), Session SESSIONID, Instance INSTANCEID    7200             YES        1              ${ENDED_NOT_OK}
+
+Import unexisted table space
+                      ${DB_USERNAME2}    ${DB_PASSWORD}    ${SID}    ${_WORKING_DIR}${/}fullExport.dmp    ${EMPTY}          ${EMPTY}     unexisted    NO           ${EMPTY}    ${EMPTY}    YES          YES     ${EMPTY}     ${EMPTY}      ${EMPTY}     NO         0               YES     NO        0         NO            NO         YES            YES       NO      YES       ALWAYS        NO           User USERNAME (USERID), Session SESSIONID, Instance INSTANCEID    7200             YES        1              ${ENDED_NOT_OK}
+
+Import unexisted from user
+                      ${DB_USERNAME2}    ${DB_PASSWORD}    ${SID}    ${_WORKING_DIR}${/}fullExport.dmp    unexisted         ${EMPTY}     ${EMPTY}     NO           ${EMPTY}    ${EMPTY}    YES          YES     ${EMPTY}     ${EMPTY}      ${EMPTY}     NO         0               YES     NO        0         NO            NO         YES            YES       NO      YES       ALWAYS        NO           User USERNAME (USERID), Session SESSIONID, Instance INSTANCEID    7200             YES        1              ${ENDED_NOT_OK}
+
+Import unexisted to user
+                      ${DB_USERNAME2}    ${DB_PASSWORD}    ${SID}    ${_WORKING_DIR}${/}fullExport.dmp    ${EMPTY}          unexisted    ${EMPTY}     NO           ${EMPTY}    ${EMPTY}    YES          YES     ${EMPTY}     ${EMPTY}      ${EMPTY}     NO         0               YES     NO        0         NO            NO         YES            YES       NO      YES       ALWAYS        NO           User USERNAME (USERID), Session SESSIONID, Instance INSTANCEID    7200             YES        1              ${ENDED_NOT_OK}
+
+Import unexisted datafiles
+                      ${DB_USERNAME2}    ${DB_PASSWORD}    ${SID}    ${_WORKING_DIR}${/}fullExport.dmp    ${EMPTY}          ${EMPTY}     ${EMPTY}     NO           ${EMPTY}    ${EMPTY}    YES          YES     ${EMPTY}     ${EMPTY}      unexisted    NO         0               YES     NO        0         NO            NO         YES            YES       NO      YES       ALWAYS        NO           User USERNAME (USERID), Session SESSIONID, Instance INSTANCEID    7200             YES        1              ${ENDED_NOT_OK}
+
+*** Keywords ***
+Import Db Template
+    [Arguments]    ${name}    ${pass}    ${sid}    ${files}    ${from_users}    ${to_users}
+    ...    ${file_size}    ${transp_ts}    ${to_list}    ${vol_size}    ${invoke_as_sysdba}    ${full}
+    ...    ${tables}    ${tts_owners}    ${data_files}    ${log_file}    ${record_length}    ${rows}
+    ...    ${commit}    ${buffer}    ${ignore_err}    ${destroy}    ${constraints}    ${config}
+    ...    ${inst}    ${grants}    ${statistics}    ${resumable}    ${resumable_name}    ${timeout}
+    ...    ${compile}    ${returnCode}    ${returnStatus}
+    Init Action    ${ACTION_IMPORT_DB}
+    Action Set    ${PRT_IMPORT_DB_DB_USERNAME}    ${name}
+    Action Set    ${PRT_IMPORT_DB_DB_PASSWORD}    ${pass}
+    Action Set    ${PRT_IMPORT_DB_DB_SID}    ${sid}
+    Action Set    ${PRT_IMPORT_DB_DB_IMPOPT_FILES}    ${files}
+    Action Set    ${PRT_IMPORT_DB_DB_IMPMODE_FROMUSERS}    ${from_users}
+    Action Set    ${PRT_IMPORT_DB_DB_IMPMODE_TOUSERS}    ${to_users}
+    Action Set    ${PRT_IMPORT_DB_DB_IMPMODE_TS_LIST}    ${to_list}
+    Action Set    ${PRT_IMPORT_DB_DB_IMPMODE_TRANSP_TS}    ${transp_ts}
+    Action Set    ${PRT_IMPORT_DB_DB_IMPOPT_FILESIZE}    ${file_size}
+    Action Set    ${PRT_IMPORT_DB_DB_IMPOPT_VOLSIZE}    ${vol_size}
+    Action Set    ${PRT_IMPORT_DB_DB_IMP_INVOKE_AS_SYSDBA}    ${invoke_as_sysdba}
+    Action Set    ${PRT_IMPORT_DB_DB_IMPMODE_FULL}    ${full}
+    Action Set    ${PRT_IMPORT_DB_DB_IMPMODE_TABLES}    ${tables}
+    Action Set    ${PRT_IMPORT_DB_DB_IMPMODE_TTS_OWNERS}    ${tts_owners}
+    Action Set    ${PRT_IMPORT_DB_DB_IMPMODE_DATAFILES}    ${data_files}
+    Action Set    ${PRT_IMPORT_DB_DB_IMPOPT_LOGFILE}    ${log_file}
+    Action Set    ${PRT_IMPORT_DB_DB_IMPOPT_RECORDLENGTH}    ${record_length}
+    Action Set    ${PRT_IMPORT_DB_DB_IMPOPT_ROWS}    ${rows}
+    Action Set    ${PRT_IMPORT_DB_DB_IMPOPT_COMMIT}    ${commit}
+    Action Set    ${PRT_IMPORT_DB_DB_IMPOPT_BUFFER}    ${buffer}
+    Action Set    ${PRT_IMPORT_DB_DB_IMPOPT_IGNORE_ERR}    ${ignore_err}
+    Action Set    ${PRT_IMPORT_DB_DB_IMPOPT_DESTROY}    ${destroy}
+    Action Set    ${PRT_IMPORT_DB_DB_IMPOPT_CONSTRAINTS}    ${constraints}
+    Action Set    ${PRT_IMPORT_DB_DB_IMPOPT_STREAMS_CONFIG}    ${config}
+    Action Set    ${PRT_IMPORT_DB_DB_IMPOPT_STREAMS_INST}    ${inst}
+    Action Set    ${PRT_IMPORT_DB_DB_IMPOPT_GRANTS}    ${grants}
+    Action Set    ${PRT_IMPORT_DB_DB_IMPOPT_STATISTICS}    ${statistics}
+    Action Set    ${PRT_IMPORT_DB_DB_IMPOPT_RESUMABLE}    ${resumable}
+    Action Set    ${PRT_IMPORT_DB_DB_IMPOPT_RESUMABLE_NAME}    ${resumable_name}
+    Action Set    ${PRT_IMPORT_DB_DB_IMPOPT_RSMBL_TIMEOUT}    ${timeout}
+    Action Set    ${PRT_IMPORT_DB_DB_IMPOPT_COMPILE}    ${compile}
+    Action Execute
+    Action Report Should Be Found
+    Action Return Code Should Be    ${returnCode}
+    Action Return Status Should Be    ${returnStatus}
+    #[Teardown]    Drop User    ${DB_USERNAME1}    YES

@@ -81,12 +81,12 @@ Create User
     Action Return Status Should Be    ${ENDED_OK}
 
 Drop User
-    [Arguments]    ${user}    ${cascade}
+    [Arguments]    ${user}
     Init Action    ${ACTION_DROP_USER}
     Oracle Common Setting
     Action Set    ${PRT_DROP_USER_DB_DROP_USER}    ${user}
     Action Set    ${PRT_DROP_USER_DB_FAIL_USR_NOT_EXISTS}    NO
-    Action Set    ${PRT_DROP_USER_DB_CASCADE}    ${cascade}
+    Action Set    ${PRT_DROP_USER_DB_CASCADE}    YES
     Action Execute
     Action Report Should Be Found
     Action Return Code Should Be    0
@@ -101,7 +101,34 @@ Drop User With Cascade
     Action Set    ${PRT_DROP_USER_DB_CASCADE}    YES
     Action Execute
 
-Drop Tablespace
+Suite Setup User
+    [Arguments]    ${user}
+    Suite Setup
+    Create User    ${user}    NO    YES    NO    NO
+
+Assign Grant all system
+    [Arguments]    ${grant_to_user}
+    Init Action    ${ACTION_ASSIGN_GRANT}
+    Oracle Common Setting
+    Action Set    ${PRT_ASSIGN_GRANT_DB_GRANT_SYS_PRIVILEGE}    ${EMPTY}
+    Action Set    ${PRT_ASSIGN_GRANT_DB_GRANT_OBJ_PRIVILEGE}    ${EMPTY}
+    Action Set    ${PRT_ASSIGN_GRANT_DB_GRANT_ROLE_PRIVILEGE}    ${EMPTY}
+    Action Set    ${PRT_ASSIGN_GRANT_DB_GRANT_CUST_ROLE_PRVLG}    ${EMPTY}
+    Action Set    ${PRT_ASSIGN_GRANT_GRANT_ALL_SYS_PRIVILEGES}    NO
+    Action Set    ${PRT_ASSIGN_GRANT_GRANT_ALL_USER_PRVLGS}    YES
+    Action Set    ${PRT_ASSIGN_GRANT_DB_GRANT_ON_SCHM_OBJ}    ${EMPTY}
+    Action Set    ${PRT_ASSIGN_GRANT_DB_GRANT_TO_USER}    ${grant_to_user}
+    Action Set    ${PRT_ASSIGN_GRANT_DB_GRANT_TO_ROLE}    ${EMPTY}
+    Action Set    ${PRT_ASSIGN_GRANT_DB_GRANT_TO_PUBLIC}    NO
+    Action Set    ${PRT_ASSIGN_GRANT_DB_WITH_HIERARCHY_OPTION}    NO
+    Action Set    ${PRT_ASSIGN_GRANT_DB_WITH_GRANT_OPTION}    NO
+    Action Set    ${PRT_ASSIGN_GRANT_DB_WITH_ADMIN_OPTION}    NO
+    Action Execute
+    Action Report Should Be Found
+    Action Return Code Should Be    0
+    Action Return Status Should Be    ${ENDED_OK}
+
+Drop TableSpace
     [Arguments]    ${name}
     Init Action    ${ACTION_DROP_TABLESPACE}
     Oracle Common Setting
@@ -111,3 +138,41 @@ Drop Tablespace
     Action Set    ${PRT_DROP_TABLESPACE_DB_DROP_DATAFILES}    YES
     Action Set    ${PRT_DROP_TABLESPACE_DB_CASCADE_CNSTR}    YES
     Action Execute
+    Action Report Should Be Found
+
+Import DB
+    [Arguments]    ${files}    ${from_users}    ${to_users}
+    Init Action    ${ACTION_IMPORT_DB}
+    Action Set    ${PRT_IMPORT_DB_DB_USERNAME}    ${DB_USERNAME2}
+    Action Set    ${PRT_IMPORT_DB_DB_PASSWORD}    ${DB_PASSWORD}
+    Action Set    ${PRT_IMPORT_DB_DB_SID}    ${SID}
+    Action Set    ${PRT_IMPORT_DB_DB_IMPOPT_FILES}    ${files}
+    Action Set    ${PRT_IMPORT_DB_DB_IMPMODE_FROMUSERS}    ${from_users}
+    Action Set    ${PRT_IMPORT_DB_DB_IMPMODE_TOUSERS}    ${to_users}
+    Action Set    ${PRT_IMPORT_DB_DB_IMPMODE_TS_LIST}    ${EMPTY}
+    Action Set    ${PRT_IMPORT_DB_DB_IMPMODE_TRANSP_TS}    NO
+    Action Set    ${PRT_IMPORT_DB_DB_IMPOPT_FILESIZE}    ${EMPTY}
+    Action Set    ${PRT_IMPORT_DB_DB_IMPOPT_VOLSIZE}    ${EMPTY}
+    Action Set    ${PRT_IMPORT_DB_DB_IMP_INVOKE_AS_SYSDBA}    YES
+    Action Set    ${PRT_IMPORT_DB_DB_IMPMODE_FULL}    YES
+    Action Set    ${PRT_IMPORT_DB_DB_IMPMODE_TABLES}    ${EMPTY}
+    Action Set    ${PRT_IMPORT_DB_DB_IMPMODE_TTS_OWNERS}    ${EMPTY}
+    Action Set    ${PRT_IMPORT_DB_DB_IMPMODE_DATAFILES}    ${EMPTY}
+    Action Set    ${PRT_IMPORT_DB_DB_IMPOPT_LOGFILE}    YES
+    Action Set    ${PRT_IMPORT_DB_DB_IMPOPT_RECORDLENGTH}    0
+    Action Set    ${PRT_IMPORT_DB_DB_IMPOPT_ROWS}    YES
+    Action Set    ${PRT_IMPORT_DB_DB_IMPOPT_COMMIT}    NO
+    Action Set    ${PRT_IMPORT_DB_DB_IMPOPT_BUFFER}    0
+    Action Set    ${PRT_IMPORT_DB_DB_IMPOPT_IGNORE_ERR}    YES
+    Action Set    ${PRT_IMPORT_DB_DB_IMPOPT_DESTROY}    NO
+    Action Set    ${PRT_IMPORT_DB_DB_IMPOPT_CONSTRAINTS}    YES
+    Action Set    ${PRT_IMPORT_DB_DB_IMPOPT_STREAMS_CONFIG}    YES
+    Action Set    ${PRT_IMPORT_DB_DB_IMPOPT_STREAMS_INST}    NO
+    Action Set    ${PRT_IMPORT_DB_DB_IMPOPT_GRANTS}    NO
+    Action Set    ${PRT_IMPORT_DB_DB_IMPOPT_STATISTICS}    ALWAYS
+    Action Set    ${PRT_IMPORT_DB_DB_IMPOPT_RESUMABLE}    NO
+    Action Set    ${PRT_IMPORT_DB_DB_IMPOPT_RESUMABLE_NAME}    ${EMPTY}
+    Action Set    ${PRT_IMPORT_DB_DB_IMPOPT_RSMBL_TIMEOUT}    ${EMPTY}
+    Action Set    ${PRT_IMPORT_DB_DB_IMPOPT_COMPILE}    YES
+    Action Execute
+    Action Report Should Be Found
