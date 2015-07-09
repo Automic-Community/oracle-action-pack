@@ -1,11 +1,11 @@
 *** Settings ***
 Documentation     NOTE:
 ...               add note here
-Suite Setup       Suite Setup User    ${DB_USERNAME}
-Suite Teardown    Drop User    ${DB_USERNAME}
+Suite Setup       Suite Setup User    ${DB_USERNAME1}
+Suite Teardown    Drop User    ${DB_USERNAME1}
 Force Tags        IMPORT_DB    win11    unix11    unix10
 Test Template     Import Db Template
-Resource          ../../resources/keywords.txt
+Resource          E:\\01-Work\\03-Robot\\pck.automic_oracle\\test\resources\\keywords.txt    #../../resources/keywords.txt
 
 *** Test Cases ***    DB_USERNAME        DB_PASSWORD        SID                FILES                                                            FROMUSERS                TOUSERS            TS_LIST             TRANSP_TS    FILESIZE    VOLSIZE     AS_SYSDBA    FULL    TABLES               TTS_OWNERS    DATAFILES                   LOGFILE    RECORDLENGTH    ROWS    COMMIT    BUFFER    IGNORE_ERR    DESTROY    CONSTRAINTS    CONFIG    INST    GRANTS    STATISTICS    RESUMABLE    RESUMABLE_NAME                                                    RSMBL_TIMEOUT    COMPILE    RETURN CODE    STATUS
 Import DB with a table

@@ -1,7 +1,8 @@
 *** Settings ***
 Documentation     NOTE:
 ...               add note here
-Suite Setup       Suite Setup
+Suite Setup       Suite Setup User Assign Import
+Suite Teardown    Drop user and tablespace
 Force Tags        EXPORT_DB    win11    unix11    unix10
 Test Template     Export Db Template
 Resource          ../../resources/keywords.txt
@@ -17,11 +18,52 @@ Normal user fail to export other user
                       ${DB_USERNAME}    ${DB_PASSWORD}    ${SID}    export1.dmp    ${EMPTY}    ${EMPTY}    ${EMPTY}    NO      ${DB_USERNAME2}    ${EMPTY}      NO           NO               ${EMPTY}    0               NO          YES     NO        ESTIMATE      YES        YES            YES       YES         NO            NO                0         NO           User USERNAME (USERID), Session SESSIONID, Instance INSTANCEID    7200             1              ${ENDED_NOT_OK}
 
 *** Keywords ***
+Suite Setup User Assign Import
+    Suite Setup User    ${DB_USERNAME1}
+    Assign Grant all system    ${USER_IMPORT}
+    Import DB    ${_WORKING_DIR}${/}fullExport.dmp    ${EMPTY}    ${DB_USERNAME1}
+
+Drop user and tablespace
+    Drop User    ${DB_USERNAME1}
+    Drop TableSpace    TEST
+    Drop TableSpace    tablespace1
+
 Export Db Template
     [Arguments]    ${name}    ${password}    ${sid}    ${files}    ${ts_list}    ${filesize}
     ...    ${volsize}    ${full}    ${owner_list}    ${table_list}    ${transp_ts}    ${tts_fullcheck}
     ...    ${logfile}    ${record_length}    ${compress}    ${rows}    ${direct}    ${statistics}
     ...    ${indexes}    ${constraints}    ${grants}    ${triggers}    ${consistent}    ${obj_consistent}
     ...    ${buffer}    ${resumable}    ${resumable_name}    ${timeout}    ${returnCode}    ${returnStatus}
-    #Drop User    ${DB_USERNAME1}
-    Drop TableSpace    TEST_TABLESPACE1
+    Init Action    ${ACTION_EXPORT_DB}
+    Action Set    ${PRT_EXPORT_DB_DB_USERNAME}    ${name}
+    Action Set    ${PRT_EXPORT_DB_DB_PASSWORD}    ${password}
+    Action Set    ${PRT_EXPORT_DB_DB_SID}    ${sid}
+    Action Set    ${PRT_EXPORT_DB_DB_EXPOPT_FILES}    ${files}
+    Action Set    ${PRT_EXPORT_DB_DB_EXPMODE_TS_LIST}    ${ts_list}
+    Action Set    ${PRT_EXPORT_DB_DB_EXPOPT_FILESIZE}    ${filesize}
+    Action Set    ${PRT_EXPORT_DB_DB_EXPOPT_VOLSIZE}    ${volsize}
+    Action Set    ${PRT_EXPORT_DB_DB_EXPMODE_FULL}    ${full}
+    Action Set    ${PRT_EXPORT_DB_DB_EXPMODE_OWNER_LIST}    ${owner_list}
+    Action Set    ${PRT_EXPORT_DB_DB_EXPMODE_TABLE_LIST}    ${table_list}
+    Action Set    ${PRT_EXPORT_DB_DB_EXPMODE_TRANSP_TS}    ${transp_ts}
+    Action Set    ${PRT_EXPORT_DB_DB_EXPMODE_TTS_FULLCHECK}    ${tts_fullcheck}
+    Action Set    ${PRT_EXPORT_DB_DB_EXPOPT_LOGFILE}    ${logfile}
+    Action Set    ${PRT_EXPORT_DB_DB_EXPOPT_RECORDLENGTH}    ${record_length}
+    Action Set    ${PRT_EXPORT_DB_DB_EXPOPT_COMPRESS}    ${compress}
+    Action Set    ${PRT_EXPORT_DB_DB_EXPOPT_ROWS}    ${rows}
+    Action Set    ${PRT_EXPORT_DB_DB_EXPOPT_DIRECT}    ${direct}
+    Action Set    ${PRT_EXPORT_DB_DB_EXPOPT_STATISTICS}    ${statistics}
+    Action Set    ${PRT_EXPORT_DB_DB_EXPOPT_INDEXES}    ${indexes}
+    Action Set    ${PRT_EXPORT_DB_DB_EXPOPT_CONSTRAINTS}    ${constraints}
+    Action Set    ${PRT_EXPORT_DB_DB_EXPOPT_GRANTS}    ${grants}
+    Action Set    ${PRT_EXPORT_DB_DB_EXPOPT_TRIGGERS}    ${triggers}
+    Action Set    ${PRT_EXPORT_DB_DB_EXPOPT_CONSISTENT}    ${consistent}
+    Action Set    ${PRT_EXPORT_DB_DB_EXPOPT_OBJ_CONSISTENT}    ${obj_consistent}
+    Action Set    ${PRT_EXPORT_DB_DB_EXPOPT_BUFFER}    ${buffer}
+    Action Set    ${PRT_EXPORT_DB_DB_EXPOPT_RESUMABLE}    ${resumable}
+    Action Set    ${PRT_EXPORT_DB_DB_EXPOPT_RESUMABLE_NAME}    ${resumable_name}
+    Action Set    ${PRT_EXPORT_DB_DB_EXPOPT_RSMBL_TIMEOUT}    ${timeout}
+    Action Execute
+    Action Report Should Be Found
+    Action Return Code Should Be    ${returnCode}
+    Action Return Status Should Be    ${returnStatus}

@@ -2,8 +2,7 @@
 Documentation     NOTE:
 ...               add note here
 Suite Setup       Suite Setup User Assign Import
-Suite Teardown    Drop user and tablespace
-Force Tags        EXPORT_DB    win11    unix11    unix10
+Force Tags        EXPORT_DB    win11    unix11    unix10    #Suite Teardown    Drop user and tablespace
 Test Template     Export Db Template
 Resource          ../../resources/keywords.txt
 
@@ -69,8 +68,9 @@ Export with resumable session
 
 *** Keywords ***
 Suite Setup User Assign Import
-    Suite Setup User    ${DB_USERNAME1}
-    Assign Grant all system    ${USER_IMPORT}
+    Suite Setup
+    Create User    ${DB_USERNAME1}    NO    YES    NO    NO
+    Assign Grant all system    ${DB_USERNAME1}    #${USER_TEST}
     Import DB    ${_WORKING_DIR}${/}fullExport.dmp    ${EMPTY}    ${DB_USERNAME1}
 
 Drop user and tablespace

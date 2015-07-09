@@ -62,7 +62,7 @@ Create User
     [Arguments]    ${name}    ${externally}    ${globally}    ${password_expire}    ${account_lock}
     Init Action    ${ACTION_CREATE_USER}
     Oracle Common Setting
-    Action Set    ${PRT_CREATE_USER_DB_USER_NAME}    ${name}
+    Action Set    &UC4RB_DB_USER_NAME#    ${name}
     Action Set    ${PRT_CREATE_USER_DB_FAIL_USR_EXISTS}    NO
     Action Set    ${PRT_CREATE_USER_DB_USER_PASSWORD}    ${DB_PASSWORD}
     Action Set    ${PRT_CREATE_USER_DB_IDTFT_EXTERNALLY}    ${externally}
@@ -81,10 +81,10 @@ Create User
     Action Return Status Should Be    ${ENDED_OK}
 
 Drop User
-    [Arguments]    ${user}
+    [Arguments]    ${userDrop}
     Init Action    ${ACTION_DROP_USER}
     Oracle Common Setting
-    Action Set    ${PRT_DROP_USER_DB_DROP_USER}    ${user}
+    Action Set    ${PRT_DROP_USER_DB_DROP_USER}    ${userDrop}
     Action Set    ${PRT_DROP_USER_DB_FAIL_USR_NOT_EXISTS}    NO
     Action Set    ${PRT_DROP_USER_DB_CASCADE}    YES
     Action Execute
@@ -102,9 +102,9 @@ Drop User With Cascade
     Action Execute
 
 Suite Setup User
-    [Arguments]    ${user}
+    [Arguments]    ${userCreate}
     Suite Setup
-    Create User    ${user}    NO    YES    NO    NO
+    Create User    ${userCreate}    NO    YES    NO    NO
 
 Assign Grant all system
     [Arguments]    ${grant_to_user}
