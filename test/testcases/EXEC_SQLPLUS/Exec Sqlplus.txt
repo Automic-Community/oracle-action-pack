@@ -6,17 +6,15 @@ Force Tags        EXEC_SQLPLUS    win11    unix11
 Test Template     Exec Sqlplus Template
 Resource          ../../resources/keywords.txt
 
-*** Test Cases ***    SERVICE                        HOST       PORT      USER    PASS          ADMIN PRIV    SQLPLUS FULL PATH       COMMAND                 RETURN CODE            RETURN STATUS
+*** Test Cases ***    SERVICE    HOST       PORT    USER       PASS          ADMIN PRIV    SQLPLUS FULL PATH       COMMAND                RETURN CODE    RETURN STATUS
 Exec Sqlplus Normal No Admin
-                      automic                        vvni03     1521      test    ventum2011    No            ${SQLPLUS_FULL_PATH}    select * from STAFF;    0                      ${ENDED_OK}
+                      automic    ${HOST}    1521    itpa       ventum2011    No            ${SQLPLUS_FULL_PATH}    select * from dual;    0              ${ENDED_OK}
 
 Exec Sqlplus Normal SYSDBA
-                      automic                        vvni03     1521      SYS     ventum2011    SYSDBA        ${SQLPLUS_FULL_PATH}    select * from dual;     0                      ${ENDED_OK}
-                      #Exec Sqlplus Normal SYSASM
-                      #                              automic    vvni03    1521    SYS           ventum2011    SYSASM                  ${SQLPLUS_FULL_PATH}    select * from dual;    0                ${ENDED_OK}
+                      automic    ${HOST}    1521    SYS        ventum2011    SYSDBA        ${SQLPLUS_FULL_PATH}    select * from dual;    0              ${ENDED_OK}
 
 Exec Sqlplus Normal SYSOPER
-                      automic                        vvni03     1521      SYS     ventum2011    SYSOPER       ${SQLPLUS_FULL_PATH}    select * from dual;     0                      ${ENDED_OK}
+                      automic    ${HOST}    1521    SYSOPER    ventum2011    SYSOPER       ${SQLPLUS_FULL_PATH}    select * from dual;    0              ${ENDED_OK}
 
 *** Keywords ***
 Exec Sqlplus Template
