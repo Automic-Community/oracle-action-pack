@@ -7,13 +7,17 @@ Test Template     Drop User Template
 Resource          ../../resources/keywords.txt
 
 *** Test Cases ***    USER    FAIL IF NOT EXISTS    CASCADE    RETURN CODE    RETURN STATUS
-Drop User Normal1     dev1    NO                    YES        0              ${ENDED_OK}
+Drop User Normal No Fail If Exists
+                      dev1    NO                    YES        0              ${ENDED_OK}
 
-Drop User Normal2     dev1    NO                    NO         0              ${ENDED_OK}
+Drop User Normal Cascade
+                      dev1    NO                    NO         0              ${ENDED_OK}
 
-Drop User Normal3     dev1    YES                   NO         0              ${ENDED_OK}
+Drop User Normal Fail If Exists
+                      dev1    YES                   NO         0              ${ENDED_OK}
 
-Drop User Normal4     dev1    YES                   YES        0              ${ENDED_OK}
+Drop User Normal Fail If Exists and Cascade
+                      dev1    YES                   YES        0              ${ENDED_OK}
 
 *** Keywords ***
 Drop User Template

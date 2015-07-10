@@ -7,16 +7,16 @@ Test Template     Create User Template
 Resource          ../../resources/keywords.txt
 
 *** Test Cases ***    NAME    FAIL_IF_EXIST    PASSWORD      EXTERNALLY    GLOBALLY    PASSWORD_EXPIRE    ACCOUT_LOCK    RETURN CODE    RETURN STATUS
-Create User Abnormal 1
+Create User Abnormal Externally
                       dev1    YES              ventum2011    NO            YES         NO                 NO             12             ${ENDED_NOT_OK}
 
-Create User Abnormal 2
+Create User Abnormal Globally
                       dev1    YES              ventum2011    YES           NO          YES                YES            12             ${ENDED_NOT_OK}
 
-Create User Abnormal 3
+Create User Abnormal Expire
                       dev1    YES              ventum2011    NO            NO          YES                YES            12             ${ENDED_NOT_OK}
 
-Create User Abnormal 4
+Create User Abnormal Lock
                       dev1    YES              ventum2011    NO            NO          NO                 NO             12             ${ENDED_NOT_OK}
 
 *** Keywords ***

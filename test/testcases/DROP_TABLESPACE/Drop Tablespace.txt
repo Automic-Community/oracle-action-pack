@@ -7,16 +7,16 @@ Test Template     Drop Tablespace Template
 Resource          ../../resources/keywords.txt
 
 *** Test Cases ***    NAME    FAIL IF NOT EXISTS    DROP CONTENTS    DROP DATAFILES    CASCADE    RETURN CODE    RETURN STATUS
-Drop Tablespace Normal 1
+Drop Tablespace Normal Drop Contents
                       tbs2    NO                    YES              YES               YES        0              ${ENDED_OK}
 
-Drop Tablespace Normal 2
+Drop Tablespace Normal Not Drop Contents
                       tbs2    NO                    NO               NO                NO         0              ${ENDED_OK}
 
-Drop Tablespace Normal 3
+Drop Tablespace Normal Drop Data Files
                       tbs2    NO                    YES              YES               NO         0              ${ENDED_OK}
 
-Drop Tablespace Normal 4
+Drop Tablespace Normal Cascade
                       tbs2    NO                    YES              NO                YES        0              ${ENDED_OK}
 
 *** Keywords ***
