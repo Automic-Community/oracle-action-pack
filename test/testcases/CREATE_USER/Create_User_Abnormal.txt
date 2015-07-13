@@ -19,6 +19,9 @@ Create User Abnormal Expire
 Create User Abnormal Lock
                       dev1    YES              ventum2011    NO            NO          NO                 NO             12             ${ENDED_NOT_OK}
 
+Create existed user no fail
+                      dev1    NO               ventum2011    NO            NO          NO                 NO             0              ${ENDED_OK}
+
 *** Keywords ***
 Create User Template
     [Arguments]    ${name}    ${fail_if_exist}    ${password}    ${externally}    ${globally}    ${password_expire}

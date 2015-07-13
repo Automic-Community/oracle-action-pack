@@ -59,9 +59,15 @@ Oracle Common Setting
     Action Set    ${PRT_CREATE_USER_DB_CONN_INTRVL}    ${INTRVL}
 
 Create User
-    [Arguments]    ${name}    ${externally}    ${globally}    ${password_expire}    ${account_lock}
+    [Arguments]    ${name}    ${externally}    ${globally}    ${password_expire}    ${account_lock}    ${id}
     Init Action    ${ACTION_CREATE_USER}
-    Oracle Common Setting
+    Action Set    ${PRT_CREATE_USER_DB_USERNAME_LG}    ${DB_USERNAME}
+    Action Set    ${PRT_CREATE_USER_DB_PASSWORD_LG}    ${DB_PASSWORD}
+    Action Set    ${PRT_CREATE_USER_DB_JDBC_CONN_STRING}    jdbc:oracle:thin:@vvnsat03:1521:${id}
+    Action Set    ${PRT_CREATE_USER_DB_DRIVER_JAR}    ${JAR}
+    Action Set    ${PRT_CREATE_USER_DB_DRIVER_CLASS}    ${CLASS}
+    Action Set    ${PRT_CREATE_USER_DB_TNSNAMES_ORA}    ${ORA}
+    Action Set    ${PRT_CREATE_USER_DB_CONN_INTRVL}    ${INTRVL}
     Action Set    &UC4RB_DB_USER_NAME#    ${name}
     Action Set    ${PRT_CREATE_USER_DB_FAIL_USR_EXISTS}    NO
     Action Set    ${PRT_CREATE_USER_DB_USER_PASSWORD}    ${DB_PASSWORD}
@@ -101,21 +107,16 @@ Drop User With Cascade
     Action Set    ${PRT_DROP_USER_DB_CASCADE}    YES
     Action Execute
 
-Suite Setup User
-    [Arguments]    ${userCreate}
-    Suite Setup
-    Create User    ${userCreate}    NO    YES    NO    NO
-
-Assign Grant all system
-    [Arguments]    ${grant_to_user}
+Assign Grant all
+    [Arguments]    ${grant_to_user}    ${sys}    ${user}
     Init Action    ${ACTION_ASSIGN_GRANT}
     Oracle Common Setting
     Action Set    ${PRT_ASSIGN_GRANT_DB_GRANT_SYS_PRIVILEGE}    ${EMPTY}
     Action Set    ${PRT_ASSIGN_GRANT_DB_GRANT_OBJ_PRIVILEGE}    ${EMPTY}
     Action Set    ${PRT_ASSIGN_GRANT_DB_GRANT_ROLE_PRIVILEGE}    ${EMPTY}
     Action Set    ${PRT_ASSIGN_GRANT_DB_GRANT_CUST_ROLE_PRVLG}    ${EMPTY}
-    Action Set    ${PRT_ASSIGN_GRANT_GRANT_ALL_SYS_PRIVILEGES}    NO
-    Action Set    ${PRT_ASSIGN_GRANT_GRANT_ALL_USER_PRVLGS}    YES
+    Action Set    ${PRT_ASSIGN_GRANT_GRANT_ALL_SYS_PRIVILEGES}    ${sys}
+    Action Set    ${PRT_ASSIGN_GRANT_GRANT_ALL_USER_PRVLGS}    ${user}
     Action Set    ${PRT_ASSIGN_GRANT_DB_GRANT_ON_SCHM_OBJ}    ${EMPTY}
     Action Set    ${PRT_ASSIGN_GRANT_DB_GRANT_TO_USER}    ${grant_to_user}
     Action Set    ${PRT_ASSIGN_GRANT_DB_GRANT_TO_ROLE}    ${EMPTY}
@@ -125,8 +126,6 @@ Assign Grant all system
     Action Set    ${PRT_ASSIGN_GRANT_DB_WITH_ADMIN_OPTION}    NO
     Action Execute
     Action Report Should Be Found
-    Action Return Code Should Be    0
-    Action Return Status Should Be    ${ENDED_OK}
 
 Drop TableSpace
     [Arguments]    ${name}
@@ -141,7 +140,7 @@ Drop TableSpace
     Action Report Should Be Found
 
 Import DB
-    [Arguments]    ${files}    ${from_users}    ${to_users}
+    [Arguments]    ${files}    ${from_users}    ${to_users}    ${tables}    ${owner}    ${tableSpace}
     Init Action    ${ACTION_IMPORT_DB}
     Action Set    ${PRT_IMPORT_DB_DB_USERNAME}    ${DB_USERNAME2}
     Action Set    ${PRT_IMPORT_DB_DB_PASSWORD}    ${DB_PASSWORD}
@@ -149,14 +148,14 @@ Import DB
     Action Set    ${PRT_IMPORT_DB_DB_IMPOPT_FILES}    ${files}
     Action Set    ${PRT_IMPORT_DB_DB_IMPMODE_FROMUSERS}    ${from_users}
     Action Set    ${PRT_IMPORT_DB_DB_IMPMODE_TOUSERS}    ${to_users}
-    Action Set    ${PRT_IMPORT_DB_DB_IMPMODE_TS_LIST}    ${EMPTY}
+    Action Set    ${PRT_IMPORT_DB_DB_IMPMODE_TS_LIST}    ${tableSpace}
     Action Set    ${PRT_IMPORT_DB_DB_IMPMODE_TRANSP_TS}    NO
     Action Set    ${PRT_IMPORT_DB_DB_IMPOPT_FILESIZE}    ${EMPTY}
     Action Set    ${PRT_IMPORT_DB_DB_IMPOPT_VOLSIZE}    ${EMPTY}
     Action Set    ${PRT_IMPORT_DB_DB_IMP_INVOKE_AS_SYSDBA}    YES
-    Action Set    ${PRT_IMPORT_DB_DB_IMPMODE_FULL}    YES
-    Action Set    ${PRT_IMPORT_DB_DB_IMPMODE_TABLES}    ${EMPTY}
-    Action Set    ${PRT_IMPORT_DB_DB_IMPMODE_TTS_OWNERS}    ${EMPTY}
+    Action Set    ${PRT_IMPORT_DB_DB_IMPMODE_FULL}    NO
+    Action Set    ${PRT_IMPORT_DB_DB_IMPMODE_TABLES}    ${tables}
+    Action Set    ${PRT_IMPORT_DB_DB_IMPMODE_TTS_OWNERS}    ${owner}
     Action Set    ${PRT_IMPORT_DB_DB_IMPMODE_DATAFILES}    ${EMPTY}
     Action Set    ${PRT_IMPORT_DB_DB_IMPOPT_LOGFILE}    YES
     Action Set    ${PRT_IMPORT_DB_DB_IMPOPT_RECORDLENGTH}    0
@@ -176,3 +175,34 @@ Import DB
     Action Set    ${PRT_IMPORT_DB_DB_IMPOPT_COMPILE}    YES
     Action Execute
     Action Report Should Be Found
+
+Create Tablespace
+    [Arguments]    ${name}
+    Drop Tablespace    ${name}
+    Init Action    ${ACTION_CREATE_TABLESPACE}
+    Oracle Common Setting
+    Action Set    ${PRT_CREATE_TABLESPACE_DB_TABLESPACE_NAME}    ${name}
+    Action Set    ${PRT_CREATE_TABLESPACE_DB_FAIL_IF_TS_EXISTS}    NO
+    Action Set    ${PRT_CREATE_TABLESPACE_DB_TABLESPACE_TYPE}    Undo
+    Action Set    ${PRT_CREATE_TABLESPACE_DB_SMALLFILE}    DEFAULT
+    Action Set    ${PRT_CREATE_TABLESPACE_DB_LOGGING}    DEFAULT
+    Action Set    ${PRT_CREATE_TABLESPACE_DB_FORCE_LOGGING}    DEFAULT
+    Action Set    ${PRT_CREATE_TABLESPACE_DB_ONLINE}    YES
+    Action Set    ${PRT_CREATE_TABLESPACE_DB_EXT_MGMT_CLAUSE}    Omit
+    Action Set    ${PRT_CREATE_TABLESPACE_DB_EXT_MGMT_TYPE}    Local
+    Action Set    ${PRT_CREATE_TABLESPACE_DB_EXT_MGMT_AUTOALLOC}    YES
+    Action Set    ${PRT_CREATE_TABLESPACE_DB_EXT_MGMT_UNIFORM}    NO
+    Action Set    ${PRT_CREATE_TABLESPACE_DB_SEGM_SPC_AUTO}    YES
+    Action Set    ${PRT_CREATE_TABLESPACE_DB_RETENTION}    NO
+    Action Set    ${PRT_CREATE_TABLESPACE_DB_PERM_DATAFILE_SPEC}    ${EMPTY}
+    Action Set    ${PRT_CREATE_TABLESPACE_DB_TEMPFILE_SPEC}    ${EMPTY}
+    Action Set    ${PRT_CREATE_TABLESPACE_DB_UNDO_DATAFILE_SPEC}    '${DB_FILE_PATH}${/}test_datafile18.dbs' size 10m
+    Action Set    ${PRT_CREATE_TABLESPACE_DB_MIN_EXT_SIZE}    ${EMPTY}
+    Action Set    ${PRT_CREATE_TABLESPACE_DB_BLOCK_SIZE}    ${EMPTY}
+    Action Set    ${PRT_CREATE_TABLESPACE_DB_TS_GROUP_NAME}    ${EMPTY}
+    Action Set    ${PRT_CREATE_TABLESPACE_DB_EXT_UNFRM_MGMT_SIZE}    ${EMPTY}
+    Action Set    ${PRT_CREATE_TABLESPACE_DB_DFLT_STRG_CLAUSE}    ${EMPTY}
+    Action Execute
+    Action Report Should Be Found
+    Action Return Code Should Be    0
+    Action Return Status Should Be    ${ENDED_OK}

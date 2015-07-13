@@ -32,6 +32,10 @@ Import unexisted datafiles
                       ${DB_USERNAME2}    ${DB_PASSWORD}    ${SID}    ${_WORKING_DIR}${/}fullExport.dmp    ${EMPTY}          ${EMPTY}     ${EMPTY}     NO           ${EMPTY}    ${EMPTY}    YES          YES     ${EMPTY}     ${EMPTY}      unexisted    NO         0               YES     NO        0         NO            NO         YES            YES       NO      YES       ALWAYS        NO           User USERNAME (USERID), Session SESSIONID, Instance INSTANCEID    7200             YES        1              ${ENDED_NOT_OK}
 
 *** Keywords ***
+Suite Setup User
+    Suite Setup
+    Create User    ${DB_USERNAME1}    NO    YES    NO    NO
+
 Import Db Template
     [Arguments]    ${name}    ${pass}    ${sid}    ${files}    ${from_users}    ${to_users}
     ...    ${file_size}    ${transp_ts}    ${to_list}    ${vol_size}    ${invoke_as_sysdba}    ${full}

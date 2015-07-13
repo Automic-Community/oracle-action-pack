@@ -7,6 +7,7 @@ Resource          actions.txt
 ${_WORKING_DIR}    /
 ${SID}            automic
 ${DB_USERNAME2}    sys
+${DB_USERNAME3}    /
 ${USER_NOGRANT}    nogrant
 ${ROLE_NOGRANT}    role_nogrant
 ${USER_IMPORT}    import
@@ -43,6 +44,8 @@ Init Win Server 11
     Set Global Variable    ${SQLPLUS_FULL_PATH}    C:\\app\\Administrator\\product\\11.2.0\\dbhome_1\\BIN\\sqlplus.exe
     Set Global Variable    ${HOST}    vvnsat03
     Set Global Variable    ${USER}    test
+    Set Global Variable    ${SID}    myautomic
+    Set Global Variable    ${SID_IMPORT}    db4import
 
 Init Unix Server 11
     [Documentation]    TODO: Write server description here
@@ -63,6 +66,8 @@ Init Unix Server 11
     Set Global Variable    ${HOST}    vvni03
     Set Global Variable    ${USER}    itpa
     Set Global Variable    ${DB_USERNAME1}    test
+    Set Global Variable    ${DB_USERNAME3}    dba
+    Set Global Variable    ${SID_IMPORT}    db4import
 
 Init Unix Server 10
     [Documentation]    TODO: Write server description here
