@@ -32,7 +32,7 @@ SYS_PRIVILEGES was YES, USER_PRVLGS was NO
                       ${EMPTY}                                                                    ${EMPTY}                ${EMPTY}                         ${EMPTY}           YES               NO             ${EMPTY}           DROP_USER    ${EMPTY}    NO        NO                  NO              NO              0          ${ENDED_OK}
 
 SYS_PRIVILEGES was YES, USER_PRVLGS was YES
-                      ${EMPTY}                                                                    ${EMPTY}                ${EMPTY}                         ${EMPTY}           YES               YES            ${EMPTY}           DROP_USER    ${EMPTY}    NO        NO                  NO              NO              0          ${ENDED_OK}
+                      ${EMPTY}                                                                    ${EMPTY}                ${EMPTY}                         ${EMPTY}           YES               YES            ${EMPTY}           DROP_USER    ${EMPTY}    NO        NO                  NO              NO              0          ${ENDED_NOT_OK}
 
 *** Keywords ***
 Assign Grant Template
