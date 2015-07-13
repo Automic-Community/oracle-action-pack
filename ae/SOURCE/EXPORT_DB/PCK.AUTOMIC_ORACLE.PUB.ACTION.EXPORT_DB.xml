@@ -80,6 +80,8 @@
 <UC4RB_DB_EXPOPT_STATISTICSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_STATISTICS#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB">ESTIMATE</UC4RB_DB_EXPOPT_STATISTICSs.00>
 <UC4RB_DB_EXPOPT_TRIGGERSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_TRIGGERS#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB">YES</UC4RB_DB_EXPOPT_TRIGGERSs.00>
 <UC4RB_DB_EXPOPT_VOLSIZEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_VOLSIZE#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB"/>
+<UC4RB_DB_EXP_INVOKE_AS_SYSDBAs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXP_INVOKE_AS_SYSDBA#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB"/>
+<UC4RB_DB_IMP_INVOKE_AS_SYSDBAs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_IMP_INVOKE_AS_SYSDBA#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB"/>
 <UC4RB_DB_PASSWORDs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_PASSWORD#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB">--10</UC4RB_DB_PASSWORDs.00>
 <UC4RB_DB_SIDs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_SID#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB"/>
 <UC4RB_DB_USERNAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_USERNAME#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB"/>
@@ -162,6 +164,8 @@
 <UC4RB_DB_EXPOPT_STATISTICSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_STATISTICS#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB">ESTIMATE</UC4RB_DB_EXPOPT_STATISTICSs.00>
 <UC4RB_DB_EXPOPT_TRIGGERSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_TRIGGERS#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB">YES</UC4RB_DB_EXPOPT_TRIGGERSs.00>
 <UC4RB_DB_EXPOPT_VOLSIZEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_VOLSIZE#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB"/>
+<UC4RB_DB_EXP_INVOKE_AS_SYSDBAs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXP_INVOKE_AS_SYSDBA#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB"/>
+<UC4RB_DB_IMP_INVOKE_AS_SYSDBAs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_IMP_INVOKE_AS_SYSDBA#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB"/>
 <UC4RB_DB_PASSWORDs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_PASSWORD#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB">--10</UC4RB_DB_PASSWORDs.00>
 <UC4RB_DB_SIDs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_SID#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB"/>
 <UC4RB_DB_USERNAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_USERNAME#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB"/>
@@ -244,6 +248,8 @@
 <UC4RB_DB_EXPOPT_STATISTICSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_STATISTICS#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB">ESTIMATE</UC4RB_DB_EXPOPT_STATISTICSs.00>
 <UC4RB_DB_EXPOPT_TRIGGERSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_TRIGGERS#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB">YES</UC4RB_DB_EXPOPT_TRIGGERSs.00>
 <UC4RB_DB_EXPOPT_VOLSIZEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_VOLSIZE#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB"/>
+<UC4RB_DB_EXP_INVOKE_AS_SYSDBAs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXP_INVOKE_AS_SYSDBA#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB"/>
+<UC4RB_DB_IMP_INVOKE_AS_SYSDBAs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_IMP_INVOKE_AS_SYSDBA#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB"/>
 <UC4RB_DB_PASSWORDs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_PASSWORD#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB">--10</UC4RB_DB_PASSWORDs.00>
 <UC4RB_DB_SIDs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_SID#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB"/>
 <UC4RB_DB_USERNAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_USERNAME#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB"/>
@@ -313,6 +319,8 @@
 <UC4RB_DB_EXPOPT_STATISTICSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_STATISTICS#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB">ESTIMATE</UC4RB_DB_EXPOPT_STATISTICSs.00>
 <UC4RB_DB_EXPOPT_TRIGGERSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_TRIGGERS#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB">YES</UC4RB_DB_EXPOPT_TRIGGERSs.00>
 <UC4RB_DB_EXPOPT_VOLSIZEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_VOLSIZE#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB"/>
+<UC4RB_DB_EXP_INVOKE_AS_SYSDBAs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXP_INVOKE_AS_SYSDBA#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB"/>
+<UC4RB_DB_IMP_INVOKE_AS_SYSDBAs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_IMP_INVOKE_AS_SYSDBA#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB"/>
 <UC4RB_DB_PASSWORDs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_PASSWORD#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB">--10</UC4RB_DB_PASSWORDs.00>
 <UC4RB_DB_SIDs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_SID#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB"/>
 <UC4RB_DB_USERNAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_USERNAME#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB"/>
