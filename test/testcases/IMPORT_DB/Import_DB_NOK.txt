@@ -34,7 +34,7 @@ Import unexisted datafiles
 *** Keywords ***
 Suite Setup User
     Suite Setup
-    Create User    ${DB_USERNAME1}    NO    YES    NO    NO
+    Create User    ${DB_USERNAME1}    NO    YES    NO    NO    ${SID}
 
 Import Db Template
     [Arguments]    ${name}    ${pass}    ${sid}    ${files}    ${from_users}    ${to_users}
