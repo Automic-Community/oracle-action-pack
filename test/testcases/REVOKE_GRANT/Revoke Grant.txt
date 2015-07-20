@@ -25,7 +25,7 @@ Revoke all system Privilege
                       ${EMPTY}      ${EMPTY}         ${EMPTY}          ${EMPTY}           YES               NO                ${EMPTY}           DROP_USER    ${EMPTY}     NO             0          ${ENDED_OK}
 
 Revoke all user Privilege
-                      ${EMPTY}      ${EMPTY}         ${EMPTY}          ${EMPTY}           YES               YES               ${EMPTY}           DROP_USER    ${EMPTY}     NO             0          ${ENDED_OK}
+                      ${EMPTY}      ${EMPTY}         ${EMPTY}          ${EMPTY}           NO                YES               ${EMPTY}           DROP_USER    ${EMPTY}     NO             0          ${ENDED_OK}
 
 Revoke all user Privilege from role
                       ${EMPTY}      ${EMPTY}         ${EMPTY}          ${EMPTY}           NO                YES               ${EMPTY}           ${EMPTY}     ROLE_TEST    NO             0          ${ENDED_OK}
@@ -34,7 +34,7 @@ Revoke all user Privilege from public
                       ${EMPTY}      ${EMPTY}         HS_ADMIN_ROLE     ${EMPTY}           NO                NO                ${EMPTY}           ${EMPTY}     ${EMPTY}     YES            0          ${ENDED_OK}
 
 Revoke all user Privilege from schema
-                      ${EMPTY}      EXECUTE          ${EMPTY}          ${EMPTY}           NO                NO                DROP_USER          DROP_USER    ${EMPTY}     NO             0          ${ENDED_OK}
+                      ${EMPTY}      DEBUG            ${EMPTY}          ${EMPTY}           NO                NO                DROP_USER.LANHL    DROP_USER    ${EMPTY}     NO             0          ${ENDED_OK}
 
 *** Keywords ***
 Revoke Grant Template

@@ -63,7 +63,7 @@ Create User
     Init Action    ${ACTION_CREATE_USER}
     Action Set    ${PRT_CREATE_USER_DB_USERNAME_LG}    ${DB_USERNAME}
     Action Set    ${PRT_CREATE_USER_DB_PASSWORD_LG}    ${DB_PASSWORD}
-    Action Set    ${PRT_CREATE_USER_DB_JDBC_CONN_STRING}    jdbc:oracle:thin:@vvnsat03:1521:${id}
+    Action Set    ${PRT_CREATE_USER_DB_JDBC_CONN_STRING}    ${CONN_WITHOUTSID}${id}
     Action Set    ${PRT_CREATE_USER_DB_DRIVER_JAR}    ${JAR}
     Action Set    ${PRT_CREATE_USER_DB_DRIVER_CLASS}    ${CLASS}
     Action Set    ${PRT_CREATE_USER_DB_TNSNAMES_ORA}    ${ORA}

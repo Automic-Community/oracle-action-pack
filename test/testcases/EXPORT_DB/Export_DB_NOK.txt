@@ -6,15 +6,15 @@ Force Tags        EXPORT_DB    win11    unix11    unix10    #Suite Teardown    D
 Test Template     Export Db Template
 Resource          ../../resources/keywords.txt
 
-*** Test Cases ***    USERNAME          PASSWORD          SID       FILES          TS_LIST     FILESIZE    VOLSIZE     FULL    OWNER_LIST         TABLE_LIST    TRANSP_TS    TTS_FULLCHECK    LOGFILE     RECORDLENGTH    COMPRESS    ROWS    DIRECT    STATISTICS    INDEXES    CONSTRAINTS    GRANTS    TRIGGERS    CONSISTENT    OBJ_CONSISTENT    BUFFER    RESUMABLE    RESUMABLE_NAME                                                    RSMBL_TIMEOUT    RETURN CODE    STATUS
+*** Test Cases ***    USERNAME          PASSWORD          SID       FILES          TS_LIST     FILESIZE    VOLSIZE     FULL    OWNER_LIST         TABLE_LIST    TRANSP_TS    TTS_FULLCHECK    LOGFILE     RECORDLENGTH    COMPRESS    ROWS    DIRECT    STATISTICS    INDEXES    CONSTRAINTS    GRANTS    TRIGGERS    CONSISTENT    OBJ_CONSISTENT    BUFFER    RESUMABLE    RESUMABLE_NAME                                                    RSMBL_TIMEOUT    INVOKE AS SYSDBA    RETURN CODE    STATUS
 Normal user fail to full export
-                      ${DB_USERNAME}    ${DB_PASSWORD}    ${SID}    export1.dmp    ${EMPTY}    ${EMPTY}    ${EMPTY}    YES     ${EMPTY}           ${EMPTY}      NO           NO               ${EMPTY}    0               NO          YES     NO        ESTIMATE      YES        YES            YES       YES         NO            NO                0         NO           User USERNAME (USERID), Session SESSIONID, Instance INSTANCEID    7200             1              ${ENDED_NOT_OK}
+                      ${DB_USERNAME}    ${DB_PASSWORD}    ${SID}    export1.dmp    ${EMPTY}    ${EMPTY}    ${EMPTY}    YES     ${EMPTY}           ${EMPTY}      NO           NO               ${EMPTY}    0               NO          YES     NO        ESTIMATE      YES        YES            YES       YES         NO            NO                0         NO           User USERNAME (USERID), Session SESSIONID, Instance INSTANCEID    7200             NO                  1              ${ENDED_NOT_OK}
 
 Normal user fail to export table space
-                      ${DB_USERNAME}    ${DB_PASSWORD}    ${SID}    export1.dmp    TEST        ${EMPTY}    ${EMPTY}    NO      ${EMPTY}           ${EMPTY}      NO           NO               ${EMPTY}    0               NO          YES     NO        ESTIMATE      YES        YES            YES       YES         NO            NO                0         NO           User USERNAME (USERID), Session SESSIONID, Instance INSTANCEID    7200             1              ${ENDED_NOT_OK}
+                      ${DB_USERNAME}    ${DB_PASSWORD}    ${SID}    export1.dmp    TEST        ${EMPTY}    ${EMPTY}    NO      ${EMPTY}           ${EMPTY}      NO           NO               ${EMPTY}    0               NO          YES     NO        ESTIMATE      YES        YES            YES       YES         NO            NO                0         NO           User USERNAME (USERID), Session SESSIONID, Instance INSTANCEID    7200             NO                  1              ${ENDED_NOT_OK}
 
 Normal user fail to export other user
-                      ${DB_USERNAME}    ${DB_PASSWORD}    ${SID}    export1.dmp    ${EMPTY}    ${EMPTY}    ${EMPTY}    NO      ${DB_USERNAME2}    ${EMPTY}      NO           NO               ${EMPTY}    0               NO          YES     NO        ESTIMATE      YES        YES            YES       YES         NO            NO                0         NO           User USERNAME (USERID), Session SESSIONID, Instance INSTANCEID    7200             1              ${ENDED_NOT_OK}
+                      ${DB_USERNAME}    ${DB_PASSWORD}    ${SID}    export1.dmp    ${EMPTY}    ${EMPTY}    ${EMPTY}    NO      ${DB_USERNAME2}    ${EMPTY}      NO           NO               ${EMPTY}    0               NO          YES     NO        ESTIMATE      YES        YES            YES       YES         NO            NO                0         NO           User USERNAME (USERID), Session SESSIONID, Instance INSTANCEID    7200             NO                  1              ${ENDED_NOT_OK}
 
 *** Keywords ***
 Suite Setup User Assign Import
@@ -28,7 +28,8 @@ Export Db Template
     ...    ${volsize}    ${full}    ${owner_list}    ${table_list}    ${transp_ts}    ${tts_fullcheck}
     ...    ${logfile}    ${record_length}    ${compress}    ${rows}    ${direct}    ${statistics}
     ...    ${indexes}    ${constraints}    ${grants}    ${triggers}    ${consistent}    ${obj_consistent}
-    ...    ${buffer}    ${resumable}    ${resumable_name}    ${timeout}    ${returnCode}    ${returnStatus}
+    ...    ${buffer}    ${resumable}    ${resumable_name}    ${timeout}    ${asSysdba}    ${returnCode}
+    ...    ${returnStatus}
     Init Action    ${ACTION_EXPORT_DB}
     Action Set    ${PRT_EXPORT_DB_DB_USERNAME}    ${name}
     Action Set    ${PRT_EXPORT_DB_DB_PASSWORD}    ${password}
@@ -58,6 +59,7 @@ Export Db Template
     Action Set    ${PRT_EXPORT_DB_DB_EXPOPT_RESUMABLE}    ${resumable}
     Action Set    ${PRT_EXPORT_DB_DB_EXPOPT_RESUMABLE_NAME}    ${resumable_name}
     Action Set    ${PRT_EXPORT_DB_DB_EXPOPT_RSMBL_TIMEOUT}    ${timeout}
+    Action Set    ${PRT_EXPORT_DB_DB_IMP_INVOKE_AS_SYSDBA}    ${asSysdba}
     Action Execute
     Action Report Should Be Found
     Action Return Code Should Be    ${returnCode}

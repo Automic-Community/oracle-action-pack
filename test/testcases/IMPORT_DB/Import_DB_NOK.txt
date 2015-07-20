@@ -1,7 +1,7 @@
 *** Settings ***
 Documentation     NOTE:
 ...               add note here
-Suite Setup       Suite Setup User    ${DB_USERNAME1}
+Suite Setup       Suite Setup User
 Force Tags        IMPORT_DB    win11    unix11    unix10
 Test Template     Import Db Template
 Resource          ../../resources/keywords.txt

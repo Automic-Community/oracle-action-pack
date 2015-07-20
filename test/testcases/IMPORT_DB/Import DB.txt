@@ -1,7 +1,7 @@
 *** Settings ***
 Documentation     NOTE:
 ...               add note here
-Suite Setup       Suite Setup User
+Suite Setup       Suite Setup
 Force Tags        IMPORT_DB    win11    unix11    unix10
 Test Template     Import Db Template
 Resource          ../../resources/keywords.txt
@@ -45,9 +45,6 @@ Import DB, not import rows
                       ${DB_USERNAME}     ${DB_PASSWORD}    ${SID_IMPORT}    ${_WORKING_DIR}${/}export1.dmp                                     ${DB_USERNAME2}    user_a             ${EMPTY}         YES          ${EMPTY}     ${EMPTY}    NO                  NO        STAFF,CERTIFICATE       ${EMPTY}      ${EMPTY}                               YES        0               NO      NO        0         NO            NO         YES            YES       NO      YES       ALWAYS        NO           User USERNAME (USERID), Session SESSIONID, Instance INSTANCEID    7200             YES        0              ${ENDED_OK}
 
 *** Keywords ***
-Suite Setup User
-    Suite Setup
-
 Import Db Template
     [Arguments]    ${name}    ${pass}    ${sid}    ${files}    ${from_users}    ${to_users}
     ...    ${to_list}    ${transp_ts}    ${file_size}    ${vol_size}    ${invoke_as_sysdba}    ${full}
