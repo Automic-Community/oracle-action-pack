@@ -29,7 +29,7 @@ Import unexisted to user
                       ${DB_USERNAME2}    ${DB_PASSWORD}    ${SID}    ${_WORKING_DIR}${/}fullExport.dmp    ${EMPTY}          unexisted    ${EMPTY}     NO           ${EMPTY}    ${EMPTY}    YES          YES     ${EMPTY}     ${EMPTY}      ${EMPTY}     NO         0               YES     NO        0         NO            NO         YES            YES       NO      YES       ALWAYS        NO           User USERNAME (USERID), Session SESSIONID, Instance INSTANCEID    7200             YES        1              ${ENDED_NOT_OK}
 
 Import unexisted datafiles
-                      ${DB_USERNAME2}    ${DB_PASSWORD}    ${SID}    ${_WORKING_DIR}${/}fullExport.dmp    ${EMPTY}          ${EMPTY}     ${EMPTY}     NO           ${EMPTY}    ${EMPTY}    YES          YES     ${EMPTY}     ${EMPTY}      unexisted    NO         0               YES     NO        0         NO            NO         YES            YES       NO      YES       ALWAYS        NO           User USERNAME (USERID), Session SESSIONID, Instance INSTANCEID    7200             YES        1              ${ENDED_NOT_OK}
+                      ${DB_USERNAME2}    ${DB_PASSWORD}    ${SID}    ${_WORKING_DIR}${/}export1.dmp       ${EMPTY}          ${EMPTY}     ${EMPTY}     NO           ${EMPTY}    ${EMPTY}    YES          YES     ${EMPTY}     ${EMPTY}      unexisted    NO         0               YES     NO        0         NO            NO         YES            YES       NO      YES       ALWAYS        NO           User USERNAME (USERID), Session SESSIONID, Instance INSTANCEID    7200             YES        0              ${ENDED_OK}
 
 *** Keywords ***
 Suite Setup User
@@ -77,6 +77,6 @@ Import Db Template
     Action Set    ${PRT_IMPORT_DB_DB_IMPOPT_COMPILE}    ${compile}
     Action Execute
     Action Report Should Be Found
-    Action Return Code Should Be    ${returnCode}
     Action Return Status Should Be    ${returnStatus}
+    Action Return Code Should Be    ${returnCode}
     #[Teardown]    Drop User    ${DB_USERNAME1}    YES
