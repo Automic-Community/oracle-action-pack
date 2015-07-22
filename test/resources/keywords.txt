@@ -206,3 +206,19 @@ Create Tablespace
     Action Report Should Be Found
     Action Return Code Should Be    0
     Action Return Status Should Be    ${ENDED_OK}
+
+Exec Sqlplus
+    [Arguments]    ${service}    ${user}    ${admin_priv}    ${command}
+    Init Action    ${ACTION_EXEC_SQLPLUS}
+    Action Set    ${PRT_EXEC_SQLPLUS_DB_SERVICE}    ${service}
+    Action Set    ${PRT_EXEC_SQLPLUS_DB_HOST}    ${HOST}
+    Action Set    ${PRT_EXEC_SQLPLUS_DB_PORT}    1521
+    Action Set    ${PRT_EXEC_SQLPLUS_DB_USER}    ${user}
+    Action Set    ${PRT_EXEC_SQLPLUS_DB_PASS}    ${DB_PASSWORD}
+    Action Set    ${PRT_EXEC_SQLPLUS_DB_USE_ADMIN_PRIV}    ${admin_priv}
+    Action Set    ${PRT_EXEC_SQLPLUS_DB_SQLPLUS_FULL_PATH}    ${SQLPLUS_FULL_PATH}
+    Action Set    ${PRT_EXEC_SQLPLUS_DB_COMMAND}    ${command}
+    Action Execute
+    Action Report Should Be Found
+    Action Return Code Should Be    0
+    Action Return Status Should Be    ${ENDED_OK}
