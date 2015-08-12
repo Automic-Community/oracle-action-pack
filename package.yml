@@ -1,15 +1,16 @@
 name: PCK.AUTOMIC_ORACLE
 source: ae
 binaries: 
-- object: RESOURCES/PCK.AUTOMIC_ORACLE.PRV.CUSTOM_TYPES
+- timestamp: disabled
+  object: RESOURCES/PCK.AUTOMIC_ORACLE.PRV.CUSTOM_TYPES
   resources: 
   - name: COMPONENT#DATABASE_ORACLE
     type: TEXT
-    path: types/component/Database Oracle.xml
+    path: ara/types/component/Database Oracle.xml
     version: 5.0
   - name: DEPLOYMENTTARGET#DATABASE_ORACLE
     type: TEXT
-    path: types/deploymenttarget/Database Oracle.xml
+    path: ara/types/deploymenttarget/Database Oracle.xml
     version: 5.0
 - object: RESOURCES/LIBS/PCK.AUTOMIC_ORACLE.PRV.STORE
   resources: 
