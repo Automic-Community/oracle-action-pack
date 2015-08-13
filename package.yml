@@ -1,8 +1,8 @@
 name: PCK.AUTOMIC_ORACLE
 source: ae
 binaries: 
-- timestamp: disabled
-  object: RESOURCES/PCK.AUTOMIC_ORACLE.PRV.CUSTOM_TYPES
+- object: RESOURCES/PCK.AUTOMIC_ORACLE.PRV.CUSTOM_TYPES
+  timestamp: disabled
   resources: 
   - name: COMPONENT#DATABASE_ORACLE
     type: TEXT
