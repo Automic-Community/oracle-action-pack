@@ -4,11 +4,11 @@ binaries:
 - object: RESOURCES/PCK.AUTOMIC_ORACLE.PRV.CUSTOM_TYPES
   timestamp: disabled
   resources: 
-  - name: COMPONENT#DATABASE_ORACLE
+  - name: COMPONENT#DATABASE_ORACLE#2
     type: TEXT
     path: ara/types/component/Database Oracle.xml
     version: 5.0
-  - name: DEPLOYMENTTARGET#DATABASE_ORACLE
+  - name: DEPLOYMENTTARGET#DATABASE_ORACLE#1
     type: TEXT
     path: ara/types/deploymenttarget/Database Oracle.xml
     version: 5.0
