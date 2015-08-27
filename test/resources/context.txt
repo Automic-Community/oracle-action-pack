@@ -34,7 +34,7 @@ Init Win Server 11
     Set Global Variable    ${/}    \\
     Set Global Variable    ${DB_USERNAME}    test
     Set Global Variable    ${DB_PASSWORD}    ventum2011
-    Set Global Variable    ${CONN_STRING}    jdbc:oracle:thin:@vvnsat03:1521:automic
+    Set Global Variable    ${CONN_STRING}    jdbc:oracle:thin:@172.16.36.72:1521:automic
     Set Global Variable    ${JAR}    C:\\automic\\Agents\\testdata\\ojdbc6.jar
     Set Global Variable    ${CLASS}    oracle.jdbc.driver.OracleDriver
     Set Global Variable    ${ORA}    C:\\app\\Administrator\\product\\11.2.0\\dbhome_1\\NETWORK\\ADMIN\\tnsnames.ora
@@ -42,11 +42,11 @@ Init Win Server 11
     Set Global Variable    ${DB_FILE_PATH}    C:\\automic\\testcases\\PCK.AUTOMIC_ORACLE
     Set Global Variable    ${ERROR_CODE}    999
     Set Global Variable    ${SQLPLUS_FULL_PATH}    C:\\app\\Administrator\\product\\11.2.0\\dbhome_1\\BIN\\sqlplus.exe
-    Set Global Variable    ${HOST}    vvnsat03
+    Set Global Variable    ${HOST}    172.16.36.72
     Set Global Variable    ${USER}    test
     Set Global Variable    ${SID}    myautomic
     Set Global Variable    ${SID_IMPORT}    db4import
-    Set Global Variable    ${CONN_WITHOUTSID}    jdbc:oracle:thin:@vvnsat03:1521:
+    Set Global Variable    ${CONN_WITHOUTSID}    jdbc:oracle:thin:@172.16.36.72:1521:
 
 Init Unix Server 11
     [Documentation]    TODO: Write server description here
