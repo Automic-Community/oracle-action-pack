@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="ISO-8859-15" standalone="no"?><uc-export clientvers="11.0.0">
+<VARA OVD_VRName="FREI" data_type="STATIC" name="PCK.AUTOMIC_ORACLE.PUB.PROMPT_EXTERNAL_MAP" replacementmode="2">
+<HEADER state="1">
+<Title/>
+<ArchiveKey1/>
+<ArchiveKey2/>
+<OH_SubType>STATIC</OH_SubType>
+</HEADER>
+<ATTR_VARA state="1">
+<Type>C|Text</Type>
+<lblSource>Static</lblSource>
+<source>STATIC</source>
+<VRName>FREI|Freely selected</VRName>
+<NotFoundErr>0</NotFoundErr>
+<NotFoundDef>1</NotFoundDef>
+<ShareN>0</ShareN>
+<ShareL>0</ShareL>
+<ShareR>0</ShareR>
+<MaxValue_C>1024</MaxValue_C>
+<CheckMax_C>0</CheckMax_C>
+<uppercase>0</uppercase>
+<sortColumn>0</sortColumn>
+<sortDirection>0</sortDirection>
+</ATTR_VARA>
+<VARA state="1">
+<Variables>
+<row Name="PCK.AUTOMIC_ORACLE.PUB.ACTION.ASSIGN_GRANT/AGENT#" Value="&amp;AGENT#" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_ORACLE.PUB.ACTION.ASSIGN_GRANT/LOGIN#" Value="&amp;LOGIN#" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_ORACLE.PUB.ACTION.ASSIGN_GRANT/UC4RB_DB_DRIVER_CLASS#" Value="EXT:/database/jdbc/driver_class" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_ORACLE.PUB.ACTION.ASSIGN_GRANT/UC4RB_DB_DRIVER_JAR#" Value="EXT:/database/jdbc/driver_jar" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_ORACLE.PUB.ACTION.ASSIGN_GRANT/UC4RB_DB_JDBC_CONN_STRING#" Value="EXT:/database/jdbc/connection_string" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_ORACLE.PUB.ACTION.ASSIGN_GRANT/UC4RB_DB_PASSWORD#" Value="EXT:/database/security/password" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_ORACLE.PUB.ACTION.ASSIGN_GRANT/UC4RB_DB_USERNAME#" Value="EXT:/database/security/username" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_ORACLE.PUB.ACTION.CREATE_TABLESPACE/AGENT#" Value="&amp;AGENT#" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_ORACLE.PUB.ACTION.CREATE_TABLESPACE/LOGIN#" Value="&amp;LOGIN#" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_ORACLE.PUB.ACTION.CREATE_TABLESPACE/UC4RB_DB_DRIVER_CLASS#" Value="EXT:/database/jdbc/driver_class" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_ORACLE.PUB.ACTION.CREATE_TABLESPACE/UC4RB_DB_DRIVER_JAR#" Value="EXT:/database/jdbc/driver_jar" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_ORACLE.PUB.ACTION.CREATE_TABLESPACE/UC4RB_DB_JDBC_CONN_STRING#" Value="EXT:/database/jdbc/connection_string" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_ORACLE.PUB.ACTION.CREATE_TABLESPACE/UC4RB_DB_PASSWORD#" Value="EXT:/database/security/password" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_ORACLE.PUB.ACTION.CREATE_TABLESPACE/UC4RB_DB_PERM_DATAFILE_SPEC#" Value="EXT:/oracle-db/tablespace/perm_datafile_spec" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_ORACLE.PUB.ACTION.CREATE_TABLESPACE/UC4RB_DB_TEMPFILE_SPEC#" Value="EXT:/oracle-db/tablespace/temp_datafile_spec" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_ORACLE.PUB.ACTION.CREATE_TABLESPACE/UC4RB_DB_UNDO_DATAFILE_SPEC#" Value="EXT:/oracle-db/tablespace/undo_datafile_spec" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_ORACLE.PUB.ACTION.CREATE_TABLESPACE/UC4RB_DB_USERNAME#" Value="EXT:/database/security/username" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_ORACLE.PUB.ACTION.CREATE_USER/AGENT#" Value="&amp;AGENT#" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_ORACLE.PUB.ACTION.CREATE_USER/LOGIN#" Value="&amp;LOGIN#" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_ORACLE.PUB.ACTION.CREATE_USER/UC4RB_DB_DRIVER_CLASS#" Value="EXT:/database/jdbc/driver_class" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_ORACLE.PUB.ACTION.CREATE_USER/UC4RB_DB_DRIVER_JAR#" Value="EXT:/database/jdbc/driver_jar" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_ORACLE.PUB.ACTION.CREATE_USER/UC4RB_DB_JDBC_CONN_STRING#" Value="EXT:/database/jdbc/connection_string" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_ORACLE.PUB.ACTION.CREATE_USER/UC4RB_DB_PASSWORD#" Value="EXT:/database/security/password" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_ORACLE.PUB.ACTION.CREATE_USER/UC4RB_DB_USERNAME#" Value="EXT:/database/security/username" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_ORACLE.PUB.ACTION.DROP_TABLESPACE/AGENT#" Value="&amp;AGENT#" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_ORACLE.PUB.ACTION.DROP_TABLESPACE/LOGIN#" Value="&amp;LOGIN#" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_ORACLE.PUB.ACTION.DROP_TABLESPACE/UC4RB_DB_DRIVER_CLASS#" Value="EXT:/database/jdbc/driver_class" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_ORACLE.PUB.ACTION.DROP_TABLESPACE/UC4RB_DB_DRIVER_JAR#" Value="EXT:/database/jdbc/driver_jar" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_ORACLE.PUB.ACTION.DROP_TABLESPACE/UC4RB_DB_JDBC_CONN_STRING#" Value="EXT:/database/jdbc/connection_string" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_ORACLE.PUB.ACTION.DROP_TABLESPACE/UC4RB_DB_PASSWORD#" Value="EXT:/database/security/password" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_ORACLE.PUB.ACTION.DROP_TABLESPACE/UC4RB_DB_USERNAME#" Value="EXT:/database/security/username" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_ORACLE.PUB.ACTION.DROP_USER/AGENT#" Value="&amp;AGENT#" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_ORACLE.PUB.ACTION.DROP_USER/LOGIN#" Value="&amp;LOGIN#" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_ORACLE.PUB.ACTION.DROP_USER/UC4RB_DB_DRIVER_CLASS#" Value="EXT:/database/jdbc/driver_class" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_ORACLE.PUB.ACTION.DROP_USER/UC4RB_DB_DRIVER_JAR#" Value="EXT:/database/jdbc/driver_jar" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_ORACLE.PUB.ACTION.DROP_USER/UC4RB_DB_JDBC_CONN_STRING#" Value="EXT:/database/jdbc/connection_string" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_ORACLE.PUB.ACTION.DROP_USER/UC4RB_DB_PASSWORD#" Value="EXT:/database/security/password" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_ORACLE.PUB.ACTION.DROP_USER/UC4RB_DB_USERNAME#" Value="EXT:/database/security/username" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_ORACLE.PUB.ACTION.EXEC_SQLPLUS/AGENT#" Value="&amp;AGENT#" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_ORACLE.PUB.ACTION.EXEC_SQLPLUS/LOGIN#" Value="&amp;LOGIN#" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_ORACLE.PUB.ACTION.EXPORT_DB/AGENT#" Value="&amp;AGENT#" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_ORACLE.PUB.ACTION.EXPORT_DB/LOGIN#" Value="&amp;LOGIN#" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_ORACLE.PUB.ACTION.EXPORT_DB/UC4RB_DB_PASSWORD#" Value="EXT:/database/security/password" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_ORACLE.PUB.ACTION.EXPORT_DB/UC4RB_DB_USERNAME#" Value="EXT:/database/security/username" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_ORACLE.PUB.ACTION.IMPORT_DB/AGENT#" Value="&amp;AGENT#" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_ORACLE.PUB.ACTION.IMPORT_DB/LOGIN#" Value="&amp;LOGIN#" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_ORACLE.PUB.ACTION.IMPORT_DB/UC4RB_DB_PASSWORD#" Value="EXT:/database/security/password" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_ORACLE.PUB.ACTION.IMPORT_DB/UC4RB_DB_USERNAME#" Value="EXT:/database/security/username" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_ORACLE.PUB.ACTION.REVOKE_GRANT/AGENT#" Value="&amp;AGENT#" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_ORACLE.PUB.ACTION.REVOKE_GRANT/LOGIN#" Value="&amp;LOGIN#" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_ORACLE.PUB.ACTION.REVOKE_GRANT/UC4RB_DB_DRIVER_CLASS#" Value="EXT:/database/jdbc/driver_class" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_ORACLE.PUB.ACTION.REVOKE_GRANT/UC4RB_DB_DRIVER_JAR#" Value="EXT:/database/jdbc/driver_jar" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_ORACLE.PUB.ACTION.REVOKE_GRANT/UC4RB_DB_JDBC_CONN_STRING#" Value="EXT:/database/jdbc/connection_string" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_ORACLE.PUB.ACTION.REVOKE_GRANT/UC4RB_DB_PASSWORD#" Value="EXT:/database/security/password" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_ORACLE.PUB.ACTION.REVOKE_GRANT/UC4RB_DB_USERNAME#" Value="EXT:/database/security/username" Value1="" Value2="" Value3="" Value4=""/>
+</Variables>
+</VARA>
+<DOCU_Docu state="1" type="text">
+<DOC/>
+</DOCU_Docu>
+</VARA>
+</uc-export>
