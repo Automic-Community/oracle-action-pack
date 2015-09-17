@@ -27,14 +27,6 @@
 	
 	<DynamicProperties>
 
-      
-
-
-
-
-
-	
-	
 		<!--CONNECTIVITY -->
 		<Property name="/database/jdbc/connection_string" highlighted="false">
             <Value>{/custom/jdbc_connection_string}</Value>
@@ -57,8 +49,6 @@
             <Description>Password used to authenticate with the Database server</Description>
         </Property>
 
-		
-		
 		<!-- DATAFILE SPECIFICATION -->
 		<Property name="/oracle-db/tablespace/perm_datafile_spec" highlighted="false">
             <Value>{/custom/perm_datafile_spec}</Value>
@@ -74,7 +64,6 @@
             <Value>{/custom/undo_datafile_spec}</Value>
             <Description>Datafile specification for undo tablespace</Description>
         </Property>
-	
 	
 		<!-- SNAPSHOTS -->
 		<Property name="/snapshot/archive_path" highlighted="false">
@@ -113,7 +102,12 @@
 			<List>Yes#;#No</List>
 		</Property>
 
-		<!-- HTTP -->
+		<!-- HTTP/S -->
+		<Property name="/source/http/protocol" highlighted="false">
+			<Value>http</Value>
+			<List>http,https</List>
+			<Description>Protocol</Description>
+		</Property>
 		<Property name="/source/http/url" highlighted="false">
 			<Description>URL</Description>
 		</Property>
@@ -144,38 +138,12 @@
 			<Description>Password if proxy requires authentication.</Description>
 		</Property>
 
-		<!-- HTTPS -->
-		<Property name="/source/https/url" highlighted="false">
-			<Description>URL</Description>
+		<!-- FTP/S -->
+		<Property name="/source/ftp/protocol" highlighted="false">
+			<Value>ftp</Value>
+			<List>ftp, ftps</List>
+			<Description>Protocol</Description>
 		</Property>
-		<Property name="/source/https/port" highlighted="false">
-			<Value>443</Value>
-			<Description>Port of HTTPS connection</Description>
-		</Property>
-		<Property name="/source/https/username" highlighted="false">
-			<Description>Username to authenticate with the server (if required by the server)</Description>
-		</Property>
-		<Property name="/source/https/password" highlighted="false"  type="Protected" >
-			<Description>Password to authenticate with the server (if required by the server)</Description>
-		</Property>
-		<Property name="/source/https/connection_timeout" highlighted="false" type="Float">
-			<Value>5000</Value>
-			<Description>Timeout in miliseconds to wait to build up a connection to the target host. Default: 5000.</Description>
-		</Property>
-		<Property name="/source/https/proxy_host" highlighted="false">
-			<Description>Proxy host to use.</Description>
-		</Property>
-		<Property name="/source/https/proxy_port" highlighted="false">
-			<Description>Proxy port to use.</Description>
-		</Property>
-		<Property name="/source/https/proxy_user" highlighted="false">
-			<Description>Username if proxy requires authentication.</Description>
-		</Property>
-		<Property name="/source/https/proxy_pwd" highlighted="false"  type="Protected">
-			<Description>Password if proxy requires authentication.</Description>
-		</Property>
-
-		<!-- FTP -->
 		<Property name="/source/ftp/host" highlighted="false">
 			<Description>Host to connect to.</Description>
 		</Property>
@@ -216,47 +184,6 @@
 			<List>BINARY#;#TEXT</List>
 		</Property>				
 		
-		<!-- FTPS -->
-		<Property name="/source/ftps/host" highlighted="false">
-			<Description>Host to connect to.</Description>
-		</Property>
-		<Property name="/source/ftps/port" highlighted="false">
-			<Value>990</Value>
-			<Description>Port to connect to.</Description>
-		</Property>		
-		<Property name="/source/ftps/username" highlighted="false">
-			<Description>Username to authenticate with the server (if required by the server)</Description>
-		</Property>
-		<Property name="/source/ftps/password" highlighted="false" type="Protected">
-			<Description>Password to authenticate with the server (if required by the server)</Description>
-		</Property>
-		<Property name="/source/ftps/recursive_download" highlighted="false" type="SingleChoice">
-			<Value>Yes</Value>	
-			<Description>Recursively get files and directories. If set to no, only direct children of the directory are downloaded</Description>
-			<List>Yes#;#No</List>
-		</Property>
-		<Property name="/source/ftps/connection_timeout" highlighted="false" type="Float">
-			<Value>5000</Value>
-			<Description>Timeout in miliseconds to wait to build up a connection to the target host. Default: 5000.</Description>
-		</Property>
-		<Property name="/source/ftps/proxy_host" highlighted="false">
-			<Description>Proxy host to use.</Description>
-		</Property>
-		<Property name="/source/ftps/proxy_port" highlighted="false">
-			<Description>Proxy port to use.</Description>
-		</Property>
-		<Property name="/source/ftps/proxy_user" highlighted="false">
-			<Description>Username if proxy requires authentication.</Description>
-		</Property>
-		<Property name="/source/ftps/proxy_pwd" highlighted="false" type="Protected">
-			<Description>Password if proxy requires authentication.</Description>
-		</Property>	
-		<Property name="/source/ftps/transfer_mode" highlighted="false" type="SingleChoice" >
-			<Value>BINARY</Value>
-			<Description>Text/Binary transfer modes.</Description>
-			<List>BINARY#;#TEXT</List>
-		</Property>			
-
 		<!-- SFTP -->
 		<Property name="/source/sftp/host" highlighted="false">
 			<Description>Host to connect to.</Description>
@@ -285,7 +212,6 @@
 			<Description>Preserves creation/modification times and modes of the original files. Default: yes</Description>
 			<List>Yes#;#No</List>
 		</Property>
-
 
 		<!-- SCP -->
 		<Property name="/source/scp/host" highlighted="false">
@@ -444,7 +370,6 @@
 			<Value>{@target/custom/staging_remote_directory}</Value>
 			<Description>Base directory on the staging server where package should be downloaded to.</Description>
 		</Property>		
-		
 		
 	</DynamicProperties>
 	
