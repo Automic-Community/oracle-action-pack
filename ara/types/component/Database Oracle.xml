@@ -84,11 +84,6 @@
 		</Property>
 		
 		<!-- SOURCE -->
-		<Property name="/source/protocol" highlighted="false" type="SingleChoice">
-			<Value>UC4_FILE_TRANSFER</Value>
-			<Description>Defines the protocol to use to get the component from source.</Description>
-			<List>HTTP#;#HTTPS#;#FTP#;#FTPS#;#SMB#;#SFTP#;#SCP#;#SVN#;#CVS#;#TFS#;#UC4_FILE_TRANSFER</List>
-		</Property>
 		<Property name="/source/source_files_dirs" highlighted="false">		
 			<Description>Remote file/directory to be downloaded. Directory not supported for HTTP(S). Not required for TFS, CVS, SVN</Description>
 		</Property>
