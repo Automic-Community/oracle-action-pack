@@ -98,9 +98,9 @@
 		</Property>
 
 		<!-- HTTP/S -->
-		<Property name="/source/http/protocol" highlighted="false">
+		<Property name="/source/http/protocol" highlighted="false" type="SingleChoice">
 			<Value>http</Value>
-			<List>http,https</List>
+			<List>HTTP#;#HTTPS</List>
 			<Description>Protocol</Description>
 		</Property>
 		<Property name="/source/http/url" highlighted="false">
@@ -108,7 +108,7 @@
 		</Property>
 		<Property name="/source/http/port" highlighted="false">
 			<Value>80</Value>
-			<Description>Port of HTTP connection</Description>
+			<Description>Port of HTTP connection is usually 80. Port of HTTPS connection is usually 443.</Description>
 		</Property>
 		<Property name="/source/http/username" highlighted="false">
 			<Description>Username to authenticate with the server (if required by the server)</Description>
@@ -134,9 +134,9 @@
 		</Property>
 
 		<!-- FTP/S -->
-		<Property name="/source/ftp/protocol" highlighted="false">
+		<Property name="/source/ftp/protocol" highlighted="false" type="SingleChoice">
 			<Value>ftp</Value>
-			<List>ftp, ftps</List>
+			<List>FTP#;#FTPS</List>
 			<Description>Protocol</Description>
 		</Property>
 		<Property name="/source/ftp/host" highlighted="false">
@@ -144,7 +144,7 @@
 		</Property>
 		<Property name="/source/ftp/port" highlighted="false">
 			<Value>21</Value>
-			<Description>Port to connect to.</Description>
+			<Description>Connection port for FTP is usually 21. Connection port for FTPS is usually 990.</Description>
 		</Property>		
 		<Property name="/source/ftp/username" highlighted="false">
 			<Description>Username to authenticate with the server (if required by the server)</Description>
