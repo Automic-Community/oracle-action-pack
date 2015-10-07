@@ -99,7 +99,7 @@
 
 		<!-- HTTP/S -->
 		<Property name="/source/http/protocol" highlighted="false" type="SingleChoice">
-			<Value>http</Value>
+			<Value>HTTP</Value>
 			<List>HTTP#;#HTTPS</List>
 			<Description>Protocol</Description>
 		</Property>
@@ -135,7 +135,7 @@
 
 		<!-- FTP/S -->
 		<Property name="/source/ftp/protocol" highlighted="false" type="SingleChoice">
-			<Value>ftp</Value>
+			<Value>FTP</Value>
 			<List>FTP#;#FTPS</List>
 			<Description>Protocol</Description>
 		</Property>
