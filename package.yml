@@ -7,11 +7,11 @@ binaries:
   - name: COMPONENT#DATABASE_ORACLE#2
     type: TEXT
     path: ara/types/component/Database Oracle.xml
-    version: 5.0
+    version: 1.0.0
   - name: DEPLOYMENTTARGET#DATABASE_ORACLE#1
     type: TEXT
     path: ara/types/deploymenttarget/Database Oracle.xml
-    version: 5.0
+    version: 1.0.0
 - object: RESOURCES/LIBS/PCK.AUTOMIC_ORACLE.PRV.STORE
   resources: 
   - name: ORACLETOOL.JAR
