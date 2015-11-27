@@ -6,42 +6,48 @@ Force Tags        REVOKE_GRANT    win11    unix11    unix10
 Test Template     Revoke Grant Template
 Resource          ../../resources/keywords.txt
 
-*** Test Cases ***    SYS_PRVLGS    OBJ_PRIVILEGE    ROLE_PRIVILEGE    CUST_ROLE_PRVLG    ALL_SYS_PRVLGS    ALL_USR_PRVLGS    SCHEMA_OBJECT      FROM_USER    FROM_ROLE    FROM_PUBLIC    RETCODE    STATUS
-Revoke Grant          ${EMPTY}      ${EMPTY}         ${EMPTY}          ${EMPTY}           NO                YES               ${EMPTY}           DROP_USER    ${EMPTY}     NO             0          ${ENDED_OK}
+*** Test Cases ***    DB_USERNAME                 SYS_PRVLGS    OBJ_PRIVILEGE    ROLE_PRIVILEGE    CUST_ROLE_PRVLG    ALL_SYS_PRVLGS    ALL_USR_PRVLGS    SCHEMA_OBJECT      FROM_USER    FROM_ROLE    FROM_PUBLIC    RETCODE    STATUS
+Revoke Grant          ${DB_USERNAME}              ${EMPTY}      ${EMPTY}         ${EMPTY}          ${EMPTY}           NO                YES               ${EMPTY}           DROP_USER    ${EMPTY}     NO             0          ${ENDED_OK}
 
 Revoke System Privilege
-                      ADVISOR       ${EMPTY}         ${EMPTY}          ${EMPTY}           NO                NO                ${EMPTY}           DROP_USER    ${EMPTY}     NO             0          ${ENDED_OK}
-
-Revoke Object Privilege
-                      ${EMPTY}      DEBUG            ${EMPTY}          ${EMPTY}           NO                NO                DROP_USER.LANHL    DROP_USER    ${EMPTY}     NO             0          ${ENDED_OK}
+                      ${DB_USERNAME}              ADVISOR       ${EMPTY}         ${EMPTY}          ${EMPTY}           NO                NO                ${EMPTY}           DROP_USER    ${EMPTY}     NO             0          ${ENDED_OK}
+                      #Revoke Object Privilege
+                      #${DB_USERNAME}             ${EMPTY}      DEBUG            ${EMPTY}          ${EMPTY}           NO                NO                DROP_USER.LANHL    DROP_USER    ${EMPTY}     NO             0          ${ENDED_OK}
 
 Revoke Role Privilege
-                      ${EMPTY}      ${EMPTY}         HS_ADMIN_ROLE     ${EMPTY}           NO                NO                ${EMPTY}           DROP_USER    ${EMPTY}     NO             0          ${ENDED_OK}
+                      ${DB_USERNAME}              ${EMPTY}      ${EMPTY}         HS_ADMIN_ROLE     ${EMPTY}           NO                NO                ${EMPTY}           DROP_USER    ${EMPTY}     NO             0          ${ENDED_OK}
 
 Revoke userdefined Role Privilege
-                      ${EMPTY}      ${EMPTY}         ${EMPTY}          ROLE_TEST          NO                NO                ${EMPTY}           DROP_USER    ${EMPTY}     NO             0          ${ENDED_OK}
+                      ${DB_USERNAME}              ${EMPTY}      ${EMPTY}         ${EMPTY}          ROLE_TEST          NO                NO                ${EMPTY}           DROP_USER    ${EMPTY}     NO             0          ${ENDED_OK}
 
 Revoke all system Privilege
-                      ${EMPTY}      ${EMPTY}         ${EMPTY}          ${EMPTY}           YES               NO                ${EMPTY}           DROP_USER    ${EMPTY}     NO             0          ${ENDED_OK}
+                      ${DB_USERNAME}              ${EMPTY}      ${EMPTY}         ${EMPTY}          ${EMPTY}           YES               NO                ${EMPTY}           DROP_USER    ${EMPTY}     NO             0          ${ENDED_OK}
 
 Revoke all user Privilege
-                      ${EMPTY}      ${EMPTY}         ${EMPTY}          ${EMPTY}           NO                YES               ${EMPTY}           DROP_USER    ${EMPTY}     NO             0          ${ENDED_OK}
+                      ${DB_USERNAME}              ${EMPTY}      ${EMPTY}         ${EMPTY}          ${EMPTY}           NO                YES               ${EMPTY}           DROP_USER    ${EMPTY}     NO             0          ${ENDED_OK}
 
 Revoke all user Privilege from role
-                      ${EMPTY}      ${EMPTY}         ${EMPTY}          ${EMPTY}           NO                YES               ${EMPTY}           ${EMPTY}     ROLE_TEST    NO             0          ${ENDED_OK}
+                      ${DB_USERNAME}              ${EMPTY}      ${EMPTY}         ${EMPTY}          ${EMPTY}           NO                YES               ${EMPTY}           ${EMPTY}     ROLE_TEST    NO             0          ${ENDED_OK}
 
 Revoke all user Privilege from public
-                      ${EMPTY}      ${EMPTY}         HS_ADMIN_ROLE     ${EMPTY}           NO                NO                ${EMPTY}           ${EMPTY}     ${EMPTY}     YES            0          ${ENDED_OK}
+                      ${DB_USERNAME}              ${EMPTY}      ${EMPTY}         HS_ADMIN_ROLE     ${EMPTY}           NO                NO                ${EMPTY}           ${EMPTY}     ${EMPTY}     YES            0          ${ENDED_OK}
 
 Revoke all user Privilege from schema
-                      ${EMPTY}      DEBUG            ${EMPTY}          ${EMPTY}           NO                NO                DROP_USER.LANHL    DROP_USER    ${EMPTY}     NO             0          ${ENDED_OK}
+                      ${DB_USERNAME}              ${EMPTY}      DEBUG            ${EMPTY}          ${EMPTY}           NO                NO                DROP_USER.LANHL    DROP_USER    ${EMPTY}     NO             0          ${ENDED_OK}
 
 *** Keywords ***
 Revoke Grant Template
-    [Arguments]    ${sys_prvlgs}    ${obj_privilege}    ${role_privilege}    ${cust_role_prvlg}    ${all_sys_prvlgs}    ${usr_prvlgs}
-    ...    ${schmea_object}    ${from_user}    ${from_role}    ${from_public}    ${returnCode}    ${returnStatus}
+    [Arguments]    ${user}    ${sys_prvlgs}    ${obj_privilege}    ${role_privilege}    ${cust_role_prvlg}    ${all_sys_prvlgs}
+    ...    ${usr_prvlgs}    ${schmea_object}    ${from_user}    ${from_role}    ${from_public}    ${returnCode}
+    ...    ${returnStatus}
     Init Action    ${ACTION_ASSIGN_GRANT}
-    Oracle Common Setting
+    Action Set    ${PRT_CREATE_USER_DB_USERNAME_LG}    ${DB_USERNAME}
+    Action Set    ${PRT_CREATE_USER_DB_PASSWORD_LG}    ${DB_PASSWORD}
+    Action Set    ${PRT_CREATE_USER_DB_JDBC_CONN_STRING}    ${CONN_STRING_AUT}
+    Action Set    ${PRT_CREATE_USER_DB_DRIVER_JAR}    ${JAR}
+    Action Set    ${PRT_CREATE_USER_DB_DRIVER_CLASS}    ${CLASS}
+    Action Set    ${PRT_CREATE_USER_DB_TNSNAMES_ORA}    ${ORA}
+    Action Set    ${PRT_CREATE_USER_DB_CONN_INTRVL}    ${INTRVL}
     Action Set    ${PRT_ASSIGN_GRANT_DB_GRANT_SYS_PRIVILEGE}    ${sys_prvlgs}
     Action Set    ${PRT_ASSIGN_GRANT_DB_GRANT_OBJ_PRIVILEGE}    ${obj_privilege}
     Action Set    ${PRT_ASSIGN_GRANT_DB_GRANT_ROLE_PRIVILEGE}    ${role_privilege}
@@ -58,9 +64,9 @@ Revoke Grant Template
     Action Execute
     Action Report Should Be Found
     Init Action    ${ACTION_REVOKE_GRANT}
-    Action Set    ${PRT_CREATE_USER_DB_USERNAME_LG}    ${DB_USERNAME}
+    Action Set    ${PRT_CREATE_USER_DB_USERNAME_LG}    ${user}
     Action Set    ${PRT_CREATE_USER_DB_PASSWORD_LG}    ${DB_PASSWORD}
-    Action Set    ${PRT_CREATE_USER_DB_JDBC_CONN_STRING}    ${CONN_STRING}
+    Action Set    ${PRT_CREATE_USER_DB_JDBC_CONN_STRING}    ${CONN_STRING_AUT}
     Action Set    ${PRT_CREATE_USER_DB_DRIVER_JAR}    ${JAR}
     Action Set    ${PRT_CREATE_USER_DB_DRIVER_CLASS}    ${CLASS}
     Action Set    ${PRT_CREATE_USER_DB_TNSNAMES_ORA}    ${ORA}
