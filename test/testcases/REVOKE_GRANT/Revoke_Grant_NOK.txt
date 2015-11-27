@@ -14,7 +14,7 @@ Revoke System Privilege
                       ADVISOR       ${EMPTY}         ${EMPTY}          ${EMPTY}           NO                NO                ${EMPTY}           ${USER_NOGRANT}    ${EMPTY}           NO             231        ${ENDED_NOT_OK}
 
 Revoke Object Privilege
-                      ${EMPTY}      DEBUG            ${EMPTY}          ${EMPTY}           NO                NO                DROP_USER.LANHL    ${USER_NOGRANT}    ${EMPTY}           NO             231        ${ENDED_NOT_OK}
+                      ${EMPTY}      DEBUG            ${EMPTY}          ${EMPTY}           NO                NO                DROP_USER.LANHL    ${USER_NOGRANT}    ${EMPTY}           NO             12         ${ENDED_NOT_OK}
 
 Revoke Role Privilege
                       ${EMPTY}      ${EMPTY}         HS_ADMIN_ROLE     ${EMPTY}           NO                NO                ${EMPTY}           ${USER_NOGRANT}    ${EMPTY}           NO             231        ${ENDED_NOT_OK}
