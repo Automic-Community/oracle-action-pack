@@ -14,7 +14,7 @@ SYS_PRIVILEGES & USER_PRVLGS were NO, Mutil SYS_PRIVILEGE
                       ADMINISTER ANY SQL TUNING SET,ALTER ANY INDEXTYPE,ALTER ROLLBACK SEGMENT    ${EMPTY}         ${EMPTY}                         ${EMPTY}           NO                NO             ${EMPTY}    DROP_USER          ${EMPTY}     NO          NO                  NO              YES             0          ${ENDED_OK}
                       #Unstable
                       #SYS_PRIVILEGES & USER_PRVLGS were NO, One OBJ_PRIVILEGE
-                      #                                                                           ${EMPTY}         SELECT                           ${EMPTY}           ${EMPTY}          NO             NO          DROP_USER.LANHL    DROP_USER    ${EMPTY}    NO                  NO              NO              NO         0                  ${ENDED_OK}
+                      #                                                                           ${EMPTY}         DEBUG                            ${EMPTY}           ${EMPTY}          NO             NO          DROP_USER.LANHL    DROP_USER    ${EMPTY}    NO                  NO              NO              NO         0                  ${ENDED_OK}
                       #Unstable
                       #SYS_PRIVILEGES & USER_PRVLGS were NO, Mutil OBJ_PRIVILEGE
                       #                                                                           ${EMPTY}         DELETE,SELECT,UPDATE             ${EMPTY}           ${EMPTY}          NO             NO          DROP_USER.LANHL    DROP_USER    ${EMPTY}    NO                  NO              YES             NO         0                  ${ENDED_OK}
