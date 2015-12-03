@@ -538,7 +538,7 @@ public class FileUtil {
 	public static File createTempDirectory() throws IOException {
 
 		File baseDir = new File(System.getProperty("java.io.tmpdir"));
-		File resultDir = File.createTempFile("UC4", "ARATools", baseDir);
+		File resultDir = File.createTempFile("UC4", "OracleTools", baseDir);
 
 		if (!(resultDir.delete())) {
 			throw new IOException("Could not delete temp file: "
