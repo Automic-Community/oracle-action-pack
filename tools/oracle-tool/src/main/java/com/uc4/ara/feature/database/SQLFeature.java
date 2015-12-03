@@ -21,7 +21,7 @@ import com.uc4.ara.feature.utils.FileUtil;
 
 /**
  * The Class SQLFeature sends an sql-string to a database and processes the
- * result. This class makes use of the ARATools.jar.config file.
+ * result. This class makes use of the oracle-tool.jar.config file.
  */
 public class SQLFeature extends AbstractFeature {
 
