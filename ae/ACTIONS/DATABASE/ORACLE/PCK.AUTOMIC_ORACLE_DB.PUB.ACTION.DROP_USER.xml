@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="ISO-8859-15" standalone="no"?><uc-export clientvers="11.0.0">
-<JOBP AllowExternal="1" name="PCK.AUTOMIC_ORACLE.PUB.ACTION.DROP_USER">
+<JOBP AllowExternal="1" name="PCK.AUTOMIC_ORACLE_DB.PUB.ACTION.DROP_USER">
 <XHEADER state="1">
 <Title>Oracle DB Drop User</Title>
 <ArchiveKey1/>
@@ -52,19 +52,19 @@
 <result ChkRExec="0" RElseHalt="0" RElseIgn="0" RElseJPAbend="0" RExecFlag="0" RExecute="" RRepMTimes="0" RRepOn="0" RRepWait="0" RWhen=""/>
 <dynvalues>
 <dyntree>
-<node content="1" id="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.DROP_USER" name="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.DROP_USER" parent="PPRPTS" type="PPROMPTSET">
-<PROMPTSET name="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.DROP_USER">
-<PRPTBOX promptset="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.DROP_USER">
-<UC4RB_DB_CASCADEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_CASCADE#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.DROP_USER">YES</UC4RB_DB_CASCADEs.00>
-<UC4RB_DB_CONN_INTRVLs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_CONN_INTRVL#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.DROP_USER">10</UC4RB_DB_CONN_INTRVLs.00>
-<UC4RB_DB_DRIVER_CLASSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_DRIVER_CLASS#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.DROP_USER"/>
-<UC4RB_DB_DRIVER_JARs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_DRIVER_JAR#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.DROP_USER"/>
-<UC4RB_DB_DROP_USERs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_DROP_USER#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.DROP_USER"/>
-<UC4RB_DB_FAIL_USR_NOT_EXISTSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_FAIL_USR_NOT_EXISTS#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.DROP_USER">NO</UC4RB_DB_FAIL_USR_NOT_EXISTSs.00>
-<UC4RB_DB_JDBC_CONN_STRINGs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_JDBC_CONN_STRING#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.DROP_USER"/>
-<UC4RB_DB_PASSWORDs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_PASSWORD#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.DROP_USER">--10</UC4RB_DB_PASSWORDs.00>
-<UC4RB_DB_TNSNAMES_ORAs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_TNSNAMES_ORA#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.DROP_USER"/>
-<UC4RB_DB_USERNAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_USERNAME#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.DROP_USER"/>
+<node content="1" id="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.DROP_USER" name="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.DROP_USER" parent="PPRPTS" type="PPROMPTSET">
+<PROMPTSET name="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.DROP_USER">
+<PRPTBOX promptset="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.DROP_USER">
+<UC4RB_DB_CASCADEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_CASCADE#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.DROP_USER">YES</UC4RB_DB_CASCADEs.00>
+<UC4RB_DB_CONN_INTRVLs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_CONN_INTRVL#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.DROP_USER">10</UC4RB_DB_CONN_INTRVLs.00>
+<UC4RB_DB_DRIVER_CLASSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_DRIVER_CLASS#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.DROP_USER"/>
+<UC4RB_DB_DRIVER_JARs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_DRIVER_JAR#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.DROP_USER"/>
+<UC4RB_DB_DROP_USERs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_DROP_USER#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.DROP_USER"/>
+<UC4RB_DB_FAIL_USR_NOT_EXISTSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_FAIL_USR_NOT_EXISTS#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.DROP_USER">NO</UC4RB_DB_FAIL_USR_NOT_EXISTSs.00>
+<UC4RB_DB_JDBC_CONN_STRINGs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_JDBC_CONN_STRING#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.DROP_USER"/>
+<UC4RB_DB_PASSWORDs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_PASSWORD#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.DROP_USER">--10</UC4RB_DB_PASSWORDs.00>
+<UC4RB_DB_TNSNAMES_ORAs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_TNSNAMES_ORA#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.DROP_USER"/>
+<UC4RB_DB_USERNAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_USERNAME#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.DROP_USER"/>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -86,7 +86,7 @@
 </PostCon>
 </postconditions>
 </task>
-<task Alias="" BranchType="0" Col="2" Lnr="2" OType="JOBS" Object="PCK.AUTOMIC_ORACLE.PRV.JOB.DROP_USER@WINDOWS" ParentAlias="" ParentObject="" Row="1" Text2="">
+<task Alias="" BranchType="0" Col="2" Lnr="2" OType="JOBS" Object="PCK.AUTOMIC_ORACLE_DB.PRV.JOB.DROP_USER@WINDOWS" ParentAlias="" ParentObject="" Row="1" Text2="">
 <checkpoint RollbackFlag="1" RunPerPatch="0" RunPerTarget="0" TcpADays="0" TcpATime="00:00" TcpATimeTZ="" TcpExecute="" TcpOn="0" promptatgen="0" showprompt="0"/>
 <after ActFlg="1" AtimOn="0" ErlstStDays="0" ErlstStTime="00:00" ErlstStTimeTZ="" HoldFlg="0"/>
 <when ChkWhenExec="0" LtstEnd="0" LtstEndDays="0" LtstEndTime="00:00" LtstSt="0" LtstStDays="0" LtstStTime="00:00" LtstTimeTZ="" WCTypeAND="1" WCTypeOR="0" WElseA="1" WElseH="0" WElseS="0" WElseX="0" WhenExecute="" WtimOn="0"/>
@@ -116,19 +116,19 @@
 </node>
 <node content="1" id="PRPTS" name="PromptSets" parent="" pref="1" type="PROMPTSET"/>
 <node content="0" id="PPRPTS" name="Parent PromptSets" parent="" type="PPROMPTSET"/>
-<node content="1" id="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.DROP_USER" name="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.DROP_USER" parent="PPRPTS" type="PPROMPTSET">
-<PROMPTSET name="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.DROP_USER">
-<PRPTBOX promptset="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.DROP_USER">
-<UC4RB_DB_CASCADEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_CASCADE#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.DROP_USER">YES</UC4RB_DB_CASCADEs.00>
-<UC4RB_DB_CONN_INTRVLs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_CONN_INTRVL#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.DROP_USER">10</UC4RB_DB_CONN_INTRVLs.00>
-<UC4RB_DB_DRIVER_CLASSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_DRIVER_CLASS#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.DROP_USER"/>
-<UC4RB_DB_DRIVER_JARs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_DRIVER_JAR#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.DROP_USER"/>
-<UC4RB_DB_DROP_USERs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_DROP_USER#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.DROP_USER"/>
-<UC4RB_DB_FAIL_USR_NOT_EXISTSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_FAIL_USR_NOT_EXISTS#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.DROP_USER">NO</UC4RB_DB_FAIL_USR_NOT_EXISTSs.00>
-<UC4RB_DB_JDBC_CONN_STRINGs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_JDBC_CONN_STRING#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.DROP_USER"/>
-<UC4RB_DB_PASSWORDs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_PASSWORD#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.DROP_USER">--10</UC4RB_DB_PASSWORDs.00>
-<UC4RB_DB_TNSNAMES_ORAs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_TNSNAMES_ORA#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.DROP_USER"/>
-<UC4RB_DB_USERNAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_USERNAME#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.DROP_USER"/>
+<node content="1" id="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.DROP_USER" name="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.DROP_USER" parent="PPRPTS" type="PPROMPTSET">
+<PROMPTSET name="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.DROP_USER">
+<PRPTBOX promptset="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.DROP_USER">
+<UC4RB_DB_CASCADEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_CASCADE#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.DROP_USER">YES</UC4RB_DB_CASCADEs.00>
+<UC4RB_DB_CONN_INTRVLs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_CONN_INTRVL#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.DROP_USER">10</UC4RB_DB_CONN_INTRVLs.00>
+<UC4RB_DB_DRIVER_CLASSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_DRIVER_CLASS#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.DROP_USER"/>
+<UC4RB_DB_DRIVER_JARs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_DRIVER_JAR#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.DROP_USER"/>
+<UC4RB_DB_DROP_USERs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_DROP_USER#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.DROP_USER"/>
+<UC4RB_DB_FAIL_USR_NOT_EXISTSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_FAIL_USR_NOT_EXISTS#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.DROP_USER">NO</UC4RB_DB_FAIL_USR_NOT_EXISTSs.00>
+<UC4RB_DB_JDBC_CONN_STRINGs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_JDBC_CONN_STRING#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.DROP_USER"/>
+<UC4RB_DB_PASSWORDs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_PASSWORD#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.DROP_USER">--10</UC4RB_DB_PASSWORDs.00>
+<UC4RB_DB_TNSNAMES_ORAs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_TNSNAMES_ORA#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.DROP_USER"/>
+<UC4RB_DB_USERNAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_USERNAME#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.DROP_USER"/>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -150,7 +150,7 @@
 </PostCon>
 </postconditions>
 </task>
-<task Alias="" BranchType="0" Col="2" Lnr="3" OType="JOBS" Object="PCK.AUTOMIC_ORACLE.PRV.JOB.DROP_USER@UNIX" ParentAlias="" ParentObject="" Row="3" Text2="">
+<task Alias="" BranchType="0" Col="2" Lnr="3" OType="JOBS" Object="PCK.AUTOMIC_ORACLE_DB.PRV.JOB.DROP_USER@UNIX" ParentAlias="" ParentObject="" Row="3" Text2="">
 <checkpoint RollbackFlag="1" RunPerPatch="0" RunPerTarget="0" TcpADays="0" TcpATime="00:00" TcpATimeTZ="" TcpExecute="" TcpOn="0" promptatgen="0" showprompt="0"/>
 <after ActFlg="1" AtimOn="0" ErlstStDays="0" ErlstStTime="00:00" ErlstStTimeTZ="" HoldFlg="0"/>
 <when ChkWhenExec="0" LtstEnd="0" LtstEndDays="0" LtstEndTime="00:00" LtstSt="0" LtstStDays="0" LtstStTime="00:00" LtstTimeTZ="" WCTypeAND="1" WCTypeOR="0" WElseA="1" WElseH="0" WElseS="0" WElseX="0" WhenExecute="" WtimOn="0"/>
@@ -180,19 +180,19 @@
 </node>
 <node content="1" id="PRPTS" name="PromptSets" parent="" pref="1" type="PROMPTSET"/>
 <node content="0" id="PPRPTS" name="Parent PromptSets" parent="" type="PPROMPTSET"/>
-<node content="1" id="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.DROP_USER" name="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.DROP_USER" parent="PPRPTS" type="PPROMPTSET">
-<PROMPTSET name="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.DROP_USER">
-<PRPTBOX promptset="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.DROP_USER">
-<UC4RB_DB_CASCADEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_CASCADE#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.DROP_USER">YES</UC4RB_DB_CASCADEs.00>
-<UC4RB_DB_CONN_INTRVLs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_CONN_INTRVL#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.DROP_USER">10</UC4RB_DB_CONN_INTRVLs.00>
-<UC4RB_DB_DRIVER_CLASSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_DRIVER_CLASS#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.DROP_USER"/>
-<UC4RB_DB_DRIVER_JARs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_DRIVER_JAR#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.DROP_USER"/>
-<UC4RB_DB_DROP_USERs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_DROP_USER#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.DROP_USER"/>
-<UC4RB_DB_FAIL_USR_NOT_EXISTSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_FAIL_USR_NOT_EXISTS#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.DROP_USER">NO</UC4RB_DB_FAIL_USR_NOT_EXISTSs.00>
-<UC4RB_DB_JDBC_CONN_STRINGs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_JDBC_CONN_STRING#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.DROP_USER"/>
-<UC4RB_DB_PASSWORDs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_PASSWORD#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.DROP_USER">--10</UC4RB_DB_PASSWORDs.00>
-<UC4RB_DB_TNSNAMES_ORAs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_TNSNAMES_ORA#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.DROP_USER"/>
-<UC4RB_DB_USERNAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_USERNAME#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.DROP_USER"/>
+<node content="1" id="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.DROP_USER" name="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.DROP_USER" parent="PPRPTS" type="PPROMPTSET">
+<PROMPTSET name="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.DROP_USER">
+<PRPTBOX promptset="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.DROP_USER">
+<UC4RB_DB_CASCADEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_CASCADE#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.DROP_USER">YES</UC4RB_DB_CASCADEs.00>
+<UC4RB_DB_CONN_INTRVLs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_CONN_INTRVL#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.DROP_USER">10</UC4RB_DB_CONN_INTRVLs.00>
+<UC4RB_DB_DRIVER_CLASSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_DRIVER_CLASS#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.DROP_USER"/>
+<UC4RB_DB_DRIVER_JARs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_DRIVER_JAR#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.DROP_USER"/>
+<UC4RB_DB_DROP_USERs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_DROP_USER#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.DROP_USER"/>
+<UC4RB_DB_FAIL_USR_NOT_EXISTSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_FAIL_USR_NOT_EXISTS#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.DROP_USER">NO</UC4RB_DB_FAIL_USR_NOT_EXISTSs.00>
+<UC4RB_DB_JDBC_CONN_STRINGs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_JDBC_CONN_STRING#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.DROP_USER"/>
+<UC4RB_DB_PASSWORDs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_PASSWORD#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.DROP_USER">--10</UC4RB_DB_PASSWORDs.00>
+<UC4RB_DB_TNSNAMES_ORAs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_TNSNAMES_ORA#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.DROP_USER"/>
+<UC4RB_DB_USERNAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_USERNAME#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.DROP_USER"/>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -231,19 +231,19 @@
 <result ChkRExec="0" RElseHalt="0" RElseIgn="0" RElseJPAbend="0" RExecFlag="0" RExecute="" RRepMTimes="0" RRepOn="0" RRepWait="0" RWhen=""/>
 <dynvalues>
 <dyntree>
-<node content="1" id="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.DROP_USER" name="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.DROP_USER" parent="PPRPTS" type="PPROMPTSET">
-<PROMPTSET name="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.DROP_USER">
-<PRPTBOX promptset="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.DROP_USER">
-<UC4RB_DB_CASCADEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_CASCADE#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.DROP_USER">YES</UC4RB_DB_CASCADEs.00>
-<UC4RB_DB_CONN_INTRVLs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_CONN_INTRVL#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.DROP_USER">10</UC4RB_DB_CONN_INTRVLs.00>
-<UC4RB_DB_DRIVER_CLASSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_DRIVER_CLASS#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.DROP_USER"/>
-<UC4RB_DB_DRIVER_JARs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_DRIVER_JAR#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.DROP_USER"/>
-<UC4RB_DB_DROP_USERs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_DROP_USER#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.DROP_USER"/>
-<UC4RB_DB_FAIL_USR_NOT_EXISTSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_FAIL_USR_NOT_EXISTS#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.DROP_USER">NO</UC4RB_DB_FAIL_USR_NOT_EXISTSs.00>
-<UC4RB_DB_JDBC_CONN_STRINGs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_JDBC_CONN_STRING#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.DROP_USER"/>
-<UC4RB_DB_PASSWORDs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_PASSWORD#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.DROP_USER">--10</UC4RB_DB_PASSWORDs.00>
-<UC4RB_DB_TNSNAMES_ORAs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_TNSNAMES_ORA#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.DROP_USER"/>
-<UC4RB_DB_USERNAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_USERNAME#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.DROP_USER"/>
+<node content="1" id="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.DROP_USER" name="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.DROP_USER" parent="PPRPTS" type="PPROMPTSET">
+<PROMPTSET name="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.DROP_USER">
+<PRPTBOX promptset="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.DROP_USER">
+<UC4RB_DB_CASCADEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_CASCADE#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.DROP_USER">YES</UC4RB_DB_CASCADEs.00>
+<UC4RB_DB_CONN_INTRVLs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_CONN_INTRVL#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.DROP_USER">10</UC4RB_DB_CONN_INTRVLs.00>
+<UC4RB_DB_DRIVER_CLASSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_DRIVER_CLASS#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.DROP_USER"/>
+<UC4RB_DB_DRIVER_JARs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_DRIVER_JAR#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.DROP_USER"/>
+<UC4RB_DB_DROP_USERs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_DROP_USER#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.DROP_USER"/>
+<UC4RB_DB_FAIL_USR_NOT_EXISTSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_FAIL_USR_NOT_EXISTS#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.DROP_USER">NO</UC4RB_DB_FAIL_USR_NOT_EXISTSs.00>
+<UC4RB_DB_JDBC_CONN_STRINGs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_JDBC_CONN_STRING#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.DROP_USER"/>
+<UC4RB_DB_PASSWORDs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_PASSWORD#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.DROP_USER">--10</UC4RB_DB_PASSWORDs.00>
+<UC4RB_DB_TNSNAMES_ORAs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_TNSNAMES_ORA#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.DROP_USER"/>
+<UC4RB_DB_USERNAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_USERNAME#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.DROP_USER"/>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -310,9 +310,9 @@
 <Mode>0</Mode>
 </VALUE>
 </node>
-<node content="1" id="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.DROP_USER" name="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.DROP_USER" parent="PRPTS" type="PROMPTSET">
-<PROMPTSET name="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.DROP_USER" ontop="1">
-<PRPTBOX promptset="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.DROP_USER" prptmode="1"/>
+<node content="1" id="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.DROP_USER" name="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.DROP_USER" parent="PRPTS" type="PROMPTSET">
+<PROMPTSET name="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.DROP_USER" ontop="1">
+<PRPTBOX promptset="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.DROP_USER" prptmode="1"/>
 </PROMPTSET>
 </node>
 <node content="1" id="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" name="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" parent="PRPTS" type="PROMPTSET">

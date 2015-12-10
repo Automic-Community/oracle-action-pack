@@ -21,10 +21,9 @@ import com.uc4.ara.feature.utils.FileUtil;
 
 /**
  * The Class SQLFeature sends an sql-string to a database and processes the
- * result. This class makes use of the oracle-tool.jar.config file.
+ * result. This class makes use of the oracle-db-tool.jar.config file.
  */
 public class SQLFeature extends AbstractFeature {
-
 
 	//Command line parameters
 	private String sqlScriptName;
@@ -56,7 +55,6 @@ public class SQLFeature extends AbstractFeature {
 		return executeSQLScript();
 	}
 
-	
 	private void parseArgs(String[] args) {
 		for (int i = 0; i < args.length; i++) {
 
@@ -86,7 +84,6 @@ public class SQLFeature extends AbstractFeature {
 		}
 	}
 
-	
 	private int executeSQLScript() throws Exception {
 		int returnCode = ErrorCodes.OK;
 		
@@ -220,7 +217,6 @@ public class SQLFeature extends AbstractFeature {
 		return returnCode;
 
 	}
-	
 	
 	/**
 	 * Prints the row.

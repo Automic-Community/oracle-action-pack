@@ -22,7 +22,6 @@ import com.uc4.ara.feature.utils.CommandLineWrapper;
 import com.uc4.ara.feature.utils.Maxim;
 import com.uc4.ara.util.Logger;
 
-
 /**
  * Command line tool for ARA Deployment Management features
  * 
@@ -39,15 +38,15 @@ public class AraFileCmd {
 	 *            parameters to pass to the class
 	 */
 	public static void main(String[] args) {
-		FeatureUtil.logMsg("oracle-tool", MsgTypes.GENERAL);
+		FeatureUtil.logMsg("oracle-db-tool", MsgTypes.GENERAL);
 		FeatureUtil.logMsg("(c) Automic Software GmbH", MsgTypes.GENERAL);
 		try {			
 			FeatureUtil.logMsg("Version: "
-					+ FeatureUtil.getCompiledVersion("oracle-tool"), MsgTypes.GENERAL);
+					+ FeatureUtil.getCompiledVersion("oracle-db-tool"), MsgTypes.GENERAL);
 			
 			FeatureUtil.logMsg("Date: "
 					+ FeatureUtil
-					.getCompiledDate("oracle-tool"), MsgTypes.GENERAL);
+					.getCompiledDate("oracle-db-tool"), MsgTypes.GENERAL);
 			FeatureUtil.logMsg("");
 		} catch (IOException ei) {
 			// ignore the exception
@@ -99,7 +98,6 @@ public class AraFileCmd {
 						
 						// handle password decryption
 						params = handlePasswordDecryption(params);
-						
 						
 						// check the parameters
 						int ret = instance.checkParams(params);

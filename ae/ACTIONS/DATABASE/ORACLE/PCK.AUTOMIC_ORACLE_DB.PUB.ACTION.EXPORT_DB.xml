@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="ISO-8859-15" standalone="no"?><uc-export clientvers="11.0.0">
-<JOBP AllowExternal="1" name="PCK.AUTOMIC_ORACLE.PUB.ACTION.EXPORT_DB">
+<JOBP AllowExternal="1" name="PCK.AUTOMIC_ORACLE_DB.PUB.ACTION.EXPORT_DB">
 <XHEADER state="1">
 <Title>Oracle DB Create Dump</Title>
 <ArchiveKey1/>
@@ -52,39 +52,39 @@
 <result ChkRExec="0" RElseHalt="0" RElseIgn="0" RElseJPAbend="0" RExecFlag="0" RExecute="" RRepMTimes="0" RRepOn="0" RRepWait="0" RWhen=""/>
 <dynvalues>
 <dyntree>
-<node content="1" id="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB" name="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB" parent="PPRPTS" type="PPROMPTSET">
-<PROMPTSET name="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB">
-<PRPTBOX promptset="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB">
-<UC4RB_DB_EXPMODE_FULLs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPMODE_FULL#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB">NO</UC4RB_DB_EXPMODE_FULLs.00>
-<UC4RB_DB_EXPMODE_OWNER_LISTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPMODE_OWNER_LIST#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB"/>
-<UC4RB_DB_EXPMODE_TABLE_LISTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPMODE_TABLE_LIST#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB"/>
-<UC4RB_DB_EXPMODE_TRANSP_TSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPMODE_TRANSP_TS#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB">NO</UC4RB_DB_EXPMODE_TRANSP_TSs.00>
-<UC4RB_DB_EXPMODE_TS_LISTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPMODE_TS_LIST#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB"/>
-<UC4RB_DB_EXPMODE_TTS_FULLCHECKs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPMODE_TTS_FULLCHECK#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB">NO</UC4RB_DB_EXPMODE_TTS_FULLCHECKs.00>
-<UC4RB_DB_EXPOPT_BUFFERs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_BUFFER#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB">0</UC4RB_DB_EXPOPT_BUFFERs.00>
-<UC4RB_DB_EXPOPT_COMPRESSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_COMPRESS#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB">NO</UC4RB_DB_EXPOPT_COMPRESSs.00>
-<UC4RB_DB_EXPOPT_CONSISTENTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_CONSISTENT#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB">NO</UC4RB_DB_EXPOPT_CONSISTENTs.00>
-<UC4RB_DB_EXPOPT_CONSTRAINTSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_CONSTRAINTS#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB">YES</UC4RB_DB_EXPOPT_CONSTRAINTSs.00>
-<UC4RB_DB_EXPOPT_DIRECTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_DIRECT#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB">NO</UC4RB_DB_EXPOPT_DIRECTs.00>
-<UC4RB_DB_EXPOPT_FILESs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_FILES#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB">expdat.dmp</UC4RB_DB_EXPOPT_FILESs.00>
-<UC4RB_DB_EXPOPT_FILESIZEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_FILESIZE#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB"/>
-<UC4RB_DB_EXPOPT_GRANTSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_GRANTS#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB">YES</UC4RB_DB_EXPOPT_GRANTSs.00>
-<UC4RB_DB_EXPOPT_INDEXESs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_INDEXES#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB">YES</UC4RB_DB_EXPOPT_INDEXESs.00>
-<UC4RB_DB_EXPOPT_LOGFILEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_LOGFILE#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB"/>
-<UC4RB_DB_EXPOPT_OBJ_CONSISTENTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_OBJ_CONSISTENT#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB">NO</UC4RB_DB_EXPOPT_OBJ_CONSISTENTs.00>
-<UC4RB_DB_EXPOPT_RECORDLENGTHs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_RECORDLENGTH#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB">0</UC4RB_DB_EXPOPT_RECORDLENGTHs.00>
-<UC4RB_DB_EXPOPT_RESUMABLEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_RESUMABLE#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB">NO</UC4RB_DB_EXPOPT_RESUMABLEs.00>
-<UC4RB_DB_EXPOPT_RESUMABLE_NAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_RESUMABLE_NAME#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB">User USERNAME (USERID), Session SESSIONID, Instance INSTANCEID</UC4RB_DB_EXPOPT_RESUMABLE_NAMEs.00>
-<UC4RB_DB_EXPOPT_ROWSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_ROWS#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB">YES</UC4RB_DB_EXPOPT_ROWSs.00>
-<UC4RB_DB_EXPOPT_RSMBL_TIMEOUTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_RSMBL_TIMEOUT#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB">7200</UC4RB_DB_EXPOPT_RSMBL_TIMEOUTs.00>
-<UC4RB_DB_EXPOPT_STATISTICSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_STATISTICS#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB">ESTIMATE</UC4RB_DB_EXPOPT_STATISTICSs.00>
-<UC4RB_DB_EXPOPT_TRIGGERSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_TRIGGERS#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB">YES</UC4RB_DB_EXPOPT_TRIGGERSs.00>
-<UC4RB_DB_EXPOPT_VOLSIZEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_VOLSIZE#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB"/>
-<UC4RB_DB_EXP_INVOKE_AS_SYSDBAs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXP_INVOKE_AS_SYSDBA#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB"/>
-<UC4RB_DB_IMP_INVOKE_AS_SYSDBAs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_IMP_INVOKE_AS_SYSDBA#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB"/>
-<UC4RB_DB_PASSWORDs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_PASSWORD#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB">--10</UC4RB_DB_PASSWORDs.00>
-<UC4RB_DB_SIDs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_SID#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB"/>
-<UC4RB_DB_USERNAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_USERNAME#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB"/>
+<node content="1" id="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXPORT_DB" name="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXPORT_DB" parent="PPRPTS" type="PPROMPTSET">
+<PROMPTSET name="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXPORT_DB">
+<PRPTBOX promptset="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXPORT_DB">
+<UC4RB_DB_EXPMODE_FULLs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPMODE_FULL#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXPORT_DB">NO</UC4RB_DB_EXPMODE_FULLs.00>
+<UC4RB_DB_EXPMODE_OWNER_LISTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPMODE_OWNER_LIST#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXPORT_DB"/>
+<UC4RB_DB_EXPMODE_TABLE_LISTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPMODE_TABLE_LIST#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXPORT_DB"/>
+<UC4RB_DB_EXPMODE_TRANSP_TSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPMODE_TRANSP_TS#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXPORT_DB">NO</UC4RB_DB_EXPMODE_TRANSP_TSs.00>
+<UC4RB_DB_EXPMODE_TS_LISTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPMODE_TS_LIST#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXPORT_DB"/>
+<UC4RB_DB_EXPMODE_TTS_FULLCHECKs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPMODE_TTS_FULLCHECK#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXPORT_DB">NO</UC4RB_DB_EXPMODE_TTS_FULLCHECKs.00>
+<UC4RB_DB_EXPOPT_BUFFERs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_BUFFER#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXPORT_DB">0</UC4RB_DB_EXPOPT_BUFFERs.00>
+<UC4RB_DB_EXPOPT_COMPRESSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_COMPRESS#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXPORT_DB">NO</UC4RB_DB_EXPOPT_COMPRESSs.00>
+<UC4RB_DB_EXPOPT_CONSISTENTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_CONSISTENT#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXPORT_DB">NO</UC4RB_DB_EXPOPT_CONSISTENTs.00>
+<UC4RB_DB_EXPOPT_CONSTRAINTSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_CONSTRAINTS#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXPORT_DB">YES</UC4RB_DB_EXPOPT_CONSTRAINTSs.00>
+<UC4RB_DB_EXPOPT_DIRECTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_DIRECT#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXPORT_DB">NO</UC4RB_DB_EXPOPT_DIRECTs.00>
+<UC4RB_DB_EXPOPT_FILESs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_FILES#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXPORT_DB">expdat.dmp</UC4RB_DB_EXPOPT_FILESs.00>
+<UC4RB_DB_EXPOPT_FILESIZEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_FILESIZE#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXPORT_DB"/>
+<UC4RB_DB_EXPOPT_GRANTSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_GRANTS#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXPORT_DB">YES</UC4RB_DB_EXPOPT_GRANTSs.00>
+<UC4RB_DB_EXPOPT_INDEXESs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_INDEXES#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXPORT_DB">YES</UC4RB_DB_EXPOPT_INDEXESs.00>
+<UC4RB_DB_EXPOPT_LOGFILEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_LOGFILE#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXPORT_DB"/>
+<UC4RB_DB_EXPOPT_OBJ_CONSISTENTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_OBJ_CONSISTENT#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXPORT_DB">NO</UC4RB_DB_EXPOPT_OBJ_CONSISTENTs.00>
+<UC4RB_DB_EXPOPT_RECORDLENGTHs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_RECORDLENGTH#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXPORT_DB">0</UC4RB_DB_EXPOPT_RECORDLENGTHs.00>
+<UC4RB_DB_EXPOPT_RESUMABLEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_RESUMABLE#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXPORT_DB">NO</UC4RB_DB_EXPOPT_RESUMABLEs.00>
+<UC4RB_DB_EXPOPT_RESUMABLE_NAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_RESUMABLE_NAME#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXPORT_DB">User USERNAME (USERID), Session SESSIONID, Instance INSTANCEID</UC4RB_DB_EXPOPT_RESUMABLE_NAMEs.00>
+<UC4RB_DB_EXPOPT_ROWSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_ROWS#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXPORT_DB">YES</UC4RB_DB_EXPOPT_ROWSs.00>
+<UC4RB_DB_EXPOPT_RSMBL_TIMEOUTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_RSMBL_TIMEOUT#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXPORT_DB">7200</UC4RB_DB_EXPOPT_RSMBL_TIMEOUTs.00>
+<UC4RB_DB_EXPOPT_STATISTICSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_STATISTICS#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXPORT_DB">ESTIMATE</UC4RB_DB_EXPOPT_STATISTICSs.00>
+<UC4RB_DB_EXPOPT_TRIGGERSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_TRIGGERS#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXPORT_DB">YES</UC4RB_DB_EXPOPT_TRIGGERSs.00>
+<UC4RB_DB_EXPOPT_VOLSIZEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_VOLSIZE#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXPORT_DB"/>
+<UC4RB_DB_EXP_INVOKE_AS_SYSDBAs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXP_INVOKE_AS_SYSDBA#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXPORT_DB"/>
+<UC4RB_DB_IMP_INVOKE_AS_SYSDBAs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_IMP_INVOKE_AS_SYSDBA#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXPORT_DB"/>
+<UC4RB_DB_PASSWORDs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_PASSWORD#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXPORT_DB">--10</UC4RB_DB_PASSWORDs.00>
+<UC4RB_DB_SIDs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_SID#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXPORT_DB"/>
+<UC4RB_DB_USERNAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_USERNAME#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXPORT_DB"/>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -106,7 +106,7 @@
 </PostCon>
 </postconditions>
 </task>
-<task Alias="" BranchType="0" Col="2" Lnr="2" OType="JOBS" Object="PCK.AUTOMIC_ORACLE.PRV.JOB.EXPORT_DB@WINDOWS" ParentAlias="" ParentObject="" Row="1" Text2="">
+<task Alias="" BranchType="0" Col="2" Lnr="2" OType="JOBS" Object="PCK.AUTOMIC_ORACLE_DB.PRV.JOB.EXPORT_DB@WINDOWS" ParentAlias="" ParentObject="" Row="1" Text2="">
 <checkpoint RollbackFlag="1" RunPerPatch="0" RunPerTarget="0" TcpADays="0" TcpATime="00:00" TcpATimeTZ="" TcpExecute="" TcpOn="0" promptatgen="0" showprompt="0"/>
 <after ActFlg="1" AtimOn="0" ErlstStDays="0" ErlstStTime="00:00" ErlstStTimeTZ="" HoldFlg="0"/>
 <when ChkWhenExec="0" LtstEnd="0" LtstEndDays="0" LtstEndTime="00:00" LtstSt="0" LtstStDays="0" LtstStTime="00:00" LtstTimeTZ="" WCTypeAND="1" WCTypeOR="0" WElseA="1" WElseH="0" WElseS="0" WElseX="0" WhenExecute="" WtimOn="0"/>
@@ -136,39 +136,39 @@
 </node>
 <node content="1" id="PRPTS" name="PromptSets" parent="" pref="1" type="PROMPTSET"/>
 <node content="0" id="PPRPTS" name="Parent PromptSets" parent="" type="PPROMPTSET"/>
-<node content="1" id="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB" name="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB" parent="PPRPTS" type="PPROMPTSET">
-<PROMPTSET name="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB">
-<PRPTBOX promptset="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB">
-<UC4RB_DB_EXPMODE_FULLs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPMODE_FULL#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB">NO</UC4RB_DB_EXPMODE_FULLs.00>
-<UC4RB_DB_EXPMODE_OWNER_LISTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPMODE_OWNER_LIST#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB"/>
-<UC4RB_DB_EXPMODE_TABLE_LISTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPMODE_TABLE_LIST#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB"/>
-<UC4RB_DB_EXPMODE_TRANSP_TSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPMODE_TRANSP_TS#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB">NO</UC4RB_DB_EXPMODE_TRANSP_TSs.00>
-<UC4RB_DB_EXPMODE_TS_LISTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPMODE_TS_LIST#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB"/>
-<UC4RB_DB_EXPMODE_TTS_FULLCHECKs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPMODE_TTS_FULLCHECK#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB">NO</UC4RB_DB_EXPMODE_TTS_FULLCHECKs.00>
-<UC4RB_DB_EXPOPT_BUFFERs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_BUFFER#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB">0</UC4RB_DB_EXPOPT_BUFFERs.00>
-<UC4RB_DB_EXPOPT_COMPRESSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_COMPRESS#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB">NO</UC4RB_DB_EXPOPT_COMPRESSs.00>
-<UC4RB_DB_EXPOPT_CONSISTENTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_CONSISTENT#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB">NO</UC4RB_DB_EXPOPT_CONSISTENTs.00>
-<UC4RB_DB_EXPOPT_CONSTRAINTSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_CONSTRAINTS#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB">YES</UC4RB_DB_EXPOPT_CONSTRAINTSs.00>
-<UC4RB_DB_EXPOPT_DIRECTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_DIRECT#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB">NO</UC4RB_DB_EXPOPT_DIRECTs.00>
-<UC4RB_DB_EXPOPT_FILESs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_FILES#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB">expdat.dmp</UC4RB_DB_EXPOPT_FILESs.00>
-<UC4RB_DB_EXPOPT_FILESIZEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_FILESIZE#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB"/>
-<UC4RB_DB_EXPOPT_GRANTSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_GRANTS#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB">YES</UC4RB_DB_EXPOPT_GRANTSs.00>
-<UC4RB_DB_EXPOPT_INDEXESs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_INDEXES#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB">YES</UC4RB_DB_EXPOPT_INDEXESs.00>
-<UC4RB_DB_EXPOPT_LOGFILEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_LOGFILE#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB"/>
-<UC4RB_DB_EXPOPT_OBJ_CONSISTENTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_OBJ_CONSISTENT#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB">NO</UC4RB_DB_EXPOPT_OBJ_CONSISTENTs.00>
-<UC4RB_DB_EXPOPT_RECORDLENGTHs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_RECORDLENGTH#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB">0</UC4RB_DB_EXPOPT_RECORDLENGTHs.00>
-<UC4RB_DB_EXPOPT_RESUMABLEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_RESUMABLE#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB">NO</UC4RB_DB_EXPOPT_RESUMABLEs.00>
-<UC4RB_DB_EXPOPT_RESUMABLE_NAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_RESUMABLE_NAME#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB">User USERNAME (USERID), Session SESSIONID, Instance INSTANCEID</UC4RB_DB_EXPOPT_RESUMABLE_NAMEs.00>
-<UC4RB_DB_EXPOPT_ROWSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_ROWS#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB">YES</UC4RB_DB_EXPOPT_ROWSs.00>
-<UC4RB_DB_EXPOPT_RSMBL_TIMEOUTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_RSMBL_TIMEOUT#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB">7200</UC4RB_DB_EXPOPT_RSMBL_TIMEOUTs.00>
-<UC4RB_DB_EXPOPT_STATISTICSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_STATISTICS#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB">ESTIMATE</UC4RB_DB_EXPOPT_STATISTICSs.00>
-<UC4RB_DB_EXPOPT_TRIGGERSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_TRIGGERS#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB">YES</UC4RB_DB_EXPOPT_TRIGGERSs.00>
-<UC4RB_DB_EXPOPT_VOLSIZEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_VOLSIZE#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB"/>
-<UC4RB_DB_EXP_INVOKE_AS_SYSDBAs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXP_INVOKE_AS_SYSDBA#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB"/>
-<UC4RB_DB_IMP_INVOKE_AS_SYSDBAs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_IMP_INVOKE_AS_SYSDBA#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB"/>
-<UC4RB_DB_PASSWORDs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_PASSWORD#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB">--10</UC4RB_DB_PASSWORDs.00>
-<UC4RB_DB_SIDs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_SID#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB"/>
-<UC4RB_DB_USERNAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_USERNAME#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB"/>
+<node content="1" id="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXPORT_DB" name="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXPORT_DB" parent="PPRPTS" type="PPROMPTSET">
+<PROMPTSET name="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXPORT_DB">
+<PRPTBOX promptset="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXPORT_DB">
+<UC4RB_DB_EXPMODE_FULLs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPMODE_FULL#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXPORT_DB">NO</UC4RB_DB_EXPMODE_FULLs.00>
+<UC4RB_DB_EXPMODE_OWNER_LISTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPMODE_OWNER_LIST#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXPORT_DB"/>
+<UC4RB_DB_EXPMODE_TABLE_LISTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPMODE_TABLE_LIST#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXPORT_DB"/>
+<UC4RB_DB_EXPMODE_TRANSP_TSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPMODE_TRANSP_TS#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXPORT_DB">NO</UC4RB_DB_EXPMODE_TRANSP_TSs.00>
+<UC4RB_DB_EXPMODE_TS_LISTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPMODE_TS_LIST#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXPORT_DB"/>
+<UC4RB_DB_EXPMODE_TTS_FULLCHECKs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPMODE_TTS_FULLCHECK#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXPORT_DB">NO</UC4RB_DB_EXPMODE_TTS_FULLCHECKs.00>
+<UC4RB_DB_EXPOPT_BUFFERs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_BUFFER#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXPORT_DB">0</UC4RB_DB_EXPOPT_BUFFERs.00>
+<UC4RB_DB_EXPOPT_COMPRESSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_COMPRESS#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXPORT_DB">NO</UC4RB_DB_EXPOPT_COMPRESSs.00>
+<UC4RB_DB_EXPOPT_CONSISTENTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_CONSISTENT#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXPORT_DB">NO</UC4RB_DB_EXPOPT_CONSISTENTs.00>
+<UC4RB_DB_EXPOPT_CONSTRAINTSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_CONSTRAINTS#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXPORT_DB">YES</UC4RB_DB_EXPOPT_CONSTRAINTSs.00>
+<UC4RB_DB_EXPOPT_DIRECTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_DIRECT#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXPORT_DB">NO</UC4RB_DB_EXPOPT_DIRECTs.00>
+<UC4RB_DB_EXPOPT_FILESs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_FILES#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXPORT_DB">expdat.dmp</UC4RB_DB_EXPOPT_FILESs.00>
+<UC4RB_DB_EXPOPT_FILESIZEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_FILESIZE#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXPORT_DB"/>
+<UC4RB_DB_EXPOPT_GRANTSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_GRANTS#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXPORT_DB">YES</UC4RB_DB_EXPOPT_GRANTSs.00>
+<UC4RB_DB_EXPOPT_INDEXESs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_INDEXES#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXPORT_DB">YES</UC4RB_DB_EXPOPT_INDEXESs.00>
+<UC4RB_DB_EXPOPT_LOGFILEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_LOGFILE#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXPORT_DB"/>
+<UC4RB_DB_EXPOPT_OBJ_CONSISTENTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_OBJ_CONSISTENT#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXPORT_DB">NO</UC4RB_DB_EXPOPT_OBJ_CONSISTENTs.00>
+<UC4RB_DB_EXPOPT_RECORDLENGTHs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_RECORDLENGTH#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXPORT_DB">0</UC4RB_DB_EXPOPT_RECORDLENGTHs.00>
+<UC4RB_DB_EXPOPT_RESUMABLEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_RESUMABLE#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXPORT_DB">NO</UC4RB_DB_EXPOPT_RESUMABLEs.00>
+<UC4RB_DB_EXPOPT_RESUMABLE_NAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_RESUMABLE_NAME#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXPORT_DB">User USERNAME (USERID), Session SESSIONID, Instance INSTANCEID</UC4RB_DB_EXPOPT_RESUMABLE_NAMEs.00>
+<UC4RB_DB_EXPOPT_ROWSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_ROWS#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXPORT_DB">YES</UC4RB_DB_EXPOPT_ROWSs.00>
+<UC4RB_DB_EXPOPT_RSMBL_TIMEOUTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_RSMBL_TIMEOUT#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXPORT_DB">7200</UC4RB_DB_EXPOPT_RSMBL_TIMEOUTs.00>
+<UC4RB_DB_EXPOPT_STATISTICSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_STATISTICS#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXPORT_DB">ESTIMATE</UC4RB_DB_EXPOPT_STATISTICSs.00>
+<UC4RB_DB_EXPOPT_TRIGGERSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_TRIGGERS#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXPORT_DB">YES</UC4RB_DB_EXPOPT_TRIGGERSs.00>
+<UC4RB_DB_EXPOPT_VOLSIZEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_VOLSIZE#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXPORT_DB"/>
+<UC4RB_DB_EXP_INVOKE_AS_SYSDBAs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXP_INVOKE_AS_SYSDBA#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXPORT_DB"/>
+<UC4RB_DB_IMP_INVOKE_AS_SYSDBAs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_IMP_INVOKE_AS_SYSDBA#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXPORT_DB"/>
+<UC4RB_DB_PASSWORDs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_PASSWORD#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXPORT_DB">--10</UC4RB_DB_PASSWORDs.00>
+<UC4RB_DB_SIDs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_SID#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXPORT_DB"/>
+<UC4RB_DB_USERNAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_USERNAME#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXPORT_DB"/>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -190,7 +190,7 @@
 </PostCon>
 </postconditions>
 </task>
-<task Alias="" BranchType="0" Col="2" Lnr="3" OType="JOBS" Object="PCK.AUTOMIC_ORACLE.PRV.JOB.EXPORT_DB@UNIX" ParentAlias="" ParentObject="" Row="3" Text2="">
+<task Alias="" BranchType="0" Col="2" Lnr="3" OType="JOBS" Object="PCK.AUTOMIC_ORACLE_DB.PRV.JOB.EXPORT_DB@UNIX" ParentAlias="" ParentObject="" Row="3" Text2="">
 <checkpoint RollbackFlag="1" RunPerPatch="0" RunPerTarget="0" TcpADays="0" TcpATime="00:00" TcpATimeTZ="" TcpExecute="" TcpOn="0" promptatgen="0" showprompt="0"/>
 <after ActFlg="1" AtimOn="0" ErlstStDays="0" ErlstStTime="00:00" ErlstStTimeTZ="" HoldFlg="0"/>
 <when ChkWhenExec="0" LtstEnd="0" LtstEndDays="0" LtstEndTime="00:00" LtstSt="0" LtstStDays="0" LtstStTime="00:00" LtstTimeTZ="" WCTypeAND="1" WCTypeOR="0" WElseA="1" WElseH="0" WElseS="0" WElseX="0" WhenExecute="" WtimOn="0"/>
@@ -220,39 +220,39 @@
 </node>
 <node content="1" id="PRPTS" name="PromptSets" parent="" pref="1" type="PROMPTSET"/>
 <node content="0" id="PPRPTS" name="Parent PromptSets" parent="" type="PPROMPTSET"/>
-<node content="1" id="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB" name="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB" parent="PPRPTS" type="PPROMPTSET">
-<PROMPTSET name="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB">
-<PRPTBOX promptset="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB">
-<UC4RB_DB_EXPMODE_FULLs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPMODE_FULL#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB">NO</UC4RB_DB_EXPMODE_FULLs.00>
-<UC4RB_DB_EXPMODE_OWNER_LISTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPMODE_OWNER_LIST#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB"/>
-<UC4RB_DB_EXPMODE_TABLE_LISTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPMODE_TABLE_LIST#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB"/>
-<UC4RB_DB_EXPMODE_TRANSP_TSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPMODE_TRANSP_TS#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB">NO</UC4RB_DB_EXPMODE_TRANSP_TSs.00>
-<UC4RB_DB_EXPMODE_TS_LISTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPMODE_TS_LIST#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB"/>
-<UC4RB_DB_EXPMODE_TTS_FULLCHECKs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPMODE_TTS_FULLCHECK#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB">NO</UC4RB_DB_EXPMODE_TTS_FULLCHECKs.00>
-<UC4RB_DB_EXPOPT_BUFFERs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_BUFFER#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB">0</UC4RB_DB_EXPOPT_BUFFERs.00>
-<UC4RB_DB_EXPOPT_COMPRESSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_COMPRESS#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB">NO</UC4RB_DB_EXPOPT_COMPRESSs.00>
-<UC4RB_DB_EXPOPT_CONSISTENTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_CONSISTENT#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB">NO</UC4RB_DB_EXPOPT_CONSISTENTs.00>
-<UC4RB_DB_EXPOPT_CONSTRAINTSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_CONSTRAINTS#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB">YES</UC4RB_DB_EXPOPT_CONSTRAINTSs.00>
-<UC4RB_DB_EXPOPT_DIRECTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_DIRECT#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB">NO</UC4RB_DB_EXPOPT_DIRECTs.00>
-<UC4RB_DB_EXPOPT_FILESs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_FILES#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB">expdat.dmp</UC4RB_DB_EXPOPT_FILESs.00>
-<UC4RB_DB_EXPOPT_FILESIZEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_FILESIZE#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB"/>
-<UC4RB_DB_EXPOPT_GRANTSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_GRANTS#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB">YES</UC4RB_DB_EXPOPT_GRANTSs.00>
-<UC4RB_DB_EXPOPT_INDEXESs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_INDEXES#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB">YES</UC4RB_DB_EXPOPT_INDEXESs.00>
-<UC4RB_DB_EXPOPT_LOGFILEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_LOGFILE#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB"/>
-<UC4RB_DB_EXPOPT_OBJ_CONSISTENTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_OBJ_CONSISTENT#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB">NO</UC4RB_DB_EXPOPT_OBJ_CONSISTENTs.00>
-<UC4RB_DB_EXPOPT_RECORDLENGTHs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_RECORDLENGTH#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB">0</UC4RB_DB_EXPOPT_RECORDLENGTHs.00>
-<UC4RB_DB_EXPOPT_RESUMABLEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_RESUMABLE#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB">NO</UC4RB_DB_EXPOPT_RESUMABLEs.00>
-<UC4RB_DB_EXPOPT_RESUMABLE_NAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_RESUMABLE_NAME#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB">User USERNAME (USERID), Session SESSIONID, Instance INSTANCEID</UC4RB_DB_EXPOPT_RESUMABLE_NAMEs.00>
-<UC4RB_DB_EXPOPT_ROWSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_ROWS#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB">YES</UC4RB_DB_EXPOPT_ROWSs.00>
-<UC4RB_DB_EXPOPT_RSMBL_TIMEOUTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_RSMBL_TIMEOUT#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB">7200</UC4RB_DB_EXPOPT_RSMBL_TIMEOUTs.00>
-<UC4RB_DB_EXPOPT_STATISTICSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_STATISTICS#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB">ESTIMATE</UC4RB_DB_EXPOPT_STATISTICSs.00>
-<UC4RB_DB_EXPOPT_TRIGGERSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_TRIGGERS#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB">YES</UC4RB_DB_EXPOPT_TRIGGERSs.00>
-<UC4RB_DB_EXPOPT_VOLSIZEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_VOLSIZE#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB"/>
-<UC4RB_DB_EXP_INVOKE_AS_SYSDBAs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXP_INVOKE_AS_SYSDBA#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB"/>
-<UC4RB_DB_IMP_INVOKE_AS_SYSDBAs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_IMP_INVOKE_AS_SYSDBA#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB"/>
-<UC4RB_DB_PASSWORDs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_PASSWORD#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB">--10</UC4RB_DB_PASSWORDs.00>
-<UC4RB_DB_SIDs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_SID#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB"/>
-<UC4RB_DB_USERNAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_USERNAME#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB"/>
+<node content="1" id="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXPORT_DB" name="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXPORT_DB" parent="PPRPTS" type="PPROMPTSET">
+<PROMPTSET name="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXPORT_DB">
+<PRPTBOX promptset="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXPORT_DB">
+<UC4RB_DB_EXPMODE_FULLs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPMODE_FULL#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXPORT_DB">NO</UC4RB_DB_EXPMODE_FULLs.00>
+<UC4RB_DB_EXPMODE_OWNER_LISTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPMODE_OWNER_LIST#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXPORT_DB"/>
+<UC4RB_DB_EXPMODE_TABLE_LISTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPMODE_TABLE_LIST#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXPORT_DB"/>
+<UC4RB_DB_EXPMODE_TRANSP_TSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPMODE_TRANSP_TS#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXPORT_DB">NO</UC4RB_DB_EXPMODE_TRANSP_TSs.00>
+<UC4RB_DB_EXPMODE_TS_LISTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPMODE_TS_LIST#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXPORT_DB"/>
+<UC4RB_DB_EXPMODE_TTS_FULLCHECKs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPMODE_TTS_FULLCHECK#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXPORT_DB">NO</UC4RB_DB_EXPMODE_TTS_FULLCHECKs.00>
+<UC4RB_DB_EXPOPT_BUFFERs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_BUFFER#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXPORT_DB">0</UC4RB_DB_EXPOPT_BUFFERs.00>
+<UC4RB_DB_EXPOPT_COMPRESSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_COMPRESS#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXPORT_DB">NO</UC4RB_DB_EXPOPT_COMPRESSs.00>
+<UC4RB_DB_EXPOPT_CONSISTENTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_CONSISTENT#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXPORT_DB">NO</UC4RB_DB_EXPOPT_CONSISTENTs.00>
+<UC4RB_DB_EXPOPT_CONSTRAINTSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_CONSTRAINTS#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXPORT_DB">YES</UC4RB_DB_EXPOPT_CONSTRAINTSs.00>
+<UC4RB_DB_EXPOPT_DIRECTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_DIRECT#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXPORT_DB">NO</UC4RB_DB_EXPOPT_DIRECTs.00>
+<UC4RB_DB_EXPOPT_FILESs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_FILES#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXPORT_DB">expdat.dmp</UC4RB_DB_EXPOPT_FILESs.00>
+<UC4RB_DB_EXPOPT_FILESIZEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_FILESIZE#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXPORT_DB"/>
+<UC4RB_DB_EXPOPT_GRANTSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_GRANTS#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXPORT_DB">YES</UC4RB_DB_EXPOPT_GRANTSs.00>
+<UC4RB_DB_EXPOPT_INDEXESs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_INDEXES#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXPORT_DB">YES</UC4RB_DB_EXPOPT_INDEXESs.00>
+<UC4RB_DB_EXPOPT_LOGFILEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_LOGFILE#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXPORT_DB"/>
+<UC4RB_DB_EXPOPT_OBJ_CONSISTENTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_OBJ_CONSISTENT#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXPORT_DB">NO</UC4RB_DB_EXPOPT_OBJ_CONSISTENTs.00>
+<UC4RB_DB_EXPOPT_RECORDLENGTHs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_RECORDLENGTH#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXPORT_DB">0</UC4RB_DB_EXPOPT_RECORDLENGTHs.00>
+<UC4RB_DB_EXPOPT_RESUMABLEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_RESUMABLE#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXPORT_DB">NO</UC4RB_DB_EXPOPT_RESUMABLEs.00>
+<UC4RB_DB_EXPOPT_RESUMABLE_NAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_RESUMABLE_NAME#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXPORT_DB">User USERNAME (USERID), Session SESSIONID, Instance INSTANCEID</UC4RB_DB_EXPOPT_RESUMABLE_NAMEs.00>
+<UC4RB_DB_EXPOPT_ROWSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_ROWS#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXPORT_DB">YES</UC4RB_DB_EXPOPT_ROWSs.00>
+<UC4RB_DB_EXPOPT_RSMBL_TIMEOUTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_RSMBL_TIMEOUT#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXPORT_DB">7200</UC4RB_DB_EXPOPT_RSMBL_TIMEOUTs.00>
+<UC4RB_DB_EXPOPT_STATISTICSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_STATISTICS#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXPORT_DB">ESTIMATE</UC4RB_DB_EXPOPT_STATISTICSs.00>
+<UC4RB_DB_EXPOPT_TRIGGERSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_TRIGGERS#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXPORT_DB">YES</UC4RB_DB_EXPOPT_TRIGGERSs.00>
+<UC4RB_DB_EXPOPT_VOLSIZEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_VOLSIZE#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXPORT_DB"/>
+<UC4RB_DB_EXP_INVOKE_AS_SYSDBAs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXP_INVOKE_AS_SYSDBA#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXPORT_DB"/>
+<UC4RB_DB_IMP_INVOKE_AS_SYSDBAs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_IMP_INVOKE_AS_SYSDBA#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXPORT_DB"/>
+<UC4RB_DB_PASSWORDs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_PASSWORD#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXPORT_DB">--10</UC4RB_DB_PASSWORDs.00>
+<UC4RB_DB_SIDs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_SID#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXPORT_DB"/>
+<UC4RB_DB_USERNAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_USERNAME#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXPORT_DB"/>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -291,39 +291,39 @@
 <result ChkRExec="0" RElseHalt="0" RElseIgn="0" RElseJPAbend="0" RExecFlag="0" RExecute="" RRepMTimes="0" RRepOn="0" RRepWait="0" RWhen=""/>
 <dynvalues>
 <dyntree>
-<node content="1" id="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB" name="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB" parent="PPRPTS" type="PPROMPTSET">
-<PROMPTSET name="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB">
-<PRPTBOX promptset="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB">
-<UC4RB_DB_EXPMODE_FULLs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPMODE_FULL#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB">NO</UC4RB_DB_EXPMODE_FULLs.00>
-<UC4RB_DB_EXPMODE_OWNER_LISTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPMODE_OWNER_LIST#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB"/>
-<UC4RB_DB_EXPMODE_TABLE_LISTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPMODE_TABLE_LIST#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB"/>
-<UC4RB_DB_EXPMODE_TRANSP_TSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPMODE_TRANSP_TS#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB">NO</UC4RB_DB_EXPMODE_TRANSP_TSs.00>
-<UC4RB_DB_EXPMODE_TS_LISTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPMODE_TS_LIST#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB"/>
-<UC4RB_DB_EXPMODE_TTS_FULLCHECKs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPMODE_TTS_FULLCHECK#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB">NO</UC4RB_DB_EXPMODE_TTS_FULLCHECKs.00>
-<UC4RB_DB_EXPOPT_BUFFERs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_BUFFER#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB">0</UC4RB_DB_EXPOPT_BUFFERs.00>
-<UC4RB_DB_EXPOPT_COMPRESSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_COMPRESS#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB">NO</UC4RB_DB_EXPOPT_COMPRESSs.00>
-<UC4RB_DB_EXPOPT_CONSISTENTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_CONSISTENT#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB">NO</UC4RB_DB_EXPOPT_CONSISTENTs.00>
-<UC4RB_DB_EXPOPT_CONSTRAINTSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_CONSTRAINTS#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB">YES</UC4RB_DB_EXPOPT_CONSTRAINTSs.00>
-<UC4RB_DB_EXPOPT_DIRECTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_DIRECT#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB">NO</UC4RB_DB_EXPOPT_DIRECTs.00>
-<UC4RB_DB_EXPOPT_FILESs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_FILES#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB">expdat.dmp</UC4RB_DB_EXPOPT_FILESs.00>
-<UC4RB_DB_EXPOPT_FILESIZEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_FILESIZE#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB"/>
-<UC4RB_DB_EXPOPT_GRANTSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_GRANTS#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB">YES</UC4RB_DB_EXPOPT_GRANTSs.00>
-<UC4RB_DB_EXPOPT_INDEXESs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_INDEXES#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB">YES</UC4RB_DB_EXPOPT_INDEXESs.00>
-<UC4RB_DB_EXPOPT_LOGFILEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_LOGFILE#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB"/>
-<UC4RB_DB_EXPOPT_OBJ_CONSISTENTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_OBJ_CONSISTENT#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB">NO</UC4RB_DB_EXPOPT_OBJ_CONSISTENTs.00>
-<UC4RB_DB_EXPOPT_RECORDLENGTHs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_RECORDLENGTH#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB">0</UC4RB_DB_EXPOPT_RECORDLENGTHs.00>
-<UC4RB_DB_EXPOPT_RESUMABLEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_RESUMABLE#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB">NO</UC4RB_DB_EXPOPT_RESUMABLEs.00>
-<UC4RB_DB_EXPOPT_RESUMABLE_NAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_RESUMABLE_NAME#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB">User USERNAME (USERID), Session SESSIONID, Instance INSTANCEID</UC4RB_DB_EXPOPT_RESUMABLE_NAMEs.00>
-<UC4RB_DB_EXPOPT_ROWSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_ROWS#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB">YES</UC4RB_DB_EXPOPT_ROWSs.00>
-<UC4RB_DB_EXPOPT_RSMBL_TIMEOUTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_RSMBL_TIMEOUT#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB">7200</UC4RB_DB_EXPOPT_RSMBL_TIMEOUTs.00>
-<UC4RB_DB_EXPOPT_STATISTICSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_STATISTICS#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB">ESTIMATE</UC4RB_DB_EXPOPT_STATISTICSs.00>
-<UC4RB_DB_EXPOPT_TRIGGERSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_TRIGGERS#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB">YES</UC4RB_DB_EXPOPT_TRIGGERSs.00>
-<UC4RB_DB_EXPOPT_VOLSIZEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_VOLSIZE#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB"/>
-<UC4RB_DB_EXP_INVOKE_AS_SYSDBAs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXP_INVOKE_AS_SYSDBA#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB"/>
-<UC4RB_DB_IMP_INVOKE_AS_SYSDBAs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_IMP_INVOKE_AS_SYSDBA#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB"/>
-<UC4RB_DB_PASSWORDs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_PASSWORD#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB">--10</UC4RB_DB_PASSWORDs.00>
-<UC4RB_DB_SIDs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_SID#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB"/>
-<UC4RB_DB_USERNAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_USERNAME#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB"/>
+<node content="1" id="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXPORT_DB" name="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXPORT_DB" parent="PPRPTS" type="PPROMPTSET">
+<PROMPTSET name="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXPORT_DB">
+<PRPTBOX promptset="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXPORT_DB">
+<UC4RB_DB_EXPMODE_FULLs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPMODE_FULL#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXPORT_DB">NO</UC4RB_DB_EXPMODE_FULLs.00>
+<UC4RB_DB_EXPMODE_OWNER_LISTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPMODE_OWNER_LIST#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXPORT_DB"/>
+<UC4RB_DB_EXPMODE_TABLE_LISTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPMODE_TABLE_LIST#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXPORT_DB"/>
+<UC4RB_DB_EXPMODE_TRANSP_TSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPMODE_TRANSP_TS#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXPORT_DB">NO</UC4RB_DB_EXPMODE_TRANSP_TSs.00>
+<UC4RB_DB_EXPMODE_TS_LISTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPMODE_TS_LIST#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXPORT_DB"/>
+<UC4RB_DB_EXPMODE_TTS_FULLCHECKs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPMODE_TTS_FULLCHECK#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXPORT_DB">NO</UC4RB_DB_EXPMODE_TTS_FULLCHECKs.00>
+<UC4RB_DB_EXPOPT_BUFFERs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_BUFFER#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXPORT_DB">0</UC4RB_DB_EXPOPT_BUFFERs.00>
+<UC4RB_DB_EXPOPT_COMPRESSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_COMPRESS#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXPORT_DB">NO</UC4RB_DB_EXPOPT_COMPRESSs.00>
+<UC4RB_DB_EXPOPT_CONSISTENTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_CONSISTENT#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXPORT_DB">NO</UC4RB_DB_EXPOPT_CONSISTENTs.00>
+<UC4RB_DB_EXPOPT_CONSTRAINTSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_CONSTRAINTS#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXPORT_DB">YES</UC4RB_DB_EXPOPT_CONSTRAINTSs.00>
+<UC4RB_DB_EXPOPT_DIRECTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_DIRECT#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXPORT_DB">NO</UC4RB_DB_EXPOPT_DIRECTs.00>
+<UC4RB_DB_EXPOPT_FILESs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_FILES#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXPORT_DB">expdat.dmp</UC4RB_DB_EXPOPT_FILESs.00>
+<UC4RB_DB_EXPOPT_FILESIZEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_FILESIZE#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXPORT_DB"/>
+<UC4RB_DB_EXPOPT_GRANTSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_GRANTS#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXPORT_DB">YES</UC4RB_DB_EXPOPT_GRANTSs.00>
+<UC4RB_DB_EXPOPT_INDEXESs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_INDEXES#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXPORT_DB">YES</UC4RB_DB_EXPOPT_INDEXESs.00>
+<UC4RB_DB_EXPOPT_LOGFILEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_LOGFILE#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXPORT_DB"/>
+<UC4RB_DB_EXPOPT_OBJ_CONSISTENTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_OBJ_CONSISTENT#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXPORT_DB">NO</UC4RB_DB_EXPOPT_OBJ_CONSISTENTs.00>
+<UC4RB_DB_EXPOPT_RECORDLENGTHs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_RECORDLENGTH#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXPORT_DB">0</UC4RB_DB_EXPOPT_RECORDLENGTHs.00>
+<UC4RB_DB_EXPOPT_RESUMABLEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_RESUMABLE#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXPORT_DB">NO</UC4RB_DB_EXPOPT_RESUMABLEs.00>
+<UC4RB_DB_EXPOPT_RESUMABLE_NAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_RESUMABLE_NAME#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXPORT_DB">User USERNAME (USERID), Session SESSIONID, Instance INSTANCEID</UC4RB_DB_EXPOPT_RESUMABLE_NAMEs.00>
+<UC4RB_DB_EXPOPT_ROWSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_ROWS#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXPORT_DB">YES</UC4RB_DB_EXPOPT_ROWSs.00>
+<UC4RB_DB_EXPOPT_RSMBL_TIMEOUTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_RSMBL_TIMEOUT#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXPORT_DB">7200</UC4RB_DB_EXPOPT_RSMBL_TIMEOUTs.00>
+<UC4RB_DB_EXPOPT_STATISTICSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_STATISTICS#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXPORT_DB">ESTIMATE</UC4RB_DB_EXPOPT_STATISTICSs.00>
+<UC4RB_DB_EXPOPT_TRIGGERSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_TRIGGERS#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXPORT_DB">YES</UC4RB_DB_EXPOPT_TRIGGERSs.00>
+<UC4RB_DB_EXPOPT_VOLSIZEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXPOPT_VOLSIZE#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXPORT_DB"/>
+<UC4RB_DB_EXP_INVOKE_AS_SYSDBAs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_EXP_INVOKE_AS_SYSDBA#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXPORT_DB"/>
+<UC4RB_DB_IMP_INVOKE_AS_SYSDBAs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_IMP_INVOKE_AS_SYSDBA#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXPORT_DB"/>
+<UC4RB_DB_PASSWORDs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_PASSWORD#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXPORT_DB">--10</UC4RB_DB_PASSWORDs.00>
+<UC4RB_DB_SIDs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_SID#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXPORT_DB"/>
+<UC4RB_DB_USERNAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_USERNAME#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXPORT_DB"/>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -390,9 +390,9 @@
 <Mode>0</Mode>
 </VALUE>
 </node>
-<node content="1" id="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB" name="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB" parent="PRPTS" type="PROMPTSET">
-<PROMPTSET name="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB" ontop="1">
-<PRPTBOX promptset="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB" prptmode="1"/>
+<node content="1" id="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXPORT_DB" name="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXPORT_DB" parent="PRPTS" type="PROMPTSET">
+<PROMPTSET name="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXPORT_DB" ontop="1">
+<PRPTBOX promptset="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXPORT_DB" prptmode="1"/>
 </PROMPTSET>
 </node>
 <node content="1" id="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" name="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" parent="PRPTS" type="PROMPTSET">

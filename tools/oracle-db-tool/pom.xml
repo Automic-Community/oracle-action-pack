@@ -2,10 +2,10 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.uc4.ara.feature</groupId>
-	<artifactId>oracle-tool</artifactId>
+	<artifactId>oracle-db-tool</artifactId>
 	<packaging>jar</packaging>
 	<version>1.0-SNAPSHOT</version>
-	<name>oracle-tool</name>
+	<name>oracle-db-tool</name>
 	<url>http://maven.apache.org</url>
 
 	<properties>
@@ -89,7 +89,7 @@
 						</manifest>
 						<manifestSections>
 							<manifestSection>
-								<name>oracle-tool</name>
+								<name>oracle-db-tool</name>
 								<manifestEntries>
 									<Application-BuildDate>${timestamp}</Application-BuildDate>
 									<Application-Version>${version}</Application-Version>
@@ -98,7 +98,7 @@
 							</manifestSection>
 						</manifestSections>
 					</archive>
-					<finalName>oracle-tool</finalName>
+					<finalName>oracle-db-tool</finalName>
 					<descriptorRefs>
 						<descriptorRef>jar-with-dependencies</descriptorRef>
 					</descriptorRefs>

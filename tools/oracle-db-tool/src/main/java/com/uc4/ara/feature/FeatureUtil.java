@@ -125,29 +125,29 @@ public class FeatureUtil {
         /**
          * The INFO.
          */
-        INFO("oracle-tool: INFO: "),
+        INFO("oracle-db-tool: INFO: "),
         /**
          * The WARNING.
          */
-        WARNING("oracle-tool: WARNING: "),
+        WARNING("oracle-db-tool: WARNING: "),
         /**
          * The ERROR.
          */
-        ERROR("oracle-tool: ERROR: "),
+        ERROR("oracle-db-tool: ERROR: "),
         /**
          * The EXCEPTION.
          */
-        EXCEPTION("oracle-tool: EXCEPTION: "),
+        EXCEPTION("oracle-db-tool: EXCEPTION: "),
         /**
          * The FAULT_OTHER.
          */
-        FAULT_OTHER("oracle-tool: FAULT_OTHER: "),
+        FAULT_OTHER("oracle-db-tool: FAULT_OTHER: "),
         /**
          * The PARAM.
          */
-        PARAM("oracle-tool: PARAM: "),
+        PARAM("oracle-db-tool: PARAM: "),
 
-        GENERAL("oracle-tool: ");
+        GENERAL("oracle-db-tool: ");
         /**
          * The prefix.
          */
@@ -223,8 +223,6 @@ public class FeatureUtil {
         if (traceFile != null)
             traceFile.println(msg);
     }
-
-
 
     /**
      * Log msg.
@@ -594,7 +592,6 @@ public class FeatureUtil {
         return false;
     }
 
-
     private static Set<String> getPackageNamesInPackage(String packageName) {
         Set<String> packageNames = new HashSet<String>();
         String packageNameSlashed = packageName.replace(".", "/");
@@ -639,7 +636,6 @@ public class FeatureUtil {
         }
         return packageNames;
     }
-
 
     private static Set<Class> getClassesInPackage(String packageName, String subPackageName) {
         Set<Class> classes = new HashSet<Class>();

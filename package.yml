@@ -1,7 +1,7 @@
-name: PCK.AUTOMIC_ORACLE
+name: PCK.AUTOMIC_ORACLE_DB
 source: ae
 binaries: 
-- object: RESOURCES/PCK.AUTOMIC_ORACLE.PRV.CUSTOM_TYPES
+- object: RESOURCES/PCK.AUTOMIC_ORACLE_DB.PRV.CUSTOM_TYPES
   timestamp: disabled
   resources: 
   - name: COMPONENT#DATABASE_ORACLE#2
@@ -12,9 +12,9 @@ binaries:
     type: TEXT
     path: ara/types/deploymenttarget/Database Oracle.xml
     version: 1.0.0
-- object: RESOURCES/LIBS/PCK.AUTOMIC_ORACLE.PRV.STORE
+- object: RESOURCES/LIBS/PCK.AUTOMIC_ORACLE_DB.PRV.STORE
   resources: 
-  - name: ORACLETOOL.JAR
+  - name: ORACLEDBTOOL.JAR
     type: BINARY
-    path: tools/oracle-tool/target/oracle-tool.jar
+    path: tools/oracle-db-tool/target/oracle-db-tool.jar
     version: 1.0.0

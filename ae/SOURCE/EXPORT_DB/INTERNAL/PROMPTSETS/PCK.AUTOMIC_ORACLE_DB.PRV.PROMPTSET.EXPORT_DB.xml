@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="ISO-8859-15" standalone="no"?><uc-export clientvers="11.0.0">
-<PRPT name="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.EXPORT_DB">
+<PRPT name="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXPORT_DB">
 <HEADER state="1">
 <Title/>
 <ArchiveKey1/>
@@ -425,10 +425,8 @@
          </properties>
       </dynradiogroup><combo alt="1" dynamic="0" enabled="1" fill="b" filter="0" focus="0" id="UC4RB_DB_EXPOPT_STATISTICSs.00" nl="1" quotes="" strict="1" text="Export Statistics" tooltip="Specifies the type of database optimizer statistics to generate when the exported data is imported. " vtype="i"><command request="_internal" target="_view" targetaction="setAttribute" targetparam="promptname|@id"/><command owner="_self" owneraction="setsource" ownerparam="src|_dialog@src"/><command owner="_promptsetcontainer" owneraction="getData" request="getpromptcombolist" target="_self" targetaction="setlist" wait="0"/>
          
-         
-         
          <properties>
-            <entry listparam="C" name="reference" reftype="STATIC">PCK.AUTOMIC_ORACLE.PRV.VARA.EXPORT_STATISTICS</entry>
+            <entry listparam="C" name="reference" reftype="STATIC">PCK.AUTOMIC_ORACLE_DB.PRV.VARA.EXPORT_STATISTICS</entry>
             <entry name="text">Export Statistics</entry>
             <entry name="quotes"/>
             <entry name="id">UC4RB_DB_EXPOPT_STATISTICSs.00</entry>

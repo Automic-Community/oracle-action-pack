@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="ISO-8859-15" standalone="no"?><uc-export clientvers="11.0.0">
-<VARA OVD_VRName="FREI" data_type="STATIC" name="PCK.AUTOMIC_ORACLE.PUB.VAR.METADATA" replacementmode="2">
+<VARA OVD_VRName="FREI" data_type="STATIC" name="PCK.AUTOMIC_ORACLE_DB.PUB.VAR.METADATA" replacementmode="2">
 <HEADER state="1">
 <Title/>
 <ArchiveKey1/>
@@ -30,7 +30,7 @@
 <row Name="Description" Value="Cover basic deployment scenarios around Oracle databases." Value1="" Value2="" Value3="" Value4=""/>
 <row Name="Homepage" Value="www.automic.com" Value1="" Value2="" Value3="" Value4=""/>
 <row Name="License" Value="" Value1="" Value2="" Value3="" Value4=""/>
-<row Name="Name" Value="PCK.AUTOMIC_ORACLE" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="Name" Value="PCK.AUTOMIC_ORACLE_DB" Value1="" Value2="" Value3="" Value4=""/>
 <row Name="Package Format Version" Value="0.1.0" Value1="" Value2="" Value3="" Value4=""/>
 <row Name="Title" Value="Automic" Value1="" Value2="" Value3="" Value4=""/>
 <row Name="Version" Value="1.0.0" Value1="" Value2="" Value3="" Value4=""/>

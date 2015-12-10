@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="ISO-8859-15" standalone="no"?><uc-export clientvers="11.0.0">
-<JOBP AllowExternal="1" name="PCK.AUTOMIC_ORACLE.PUB.ACTION.ASSIGN_GRANT">
+<JOBP AllowExternal="1" name="PCK.AUTOMIC_ORACLE_DB.PUB.ACTION.ASSIGN_GRANT">
 <XHEADER state="1">
 <Title>Oracle DB Grant Rights</Title>
 <ArchiveKey1/>
@@ -52,29 +52,29 @@
 <result ChkRExec="0" RElseHalt="0" RElseIgn="0" RElseJPAbend="0" RExecFlag="0" RExecute="" RRepMTimes="0" RRepOn="0" RRepWait="0" RWhen=""/>
 <dynvalues>
 <dyntree>
-<node content="1" id="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.ASSIGN_GRANT" name="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.ASSIGN_GRANT" parent="PPRPTS" type="PPROMPTSET">
-<PROMPTSET name="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.ASSIGN_GRANT">
-<PRPTBOX promptset="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.ASSIGN_GRANT">
-<UC4RB_DB_CONN_INTRVLs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_CONN_INTRVL#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.ASSIGN_GRANT">10</UC4RB_DB_CONN_INTRVLs.00>
-<UC4RB_DB_DRIVER_CLASSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_DRIVER_CLASS#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.ASSIGN_GRANT"/>
-<UC4RB_DB_DRIVER_JARs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_DRIVER_JAR#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.ASSIGN_GRANT"/>
-<UC4RB_DB_GRANT_CUST_ROLE_PRVLGs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_GRANT_CUST_ROLE_PRVLG#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.ASSIGN_GRANT"/>
-<UC4RB_DB_GRANT_OBJ_PRIVILEGEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_GRANT_OBJ_PRIVILEGE#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.ASSIGN_GRANT"/>
-<UC4RB_DB_GRANT_ON_SCHM_OBJs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_GRANT_ON_SCHM_OBJ#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.ASSIGN_GRANT"/>
-<UC4RB_DB_GRANT_ROLE_PRIVILEGEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_GRANT_ROLE_PRIVILEGE#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.ASSIGN_GRANT"/>
-<UC4RB_DB_GRANT_SYS_PRIVILEGEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_GRANT_SYS_PRIVILEGE#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.ASSIGN_GRANT"/>
-<UC4RB_DB_GRANT_TO_PUBLICs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_GRANT_TO_PUBLIC#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.ASSIGN_GRANT">NO</UC4RB_DB_GRANT_TO_PUBLICs.00>
-<UC4RB_DB_GRANT_TO_ROLEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_GRANT_TO_ROLE#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.ASSIGN_GRANT"/>
-<UC4RB_DB_GRANT_TO_USERs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_GRANT_TO_USER#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.ASSIGN_GRANT"/>
-<UC4RB_DB_JDBC_CONN_STRINGs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_JDBC_CONN_STRING#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.ASSIGN_GRANT"/>
-<UC4RB_DB_PASSWORDs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_PASSWORD#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.ASSIGN_GRANT">--10</UC4RB_DB_PASSWORDs.00>
-<UC4RB_DB_TNSNAMES_ORAs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_TNSNAMES_ORA#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.ASSIGN_GRANT"/>
-<UC4RB_DB_USERNAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_USERNAME#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.ASSIGN_GRANT"/>
-<UC4RB_DB_WITH_ADMIN_OPTIONs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_WITH_ADMIN_OPTION#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.ASSIGN_GRANT">NO</UC4RB_DB_WITH_ADMIN_OPTIONs.00>
-<UC4RB_DB_WITH_GRANT_OPTIONs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_WITH_GRANT_OPTION#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.ASSIGN_GRANT">NO</UC4RB_DB_WITH_GRANT_OPTIONs.00>
-<UC4RB_DB_WITH_HIERARCHY_OPTIONs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_WITH_HIERARCHY_OPTION#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.ASSIGN_GRANT">NO</UC4RB_DB_WITH_HIERARCHY_OPTIONs.00>
-<UC4RB_GRANT_ALL_SYS_PRIVILEGESs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_GRANT_ALL_SYS_PRIVILEGES#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.ASSIGN_GRANT">NO</UC4RB_GRANT_ALL_SYS_PRIVILEGESs.00>
-<UC4RB_GRANT_ALL_USER_PRVLGSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_GRANT_ALL_USER_PRVLGS#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.ASSIGN_GRANT">NO</UC4RB_GRANT_ALL_USER_PRVLGSs.00>
+<node content="1" id="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.ASSIGN_GRANT" name="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.ASSIGN_GRANT" parent="PPRPTS" type="PPROMPTSET">
+<PROMPTSET name="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.ASSIGN_GRANT">
+<PRPTBOX promptset="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.ASSIGN_GRANT">
+<UC4RB_DB_CONN_INTRVLs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_CONN_INTRVL#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.ASSIGN_GRANT">10</UC4RB_DB_CONN_INTRVLs.00>
+<UC4RB_DB_DRIVER_CLASSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_DRIVER_CLASS#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.ASSIGN_GRANT"/>
+<UC4RB_DB_DRIVER_JARs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_DRIVER_JAR#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.ASSIGN_GRANT"/>
+<UC4RB_DB_GRANT_CUST_ROLE_PRVLGs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_GRANT_CUST_ROLE_PRVLG#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.ASSIGN_GRANT"/>
+<UC4RB_DB_GRANT_OBJ_PRIVILEGEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_GRANT_OBJ_PRIVILEGE#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.ASSIGN_GRANT"/>
+<UC4RB_DB_GRANT_ON_SCHM_OBJs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_GRANT_ON_SCHM_OBJ#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.ASSIGN_GRANT"/>
+<UC4RB_DB_GRANT_ROLE_PRIVILEGEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_GRANT_ROLE_PRIVILEGE#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.ASSIGN_GRANT"/>
+<UC4RB_DB_GRANT_SYS_PRIVILEGEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_GRANT_SYS_PRIVILEGE#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.ASSIGN_GRANT"/>
+<UC4RB_DB_GRANT_TO_PUBLICs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_GRANT_TO_PUBLIC#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.ASSIGN_GRANT">NO</UC4RB_DB_GRANT_TO_PUBLICs.00>
+<UC4RB_DB_GRANT_TO_ROLEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_GRANT_TO_ROLE#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.ASSIGN_GRANT"/>
+<UC4RB_DB_GRANT_TO_USERs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_GRANT_TO_USER#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.ASSIGN_GRANT"/>
+<UC4RB_DB_JDBC_CONN_STRINGs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_JDBC_CONN_STRING#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.ASSIGN_GRANT"/>
+<UC4RB_DB_PASSWORDs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_PASSWORD#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.ASSIGN_GRANT">--10</UC4RB_DB_PASSWORDs.00>
+<UC4RB_DB_TNSNAMES_ORAs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_TNSNAMES_ORA#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.ASSIGN_GRANT"/>
+<UC4RB_DB_USERNAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_USERNAME#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.ASSIGN_GRANT"/>
+<UC4RB_DB_WITH_ADMIN_OPTIONs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_WITH_ADMIN_OPTION#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.ASSIGN_GRANT">NO</UC4RB_DB_WITH_ADMIN_OPTIONs.00>
+<UC4RB_DB_WITH_GRANT_OPTIONs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_WITH_GRANT_OPTION#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.ASSIGN_GRANT">NO</UC4RB_DB_WITH_GRANT_OPTIONs.00>
+<UC4RB_DB_WITH_HIERARCHY_OPTIONs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_WITH_HIERARCHY_OPTION#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.ASSIGN_GRANT">NO</UC4RB_DB_WITH_HIERARCHY_OPTIONs.00>
+<UC4RB_GRANT_ALL_SYS_PRIVILEGESs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_GRANT_ALL_SYS_PRIVILEGES#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.ASSIGN_GRANT">NO</UC4RB_GRANT_ALL_SYS_PRIVILEGESs.00>
+<UC4RB_GRANT_ALL_USER_PRVLGSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_GRANT_ALL_USER_PRVLGS#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.ASSIGN_GRANT">NO</UC4RB_GRANT_ALL_USER_PRVLGSs.00>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -96,7 +96,7 @@
 </PostCon>
 </postconditions>
 </task>
-<task Alias="" BranchType="0" Col="2" Lnr="2" OType="JOBS" Object="PCK.AUTOMIC_ORACLE.PRV.JOB.ASSIGN_GRANT@WINDOWS" ParentAlias="" ParentObject="" Row="1" Text2="">
+<task Alias="" BranchType="0" Col="2" Lnr="2" OType="JOBS" Object="PCK.AUTOMIC_ORACLE_DB.PRV.JOB.ASSIGN_GRANT@WINDOWS" ParentAlias="" ParentObject="" Row="1" Text2="">
 <checkpoint RollbackFlag="1" RunPerPatch="0" RunPerTarget="0" TcpADays="0" TcpATime="00:00" TcpATimeTZ="" TcpExecute="" TcpOn="0" promptatgen="0" showprompt="0"/>
 <after ActFlg="1" AtimOn="0" ErlstStDays="0" ErlstStTime="00:00" ErlstStTimeTZ="" HoldFlg="0"/>
 <when ChkWhenExec="0" LtstEnd="0" LtstEndDays="0" LtstEndTime="00:00" LtstSt="0" LtstStDays="0" LtstStTime="00:00" LtstTimeTZ="" WCTypeAND="1" WCTypeOR="0" WElseA="1" WElseH="0" WElseS="0" WElseX="0" WhenExecute="" WtimOn="0"/>
@@ -126,29 +126,29 @@
 </node>
 <node content="1" id="PRPTS" name="PromptSets" parent="" pref="1" type="PROMPTSET"/>
 <node content="0" id="PPRPTS" name="Parent PromptSets" parent="" type="PPROMPTSET"/>
-<node content="1" id="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.ASSIGN_GRANT" name="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.ASSIGN_GRANT" parent="PPRPTS" type="PPROMPTSET">
-<PROMPTSET name="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.ASSIGN_GRANT">
-<PRPTBOX promptset="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.ASSIGN_GRANT">
-<UC4RB_DB_CONN_INTRVLs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_CONN_INTRVL#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.ASSIGN_GRANT">10</UC4RB_DB_CONN_INTRVLs.00>
-<UC4RB_DB_DRIVER_CLASSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_DRIVER_CLASS#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.ASSIGN_GRANT"/>
-<UC4RB_DB_DRIVER_JARs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_DRIVER_JAR#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.ASSIGN_GRANT"/>
-<UC4RB_DB_GRANT_CUST_ROLE_PRVLGs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_GRANT_CUST_ROLE_PRVLG#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.ASSIGN_GRANT"/>
-<UC4RB_DB_GRANT_OBJ_PRIVILEGEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_GRANT_OBJ_PRIVILEGE#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.ASSIGN_GRANT"/>
-<UC4RB_DB_GRANT_ON_SCHM_OBJs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_GRANT_ON_SCHM_OBJ#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.ASSIGN_GRANT"/>
-<UC4RB_DB_GRANT_ROLE_PRIVILEGEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_GRANT_ROLE_PRIVILEGE#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.ASSIGN_GRANT"/>
-<UC4RB_DB_GRANT_SYS_PRIVILEGEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_GRANT_SYS_PRIVILEGE#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.ASSIGN_GRANT"/>
-<UC4RB_DB_GRANT_TO_PUBLICs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_GRANT_TO_PUBLIC#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.ASSIGN_GRANT">NO</UC4RB_DB_GRANT_TO_PUBLICs.00>
-<UC4RB_DB_GRANT_TO_ROLEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_GRANT_TO_ROLE#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.ASSIGN_GRANT"/>
-<UC4RB_DB_GRANT_TO_USERs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_GRANT_TO_USER#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.ASSIGN_GRANT"/>
-<UC4RB_DB_JDBC_CONN_STRINGs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_JDBC_CONN_STRING#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.ASSIGN_GRANT"/>
-<UC4RB_DB_PASSWORDs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_PASSWORD#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.ASSIGN_GRANT">--10</UC4RB_DB_PASSWORDs.00>
-<UC4RB_DB_TNSNAMES_ORAs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_TNSNAMES_ORA#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.ASSIGN_GRANT"/>
-<UC4RB_DB_USERNAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_USERNAME#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.ASSIGN_GRANT"/>
-<UC4RB_DB_WITH_ADMIN_OPTIONs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_WITH_ADMIN_OPTION#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.ASSIGN_GRANT">NO</UC4RB_DB_WITH_ADMIN_OPTIONs.00>
-<UC4RB_DB_WITH_GRANT_OPTIONs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_WITH_GRANT_OPTION#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.ASSIGN_GRANT">NO</UC4RB_DB_WITH_GRANT_OPTIONs.00>
-<UC4RB_DB_WITH_HIERARCHY_OPTIONs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_WITH_HIERARCHY_OPTION#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.ASSIGN_GRANT">NO</UC4RB_DB_WITH_HIERARCHY_OPTIONs.00>
-<UC4RB_GRANT_ALL_SYS_PRIVILEGESs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_GRANT_ALL_SYS_PRIVILEGES#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.ASSIGN_GRANT">NO</UC4RB_GRANT_ALL_SYS_PRIVILEGESs.00>
-<UC4RB_GRANT_ALL_USER_PRVLGSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_GRANT_ALL_USER_PRVLGS#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.ASSIGN_GRANT">NO</UC4RB_GRANT_ALL_USER_PRVLGSs.00>
+<node content="1" id="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.ASSIGN_GRANT" name="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.ASSIGN_GRANT" parent="PPRPTS" type="PPROMPTSET">
+<PROMPTSET name="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.ASSIGN_GRANT">
+<PRPTBOX promptset="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.ASSIGN_GRANT">
+<UC4RB_DB_CONN_INTRVLs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_CONN_INTRVL#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.ASSIGN_GRANT">10</UC4RB_DB_CONN_INTRVLs.00>
+<UC4RB_DB_DRIVER_CLASSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_DRIVER_CLASS#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.ASSIGN_GRANT"/>
+<UC4RB_DB_DRIVER_JARs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_DRIVER_JAR#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.ASSIGN_GRANT"/>
+<UC4RB_DB_GRANT_CUST_ROLE_PRVLGs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_GRANT_CUST_ROLE_PRVLG#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.ASSIGN_GRANT"/>
+<UC4RB_DB_GRANT_OBJ_PRIVILEGEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_GRANT_OBJ_PRIVILEGE#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.ASSIGN_GRANT"/>
+<UC4RB_DB_GRANT_ON_SCHM_OBJs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_GRANT_ON_SCHM_OBJ#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.ASSIGN_GRANT"/>
+<UC4RB_DB_GRANT_ROLE_PRIVILEGEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_GRANT_ROLE_PRIVILEGE#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.ASSIGN_GRANT"/>
+<UC4RB_DB_GRANT_SYS_PRIVILEGEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_GRANT_SYS_PRIVILEGE#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.ASSIGN_GRANT"/>
+<UC4RB_DB_GRANT_TO_PUBLICs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_GRANT_TO_PUBLIC#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.ASSIGN_GRANT">NO</UC4RB_DB_GRANT_TO_PUBLICs.00>
+<UC4RB_DB_GRANT_TO_ROLEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_GRANT_TO_ROLE#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.ASSIGN_GRANT"/>
+<UC4RB_DB_GRANT_TO_USERs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_GRANT_TO_USER#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.ASSIGN_GRANT"/>
+<UC4RB_DB_JDBC_CONN_STRINGs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_JDBC_CONN_STRING#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.ASSIGN_GRANT"/>
+<UC4RB_DB_PASSWORDs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_PASSWORD#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.ASSIGN_GRANT">--10</UC4RB_DB_PASSWORDs.00>
+<UC4RB_DB_TNSNAMES_ORAs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_TNSNAMES_ORA#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.ASSIGN_GRANT"/>
+<UC4RB_DB_USERNAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_USERNAME#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.ASSIGN_GRANT"/>
+<UC4RB_DB_WITH_ADMIN_OPTIONs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_WITH_ADMIN_OPTION#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.ASSIGN_GRANT">NO</UC4RB_DB_WITH_ADMIN_OPTIONs.00>
+<UC4RB_DB_WITH_GRANT_OPTIONs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_WITH_GRANT_OPTION#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.ASSIGN_GRANT">NO</UC4RB_DB_WITH_GRANT_OPTIONs.00>
+<UC4RB_DB_WITH_HIERARCHY_OPTIONs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_WITH_HIERARCHY_OPTION#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.ASSIGN_GRANT">NO</UC4RB_DB_WITH_HIERARCHY_OPTIONs.00>
+<UC4RB_GRANT_ALL_SYS_PRIVILEGESs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_GRANT_ALL_SYS_PRIVILEGES#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.ASSIGN_GRANT">NO</UC4RB_GRANT_ALL_SYS_PRIVILEGESs.00>
+<UC4RB_GRANT_ALL_USER_PRVLGSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_GRANT_ALL_USER_PRVLGS#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.ASSIGN_GRANT">NO</UC4RB_GRANT_ALL_USER_PRVLGSs.00>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -170,7 +170,7 @@
 </PostCon>
 </postconditions>
 </task>
-<task Alias="" BranchType="0" Col="2" Lnr="3" OType="JOBS" Object="PCK.AUTOMIC_ORACLE.PRV.JOB.ASSIGN_GRANT@UNIX" ParentAlias="" ParentObject="" Row="3" Text2="">
+<task Alias="" BranchType="0" Col="2" Lnr="3" OType="JOBS" Object="PCK.AUTOMIC_ORACLE_DB.PRV.JOB.ASSIGN_GRANT@UNIX" ParentAlias="" ParentObject="" Row="3" Text2="">
 <checkpoint RollbackFlag="1" RunPerPatch="0" RunPerTarget="0" TcpADays="0" TcpATime="00:00" TcpATimeTZ="" TcpExecute="" TcpOn="0" promptatgen="0" showprompt="0"/>
 <after ActFlg="1" AtimOn="0" ErlstStDays="0" ErlstStTime="00:00" ErlstStTimeTZ="" HoldFlg="0"/>
 <when ChkWhenExec="0" LtstEnd="0" LtstEndDays="0" LtstEndTime="00:00" LtstSt="0" LtstStDays="0" LtstStTime="00:00" LtstTimeTZ="" WCTypeAND="1" WCTypeOR="0" WElseA="1" WElseH="0" WElseS="0" WElseX="0" WhenExecute="" WtimOn="0"/>
@@ -200,29 +200,29 @@
 </node>
 <node content="1" id="PRPTS" name="PromptSets" parent="" pref="1" type="PROMPTSET"/>
 <node content="0" id="PPRPTS" name="Parent PromptSets" parent="" type="PPROMPTSET"/>
-<node content="1" id="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.ASSIGN_GRANT" name="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.ASSIGN_GRANT" parent="PPRPTS" type="PPROMPTSET">
-<PROMPTSET name="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.ASSIGN_GRANT">
-<PRPTBOX promptset="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.ASSIGN_GRANT">
-<UC4RB_DB_CONN_INTRVLs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_CONN_INTRVL#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.ASSIGN_GRANT">10</UC4RB_DB_CONN_INTRVLs.00>
-<UC4RB_DB_DRIVER_CLASSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_DRIVER_CLASS#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.ASSIGN_GRANT"/>
-<UC4RB_DB_DRIVER_JARs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_DRIVER_JAR#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.ASSIGN_GRANT"/>
-<UC4RB_DB_GRANT_CUST_ROLE_PRVLGs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_GRANT_CUST_ROLE_PRVLG#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.ASSIGN_GRANT"/>
-<UC4RB_DB_GRANT_OBJ_PRIVILEGEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_GRANT_OBJ_PRIVILEGE#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.ASSIGN_GRANT"/>
-<UC4RB_DB_GRANT_ON_SCHM_OBJs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_GRANT_ON_SCHM_OBJ#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.ASSIGN_GRANT"/>
-<UC4RB_DB_GRANT_ROLE_PRIVILEGEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_GRANT_ROLE_PRIVILEGE#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.ASSIGN_GRANT"/>
-<UC4RB_DB_GRANT_SYS_PRIVILEGEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_GRANT_SYS_PRIVILEGE#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.ASSIGN_GRANT"/>
-<UC4RB_DB_GRANT_TO_PUBLICs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_GRANT_TO_PUBLIC#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.ASSIGN_GRANT">NO</UC4RB_DB_GRANT_TO_PUBLICs.00>
-<UC4RB_DB_GRANT_TO_ROLEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_GRANT_TO_ROLE#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.ASSIGN_GRANT"/>
-<UC4RB_DB_GRANT_TO_USERs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_GRANT_TO_USER#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.ASSIGN_GRANT"/>
-<UC4RB_DB_JDBC_CONN_STRINGs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_JDBC_CONN_STRING#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.ASSIGN_GRANT"/>
-<UC4RB_DB_PASSWORDs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_PASSWORD#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.ASSIGN_GRANT">--10</UC4RB_DB_PASSWORDs.00>
-<UC4RB_DB_TNSNAMES_ORAs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_TNSNAMES_ORA#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.ASSIGN_GRANT"/>
-<UC4RB_DB_USERNAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_USERNAME#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.ASSIGN_GRANT"/>
-<UC4RB_DB_WITH_ADMIN_OPTIONs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_WITH_ADMIN_OPTION#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.ASSIGN_GRANT">NO</UC4RB_DB_WITH_ADMIN_OPTIONs.00>
-<UC4RB_DB_WITH_GRANT_OPTIONs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_WITH_GRANT_OPTION#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.ASSIGN_GRANT">NO</UC4RB_DB_WITH_GRANT_OPTIONs.00>
-<UC4RB_DB_WITH_HIERARCHY_OPTIONs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_WITH_HIERARCHY_OPTION#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.ASSIGN_GRANT">NO</UC4RB_DB_WITH_HIERARCHY_OPTIONs.00>
-<UC4RB_GRANT_ALL_SYS_PRIVILEGESs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_GRANT_ALL_SYS_PRIVILEGES#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.ASSIGN_GRANT">NO</UC4RB_GRANT_ALL_SYS_PRIVILEGESs.00>
-<UC4RB_GRANT_ALL_USER_PRVLGSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_GRANT_ALL_USER_PRVLGS#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.ASSIGN_GRANT">NO</UC4RB_GRANT_ALL_USER_PRVLGSs.00>
+<node content="1" id="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.ASSIGN_GRANT" name="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.ASSIGN_GRANT" parent="PPRPTS" type="PPROMPTSET">
+<PROMPTSET name="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.ASSIGN_GRANT">
+<PRPTBOX promptset="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.ASSIGN_GRANT">
+<UC4RB_DB_CONN_INTRVLs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_CONN_INTRVL#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.ASSIGN_GRANT">10</UC4RB_DB_CONN_INTRVLs.00>
+<UC4RB_DB_DRIVER_CLASSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_DRIVER_CLASS#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.ASSIGN_GRANT"/>
+<UC4RB_DB_DRIVER_JARs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_DRIVER_JAR#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.ASSIGN_GRANT"/>
+<UC4RB_DB_GRANT_CUST_ROLE_PRVLGs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_GRANT_CUST_ROLE_PRVLG#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.ASSIGN_GRANT"/>
+<UC4RB_DB_GRANT_OBJ_PRIVILEGEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_GRANT_OBJ_PRIVILEGE#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.ASSIGN_GRANT"/>
+<UC4RB_DB_GRANT_ON_SCHM_OBJs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_GRANT_ON_SCHM_OBJ#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.ASSIGN_GRANT"/>
+<UC4RB_DB_GRANT_ROLE_PRIVILEGEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_GRANT_ROLE_PRIVILEGE#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.ASSIGN_GRANT"/>
+<UC4RB_DB_GRANT_SYS_PRIVILEGEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_GRANT_SYS_PRIVILEGE#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.ASSIGN_GRANT"/>
+<UC4RB_DB_GRANT_TO_PUBLICs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_GRANT_TO_PUBLIC#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.ASSIGN_GRANT">NO</UC4RB_DB_GRANT_TO_PUBLICs.00>
+<UC4RB_DB_GRANT_TO_ROLEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_GRANT_TO_ROLE#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.ASSIGN_GRANT"/>
+<UC4RB_DB_GRANT_TO_USERs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_GRANT_TO_USER#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.ASSIGN_GRANT"/>
+<UC4RB_DB_JDBC_CONN_STRINGs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_JDBC_CONN_STRING#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.ASSIGN_GRANT"/>
+<UC4RB_DB_PASSWORDs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_PASSWORD#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.ASSIGN_GRANT">--10</UC4RB_DB_PASSWORDs.00>
+<UC4RB_DB_TNSNAMES_ORAs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_TNSNAMES_ORA#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.ASSIGN_GRANT"/>
+<UC4RB_DB_USERNAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_USERNAME#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.ASSIGN_GRANT"/>
+<UC4RB_DB_WITH_ADMIN_OPTIONs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_WITH_ADMIN_OPTION#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.ASSIGN_GRANT">NO</UC4RB_DB_WITH_ADMIN_OPTIONs.00>
+<UC4RB_DB_WITH_GRANT_OPTIONs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_WITH_GRANT_OPTION#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.ASSIGN_GRANT">NO</UC4RB_DB_WITH_GRANT_OPTIONs.00>
+<UC4RB_DB_WITH_HIERARCHY_OPTIONs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_WITH_HIERARCHY_OPTION#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.ASSIGN_GRANT">NO</UC4RB_DB_WITH_HIERARCHY_OPTIONs.00>
+<UC4RB_GRANT_ALL_SYS_PRIVILEGESs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_GRANT_ALL_SYS_PRIVILEGES#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.ASSIGN_GRANT">NO</UC4RB_GRANT_ALL_SYS_PRIVILEGESs.00>
+<UC4RB_GRANT_ALL_USER_PRVLGSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_GRANT_ALL_USER_PRVLGS#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.ASSIGN_GRANT">NO</UC4RB_GRANT_ALL_USER_PRVLGSs.00>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -261,29 +261,29 @@
 <result ChkRExec="0" RElseHalt="0" RElseIgn="0" RElseJPAbend="0" RExecFlag="0" RExecute="" RRepMTimes="0" RRepOn="0" RRepWait="0" RWhen=""/>
 <dynvalues>
 <dyntree>
-<node content="1" id="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.ASSIGN_GRANT" name="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.ASSIGN_GRANT" parent="PPRPTS" type="PPROMPTSET">
-<PROMPTSET name="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.ASSIGN_GRANT">
-<PRPTBOX promptset="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.ASSIGN_GRANT">
-<UC4RB_DB_CONN_INTRVLs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_CONN_INTRVL#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.ASSIGN_GRANT">10</UC4RB_DB_CONN_INTRVLs.00>
-<UC4RB_DB_DRIVER_CLASSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_DRIVER_CLASS#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.ASSIGN_GRANT"/>
-<UC4RB_DB_DRIVER_JARs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_DRIVER_JAR#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.ASSIGN_GRANT"/>
-<UC4RB_DB_GRANT_CUST_ROLE_PRVLGs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_GRANT_CUST_ROLE_PRVLG#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.ASSIGN_GRANT"/>
-<UC4RB_DB_GRANT_OBJ_PRIVILEGEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_GRANT_OBJ_PRIVILEGE#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.ASSIGN_GRANT"/>
-<UC4RB_DB_GRANT_ON_SCHM_OBJs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_GRANT_ON_SCHM_OBJ#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.ASSIGN_GRANT"/>
-<UC4RB_DB_GRANT_ROLE_PRIVILEGEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_GRANT_ROLE_PRIVILEGE#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.ASSIGN_GRANT"/>
-<UC4RB_DB_GRANT_SYS_PRIVILEGEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_GRANT_SYS_PRIVILEGE#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.ASSIGN_GRANT"/>
-<UC4RB_DB_GRANT_TO_PUBLICs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_GRANT_TO_PUBLIC#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.ASSIGN_GRANT">NO</UC4RB_DB_GRANT_TO_PUBLICs.00>
-<UC4RB_DB_GRANT_TO_ROLEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_GRANT_TO_ROLE#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.ASSIGN_GRANT"/>
-<UC4RB_DB_GRANT_TO_USERs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_GRANT_TO_USER#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.ASSIGN_GRANT"/>
-<UC4RB_DB_JDBC_CONN_STRINGs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_JDBC_CONN_STRING#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.ASSIGN_GRANT"/>
-<UC4RB_DB_PASSWORDs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_PASSWORD#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.ASSIGN_GRANT">--10</UC4RB_DB_PASSWORDs.00>
-<UC4RB_DB_TNSNAMES_ORAs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_TNSNAMES_ORA#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.ASSIGN_GRANT"/>
-<UC4RB_DB_USERNAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_USERNAME#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.ASSIGN_GRANT"/>
-<UC4RB_DB_WITH_ADMIN_OPTIONs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_WITH_ADMIN_OPTION#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.ASSIGN_GRANT">NO</UC4RB_DB_WITH_ADMIN_OPTIONs.00>
-<UC4RB_DB_WITH_GRANT_OPTIONs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_WITH_GRANT_OPTION#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.ASSIGN_GRANT">NO</UC4RB_DB_WITH_GRANT_OPTIONs.00>
-<UC4RB_DB_WITH_HIERARCHY_OPTIONs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_WITH_HIERARCHY_OPTION#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.ASSIGN_GRANT">NO</UC4RB_DB_WITH_HIERARCHY_OPTIONs.00>
-<UC4RB_GRANT_ALL_SYS_PRIVILEGESs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_GRANT_ALL_SYS_PRIVILEGES#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.ASSIGN_GRANT">NO</UC4RB_GRANT_ALL_SYS_PRIVILEGESs.00>
-<UC4RB_GRANT_ALL_USER_PRVLGSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_GRANT_ALL_USER_PRVLGS#" promptsetname="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.ASSIGN_GRANT">NO</UC4RB_GRANT_ALL_USER_PRVLGSs.00>
+<node content="1" id="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.ASSIGN_GRANT" name="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.ASSIGN_GRANT" parent="PPRPTS" type="PPROMPTSET">
+<PROMPTSET name="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.ASSIGN_GRANT">
+<PRPTBOX promptset="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.ASSIGN_GRANT">
+<UC4RB_DB_CONN_INTRVLs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_CONN_INTRVL#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.ASSIGN_GRANT">10</UC4RB_DB_CONN_INTRVLs.00>
+<UC4RB_DB_DRIVER_CLASSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_DRIVER_CLASS#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.ASSIGN_GRANT"/>
+<UC4RB_DB_DRIVER_JARs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_DRIVER_JAR#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.ASSIGN_GRANT"/>
+<UC4RB_DB_GRANT_CUST_ROLE_PRVLGs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_GRANT_CUST_ROLE_PRVLG#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.ASSIGN_GRANT"/>
+<UC4RB_DB_GRANT_OBJ_PRIVILEGEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_GRANT_OBJ_PRIVILEGE#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.ASSIGN_GRANT"/>
+<UC4RB_DB_GRANT_ON_SCHM_OBJs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_GRANT_ON_SCHM_OBJ#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.ASSIGN_GRANT"/>
+<UC4RB_DB_GRANT_ROLE_PRIVILEGEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_GRANT_ROLE_PRIVILEGE#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.ASSIGN_GRANT"/>
+<UC4RB_DB_GRANT_SYS_PRIVILEGEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_GRANT_SYS_PRIVILEGE#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.ASSIGN_GRANT"/>
+<UC4RB_DB_GRANT_TO_PUBLICs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_GRANT_TO_PUBLIC#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.ASSIGN_GRANT">NO</UC4RB_DB_GRANT_TO_PUBLICs.00>
+<UC4RB_DB_GRANT_TO_ROLEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_GRANT_TO_ROLE#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.ASSIGN_GRANT"/>
+<UC4RB_DB_GRANT_TO_USERs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_GRANT_TO_USER#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.ASSIGN_GRANT"/>
+<UC4RB_DB_JDBC_CONN_STRINGs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_JDBC_CONN_STRING#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.ASSIGN_GRANT"/>
+<UC4RB_DB_PASSWORDs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_PASSWORD#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.ASSIGN_GRANT">--10</UC4RB_DB_PASSWORDs.00>
+<UC4RB_DB_TNSNAMES_ORAs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_TNSNAMES_ORA#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.ASSIGN_GRANT"/>
+<UC4RB_DB_USERNAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_USERNAME#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.ASSIGN_GRANT"/>
+<UC4RB_DB_WITH_ADMIN_OPTIONs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_WITH_ADMIN_OPTION#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.ASSIGN_GRANT">NO</UC4RB_DB_WITH_ADMIN_OPTIONs.00>
+<UC4RB_DB_WITH_GRANT_OPTIONs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_WITH_GRANT_OPTION#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.ASSIGN_GRANT">NO</UC4RB_DB_WITH_GRANT_OPTIONs.00>
+<UC4RB_DB_WITH_HIERARCHY_OPTIONs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_WITH_HIERARCHY_OPTION#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.ASSIGN_GRANT">NO</UC4RB_DB_WITH_HIERARCHY_OPTIONs.00>
+<UC4RB_GRANT_ALL_SYS_PRIVILEGESs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_GRANT_ALL_SYS_PRIVILEGES#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.ASSIGN_GRANT">NO</UC4RB_GRANT_ALL_SYS_PRIVILEGESs.00>
+<UC4RB_GRANT_ALL_USER_PRVLGSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_GRANT_ALL_USER_PRVLGS#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.ASSIGN_GRANT">NO</UC4RB_GRANT_ALL_USER_PRVLGSs.00>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -350,9 +350,9 @@
 <Mode>0</Mode>
 </VALUE>
 </node>
-<node content="1" id="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.ASSIGN_GRANT" name="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.ASSIGN_GRANT" parent="PRPTS" type="PROMPTSET">
-<PROMPTSET name="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.ASSIGN_GRANT" ontop="1">
-<PRPTBOX promptset="PCK.AUTOMIC_ORACLE.PRV.PROMPTSET.ASSIGN_GRANT" prptmode="1"/>
+<node content="1" id="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.ASSIGN_GRANT" name="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.ASSIGN_GRANT" parent="PRPTS" type="PROMPTSET">
+<PROMPTSET name="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.ASSIGN_GRANT" ontop="1">
+<PRPTBOX promptset="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.ASSIGN_GRANT" prptmode="1"/>
 </PROMPTSET>
 </node>
 <node content="1" id="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" name="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" parent="PRPTS" type="PROMPTSET">

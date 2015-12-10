@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="ISO-8859-15" standalone="no"?><uc-export clientvers="11.0.0">
-<DOCU name="PCK.AUTOMIC_ORACLE.PUB.DOC">
+<DOCU name="PCK.AUTOMIC_ORACLE_DB.PUB.DOC">
 <HEADER state="1">
 <Title/>
 <ArchiveKey1/>
@@ -30,8 +30,6 @@ The runbook functions use standard SQL queries executed over a JDBC connection t
 =Rollback=
 
 The Oracle Database actions do not have rollbacks defined yet.
-
-
 
 ]]></DOC>
 </DOCU_Docu>
