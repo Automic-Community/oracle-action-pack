@@ -11,7 +11,7 @@ ${_WORKING_DIR}    /
 
 *** Key Words ***
 Suite Setup
-    Prepare Package    PCK.AUTOMIC_ORACLE    
+    Prepare Package    PCK.AUTOMIC_ORACLE_DB    
     Action Connect    ${_AE_HOST}    ${_AE_PORT}    ${_AE_USER}    ${_AE_PASS}    ${_AE_TEMP_FOLD}
     Init Server
     
@@ -19,14 +19,14 @@ Init Win Server
     [Documentation]    TODO: Write server description here
     Set Global Variable    ${_AGENT}    FL01DEV1
     Set Global Variable    ${_LOGIN}    VVNSAT.LOGIN_ALL
-    Set Global Variable    ${_WORKING_DIR}    C:\\automic\\testcases\\PCK.AUTOMIC_ORACLE
+    Set Global Variable    ${_WORKING_DIR}    C:\\automic\\testcases\\PCK.AUTOMIC_ORACLE_DB
     Set Global Variable    ${/}    \\
 
 Init Unix Server
     [Documentation]    TODO: Write server description here
     Set Global Variable    ${_AGENT}    FL02DEV1
     Set Global Variable    ${_LOGIN}    VVNSAT.LOGIN_ALL
-    Set Global Variable    ${_WORKING_DIR}    /opt/automic/testcases/PCK.AUTOMIC_ORACLE
+    Set Global Variable    ${_WORKING_DIR}    /opt/automic/testcases/PCK.AUTOMIC_ORACLE_DB
     Set Global Variable    ${/}    /
 
 Init Server
