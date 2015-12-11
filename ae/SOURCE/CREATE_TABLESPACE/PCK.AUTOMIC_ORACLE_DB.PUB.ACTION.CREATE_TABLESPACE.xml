@@ -55,7 +55,7 @@
 <node content="1" id="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.CREATE_TABLESPACE" name="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.CREATE_TABLESPACE" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.CREATE_TABLESPACE">
 <PRPTBOX promptset="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.CREATE_TABLESPACE">
-<TIMESTAMP1s.00 ReadFromTable="OPSE" altview="1" haslist="0" msginsert="" msgnr="" promptname="TIMESTAMP1#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.CREATE_TABLESPACE">&amp;$PHYS_DATE_YYYY_MM_DD_d# &amp;$PHYS_TIME_HH_MM_SS#</TIMESTAMP1s.00>
+<TIMESTAMP1s.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="TIMESTAMP1#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.CREATE_TABLESPACE">2015-12-11 19:27:00</TIMESTAMP1s.00>
 <UC4RB_DB_BLOCK_SIZEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_BLOCK_SIZE#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.CREATE_TABLESPACE"/>
 <UC4RB_DB_CONN_INTRVLs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_CONN_INTRVL#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.CREATE_TABLESPACE">10</UC4RB_DB_CONN_INTRVLs.00>
 <UC4RB_DB_DFLT_STRG_CLAUSEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_DFLT_STRG_CLAUSE#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.CREATE_TABLESPACE"/>
@@ -129,7 +129,9 @@
 </node>
 <node content="1" id="PVALUE" name="Parent Variables" parent="" type="TASKVALUE">
 <VALUE state="2">
-<Values/>
+<Values>
+<row ERTUsage="0" Mod="0" Name="&amp;TIMESTAMP1#" Value="&amp;$PHYS_DATE_YYYY_MM_DD_d# &amp;$PHYS_TIME_HH_MM_SS#"/>
+</Values>
 <Mode>0</Mode>
 </VALUE>
 </node>
@@ -138,7 +140,7 @@
 <node content="1" id="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.CREATE_TABLESPACE" name="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.CREATE_TABLESPACE" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.CREATE_TABLESPACE">
 <PRPTBOX promptset="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.CREATE_TABLESPACE">
-<TIMESTAMP1s.00 ReadFromTable="OPSE" altview="1" haslist="0" msginsert="" msgnr="" promptname="TIMESTAMP1#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.CREATE_TABLESPACE">&amp;$PHYS_DATE_YYYY_MM_DD_d# &amp;$PHYS_TIME_HH_MM_SS#</TIMESTAMP1s.00>
+<TIMESTAMP1s.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="TIMESTAMP1#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.CREATE_TABLESPACE">2015-12-11 19:27:00</TIMESTAMP1s.00>
 <UC4RB_DB_BLOCK_SIZEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_BLOCK_SIZE#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.CREATE_TABLESPACE"/>
 <UC4RB_DB_CONN_INTRVLs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_CONN_INTRVL#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.CREATE_TABLESPACE">10</UC4RB_DB_CONN_INTRVLs.00>
 <UC4RB_DB_DFLT_STRG_CLAUSEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_DFLT_STRG_CLAUSE#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.CREATE_TABLESPACE"/>
@@ -212,7 +214,9 @@
 </node>
 <node content="1" id="PVALUE" name="Parent Variables" parent="" type="TASKVALUE">
 <VALUE state="2">
-<Values/>
+<Values>
+<row ERTUsage="0" Mod="0" Name="&amp;TIMESTAMP1#" Value="&amp;$PHYS_DATE_YYYY_MM_DD_d# &amp;$PHYS_TIME_HH_MM_SS#"/>
+</Values>
 <Mode>0</Mode>
 </VALUE>
 </node>
@@ -221,7 +225,7 @@
 <node content="1" id="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.CREATE_TABLESPACE" name="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.CREATE_TABLESPACE" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.CREATE_TABLESPACE">
 <PRPTBOX promptset="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.CREATE_TABLESPACE">
-<TIMESTAMP1s.00 ReadFromTable="OPSE" altview="1" haslist="0" msginsert="" msgnr="" promptname="TIMESTAMP1#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.CREATE_TABLESPACE">&amp;$PHYS_DATE_YYYY_MM_DD_d# &amp;$PHYS_TIME_HH_MM_SS#</TIMESTAMP1s.00>
+<TIMESTAMP1s.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="TIMESTAMP1#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.CREATE_TABLESPACE">2015-12-11 19:27:00</TIMESTAMP1s.00>
 <UC4RB_DB_BLOCK_SIZEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_BLOCK_SIZE#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.CREATE_TABLESPACE"/>
 <UC4RB_DB_CONN_INTRVLs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_CONN_INTRVL#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.CREATE_TABLESPACE">10</UC4RB_DB_CONN_INTRVLs.00>
 <UC4RB_DB_DFLT_STRG_CLAUSEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_DFLT_STRG_CLAUSE#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.CREATE_TABLESPACE"/>
@@ -291,7 +295,7 @@
 <node content="1" id="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.CREATE_TABLESPACE" name="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.CREATE_TABLESPACE" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.CREATE_TABLESPACE">
 <PRPTBOX promptset="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.CREATE_TABLESPACE">
-<TIMESTAMP1s.00 ReadFromTable="OPSE" altview="1" haslist="0" msginsert="" msgnr="" promptname="TIMESTAMP1#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.CREATE_TABLESPACE">&amp;$PHYS_DATE_YYYY_MM_DD_d# &amp;$PHYS_TIME_HH_MM_SS#</TIMESTAMP1s.00>
+<TIMESTAMP1s.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="TIMESTAMP1#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.CREATE_TABLESPACE">2015-12-11 19:27:00</TIMESTAMP1s.00>
 <UC4RB_DB_BLOCK_SIZEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_BLOCK_SIZE#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.CREATE_TABLESPACE"/>
 <UC4RB_DB_CONN_INTRVLs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_CONN_INTRVL#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.CREATE_TABLESPACE">10</UC4RB_DB_CONN_INTRVLs.00>
 <UC4RB_DB_DFLT_STRG_CLAUSEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_DFLT_STRG_CLAUSE#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.CREATE_TABLESPACE"/>
@@ -382,7 +386,9 @@
 <dyntree>
 <node content="1" id="VALUE" name="Variables" parent="" type="VALUE">
 <VALUE state="1">
-<Values/>
+<Values>
+<row ERTUsage="0" Name="&amp;TIMESTAMP1#" Value="&amp;$PHYS_DATE_YYYY_MM_DD_d# &amp;$PHYS_TIME_HH_MM_SS#"/>
+</Values>
 <Mode>0</Mode>
 </VALUE>
 </node>
