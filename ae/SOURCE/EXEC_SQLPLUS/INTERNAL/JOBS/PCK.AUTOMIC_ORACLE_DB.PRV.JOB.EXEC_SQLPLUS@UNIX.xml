@@ -55,7 +55,7 @@
 <MaxRetCode>0</MaxRetCode>
 <MrcExecute/>
 <MrcElseE>0</MrcElseE>
-<FcstStatus>0|U00000000 ??? ""</FcstStatus>
+<FcstStatus>0| |</FcstStatus>
 
 <ErtMethodDef>1</ErtMethodDef>
 <ErtMethodFix>0</ErtMethodFix>
@@ -110,7 +110,7 @@
 <MSCRI><![CDATA[!@echo off
 :INC PCK.ITPA_SHARED.PUB.INCLUDE.ATTACH
 :INCLUDE PCK.ITPA_SHARED.PRV.INCLUDE.LOGGING.HEADER.PARAM_VALIDATION
- 
+
 !Logging Params
 :SET &UC4RB_LOGGING_PARAMETER# = "Service Name"
 :INCLUDE PCK.ITPA_SHARED.PRV.INCLUDE.LOGGING.PARAM &UC4RB_LOGGING_PARAMETER_VAL# = &UC4RB_DB_SERVICE#

@@ -61,8 +61,8 @@
 <UC4RB_DB_PORTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_PORT#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXEC_SQLPLUS"/>
 <UC4RB_DB_SERVICEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_SERVICE#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXEC_SQLPLUS"/>
 <UC4RB_DB_SQLPLUS_FULL_PATHs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_SQLPLUS_FULL_PATH#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXEC_SQLPLUS">sqlplus</UC4RB_DB_SQLPLUS_FULL_PATHs.00>
-<UC4RB_DB_USERs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_USER#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXEC_SQLPLUS"/>
 <UC4RB_DB_USE_ADMIN_PRIVs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_USE_ADMIN_PRIV#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXEC_SQLPLUS">No</UC4RB_DB_USE_ADMIN_PRIVs.00>
+<UC4RB_DB_USERs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_USER#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXEC_SQLPLUS"/>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -109,8 +109,8 @@
 <node content="1" id="PVALUE" name="Parent Variables" parent="" type="TASKVALUE">
 <VALUE state="2">
 <Values>
-<row Mod="0" Name="&amp;UC4RB_OUT_ORCL_MESSAGE_DESCR#" Value=""/>
-<row Mod="0" Name="&amp;UC4RB_OUT_ORCL_STATUS_CODE#" Value=""/>
+<row ERTUsage="0" Mod="0" Name="&amp;UC4RB_OUT_ORCL_MESSAGE_DESCR#" Value=""/>
+<row ERTUsage="0" Mod="0" Name="&amp;UC4RB_OUT_ORCL_STATUS_CODE#" Value=""/>
 </Values>
 <Mode>0</Mode>
 </VALUE>
@@ -126,8 +126,8 @@
 <UC4RB_DB_PORTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_PORT#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXEC_SQLPLUS"/>
 <UC4RB_DB_SERVICEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_SERVICE#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXEC_SQLPLUS"/>
 <UC4RB_DB_SQLPLUS_FULL_PATHs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_SQLPLUS_FULL_PATH#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXEC_SQLPLUS">sqlplus</UC4RB_DB_SQLPLUS_FULL_PATHs.00>
-<UC4RB_DB_USERs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_USER#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXEC_SQLPLUS"/>
 <UC4RB_DB_USE_ADMIN_PRIVs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_USE_ADMIN_PRIV#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXEC_SQLPLUS">No</UC4RB_DB_USE_ADMIN_PRIVs.00>
+<UC4RB_DB_USERs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_USER#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXEC_SQLPLUS"/>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -174,8 +174,8 @@
 <node content="1" id="PVALUE" name="Parent Variables" parent="" type="TASKVALUE">
 <VALUE state="2">
 <Values>
-<row Mod="0" Name="&amp;UC4RB_OUT_ORCL_MESSAGE_DESCR#" Value=""/>
-<row Mod="0" Name="&amp;UC4RB_OUT_ORCL_STATUS_CODE#" Value=""/>
+<row ERTUsage="0" Mod="0" Name="&amp;UC4RB_OUT_ORCL_MESSAGE_DESCR#" Value=""/>
+<row ERTUsage="0" Mod="0" Name="&amp;UC4RB_OUT_ORCL_STATUS_CODE#" Value=""/>
 </Values>
 <Mode>0</Mode>
 </VALUE>
@@ -191,8 +191,8 @@
 <UC4RB_DB_PORTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_PORT#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXEC_SQLPLUS"/>
 <UC4RB_DB_SERVICEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_SERVICE#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXEC_SQLPLUS"/>
 <UC4RB_DB_SQLPLUS_FULL_PATHs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_SQLPLUS_FULL_PATH#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXEC_SQLPLUS">sqlplus</UC4RB_DB_SQLPLUS_FULL_PATHs.00>
-<UC4RB_DB_USERs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_USER#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXEC_SQLPLUS"/>
 <UC4RB_DB_USE_ADMIN_PRIVs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_USE_ADMIN_PRIV#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXEC_SQLPLUS">No</UC4RB_DB_USE_ADMIN_PRIVs.00>
+<UC4RB_DB_USERs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_USER#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXEC_SQLPLUS"/>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -240,8 +240,8 @@
 <UC4RB_DB_PORTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_PORT#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXEC_SQLPLUS"/>
 <UC4RB_DB_SERVICEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_SERVICE#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXEC_SQLPLUS"/>
 <UC4RB_DB_SQLPLUS_FULL_PATHs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_SQLPLUS_FULL_PATH#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXEC_SQLPLUS">sqlplus</UC4RB_DB_SQLPLUS_FULL_PATHs.00>
-<UC4RB_DB_USERs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_USER#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXEC_SQLPLUS"/>
 <UC4RB_DB_USE_ADMIN_PRIVs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_USE_ADMIN_PRIV#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXEC_SQLPLUS">No</UC4RB_DB_USE_ADMIN_PRIVs.00>
+<UC4RB_DB_USERs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_USER#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXEC_SQLPLUS"/>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -270,7 +270,7 @@
 <MaxRetCode>0</MaxRetCode>
 <MrcExecute/>
 <MrcElseE>0</MrcElseE>
-<FcstStatus>0|U00000000 ??? ""</FcstStatus>
+<FcstStatus>0| |</FcstStatus>
 
 <ErtMethodDef>1</ErtMethodDef>
 <ErtMethodFix>0</ErtMethodFix>
