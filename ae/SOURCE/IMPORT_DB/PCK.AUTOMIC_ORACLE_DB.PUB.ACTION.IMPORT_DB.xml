@@ -55,6 +55,7 @@
 <node content="1" id="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.IMPORT_DB" name="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.IMPORT_DB" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.IMPORT_DB">
 <PRPTBOX promptset="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.IMPORT_DB">
+<UC4RB_DB_IMP_INVOKE_AS_SYSDBAs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_IMP_INVOKE_AS_SYSDBA#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.IMPORT_DB">NO</UC4RB_DB_IMP_INVOKE_AS_SYSDBAs.00>
 <UC4RB_DB_IMPMODE_DATAFILESs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_IMPMODE_DATAFILES#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.IMPORT_DB"/>
 <UC4RB_DB_IMPMODE_FROMUSERSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_IMPMODE_FROMUSERS#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.IMPORT_DB"/>
 <UC4RB_DB_IMPMODE_FULLs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_IMPMODE_FULL#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.IMPORT_DB">NO</UC4RB_DB_IMPMODE_FULLs.00>
@@ -82,7 +83,6 @@
 <UC4RB_DB_IMPOPT_STREAMS_CONFIGs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_IMPOPT_STREAMS_CONFIG#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.IMPORT_DB">YES</UC4RB_DB_IMPOPT_STREAMS_CONFIGs.00>
 <UC4RB_DB_IMPOPT_STREAMS_INSTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_IMPOPT_STREAMS_INST#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.IMPORT_DB">NO</UC4RB_DB_IMPOPT_STREAMS_INSTs.00>
 <UC4RB_DB_IMPOPT_VOLSIZEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_IMPOPT_VOLSIZE#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.IMPORT_DB"/>
-<UC4RB_DB_IMP_INVOKE_AS_SYSDBAs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_IMP_INVOKE_AS_SYSDBA#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.IMPORT_DB">NO</UC4RB_DB_IMP_INVOKE_AS_SYSDBAs.00>
 <UC4RB_DB_PASSWORDs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_PASSWORD#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.IMPORT_DB">--10</UC4RB_DB_PASSWORDs.00>
 <UC4RB_DB_SIDs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_SID#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.IMPORT_DB"/>
 <UC4RB_DB_USERNAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_USERNAME#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.IMPORT_DB"/>
@@ -140,6 +140,7 @@
 <node content="1" id="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.IMPORT_DB" name="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.IMPORT_DB" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.IMPORT_DB">
 <PRPTBOX promptset="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.IMPORT_DB">
+<UC4RB_DB_IMP_INVOKE_AS_SYSDBAs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_IMP_INVOKE_AS_SYSDBA#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.IMPORT_DB">NO</UC4RB_DB_IMP_INVOKE_AS_SYSDBAs.00>
 <UC4RB_DB_IMPMODE_DATAFILESs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_IMPMODE_DATAFILES#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.IMPORT_DB"/>
 <UC4RB_DB_IMPMODE_FROMUSERSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_IMPMODE_FROMUSERS#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.IMPORT_DB"/>
 <UC4RB_DB_IMPMODE_FULLs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_IMPMODE_FULL#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.IMPORT_DB">NO</UC4RB_DB_IMPMODE_FULLs.00>
@@ -167,7 +168,6 @@
 <UC4RB_DB_IMPOPT_STREAMS_CONFIGs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_IMPOPT_STREAMS_CONFIG#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.IMPORT_DB">YES</UC4RB_DB_IMPOPT_STREAMS_CONFIGs.00>
 <UC4RB_DB_IMPOPT_STREAMS_INSTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_IMPOPT_STREAMS_INST#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.IMPORT_DB">NO</UC4RB_DB_IMPOPT_STREAMS_INSTs.00>
 <UC4RB_DB_IMPOPT_VOLSIZEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_IMPOPT_VOLSIZE#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.IMPORT_DB"/>
-<UC4RB_DB_IMP_INVOKE_AS_SYSDBAs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_IMP_INVOKE_AS_SYSDBA#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.IMPORT_DB">NO</UC4RB_DB_IMP_INVOKE_AS_SYSDBAs.00>
 <UC4RB_DB_PASSWORDs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_PASSWORD#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.IMPORT_DB">--10</UC4RB_DB_PASSWORDs.00>
 <UC4RB_DB_SIDs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_SID#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.IMPORT_DB"/>
 <UC4RB_DB_USERNAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_USERNAME#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.IMPORT_DB"/>
@@ -225,6 +225,7 @@
 <node content="1" id="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.IMPORT_DB" name="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.IMPORT_DB" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.IMPORT_DB">
 <PRPTBOX promptset="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.IMPORT_DB">
+<UC4RB_DB_IMP_INVOKE_AS_SYSDBAs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_IMP_INVOKE_AS_SYSDBA#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.IMPORT_DB">NO</UC4RB_DB_IMP_INVOKE_AS_SYSDBAs.00>
 <UC4RB_DB_IMPMODE_DATAFILESs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_IMPMODE_DATAFILES#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.IMPORT_DB"/>
 <UC4RB_DB_IMPMODE_FROMUSERSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_IMPMODE_FROMUSERS#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.IMPORT_DB"/>
 <UC4RB_DB_IMPMODE_FULLs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_IMPMODE_FULL#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.IMPORT_DB">NO</UC4RB_DB_IMPMODE_FULLs.00>
@@ -252,7 +253,6 @@
 <UC4RB_DB_IMPOPT_STREAMS_CONFIGs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_IMPOPT_STREAMS_CONFIG#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.IMPORT_DB">YES</UC4RB_DB_IMPOPT_STREAMS_CONFIGs.00>
 <UC4RB_DB_IMPOPT_STREAMS_INSTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_IMPOPT_STREAMS_INST#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.IMPORT_DB">NO</UC4RB_DB_IMPOPT_STREAMS_INSTs.00>
 <UC4RB_DB_IMPOPT_VOLSIZEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_IMPOPT_VOLSIZE#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.IMPORT_DB"/>
-<UC4RB_DB_IMP_INVOKE_AS_SYSDBAs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_IMP_INVOKE_AS_SYSDBA#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.IMPORT_DB">NO</UC4RB_DB_IMP_INVOKE_AS_SYSDBAs.00>
 <UC4RB_DB_PASSWORDs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_PASSWORD#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.IMPORT_DB">--10</UC4RB_DB_PASSWORDs.00>
 <UC4RB_DB_SIDs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_SID#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.IMPORT_DB"/>
 <UC4RB_DB_USERNAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_USERNAME#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.IMPORT_DB"/>
@@ -297,6 +297,7 @@
 <node content="1" id="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.IMPORT_DB" name="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.IMPORT_DB" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.IMPORT_DB">
 <PRPTBOX promptset="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.IMPORT_DB">
+<UC4RB_DB_IMP_INVOKE_AS_SYSDBAs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_IMP_INVOKE_AS_SYSDBA#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.IMPORT_DB">NO</UC4RB_DB_IMP_INVOKE_AS_SYSDBAs.00>
 <UC4RB_DB_IMPMODE_DATAFILESs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_IMPMODE_DATAFILES#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.IMPORT_DB"/>
 <UC4RB_DB_IMPMODE_FROMUSERSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_IMPMODE_FROMUSERS#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.IMPORT_DB"/>
 <UC4RB_DB_IMPMODE_FULLs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_IMPMODE_FULL#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.IMPORT_DB">NO</UC4RB_DB_IMPMODE_FULLs.00>
@@ -324,7 +325,6 @@
 <UC4RB_DB_IMPOPT_STREAMS_CONFIGs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_IMPOPT_STREAMS_CONFIG#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.IMPORT_DB">YES</UC4RB_DB_IMPOPT_STREAMS_CONFIGs.00>
 <UC4RB_DB_IMPOPT_STREAMS_INSTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_IMPOPT_STREAMS_INST#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.IMPORT_DB">NO</UC4RB_DB_IMPOPT_STREAMS_INSTs.00>
 <UC4RB_DB_IMPOPT_VOLSIZEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_IMPOPT_VOLSIZE#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.IMPORT_DB"/>
-<UC4RB_DB_IMP_INVOKE_AS_SYSDBAs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_IMP_INVOKE_AS_SYSDBA#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.IMPORT_DB">NO</UC4RB_DB_IMP_INVOKE_AS_SYSDBAs.00>
 <UC4RB_DB_PASSWORDs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_PASSWORD#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.IMPORT_DB">--10</UC4RB_DB_PASSWORDs.00>
 <UC4RB_DB_SIDs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_SID#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.IMPORT_DB"/>
 <UC4RB_DB_USERNAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_USERNAME#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.IMPORT_DB"/>
@@ -356,7 +356,7 @@
 <MaxRetCode>0</MaxRetCode>
 <MrcExecute/>
 <MrcElseE>0</MrcElseE>
-<FcstStatus>0|U00000000 ??? ""</FcstStatus>
+<FcstStatus>0| |</FcstStatus>
 
 <ErtMethodDef>1</ErtMethodDef>
 <ErtMethodFix>0</ErtMethodFix>

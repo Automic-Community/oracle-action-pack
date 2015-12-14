@@ -146,7 +146,7 @@
 <row Name="GLOBAL QUERY REWRITE" Value="GLOBAL QUERY REWRITE" Value1="" Value2="" Value3="" Value4=""/>
 <row Name="GRANT ANY PRIVILEGE" Value="GRANT ANY PRIVILEGE" Value1="" Value2="" Value3="" Value4=""/>
 <row Name="GRANT ANY ROLE" Value="GRANT ANY ROLE" Value1="" Value2="" Value3="" Value4=""/>
-<row Name="GRANTANYOBJECTPRIVILEGE" Value="GRANTANYOBJECTPRIVILEGE" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="GRANTÃÂANYÃÂOBJECTÃÂPRIVILEGE" Value="GRANTÃÂANYÃÂOBJECTÃÂPRIVILEGE" Value1="" Value2="" Value3="" Value4=""/>
 <row Name="IMP_FULL_DATABASE" Value="IMP_FULL_DATABASE" Value1="" Value2="" Value3="" Value4=""/>
 <row Name="INSERT ANY TABLE" Value="INSERT ANY TABLE" Value1="" Value2="" Value3="" Value4=""/>
 <row Name="LOCK ANY TABLE" Value="LOCK ANY TABLE" Value1="" Value2="" Value3="" Value4=""/>

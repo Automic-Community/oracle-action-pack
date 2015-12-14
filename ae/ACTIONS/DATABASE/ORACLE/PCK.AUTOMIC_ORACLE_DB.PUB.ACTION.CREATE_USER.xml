@@ -72,9 +72,9 @@
 <UC4RB_DB_QUOTA_SPECs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_QUOTA_SPEC#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.CREATE_USER"/>
 <UC4RB_DB_TEMP_TABLESPACEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_TEMP_TABLESPACE#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.CREATE_USER"/>
 <UC4RB_DB_TNSNAMES_ORAs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_TNSNAMES_ORA#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.CREATE_USER"/>
-<UC4RB_DB_USERNAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_USERNAME#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.CREATE_USER"/>
 <UC4RB_DB_USER_NAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_USER_NAME#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.CREATE_USER"/>
 <UC4RB_DB_USER_PASSWORDs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_USER_PASSWORD#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.CREATE_USER"/>
+<UC4RB_DB_USERNAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_USERNAME#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.CREATE_USER"/>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -146,9 +146,9 @@
 <UC4RB_DB_QUOTA_SPECs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_QUOTA_SPEC#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.CREATE_USER"/>
 <UC4RB_DB_TEMP_TABLESPACEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_TEMP_TABLESPACE#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.CREATE_USER"/>
 <UC4RB_DB_TNSNAMES_ORAs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_TNSNAMES_ORA#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.CREATE_USER"/>
-<UC4RB_DB_USERNAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_USERNAME#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.CREATE_USER"/>
 <UC4RB_DB_USER_NAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_USER_NAME#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.CREATE_USER"/>
 <UC4RB_DB_USER_PASSWORDs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_USER_PASSWORD#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.CREATE_USER"/>
+<UC4RB_DB_USERNAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_USERNAME#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.CREATE_USER"/>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -220,9 +220,9 @@
 <UC4RB_DB_QUOTA_SPECs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_QUOTA_SPEC#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.CREATE_USER"/>
 <UC4RB_DB_TEMP_TABLESPACEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_TEMP_TABLESPACE#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.CREATE_USER"/>
 <UC4RB_DB_TNSNAMES_ORAs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_TNSNAMES_ORA#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.CREATE_USER"/>
-<UC4RB_DB_USERNAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_USERNAME#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.CREATE_USER"/>
 <UC4RB_DB_USER_NAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_USER_NAME#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.CREATE_USER"/>
 <UC4RB_DB_USER_PASSWORDs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_USER_PASSWORD#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.CREATE_USER"/>
+<UC4RB_DB_USERNAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_USERNAME#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.CREATE_USER"/>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -281,9 +281,9 @@
 <UC4RB_DB_QUOTA_SPECs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_QUOTA_SPEC#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.CREATE_USER"/>
 <UC4RB_DB_TEMP_TABLESPACEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_TEMP_TABLESPACE#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.CREATE_USER"/>
 <UC4RB_DB_TNSNAMES_ORAs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_TNSNAMES_ORA#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.CREATE_USER"/>
-<UC4RB_DB_USERNAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_USERNAME#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.CREATE_USER"/>
 <UC4RB_DB_USER_NAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_USER_NAME#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.CREATE_USER"/>
 <UC4RB_DB_USER_PASSWORDs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_USER_PASSWORD#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.CREATE_USER"/>
+<UC4RB_DB_USERNAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_USERNAME#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.CREATE_USER"/>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -312,7 +312,7 @@
 <MaxRetCode>0</MaxRetCode>
 <MrcExecute/>
 <MrcElseE>0</MrcElseE>
-<FcstStatus>0|U00000000 ??? ""</FcstStatus>
+<FcstStatus>0| |</FcstStatus>
 
 <ErtMethodDef>1</ErtMethodDef>
 <ErtMethodFix>0</ErtMethodFix>
