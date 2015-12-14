@@ -5,6 +5,27 @@ Resource          context.txt
 Library           com.automic.robot.itpa.ItpaLibrary
 
 *** Key Words ***
+Suite Setup
+    Action Connect    ${_AE_HOST}    ${_AE_PORT}    ${_AE_USER}    ${_AE_PASS}    ${_AE_TEMP_FOLD}
+    Init Server
+    Download datatest    /testdata/PCK.AUTOMIC_ORACLE
+
+Download datatest
+    [Arguments]    ${path}
+    Action Connect    ${_AE_HOST}    ${_AE_PORT}    ${_AE_USER}    ${_AE_PASS}    ${_AE_TEMP_FOLD}
+    Init Action    PCK.AUTOMIC_FTP.PUB.ACTION.GET
+    Action Set    &UC4RB_FTP_HOST#    vvni01
+    Action Set    &UC4RB_FTP_USER#    administrator
+    Action Set    &UC4RB_FTP_PWD#    S3rv3r@Aut
+    Action Set    &UC4RB_FTP_TGT_OVERWRITE#    YES
+    Action Set    &UC4RB_FTP_SOURCE_FILES#    ${path}
+    Action Set    &UC4RB_FTP_TGT_FILES_DIR#    ${_WORKING_DIR}
+    Action Set    &UC4RB_FTP_RECURSIVE_GET#    YES
+    Action Set    &UC4RB_FTP_PROTOCOL#    FTP
+    Action Set    &UC4RB_FTP_CONNECT_TIMEOUT#    5000
+    Action Set    &UC4RB_FTP_TR_MODE#    BINARY
+    Action Execute
+
 Init Action
     [Arguments]    ${actionName}
     Action Create    ${actionName}
