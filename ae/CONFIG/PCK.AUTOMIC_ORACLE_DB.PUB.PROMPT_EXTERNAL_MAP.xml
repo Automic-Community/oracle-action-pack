@@ -62,10 +62,10 @@
 <row Name="PCK.AUTOMIC_ORACLE_DB.PUB.ACTION.DROP_USER/UC4RB_DB_JDBC_CONN_STRING#" Value="EXT:/database/jdbc/connection_string" Value1="" Value2="" Value3="" Value4=""/>
 <row Name="PCK.AUTOMIC_ORACLE_DB.PUB.ACTION.DROP_USER/UC4RB_DB_PASSWORD#" Value="EXT:/database/security/password" Value1="" Value2="" Value3="" Value4=""/>
 <row Name="PCK.AUTOMIC_ORACLE_DB.PUB.ACTION.DROP_USER/UC4RB_DB_USERNAME#" Value="EXT:/database/security/username" Value1="" Value2="" Value3="" Value4=""/>
-<row Name="PCK.AUTOMIC_ORACLE_DB.PUB.ACTION.EXEC_SQLPLUS/UC4RB_DB_PASS#" Value="EXT:/database/security/password" Value1="" Value2="" Value3="" Value4=""/>
-<row Name="PCK.AUTOMIC_ORACLE_DB.PUB.ACTION.EXEC_SQLPLUS/UC4RB_DB_USER#" Value="EXT:/database/security/username" Value1="" Value2="" Value3="" Value4=""/>
 <row Name="PCK.AUTOMIC_ORACLE_DB.PUB.ACTION.EXEC_SQLPLUS/AGENT#" Value="&amp;AGENT#" Value1="" Value2="" Value3="" Value4=""/>
 <row Name="PCK.AUTOMIC_ORACLE_DB.PUB.ACTION.EXEC_SQLPLUS/LOGIN#" Value="&amp;LOGIN#" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_ORACLE_DB.PUB.ACTION.EXEC_SQLPLUS/UC4RB_DB_PASS#" Value="EXT:/database/security/password" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_ORACLE_DB.PUB.ACTION.EXEC_SQLPLUS/UC4RB_DB_USER#" Value="EXT:/database/security/username" Value1="" Value2="" Value3="" Value4=""/>
 <row Name="PCK.AUTOMIC_ORACLE_DB.PUB.ACTION.EXPORT_DB/AGENT#" Value="&amp;AGENT#" Value1="" Value2="" Value3="" Value4=""/>
 <row Name="PCK.AUTOMIC_ORACLE_DB.PUB.ACTION.EXPORT_DB/LOGIN#" Value="&amp;LOGIN#" Value1="" Value2="" Value3="" Value4=""/>
 <row Name="PCK.AUTOMIC_ORACLE_DB.PUB.ACTION.EXPORT_DB/UC4RB_DB_PASSWORD#" Value="EXT:/database/security/password" Value1="" Value2="" Value3="" Value4=""/>
