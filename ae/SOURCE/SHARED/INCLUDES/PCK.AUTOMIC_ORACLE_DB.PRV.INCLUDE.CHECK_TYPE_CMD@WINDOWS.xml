@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="ISO-8859-15" standalone="no"?><uc-export clientvers="11.0.0">
+<JOBI name="PCK.AUTOMIC_ORACLE_DB.PRV.INCLUDE.CHECK_TYPE_CMD@WINDOWS">
+<HEADER state="1">
+<Title/>
+<ArchiveKey1/>
+<ArchiveKey2/>
+<OH_SubType/>
+</HEADER>
+<SCRIPT mode="1" state="1">
+<MSCRI><![CDATA[! TODO: REPLACE CHECK_TYPE_CMD in ITPASHARED
+! requires UC4 script variable &UC4RB_CHECKME#
+! different Windows variable are set if the object is a directory, a file or doesn't exist
+:SET &UC4RB_CHECKME_ESCAPED# = STR_SUBSTITUTE (&UC4RB_CHECKME#, '"', '""')
+:SET &UC4RB_CHECKME_ESCAPED# = STR_SUBSTITUTE (&UC4RB_CHECKME_ESCAPED#, '`', '``')
+:SET &UC4RB_CHECKME_ESCAPED# = STR_SUBSTITUTE (&UC4RB_CHECKME_ESCAPED#, '$', '`$')
+SET CHECKME=&UC4RB_ESCAPED_STRING#
+SET ISFILE=0
+SET ISDIR=0
+SET EXIST=0
+if exist "%CHECKME%" (
+  SET EXIST=1
+  if exist "%CHECKME%\" (
+    SET ISDIR=1
+  ) else (
+    SET ISFILE=1
+  )
+) else (
+  SET EXIST=0
+)
+:SET &UC4RB_LOGGING_INFO# = "&UC4RB_CHECKME# is checked for being a dir/file and if it exist"
+:INC PCK.ITPA_SHARED.PRV.INCLUDE.LOGGING.INFO
+:SET &UC4RB_LOGGING_INFO# = "ISDIR($ISDIR) ISFILE($ISFILE) EXIST($EXIST)"
+:INC PCK.ITPA_SHARED.PRV.INCLUDE.LOGGING.INFO
+:SET &UC4RB_LOGGING_INFO# = "------------------------------"
+:INC PCK.ITPA_SHARED.PRV.INCLUDE.LOGGING.INFO]]></MSCRI>
+</SCRIPT>
+<DOCU_Docu state="1" type="text">
+<DOC/>
+</DOCU_Docu>
+</JOBI>
+</uc-export>
