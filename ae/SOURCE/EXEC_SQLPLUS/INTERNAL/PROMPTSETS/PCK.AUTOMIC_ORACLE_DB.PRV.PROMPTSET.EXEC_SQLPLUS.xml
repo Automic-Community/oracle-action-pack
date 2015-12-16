@@ -10,7 +10,7 @@
 <DESIGNER/>
 </PROMPTDESIGNER>
 <PROMPTSETXUI state="1">
-<XUIEDITOR><![CDATA[<dialog height="506" icon="PRPT" id="PRPTS" left="0" top="0" width="407"><readpanel fill="b" id="PRPTBOX" nl="1" scroll="v" text="Parameters"><properties><entry name="text">Parameters</entry><entry name="modifiable">0</entry></properties><text alt="1" enabled="1" fill="b" focus="0" id="UC4RB_DB_SERVICEs.00" inputassistance="0" len="" nl="1" regex="" required="0" separator=";" showaspassword="0" text="Service Name" tooltip="A simple name for a service that resolves to a connect descriptor. Example: to connect to a database using a Net Service Name where the database net service name is ORCL, set this parameter to ORCL." upper="0" multiline="0" multilineIcon="0"><oninputassistant><command request="_internal" target="_view" targetaction="setAttribute" targetparam="promptname|@id"/><command request="_internal" target="_view" targetaction="setAttribute" targetparam="promptvalue|@value"/><command owner="_promptsetcontainer" owneraction="getData" request="getpromptinputassistance" target="_chainwindow"/></oninputassistant>
+<XUIEDITOR><![CDATA[<dialog height="506" icon="PRPT" id="PRPTS" left="0" top="0" width="407"><readpanel fill="b" id="PRPTBOX" nl="1" scroll="v" text="Parameters"><properties><entry name="text">Parameters</entry><entry name="modifiable">0</entry></properties><text alt="1" enabled="1" fill="b" focus="0" id="UC4RB_DB_SERVICEs.00" inputassistance="0" len="" multiline="0" multilineIcon="0" nl="1" regex="" required="0" separator=";" showaspassword="0" text="Service Name" tooltip="A simple name for a service that resolves to a connect descriptor. Example: to connect to a database using a Net Service Name where the database net service name is ORCL, set this parameter to ORCL." upper="0"><oninputassistant><command request="_internal" target="_view" targetaction="setAttribute" targetparam="promptname|@id"/><command request="_internal" target="_view" targetaction="setAttribute" targetparam="promptvalue|@value"/><command owner="_promptsetcontainer" owneraction="getData" request="getpromptinputassistance" target="_chainwindow"/></oninputassistant>
          
       <properties>
         <entry listparam="C,N" name="reference" reftype="STATIC">UC_DATATYPE_STRING</entry>
@@ -31,8 +31,14 @@
         <entry name="modifiable">1</entry>
         <entry name="customfield"/>
       <entry name="initvalue"/>
-         <entry name="xmlkey"/><entry name="xmlpath"/><entry name="multiline">0</entry><entry name="multilineIcon">0</entry><entry name="onchangereset"/><entry name="resetable">1</entry></properties>
-    </text><text alt="1" enabled="1" fill="b" focus="0" id="UC4RB_DB_HOSTs.00" inputassistance="0" len="" nl="1" regex="" required="0" separator=";" showaspassword="0" text="Host" tooltip="Host name or IP address of the database server." upper="0" multiline="0" multilineIcon="0"><oninputassistant><command request="_internal" target="_view" targetaction="setAttribute" targetparam="promptname|@id"/><command request="_internal" target="_view" targetaction="setAttribute" targetparam="promptvalue|@value"/><command owner="_promptsetcontainer" owneraction="getData" request="getpromptinputassistance" target="_chainwindow"/></oninputassistant>
+         <entry name="xmlkey"/>
+            <entry name="xmlpath"/>
+            <entry name="multiline">0</entry>
+            <entry name="multilineIcon">0</entry>
+            <entry name="onchangereset"/>
+            <entry name="resetable">1</entry>
+         </properties>
+    </text><text alt="1" enabled="1" fill="b" focus="0" id="UC4RB_DB_HOSTs.00" inputassistance="0" len="" multiline="0" multilineIcon="0" nl="1" regex="" required="0" separator=";" showaspassword="0" text="Host" tooltip="Host name or IP address of the database server." upper="0"><oninputassistant><command request="_internal" target="_view" targetaction="setAttribute" targetparam="promptname|@id"/><command request="_internal" target="_view" targetaction="setAttribute" targetparam="promptvalue|@value"/><command owner="_promptsetcontainer" owneraction="getData" request="getpromptinputassistance" target="_chainwindow"/></oninputassistant>
          
       <properties>
         <entry listparam="C,N" name="reference" reftype="STATIC">UC_DATATYPE_STRING</entry>
@@ -53,8 +59,14 @@
         <entry name="modifiable">1</entry>
         <entry name="customfield"/>
       <entry name="initvalue"/>
-         <entry name="xmlkey"/><entry name="xmlpath"/><entry name="multiline">0</entry><entry name="multilineIcon">0</entry><entry name="onchangereset"/><entry name="resetable">1</entry></properties>
-    </text><text alt="1" enabled="1" fill="b" focus="0" id="UC4RB_DB_PORTs.00" inputassistance="0" len="" nl="1" regex="" required="0" separator=";" showaspassword="0" text="Port" tooltip="Port number of the Database server" upper="0" multiline="0" multilineIcon="0"><oninputassistant><command request="_internal" target="_view" targetaction="setAttribute" targetparam="promptname|@id"/><command request="_internal" target="_view" targetaction="setAttribute" targetparam="promptvalue|@value"/><command owner="_promptsetcontainer" owneraction="getData" request="getpromptinputassistance" target="_chainwindow"/></oninputassistant>
+         <entry name="xmlkey"/>
+            <entry name="xmlpath"/>
+            <entry name="multiline">0</entry>
+            <entry name="multilineIcon">0</entry>
+            <entry name="onchangereset"/>
+            <entry name="resetable">1</entry>
+         </properties>
+    </text><text alt="1" enabled="1" fill="b" focus="0" id="UC4RB_DB_PORTs.00" inputassistance="0" len="" multiline="0" multilineIcon="0" nl="1" regex="" required="0" separator=";" showaspassword="0" text="Port" tooltip="Port number of the Database server" upper="0"><oninputassistant><command request="_internal" target="_view" targetaction="setAttribute" targetparam="promptname|@id"/><command request="_internal" target="_view" targetaction="setAttribute" targetparam="promptvalue|@value"/><command owner="_promptsetcontainer" owneraction="getData" request="getpromptinputassistance" target="_chainwindow"/></oninputassistant>
          
       <properties>
         <entry listparam="C,N" name="reference" reftype="STATIC">UC_DATATYPE_NUMERIC</entry>
@@ -75,8 +87,14 @@
         <entry name="modifiable">1</entry>
         <entry name="customfield"/>
       <entry name="initvalue"/>
-         <entry name="xmlkey"/><entry name="xmlpath"/><entry name="multiline">0</entry><entry name="multilineIcon">0</entry><entry name="onchangereset"/><entry name="resetable">1</entry></properties>
-    </text><text alt="1" enabled="1" fill="b" focus="0" id="UC4RB_DB_USERs.00" inputassistance="0" len="" nl="1" regex="" required="0" separator=";" showaspassword="0" text="SQL Username" tooltip="Username used to authenticate with the DB server." upper="0" multiline="0" multilineIcon="0"><oninputassistant><command request="_internal" target="_view" targetaction="setAttribute" targetparam="promptname|@id"/><command request="_internal" target="_view" targetaction="setAttribute" targetparam="promptvalue|@value"/><command owner="_promptsetcontainer" owneraction="getData" request="getpromptinputassistance" target="_chainwindow"/></oninputassistant>
+         <entry name="xmlkey"/>
+            <entry name="xmlpath"/>
+            <entry name="multiline">0</entry>
+            <entry name="multilineIcon">0</entry>
+            <entry name="onchangereset"/>
+            <entry name="resetable">1</entry>
+         </properties>
+    </text><text alt="1" enabled="1" fill="b" focus="0" id="UC4RB_DB_USERs.00" inputassistance="0" len="" multiline="0" multilineIcon="0" nl="1" regex="" required="0" separator=";" showaspassword="0" text="SQL Username" tooltip="Username used to authenticate with the DB server." upper="0"><oninputassistant><command request="_internal" target="_view" targetaction="setAttribute" targetparam="promptname|@id"/><command request="_internal" target="_view" targetaction="setAttribute" targetparam="promptvalue|@value"/><command owner="_promptsetcontainer" owneraction="getData" request="getpromptinputassistance" target="_chainwindow"/></oninputassistant>
          
       <properties>
         <entry listparam="C,N" name="reference" reftype="STATIC">UC_DATATYPE_STRING</entry>
@@ -97,8 +115,14 @@
         <entry name="modifiable">1</entry>
         <entry name="customfield"/>
       <entry name="initvalue"/>
-         <entry name="xmlkey"/><entry name="xmlpath"/><entry name="multiline">0</entry><entry name="multilineIcon">0</entry><entry name="onchangereset"/><entry name="resetable">1</entry></properties>
-    </text><text alt="1" enabled="1" fill="b" focus="0" id="UC4RB_DB_PASSs.00" inputassistance="0" len="" nl="1" regex="" required="0" separator=";" showaspassword="0" text="SQL Password" tooltip="Password used to authenticate with the DB server." upper="0" multiline="0" multilineIcon="0"><oninputassistant><command request="_internal" target="_view" targetaction="setAttribute" targetparam="promptname|@id"/><command request="_internal" target="_view" targetaction="setAttribute" targetparam="promptvalue|@value"/><command owner="_promptsetcontainer" owneraction="getData" request="getpromptinputassistance" target="_chainwindow"/></oninputassistant>
+         <entry name="xmlkey"/>
+            <entry name="xmlpath"/>
+            <entry name="multiline">0</entry>
+            <entry name="multilineIcon">0</entry>
+            <entry name="onchangereset"/>
+            <entry name="resetable">1</entry>
+         </properties>
+    </text><text alt="1" enabled="1" fill="b" focus="0" id="UC4RB_DB_PASSs.00" inputassistance="0" len="" multiline="0" multilineIcon="0" nl="1" regex="" required="0" separator=";" showaspassword="1" text="SQL Password" tooltip="Password used to authenticate with the DB server." upper="0"><oninputassistant><command request="_internal" target="_view" targetaction="setAttribute" targetparam="promptname|@id"/><command request="_internal" target="_view" targetaction="setAttribute" targetparam="promptvalue|@value"/><command owner="_promptsetcontainer" owneraction="getData" request="getpromptinputassistance" target="_chainwindow"/></oninputassistant>
          
       <properties>
         <entry listparam="C,N" name="reference" reftype="STATIC">UC_DATATYPE_STRING</entry>
@@ -114,12 +138,18 @@
         <entry name="required">0</entry>
         <entry name="upper">0</entry>
         <entry name="focus">0</entry>
-        <entry name="showaspassword">0</entry>
+        <entry name="showaspassword">1</entry>
         <entry name="tooltip">Password used to authenticate with the DB server.</entry>
         <entry name="modifiable">1</entry>
         <entry name="customfield"/>
       <entry name="initvalue"/>
-         <entry name="xmlkey"/><entry name="xmlpath"/><entry name="multiline">0</entry><entry name="multilineIcon">0</entry><entry name="onchangereset"/><entry name="resetable">1</entry></properties>
+         <entry name="xmlkey"/>
+            <entry name="xmlpath"/>
+            <entry name="multiline">0</entry>
+            <entry name="multilineIcon">0</entry>
+            <entry name="onchangereset"/>
+            <entry name="resetable">1</entry>
+         </properties>
     </text><dynradiogroup alt="1" enabled="1" fill="b" focus="" id="UC4RB_DB_USE_ADMIN_PRIVs.00" nl="1" text="Use DB Admin Privileges" tooltip="Database administration privileges" required="0">
       <properties>
         <entry listparam="C,N" name="reference" reftype="STATIC">PCK.AUTOMIC_ORACLE_DB.PRV.VARA.ADMIN_PRIV</entry>
@@ -132,8 +162,10 @@
         <entry name="modifiable">1</entry>
         <entry name="customfield"/>
       <entry name="initvalue"/>
-         <entry name="xmlkey"/><entry name="xmlpath"/></properties>
-    </dynradiogroup><text alt="1" enabled="1" fill="b" focus="0" id="UC4RB_DB_SQLPLUS_FULL_PATHs.00" inputassistance="0" len="" nl="1" regex="" required="0" separator=";" showaspassword="0" text="Full Path to SQLPlus" tooltip="The full path to the SQLPlus tool. You may use also environment variables in the path pointing to the sqlplus tool, e.g %ORACLE_HOME%/bin/sqlplus on Windows or $ORACLE_HOME/bin/sqlplus on UNIX hosts" upper="0" multiline="0" multilineIcon="0"><oninputassistant><command request="_internal" target="_view" targetaction="setAttribute" targetparam="promptname|@id"/><command request="_internal" target="_view" targetaction="setAttribute" targetparam="promptvalue|@value"/><command owner="_promptsetcontainer" owneraction="getData" request="getpromptinputassistance" target="_chainwindow"/></oninputassistant>
+         <entry name="xmlkey"/>
+            <entry name="xmlpath"/>
+         </properties>
+    </dynradiogroup><text alt="1" enabled="1" fill="b" focus="0" id="UC4RB_DB_SQLPLUS_FULL_PATHs.00" inputassistance="0" len="" multiline="0" multilineIcon="0" nl="1" regex="" required="0" separator=";" showaspassword="0" text="Full Path to SQLPlus" tooltip="The full path to the SQLPlus tool. You may use also environment variables in the path pointing to the sqlplus tool, e.g %ORACLE_HOME%/bin/sqlplus on Windows or $ORACLE_HOME/bin/sqlplus on UNIX hosts" upper="0"><oninputassistant><command request="_internal" target="_view" targetaction="setAttribute" targetparam="promptname|@id"/><command request="_internal" target="_view" targetaction="setAttribute" targetparam="promptvalue|@value"/><command owner="_promptsetcontainer" owneraction="getData" request="getpromptinputassistance" target="_chainwindow"/></oninputassistant>
          
       <properties>
         <entry listparam="C,N" name="reference" reftype="STATIC">UC_DATATYPE_STRING</entry>
@@ -154,8 +186,14 @@
         <entry name="modifiable">1</entry>
         <entry name="customfield"/>
       <entry name="initvalue"/>
-         <entry name="xmlkey"/><entry name="xmlpath"/><entry name="multiline">0</entry><entry name="multilineIcon">0</entry><entry name="onchangereset"/><entry name="resetable">1</entry></properties>
-    </text><text alt="1" enabled="1" fill="b" focus="0" id="UC4RB_DB_COMMANDs.00" inputassistance="0" len="" nl="1" regex="" required="0" separator=";" showaspassword="0" text="Command" tooltip="A command to be passed for execution to the SQLPlus tool. " upper="0" multiline="0" multilineIcon="0"><oninputassistant><command request="_internal" target="_view" targetaction="setAttribute" targetparam="promptname|@id"/><command request="_internal" target="_view" targetaction="setAttribute" targetparam="promptvalue|@value"/><command owner="_promptsetcontainer" owneraction="getData" request="getpromptinputassistance" target="_chainwindow"/></oninputassistant>
+         <entry name="xmlkey"/>
+            <entry name="xmlpath"/>
+            <entry name="multiline">0</entry>
+            <entry name="multilineIcon">0</entry>
+            <entry name="onchangereset"/>
+            <entry name="resetable">1</entry>
+         </properties>
+    </text><text alt="1" enabled="1" fill="b" focus="0" id="UC4RB_DB_COMMANDs.00" inputassistance="0" len="" multiline="0" multilineIcon="0" nl="1" regex="" required="0" separator=";" showaspassword="0" text="Command" tooltip="A command to be passed for execution to the SQLPlus tool. " upper="0"><oninputassistant><command request="_internal" target="_view" targetaction="setAttribute" targetparam="promptname|@id"/><command request="_internal" target="_view" targetaction="setAttribute" targetparam="promptvalue|@value"/><command owner="_promptsetcontainer" owneraction="getData" request="getpromptinputassistance" target="_chainwindow"/></oninputassistant>
          
       <properties>
         <entry listparam="C,N" name="reference" reftype="STATIC">UC_DATATYPE_STRING</entry>
@@ -176,7 +214,13 @@
         <entry name="modifiable">1</entry>
         <entry name="customfield"/>
       <entry name="initvalue"/>
-         <entry name="xmlkey"/><entry name="xmlpath"/><entry name="multiline">0</entry><entry name="multilineIcon">0</entry><entry name="onchangereset"/><entry name="resetable">1</entry></properties>
+         <entry name="xmlkey"/>
+            <entry name="xmlpath"/>
+            <entry name="multiline">0</entry>
+            <entry name="multilineIcon">0</entry>
+            <entry name="onchangereset"/>
+            <entry name="resetable">1</entry>
+         </properties>
     </text></readpanel></dialog>]]></XUIEDITOR>
 </PROMPTSETXUI>
 <PROMPTSETDATA state="1">
