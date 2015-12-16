@@ -60,7 +60,7 @@
 <ShowJob>0</ShowJob>
 </ATTR_WINDOWS>
 <RUNTIME state="1">
-<MaxRetCode>3</MaxRetCode>
+<MaxRetCode>0</MaxRetCode>
 <MrcExecute/>
 <MrcElseE>0</MrcElseE>
 <FcstStatus>0| |</FcstStatus>
@@ -132,7 +132,13 @@
 <LoginFsc/>
 </OUTPUTSCAN>
 <POST_SCRIPT mode="1" replacementmode="1" state="1">
-<OSCRI/>
+<OSCRI><![CDATA[:SET &ret# = GET_UC_OBJECT_STATUS(,,'RETCODE')
+:PRINT &ret#
+:IF &ret# = 0 OR 3
+:  MODIFY_STATE RETCODE=0
+:  MODIFY_STATE STATUS_TEXT = "Exporting successfully with warnings"
+:ENDIF
+:INCLUDE PCK.ITPA_SHARED.PRV.INCLUDE.CHECK_CMDLINE_CMD@WINDOWS]]></OSCRI>
 </POST_SCRIPT>
 <DOCU_Docu state="1" type="text">
 <DOC/>
