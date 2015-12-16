@@ -30,6 +30,10 @@
 				<Property name="password" type="Protected" mode="EDITABLE" displayName="Password">
 					<Description>Password used to authenticate with the Database server</Description>
                 </Property>
+				<Property name="jdbc_connection_string" type="SingleLineText" mode="EDITABLE" displayName="JDBC Connection string">
+		            <Defaultvalue>jdbc:oracle:thin:@[insert-host]:[insert-port]:[insert-sid]</Defaultvalue>
+		            <Description>JDBC connection string. E.g.: jdbc:oracle:thin:@myServer:1521:myDB</Description>
+        		</Property>
 				<Property name="jdbc_driver_jar" type="SingleLineText" mode="EDITABLE" displayName="JDBC Driver JAR Location">
 					<Defaultvalue>ojdbc6.jar</Defaultvalue>
 					<Description>URI pointing to the vendor-specific JDBC jar-file</Description>
@@ -38,10 +42,6 @@
 					<Defaultvalue>oracle.jdbc.OracleDriver</Defaultvalue>
 					<Description>Name of the class to load when initializing the JDBC connection. E.g "com.microsoft.jdbc.sqlserver.SQLServerDriver"</Description>
 				</Property>
-				<Property name="jdbc_connection_string" highlighted="false">
-		            <Value>jdbc:oracle:thin:@[insert-host]:[insert-port]:[insert-sid]</Value>
-		            <Description>JDBC connection string. E.g.: jdbc:oracle:thin:@myServer:1521:myDB</Description>
-        		</Property>
             </Group>
             
             <Group name="persistency_specs" displayName="Persistency specifications">
