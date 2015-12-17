@@ -30,6 +30,16 @@
 				<Property name="password" type="Protected" mode="EDITABLE" displayName="Password">
 					<Description>Password used to authenticate with the Database server</Description>
                 </Property>
+                <Property name="host" type="SingleLineText" mode="EDITABLE" displayName="Host">
+					<Description>Host name or IP address of the database server</Description>
+                </Property>
+                <Property name="port" type="SingleLineText" mode="EDITABLE" displayName="Port">
+					<Description>Port number of database server</Description>
+                </Property>
+                <Property name="sqlplus" type="SingleLineText" mode="EDITABLE" displayName="Full path to SQLPlus">
+                	<Defaultvalue>sqlplus</Defaultvalue>
+					<Description>You may use also environment variables in the path pointing to the sqlplus tool, e.g %ORACLE_HOME%/bin/sqlplus on Windows or $ORACLE_HOME/bin/sqlplus on UNIX hosts</Description>
+                </Property>
 				<Property name="jdbc_connection_string" type="SingleLineText" mode="EDITABLE" displayName="JDBC Connection string">
 		            <Defaultvalue>jdbc:oracle:thin:@[insert-host]:[insert-port]:[insert-sid]</Defaultvalue>
 		            <Description>JDBC connection string. E.g.: jdbc:oracle:thin:@myServer:1521:myDB</Description>
