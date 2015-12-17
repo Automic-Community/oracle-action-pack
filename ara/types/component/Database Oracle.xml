@@ -3,33 +3,12 @@
 <ComponentType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd-schemes/component.xsd">
 	<Name>Database Oracle</Name>
 	<DefaultDeploymentTargetType>Database Oracle</DefaultDeploymentTargetType>
-   	
-	<Properties>
-		<Group name="connectivity" displayName="Management Connection">
-            <Property name="jdbc_connection_string" type="SingleLineText" mode="EDITABLE" displayName="JDBC Connection String">
-				<Defaultvalue>jdbc:oracle:thin:@[insert-host]:[insert-port]:[insert-sid]</Defaultvalue>
-				<Description>JDBC connection string. E.g.: jdbc:oracle:thin:@myServer:1521:myDB</Description>
-			</Property>
-		</Group>
-		
-		<Group name="persistency_specs" displayName="Persistency specifications">
-            <Property name="perm_datafile_spec" type="SingleLineText" mode="EDITABLE" displayName="Permanent datafile specification">
-				<Description>Datafile specification for permanent tablespace</Description>
-			</Property>
-            <Property name="temp_datafile_spec" type="SingleLineText" mode="EDITABLE" displayName="Temporary datafile specification">
-				<Description>Data specification for temporary tablespace</Description>
-			</Property>
-            <Property name="undo_datafile_spec" type="SingleLineText" mode="EDITABLE" displayName="Undo datafile specification">
-				<Description>Datafile specification for undo tablespace</Description>
-			</Property>
-        </Group>
-	</Properties>
 	
 	<DynamicProperties>
 
 		<!--CONNECTIVITY -->
 		<Property name="/database/jdbc/connection_string" highlighted="false">
-            <Value>{/custom/jdbc_connection_string}</Value>
+            <Value>{@target/custom/jdbc_connection_string}</Value>
             <Description>JDBC connection string. E.g.: jdbc:oracle:thin:@myServer:1521:myDB</Description>
         </Property>
 		<Property name="/database/jdbc/driver_jar" highlighted="false">
@@ -44,24 +23,24 @@
             <Value>{@target/custom/username}</Value>
             <Description>Username used to authenticate with the Database server</Description>
         </Property>
-		<Property name="/database/security/password" highlighted="false">
+		<Property name="/database/security/password" type="Protected" highlighted="false">
             <Value>{@target/custom/password}</Value>
             <Description>Password used to authenticate with the Database server</Description>
         </Property>
 
 		<!-- DATAFILE SPECIFICATION -->
 		<Property name="/oracle-db/tablespace/perm_datafile_spec" highlighted="false">
-            <Value>{/custom/perm_datafile_spec}</Value>
+            <Value>{@target/custom/perm_datafile_spec}</Value>
             <Description>Datafile specification for permanent tablespace</Description>
         </Property>
 		
 		<Property name="/oracle-db/tablespace/temp_datafile_spec" highlighted="false">
-            <Value>{/custom/temp_datafile_spec}</Value>
+            <Value>{@target/custom/temp_datafile_spec}</Value>
             <Description>Data specification for temporary tablespace</Description>
         </Property>
 		
 		<Property name="/oracle-db/tablespace/undo_datafile_spec" highlighted="false">
-            <Value>{/custom/undo_datafile_spec}</Value>
+            <Value>{@target/custom/undo_datafile_spec}</Value>
             <Description>Datafile specification for undo tablespace</Description>
         </Property>
 	
