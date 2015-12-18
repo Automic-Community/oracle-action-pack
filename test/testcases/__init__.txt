@@ -1,3 +1,3 @@
 *** Settings ***
-Suite Setup
-Force Tags        #_package_name_#
+Suite Setup       #_package_name_#
+Force Tags
