@@ -8,10 +8,10 @@ Resource          ../../resources/keywords.txt
 
 *** Test Cases ***    SERVICE                         HOST       PORT    USER       PASS          ADMIN PRIV    SQLPLUS FULL PATH       COMMAND                RETURN CODE    RETURN STATUS
 Exec Sqlplus Normal No Admin
-                      DB4IMPORT                       ${HOST}    1521    ${USER}    ventum2011    No            ${SQLPLUS_FULL_PATH}    select * from dual;    0              ${ENDED_OK}
+                      ${SID}                          ${HOST}    1521    ${USER}    ventum2011    No            ${SQLPLUS_FULL_PATH}    select * from dual;    0              ${ENDED_OK}
 
 Exec Sqlplus Normal SYSDBA
-                      db4import                       ${HOST}    1521    SYS        ventum2011    SYSDBA        ${SQLPLUS_FULL_PATH}    select * from dual     0              ${ENDED_OK}
+                      ${SID}                          ${HOST}    1521    SYS        ventum2011    SYSDBA        ${SQLPLUS_FULL_PATH}    select * from dual     0              ${ENDED_OK}
                       #Exec Sqlplus Normal SYSOPER
                       #automic                        ${HOST}    1521    SYSOPER    ventum2011    SYSOPER       ${SQLPLUS_FULL_PATH}    select * from dual;    0              ${ENDED_OK}
 

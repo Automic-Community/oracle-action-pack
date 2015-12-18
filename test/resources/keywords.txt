@@ -8,7 +8,7 @@ Library           com.automic.robot.itpa.ItpaLibrary
 Suite Setup
     Action Connect    ${_AE_HOST}    ${_AE_PORT}    ${_AE_USER}    ${_AE_PASS}    ${_AE_TEMP_FOLD}
     Init Server
-    Download datatest    /testdata/PCK.AUTOMIC_ORACLE
+    #Download datatest    /testdata/PCK.AUTOMIC_ORACLE
 
 Download datatest
     [Arguments]    ${path}
@@ -111,6 +111,24 @@ Drop User
     [Arguments]    ${userDrop}
     Init Action    ${ACTION_DROP_USER}
     Oracle Common Setting
+    Action Set    ${PRT_DROP_USER_DB_DROP_USER}    ${userDrop}
+    Action Set    ${PRT_DROP_USER_DB_FAIL_USR_NOT_EXISTS}    NO
+    Action Set    ${PRT_DROP_USER_DB_CASCADE}    YES
+    Action Execute
+    Action Report Should Be Found
+    Action Return Code Should Be    0
+    Action Return Status Should Be    ${ENDED_OK}
+
+Drop User From Instance
+    [Arguments]    ${userDrop}    ${instance}
+    Init Action    ${ACTION_DROP_USER}
+    Action Set    ${PRT_CREATE_USER_DB_USERNAME_LG}    ${DB_USERNAME}
+    Action Set    ${PRT_CREATE_USER_DB_PASSWORD_LG}    ${DB_PASSWORD}
+    Action Set    ${PRT_CREATE_USER_DB_JDBC_CONN_STRING}    ${CONN_WITHOUTSID}${instance}
+    Action Set    ${PRT_CREATE_USER_DB_DRIVER_JAR}    ${JAR}
+    Action Set    ${PRT_CREATE_USER_DB_DRIVER_CLASS}    ${CLASS}
+    Action Set    ${PRT_CREATE_USER_DB_TNSNAMES_ORA}    ${ORA}
+    Action Set    ${PRT_CREATE_USER_DB_CONN_INTRVL}    ${INTRVL}
     Action Set    ${PRT_DROP_USER_DB_DROP_USER}    ${userDrop}
     Action Set    ${PRT_DROP_USER_DB_FAIL_USR_NOT_EXISTS}    NO
     Action Set    ${PRT_DROP_USER_DB_CASCADE}    YES

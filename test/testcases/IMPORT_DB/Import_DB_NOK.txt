@@ -79,4 +79,4 @@ Import Db Template
     Action Report Should Be Found
     Action Return Status Should Be    ${returnStatus}
     Action Return Code Should Be    ${returnCode}
-    #[Teardown]    Drop User    ${DB_USERNAME1}    YES
+    [Teardown]    Drop User    ${DB_USERNAME1}    YES

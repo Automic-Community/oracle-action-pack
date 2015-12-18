@@ -6,24 +6,24 @@ Force Tags        CREATE_TABLESPACE    win11    unix11    unix10
 Test Template     Create Tablespace Template
 Resource          ../../resources/keywords.txt
 
-*** Test Cases ***    NAME    FAIL_IF_EXISTS    TYPE         SMALL_FILE    LOGGING    FORCE_LOGGING    ONLINE    MGMT_CLAUSE    MGMT_TYPE    MGMT_AUTOALLOC    MGMT_UNIFORM    SPC_AUTO    RETENTION    PERM DATA FILE                                      TEMP DATA FILE                                      UNDO DATA FILE                                      RETURN CODE    RETURN STATUS
+*** Test Cases ***    NAME           FAIL_IF_EXISTS    TYPE         SMALL_FILE    LOGGING    FORCE_LOGGING    ONLINE    MGMT_CLAUSE    MGMT_TYPE    MGMT_AUTOALLOC    MGMT_UNIFORM    SPC_AUTO    RETENTION    PERM DATA FILE                             TEMP DATA FILE                                      UNDO DATA FILE                                      RETURN CODE    RETURN STATUS
 Create TS Permanent Force Logging
-                      tbs2    NO                Permanent    DEFAULT       DEFAULT    DEFAULT          YES       Omit           Local        YES               NO              YES         NO           '${DB_FILE_PATH}${/}test_datafile2.dbs' size 10m    ${EMPTY}                                            ${EMPTY}                                            0              ${ENDED_OK}
+                      tablespace4    NO                Permanent    DEFAULT       DEFAULT    DEFAULT          YES       Omit           Local        YES               NO              YES         NO           ${DB_FILE_PATH}${/}test_xyz_126.dat        ${EMPTY}                                            ${EMPTY}                                            0              ${ENDED_OK}
 
 Create TS Permanent Online Omit
-                      tbs3    YES               Permanent    DEFAULT       DEFAULT    DEFAULT          YES       Omit           Local        YES               NO              YES         NO           '${DB_FILE_PATH}${/}test_datafile3.dbs' size 10m    ${EMPTY}                                            ${EMPTY}                                            0              ${ENDED_OK}
+                      tbs3           YES               Permanent    DEFAULT       DEFAULT    DEFAULT          YES       Omit           Local        YES               NO              YES         NO           '${DB_FILE_PATH}${/}test_datafile3.dbs'    ${EMPTY}                                            ${EMPTY}                                            0              ${ENDED_OK}
 
 Create TS Temporary MGMT Local
-                      tbs4    NO                Temporary    BIGFILE       NO         NO               YES       Omit           Local        YES               NO              YES         NO           ${EMPTY}                                            '${DB_FILE_PATH}${/}test_datafile4.dbs' size 10m    ${EMPTY}                                            0              ${ENDED_OK}
+                      tbs4           NO                Temporary    BIGFILE       NO         NO               YES       Omit           Local        YES               NO              YES         NO           ${EMPTY}                                   '${DB_FILE_PATH}${/}test_datafile4.dbs'             ${EMPTY}                                            0              ${ENDED_OK}
 
 Create TS Temporary MGMT Uniform
-                      tbs5    YES               Temporary    BIGFILE       NO         NO               NO        Omit           Local        YES               NO              YES         NO           ${EMPTY}                                            '${DB_FILE_PATH}${/}test_datafile5.dbs' size 10m    ${EMPTY}                                            0              ${ENDED_OK}
+                      tbs5           YES               Temporary    BIGFILE       NO         NO               NO        Omit           Local        YES               NO              YES         NO           ${EMPTY}                                   '${DB_FILE_PATH}${/}test_datafile5.dbs' size 10m    ${EMPTY}                                            0              ${ENDED_OK}
 
 Create TS Undo Omit
-                      tbs6    NO                Undo         DEFAULT       DEFAULT    DEFAULT          YES       Omit           Local        YES               NO              YES         NO           ${EMPTY}                                            ${EMPTY}                                            '${DB_FILE_PATH}${/}test_datafile6.dbs' size 10m    0              ${ENDED_OK}
+                      tbs6           NO                Undo         DEFAULT       DEFAULT    DEFAULT          YES       Omit           Local        YES               NO              YES         NO           ${EMPTY}                                   ${EMPTY}                                            '${DB_FILE_PATH}${/}test_datafile6.dbs' size 10m    0              ${ENDED_OK}
 
 Create TS Undo Generate
-                      tbs8    YES               Undo         SMALLFILE     YES        YES              YES       Generate       Local        NO                NO              NO          YES          ${EMPTY}                                            ${EMPTY}                                            '${DB_FILE_PATH}${/}test_datafile8.dbs' size 10m    0              ${ENDED_OK}
+                      tbs8           YES               Undo         SMALLFILE     YES        YES              YES       Generate       Local        NO                NO              NO          YES          ${EMPTY}                                   ${EMPTY}                                            '${DB_FILE_PATH}${/}test_datafile8.dbs' size 10m    0              ${ENDED_OK}
 
 *** Keywords ***
 Create Tablespace Template

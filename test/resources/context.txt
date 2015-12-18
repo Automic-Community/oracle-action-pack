@@ -18,10 +18,12 @@ ${SQLPLUS_FULL_PATH}    /
 ${HOST}           /
 ${USER}           /
 ${DB_USERNAME1}    /
+${SERVICE_NAME}    /
 
 *** Key Words ***
 Init Win Server 11
     [Documentation]    TODO: Write server description here
+    Set Global Variable    ${SERVICE_NAME}    AUTOMIC_2
     Set Global Variable    ${DB_USERNAME1}    itpa
     Set Global Variable    ${_AGENT}    DEMO01AT03
     Set Global Variable    ${_LOGIN}    VVNSAT.LOGIN_ALL
@@ -41,10 +43,12 @@ Init Win Server 11
     Set Global Variable    ${USER}    test
     Set Global Variable    ${SID}    automic
     Set Global Variable    ${SID_IMPORT}    automic2
+    Set Global Variable    ${CONN_STRING_AUT}    jdbc:oracle:thin:@vvnidemo01:1521:automic
     Set Global Variable    ${CONN_WITHOUTSID}    jdbc:oracle:thin:@vvnidemo01:1521:
 
 Init Unix Server 11
     [Documentation]    TODO: Write server description here
+    Set Global Variable    ${SERVICE_NAME}    db4import
     Set Global Variable    ${_AGENT}    VI03AT03
     Set Global Variable    ${_LOGIN}    VVNSAT.LOGIN_ALL
     Set Global Variable    ${_WORKING_DIR}    /opt/automic/testcases/PCK.AUTOMIC_ORACLE_DB
