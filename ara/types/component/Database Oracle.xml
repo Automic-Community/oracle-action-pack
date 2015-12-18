@@ -19,6 +19,22 @@
             <Value>{@target/custom/jdbc_driver_class}</Value>
             <Description>Name of the class to load when initializing the JDBC connection. E.g "com.microsoft.jdbc.sqlserver.SQLServerDriver"</Description>
         </Property>
+        <Property name="/database/host" highlighted="false">
+            <Value>{@target/custom/host}</Value>
+            <Description>Optionally you may provide a host name. A host specifies the host name or IP address of the database server.</Description>
+        </Property>
+        <Property name="/database/port" highlighted="false">
+            <Value>{@target/custom/port}</Value>
+            <Description>Optionally you may provide a port. A port specifies the listening port on the database server.</Description>
+        </Property>
+        <Property name="/database/service" highlighted="false">
+            <Value>{@target/custom/service}</Value>
+            <Description>A simple name for a service that resolves to a connect descriptor. Example: to connect to a database using a Net Service Name where the database net service name is ORCL, set this parameter to ORCL.</Description>
+        </Property>
+        <Property name="/database/sqlplus_full_path" highlighted="false">
+            <Value>{@target/custom/sqlplus}</Value>
+            <Description>The full path to the SQLPlus tool. You may use also environment variables in the path pointing to the sqlplus tool, e.g %ORACLE_HOME%/bin/sqlplus on Windows or $ORACLE_HOME/bin/sqlplus on UNIX hosts</Description>
+        </Property>
 		<Property name="/database/security/username" highlighted="false">
             <Value>{@target/custom/username}</Value>
             <Description>Username used to authenticate with the Database server</Description>

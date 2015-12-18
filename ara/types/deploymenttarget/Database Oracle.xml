@@ -31,10 +31,13 @@
 					<Description>Password used to authenticate with the Database server</Description>
                 </Property>
                 <Property name="host" type="SingleLineText" mode="EDITABLE" displayName="Host">
-					<Description>Host name or IP address of the database server</Description>
+					<Description>Optionally you may provide a host name. A host specifies the host name or IP address of the database server.</Description>
                 </Property>
                 <Property name="port" type="SingleLineText" mode="EDITABLE" displayName="Port">
-					<Description>Port number of database server</Description>
+					<Description>Optionally you may provide a port. A port specifies the listening port on the database server.</Description>
+                </Property>
+                <Property name="service" type="SingleLineText" mode="EDITABLE" displayName="Service">
+					<Description>A simple name for a service that resolves to a connect descriptor. Example: to connect to a database using a Net Service Name where the database net service name is ORCL, set this parameter to ORCL.</Description>
                 </Property>
                 <Property name="sqlplus" type="SingleLineText" mode="EDITABLE" displayName="Full path to SQLPlus">
                 	<Defaultvalue>sqlplus</Defaultvalue>
