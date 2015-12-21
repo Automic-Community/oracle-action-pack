@@ -45,6 +45,7 @@ Init Win Server 11
     Set Global Variable    ${SID_IMPORT}    automic2
     Set Global Variable    ${CONN_STRING_AUT}    jdbc:oracle:thin:@vvnidemo01:1521:automic
     Set Global Variable    ${CONN_WITHOUTSID}    jdbc:oracle:thin:@vvnidemo01:1521:
+    Set Global Variable    ${ERROR_CODE1}    999
 
 Init Unix Server 11
     [Documentation]    TODO: Write server description here
@@ -70,6 +71,8 @@ Init Unix Server 11
     Set Global Variable    ${DB_USERNAME3}    dba
     Set Global Variable    ${SID_IMPORT}    db4import
     Set Global Variable    ${CONN_WITHOUTSID}    jdbc:oracle:thin:@172.16.36.70:1521:
+    Set Global Variable    ${ERROR_CODE}    999
+    Set Global Variable    ${ERROR_CODE1}    12
 
 Init Unix Server 10
     [Documentation]    TODO: Write server description here

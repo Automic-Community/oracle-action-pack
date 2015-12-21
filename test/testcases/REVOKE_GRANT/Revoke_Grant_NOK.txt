@@ -6,36 +6,36 @@ Force Tags        REVOKE_GRANT    win11    unix11    unix10
 Test Template     Revoke Grant Template
 Resource          ../../resources/keywords.txt
 
-*** Test Cases ***    SYS_PRVLGS    OBJ_PRIVILEGE    ROLE_PRIVILEGE    CUST_ROLE_PRVLG    ALL_SYS_PRVLGS    ALL_USR_PRVLGS    SCHEMA_OBJECT      FROM_USER          FROM_ROLE          FROM_PUBLIC    RETCODE    STATUS
+*** Test Cases ***    SYS_PRVLGS    OBJ_PRIVILEGE    ROLE_PRIVILEGE    CUST_ROLE_PRVLG    ALL_SYS_PRVLGS    ALL_USR_PRVLGS    SCHEMA_OBJECT      FROM_USER          FROM_ROLE          FROM_PUBLIC    RETCODE           STATUS
 Revoke Unassigned Grant
-                      ${EMPTY}      ${EMPTY}         ${EMPTY}          ${EMPTY}           NO                YES               ${EMPTY}           ${USER_NOGRANT}    ${EMPTY}           NO             231        ${ENDED_NOT_OK}
+                      ${EMPTY}      ${EMPTY}         ${EMPTY}          ${EMPTY}           NO                YES               ${EMPTY}           ${USER_NOGRANT}    ${EMPTY}           NO             ${ERROR_CODE}     ${ENDED_NOT_OK}
 
 Revoke System Privilege
-                      ADVISOR       ${EMPTY}         ${EMPTY}          ${EMPTY}           NO                NO                ${EMPTY}           ${USER_NOGRANT}    ${EMPTY}           NO             231        ${ENDED_NOT_OK}
+                      ADVISOR       ${EMPTY}         ${EMPTY}          ${EMPTY}           NO                NO                ${EMPTY}           ${USER_NOGRANT}    ${EMPTY}           NO             ${ERROR_CODE}     ${ENDED_NOT_OK}
 
 Revoke Object Privilege
-                      ${EMPTY}      DEBUG            ${EMPTY}          ${EMPTY}           NO                NO                DROP_USER.LANHL    ${USER_NOGRANT}    ${EMPTY}           NO             12         ${ENDED_NOT_OK}
+                      ${EMPTY}      DEBUG            ${EMPTY}          ${EMPTY}           NO                NO                DROP_USER.LANHL    ${USER_NOGRANT}    ${EMPTY}           NO             ${ERROR_CODE1}    ${ENDED_NOT_OK}
 
 Revoke Role Privilege
-                      ${EMPTY}      ${EMPTY}         HS_ADMIN_ROLE     ${EMPTY}           NO                NO                ${EMPTY}           ${USER_NOGRANT}    ${EMPTY}           NO             231        ${ENDED_NOT_OK}
+                      ${EMPTY}      ${EMPTY}         HS_ADMIN_ROLE     ${EMPTY}           NO                NO                ${EMPTY}           ${USER_NOGRANT}    ${EMPTY}           NO             ${ERROR_CODE}     ${ENDED_NOT_OK}
 
 Revoke userdefined Role Privilege
-                      ${EMPTY}      ${EMPTY}         ${EMPTY}          ROLE               NO                YES               ${EMPTY}           ${USER_NOGRANT}    ${EMPTY}           NO             231        ${ENDED_NOT_OK}
+                      ${EMPTY}      ${EMPTY}         ${EMPTY}          ROLE               NO                YES               ${EMPTY}           ${USER_NOGRANT}    ${EMPTY}           NO             ${ERROR_CODE}     ${ENDED_NOT_OK}
 
 Revoke all system Privilege
-                      ${EMPTY}      ${EMPTY}         ${EMPTY}          ${EMPTY}           YES               NO                ${EMPTY}           ${USER_NOGRANT}    ${EMPTY}           NO             231        ${ENDED_NOT_OK}
+                      ${EMPTY}      ${EMPTY}         ${EMPTY}          ${EMPTY}           YES               NO                ${EMPTY}           ${USER_NOGRANT}    ${EMPTY}           NO             ${ERROR_CODE}     ${ENDED_NOT_OK}
 
 Revoke all user Privilege
-                      ${EMPTY}      ${EMPTY}         ${EMPTY}          ${EMPTY}           YES               YES               ${EMPTY}           ${USER_NOGRANT}    ${EMPTY}           NO             231        ${ENDED_NOT_OK}
+                      ${EMPTY}      ${EMPTY}         ${EMPTY}          ${EMPTY}           YES               YES               ${EMPTY}           ${USER_NOGRANT}    ${EMPTY}           NO             ${ERROR_CODE}     ${ENDED_NOT_OK}
 
 Revoke all user Privilege from role
-                      ${EMPTY}      ${EMPTY}         ${EMPTY}          ${EMPTY}           NO                YES               ${EMPTY}           ${EMPTY}           ${ROLE_NOGRANT}    NO             231        ${ENDED_NOT_OK}
+                      ${EMPTY}      ${EMPTY}         ${EMPTY}          ${EMPTY}           NO                YES               ${EMPTY}           ${EMPTY}           ${ROLE_NOGRANT}    NO             ${ERROR_CODE}     ${ENDED_NOT_OK}
 
 Revoke all user Privilege from public
-                      ${EMPTY}      ${EMPTY}         HS_ADMIN_ROLE     ${EMPTY}           NO                NO                ${EMPTY}           ${EMPTY}           ${ROLE_NOGRANT}    YES            231        ${ENDED_NOT_OK}
+                      ${EMPTY}      ${EMPTY}         HS_ADMIN_ROLE     ${EMPTY}           NO                NO                ${EMPTY}           ${EMPTY}           ${ROLE_NOGRANT}    YES            ${ERROR_CODE}     ${ENDED_NOT_OK}
 
 Revoke all user Privilege from schema
-                      ${EMPTY}      DEBUG            ${EMPTY}          ${EMPTY}           NO                NO                DROP_USER.LANHL    ${EMPTY}           ${ROLE_NOGRANT}    YES            231        ${ENDED_NOT_OK}
+                      ${EMPTY}      DEBUG            ${EMPTY}          ${EMPTY}           NO                NO                DROP_USER.LANHL    ${EMPTY}           ${ROLE_NOGRANT}    YES            ${ERROR_CODE}     ${ENDED_NOT_OK}
 
 *** Keywords ***
 Suite Setup User
