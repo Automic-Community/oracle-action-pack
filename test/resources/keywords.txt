@@ -8,7 +8,7 @@ Library           com.automic.robot.itpa.ItpaLibrary
 Suite Setup
     Action Connect    ${_AE_HOST}    ${_AE_PORT}    ${_AE_USER}    ${_AE_PASS}    ${_AE_TEMP_FOLD}
     Init Server
-    #Download datatest    /testdata/PCK.AUTOMIC_ORACLE
+    Download datatest    /testdata/PCK.AUTOMIC_ORACLE_DB
 
 Download datatest
     [Arguments]    ${path}

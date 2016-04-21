@@ -23,8 +23,8 @@ ${SERVICE_NAME}    /
 *** Key Words ***
 Init Win Server 11
     [Documentation]    TODO: Write server description here
-    Set Global Variable    ${SERVICE_NAME}    AUTOMIC_2
-    Set Global Variable    ${DB_USERNAME1}    itpa
+    Set Global Variable    ${SERVICE_NAME}    automic
+    Set Global Variable    ${DB_USERNAME1}    test
     Set Global Variable    ${_AGENT}    VVNORA01
     Set Global Variable    ${_LOGIN}    VVNSAT.LOGIN_ALL
     Set Global Variable    ${_WORKING_DIR}    C:\\automic\\testcases\\PCK.AUTOMIC_ORACLE_DB
@@ -32,7 +32,7 @@ Init Win Server 11
     Set Global Variable    ${DB_USERNAME}    test
     Set Global Variable    ${DB_PASSWORD}    ventum2011
     Set Global Variable    ${CONN_STRING}    jdbc:oracle:thin:@vvnora01:1521:automic
-    Set Global Variable    ${JAR}    C:\\automic\\agents\\testdata\\ojdbc6.jar
+    Set Global Variable    ${JAR}    C:\\automic\\testcases\\PCK.AUTOMIC_ORACLE_DB\\ojdbc6.jar
     Set Global Variable    ${CLASS}    oracle.jdbc.driver.OracleDriver
     Set Global Variable    ${ORA}    C:\\app\\Administrator\\product\\11.2.0\\dbhome_1\\NETWORK\\ADMIN\\SAMPLE\\tnsnames.ora
     Set Global Variable    ${INTRVL}    10
@@ -73,18 +73,17 @@ Init Unix Server 11
     Set Global Variable    ${CONN_WITHOUTSID}    jdbc:oracle:thin:@vvnora02:1521:
     Set Global Variable    ${ERROR_CODE}    999
     Set Global Variable    ${ERROR_CODE1}    12
-
-#Init Unix Server 10
-#    [Documentation]    TODO: Write server description here
-#    Set Global Variable    ${_AGENT}    OR10UNIX
-#    Set Global Variable    ${_LOGIN}    VVNSAT.LOGIN_ALL
-#    Set Global Variable    ${_WORKING_DIR}    /opt/automic/testcases/PCK.AUTOMIC_ORACLE_DB
-#    Set Global Variable    ${/}    /
-#    Set Global Variable    ${DB_USERNAME}    test
-#    Set Global Variable    ${DB_PASSWORD}    ventum2011
+    #Init Unix Server 10
+    #    [Documentation]    TODO: Write server description here
+    #    Set Global Variable    ${_AGENT}    OR10UNIX
+    #    Set Global Variable    ${_LOGIN}    VVNSAT.LOGIN_ALL
+    #    Set Global Variable    ${_WORKING_DIR}    /opt/automic/testcases/PCK.AUTOMIC_ORACLE_DB
+    #    Set Global Variable    ${/}    /
+    #    Set Global Variable    ${DB_USERNAME}    test
+    #    Set Global Variable    ${DB_PASSWORD}    ventum2011
 
 Init Server
     [Documentation]    Requirement
     Run Keyword If    '${OS}' == 'WIN11'    Init Win Server 11
     Run Keyword If    '${OS}' == 'UNIX11'    Init Unix Server 11
-#    Run Keyword If    '${OS}' == 'UNIX10'    Init Unix Server 10
+    #    Run Keyword If    '${OS}' == 'UNIX10'    Init Unix Server 10
