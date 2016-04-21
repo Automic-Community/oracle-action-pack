@@ -32,7 +32,7 @@ Init Win Server 11
     Set Global Variable    ${DB_USERNAME}    test
     Set Global Variable    ${DB_PASSWORD}    ventum2011
     Set Global Variable    ${CONN_STRING}    jdbc:oracle:thin:@vvnora01:1521:automic
-    Set Global Variable    ${JAR}    C:\\automic\\testcases\\PCK.AUTOMIC_ORACLE_DB\\ojdbc6.jar
+    Set Global Variable    ${JAR}    C:\\app\\Administrator\\product\\11.2.0\\dbhome_1\\jdbc\\lib\\ojdbc6.jar
     Set Global Variable    ${CLASS}    oracle.jdbc.driver.OracleDriver
     Set Global Variable    ${ORA}    C:\\app\\Administrator\\product\\11.2.0\\dbhome_1\\NETWORK\\ADMIN\\SAMPLE\\tnsnames.ora
     Set Global Variable    ${INTRVL}    10
@@ -58,7 +58,7 @@ Init Unix Server 11
     Set Global Variable    ${DB_PASSWORD}    ventum2011
     Set Global Variable    ${CONN_STRING_AUT}    jdbc:oracle:thin:@vvnora02:1521:automic
     Set Global Variable    ${CONN_STRING}    jdbc:oracle:thin:@vvnora02:1521:db4import
-    Set Global Variable    ${JAR}    /ojdbc6.jar
+    Set Global Variable    ${JAR}    /u01/app/oracle/product/11.2.0/db_1/jdbc/lib/ojdbc6.jar
     Set Global Variable    ${CLASS}    oracle.jdbc.driver.OracleDriver
     Set Global Variable    ${ORA}    /u01/app/oracle/product/11.2.0/db_1/network/admin/tnsnames.ora
     Set Global Variable    ${INTRVL}    10
