@@ -49,7 +49,7 @@ Init Win Server 11
 
 Init Unix Server 11
     [Documentation]    TODO: Write server description here
-    Set Global Variable    ${SERVICE_NAME}    db4import
+    Set Global Variable    ${SERVICE_NAME}    automic
     Set Global Variable    ${_AGENT}    VVNORA02
     Set Global Variable    ${_LOGIN}    VVNSAT.LOGIN_ALL
     Set Global Variable    ${_WORKING_DIR}    /opt/automic/testcases/PCK.AUTOMIC_ORACLE_DB
@@ -69,6 +69,7 @@ Init Unix Server 11
     Set Global Variable    ${USER}    itpa
     Set Global Variable    ${DB_USERNAME1}    test
     Set Global Variable    ${DB_USERNAME3}    dba
+    Set Global Variable    ${SID}    automic
     Set Global Variable    ${SID_IMPORT}    db4import
     Set Global Variable    ${CONN_WITHOUTSID}    jdbc:oracle:thin:@vvnora02:1521:
     Set Global Variable    ${ERROR_CODE}    999
