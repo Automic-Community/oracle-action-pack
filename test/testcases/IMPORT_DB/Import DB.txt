@@ -3,6 +3,7 @@ Documentation     NOTE:
 ...               add note here
 Suite Setup       Suite Setup
 Force Tags        IMPORT_DB    win11    unix11    unix10
+Default Tags      ALL
 Test Template     Import Db Template
 Resource          ../../resources/keywords.txt
 

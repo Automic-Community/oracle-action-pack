@@ -3,6 +3,7 @@ Documentation     NOTE:
 ...               add note here
 Suite Setup       Suite Setup User Assign Import
 Force Tags        EXPORT_DB    win11    unix11    unix10    #Suite Teardown    Drop user and tablespace
+Default Tags      ALL
 Test Template     Export Db Template
 Resource          ../../resources/keywords.txt
 

@@ -3,6 +3,7 @@ Documentation     NOTE:
 ...               add note here
 Suite Setup       Suite Setup
 Force Tags        DROP_USER    win11    unix11    unix10
+Default Tags      ALL
 Test Template     Drop User Template
 Resource          ../../resources/keywords.txt
 

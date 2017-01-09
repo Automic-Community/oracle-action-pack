@@ -3,6 +3,7 @@ Documentation     NOTE:
 ...               add note here
 Suite Setup       Suite Setup
 Force Tags        EXEC_SQLPLUS    win11    unix11
+Default Tags      ALL
 Test Template     Exec Sqlplus Template
 Resource          ../../resources/keywords.txt
 
