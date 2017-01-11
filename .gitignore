@@ -10,3 +10,5 @@ connection.properties
 .project
 .sonar
 .sonar
+tools/oracle-db-tool/.idea/
+tools/oracle-db-tool/oracle-db-tool.iml
