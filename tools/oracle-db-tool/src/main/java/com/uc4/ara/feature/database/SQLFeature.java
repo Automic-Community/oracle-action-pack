@@ -199,7 +199,7 @@ public class SQLFeature extends AbstractFeature {
 					rowCount += updateCount;
 				}
 			} catch (SQLException sqlEx) {
-				if (sqlEx.getMessage().toLowerCase().contains(" exist")
+				if (sqlEx.getMessage().toLowerCase().contains(" already exist")
 						|| sqlEx.getErrorCode() == 1920 || sqlEx.getErrorCode() == 1918) {
 					returnCode = ErrorCodes.SQL_EXISTS_ERROR;
 					FeatureUtil.logMsg("SQL return code: " + sqlEx.getErrorCode());			
