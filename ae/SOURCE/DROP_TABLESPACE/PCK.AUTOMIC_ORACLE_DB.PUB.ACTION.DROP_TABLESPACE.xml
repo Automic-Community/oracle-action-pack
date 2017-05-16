@@ -350,7 +350,12 @@
 <MSCRI/>
 </SCRIPT>
 <DOCU_Docu state="1" type="text">
-<DOC><![CDATA[Removes a tablespace from the database.]]></DOC>
+<DOC><![CDATA[Removes a tablespace from the database.
+Because of Issue "2338968 : DROP TABLESPACE DOES NOT ALWAYS AUTOMATICALLY DROP DATAFILES" of Oracle, 
+when using this action on Windows with Option "include datafiles" then datafiles in OS will not be deleted.
+This issue happen on all versions of Oracle.
+To delete datafiles on Windows, user must stop Oracle services and delete file directly on datafiles folder
+	]]></DOC>
 </DOCU_Docu>
 </JOBP>
 </uc-export>
