@@ -46,7 +46,7 @@ Init Win Server 11
     Set Global Variable    ${CONN_STRING_AUT}    jdbc:oracle:thin:@vvnora01:1521:automic
     Set Global Variable    ${CONN_WITHOUTSID}    jdbc:oracle:thin:@vvnora01:1521:
     Set Global Variable    ${ERROR_CODE1}    999
-    Set Global Variable    ${DATAFILE_PATH}    '/u01/app/oracle/test_datafile2.dbs'
+    Set Global Variable    ${DATAFILE_PATH}    'C:/u01/app/oracle/test_datafile2.dbs'
 
 Init Unix Server 11
     [Documentation]    TODO: Write server description here
@@ -75,7 +75,7 @@ Init Unix Server 11
     Set Global Variable    ${CONN_WITHOUTSID}    jdbc:oracle:thin:@vvnora02:1521:
     Set Global Variable    ${ERROR_CODE}    999
     Set Global Variable    ${ERROR_CODE1}    231
-    Set Global Variable    ${DATAFILE_PATH}    'C:/u01/app/oracle/test_datafile2.dbs'
+    Set Global Variable    ${DATAFILE_PATH}    '/u01/app/oracle/test_datafile2.dbs'
     #Init Unix Server 10
     #    [Documentation]    TODO: Write server description here
     #    Set Global Variable    ${_AGENT}    OR10UNIX
