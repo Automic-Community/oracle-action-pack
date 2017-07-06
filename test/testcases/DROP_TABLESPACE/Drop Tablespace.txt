@@ -7,23 +7,23 @@ Default Tags      ALL
 Test Template     Drop Tablespace Template
 Resource          ../../resources/keywords.txt
 
-*** Test Cases ***    NAME    FAIL IF NOT EXISTS    DROP CONTENTS    DROP DATAFILES    CASCADE    RETURN CODE    RETURN STATUS
-Drop Tablespace Normal Drop Contents
-                      tbs2    NO                    YES              YES               YES        0              ${ENDED_OK}
-
-Drop Tablespace Normal Not Drop Contents
-                      tbs2    NO                    NO               NO                NO         0              ${ENDED_OK}
-
+*** Test Cases ***    NAME    FAIL IF NOT EXISTS    DROP CONTENTS    DROP DATAFILES    CASCADE    DATAFILE PATH                 RETURN CODE    RETURN STATUS
 Drop Tablespace Normal Drop Data Files
-                      tbs2    NO                    YES              YES               NO         0              ${ENDED_OK}
+                      tbs2    NO                    YES              YES               NO         ${DATAFILE_PATH1} size 10m    0              ${ENDED_OK}
+
+Drop Tablespace Normal Drop Contents
+                      tbs2    NO                    YES              YES               YES        ${DATAFILE_PATH2} size 10m    0              ${ENDED_OK}
 
 Drop Tablespace Normal Cascade
-                      tbs2    NO                    YES              NO                YES        0              ${ENDED_OK}
+                      tbs2    NO                    YES              NO                YES        ${DATAFILE_PATH3} size 10m    0              ${ENDED_OK}
+
+Drop Tablespace Normal Not Drop Contents
+                      tbs2    NO                    NO               NO                NO         ${DATAFILE_PATH4} size 10m    0              ${ENDED_OK}
 
 *** Keywords ***
 Drop Tablespace Template
-    [Arguments]    ${name}    ${fail_if_not_exists}    ${drop_contents}    ${drop_datafiles}    ${cascade_cnstr}    ${returnCode}
-    ...    ${returnStatus}
+    [Arguments]    ${name}    ${fail_if_not_exists}    ${drop_contents}    ${drop_datafiles}    ${cascade_cnstr}    ${datafile_spec}
+    ...    ${returnCode}    ${returnStatus}
     Init Action    ${ACTION_CREATE_TABLESPACE}
     Oracle Common Setting
     Action Set    ${PRT_CREATE_TABLESPACE_DB_TABLESPACE_NAME}    ${name}
@@ -39,7 +39,7 @@ Drop Tablespace Template
     Action Set    ${PRT_CREATE_TABLESPACE_DB_EXT_MGMT_UNIFORM}    NO
     Action Set    ${PRT_CREATE_TABLESPACE_DB_SEGM_SPC_AUTO}    YES
     Action Set    ${PRT_CREATE_TABLESPACE_DB_RETENTION}    NO
-    Action Set    ${PRT_CREATE_TABLESPACE_DB_PERM_DATAFILE_SPEC}    ${DATAFILE_PATH} size 10m
+    Action Set    ${PRT_CREATE_TABLESPACE_DB_PERM_DATAFILE_SPEC}    ${datafile_spec}
     Action Execute
     Init Action    ${ACTION_DROP_TABLESPACE}
     Oracle Common Setting
