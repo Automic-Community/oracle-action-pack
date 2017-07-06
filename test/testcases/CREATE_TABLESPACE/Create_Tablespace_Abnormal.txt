@@ -7,12 +7,12 @@ Default Tags      ALL
 Test Template     Create Tablespace Template
 Resource          ../../resources/keywords.txt
 
-*** Test Cases ***    NAME    FAIL_IF_EXISTS    TYPE         SMALL_FILE    LOGGING    FORCE_LOGGING    ONLINE    MGMT_CLAUSE    MGMT_TYPE    MGMT_AUTOALLOC    MGMT_UNIFORM    SPC_AUTO    RETENTION    PERM DATA FILE               TEMP DATA FILE    RETURN CODE       RETURN STATUS
+*** Test Cases ***    NAME    FAIL_IF_EXISTS    TYPE         SMALL_FILE    LOGGING    FORCE_LOGGING    ONLINE    MGMT_CLAUSE    MGMT_TYPE    MGMT_AUTOALLOC    MGMT_UNIFORM    SPC_AUTO    RETENTION    PERM DATA FILE               TEMP DATA FILE    RETURN CODE    RETURN STATUS
 Create TS Abnormal Permanent
-                      tbs2    YES               Permanent    DEFAULT       DEFAULT    DEFAULT          YES       Omit           Local        YES               NO              YES         NO           ${DATAFILE_PATH} size 10m    ${EMPTY}          ${ERROR_CODE1}    ${ENDED_NOT_OK}
+                      tbs2    YES               Permanent    DEFAULT       DEFAULT    DEFAULT          YES       Omit           Local        YES               NO              YES         NO           ${DATAFILE_PATH} size 10m    ${EMPTY}          231            ${ENDED_NOT_OK}
 
 Create TS Abnormal Temp
-                      tbs3    YES               Permanent    DEFAULT       DEFAULT    DEFAULT          YES       Omit           Local        YES               NO              YES         NO           ${DATAFILE_PATH} size 10m    ${EMPTY}          ${ERROR_CODE1}    ${ENDED_NOT_OK}
+                      tbs3    YES               Permanent    DEFAULT       DEFAULT    DEFAULT          YES       Omit           Local        YES               NO              YES         NO           ${DATAFILE_PATH} size 10m    ${EMPTY}          231            ${ENDED_NOT_OK}
 
 *** Keywords ***
 Create Tablespace Template

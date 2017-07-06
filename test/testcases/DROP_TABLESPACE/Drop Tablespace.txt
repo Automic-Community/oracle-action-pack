@@ -39,7 +39,7 @@ Drop Tablespace Template
     Action Set    ${PRT_CREATE_TABLESPACE_DB_EXT_MGMT_UNIFORM}    NO
     Action Set    ${PRT_CREATE_TABLESPACE_DB_SEGM_SPC_AUTO}    YES
     Action Set    ${PRT_CREATE_TABLESPACE_DB_RETENTION}    NO
-    Action Set    ${PRT_CREATE_TABLESPACE_DB_PERM_DATAFILE_SPEC}    '/u01/app/oracle/test_datafile2.dbs' size 10m
+    Action Set    ${PRT_CREATE_TABLESPACE_DB_PERM_DATAFILE_SPEC}    ${DATAFILE_PATH} size 10m
     Action Execute
     Init Action    ${ACTION_DROP_TABLESPACE}
     Oracle Common Setting

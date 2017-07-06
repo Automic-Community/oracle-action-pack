@@ -45,7 +45,7 @@ Init Win Server 11
     Set Global Variable    ${SID_IMPORT}    automic2
     Set Global Variable    ${CONN_STRING_AUT}    jdbc:oracle:thin:@vvnora01:1521:automic
     Set Global Variable    ${CONN_WITHOUTSID}    jdbc:oracle:thin:@vvnora01:1521:
-    Set Global Variable    ${ERROR_CODE1}    999
+    Set Global Variable    ${ERROR_CODE1}    12
     Set Global Variable    ${DATAFILE_PATH}    'C:/u01/app/oracle/test_datafile2.dbs'
 
 Init Unix Server 11
@@ -64,7 +64,6 @@ Init Unix Server 11
     Set Global Variable    ${ORA}    /u01/app/oracle/product/11.2.0/db_1/network/admin/tnsnames.ora
     Set Global Variable    ${INTRVL}    10
     Set Global Variable    ${DB_FILE_PATH}    /u01/app/oracle
-    Set Global Variable    ${ERROR_CODE}    12
     Set Global Variable    ${SQLPLUS_FULL_PATH}    /u01/app/oracle/product/11.2.0/db_1/bin/sqlplus
     Set Global Variable    ${HOST}    vvnora02
     Set Global Variable    ${USER}    itpa
@@ -74,7 +73,7 @@ Init Unix Server 11
     Set Global Variable    ${SID_IMPORT}    db4import
     Set Global Variable    ${CONN_WITHOUTSID}    jdbc:oracle:thin:@vvnora02:1521:
     Set Global Variable    ${ERROR_CODE}    999
-    Set Global Variable    ${ERROR_CODE1}    231
+    Set Global Variable    ${ERROR_CODE1}    12
     Set Global Variable    ${DATAFILE_PATH}    '/u01/app/oracle/test_datafile2.dbs'
     #Init Unix Server 10
     #    [Documentation]    TODO: Write server description here

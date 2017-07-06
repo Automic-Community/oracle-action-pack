@@ -9,19 +9,19 @@ Resource          ../../resources/keywords.txt
 
 *** Test Cases ***    NAME    FAIL IF NOT EXISTS    DROP CONTENTS    DROP DATAFILES    CASCADE    RETURN CODE    RETURN STATUS
 Drop Tablespace Normal Drop Contents
-                      tbs2    YES                   YES              YES               YES        12             ${ENDED_NOT_OK}
+                      tbs2    YES                   YES              YES               YES        231            ${ENDED_NOT_OK}
 
 Drop Tablespace Normal Drop Datafiles
-                      tbs2    YES                   NO               NO                NO         12             ${ENDED_NOT_OK}
+                      tbs2    YES                   NO               NO                NO         231            ${ENDED_NOT_OK}
 
 Drop Tablespace Normal Cascade
-                      tbs2    YES                   YES              NO                NO         12             ${ENDED_NOT_OK}
+                      tbs2    YES                   YES              NO                NO         231            ${ENDED_NOT_OK}
 
 Drop Tablespace Normal No Cascade
-                      tbs2    YES                   YES              YES               NO         12             ${ENDED_NOT_OK}
+                      tbs2    YES                   YES              YES               NO         231            ${ENDED_NOT_OK}
 
 Drop Tablespace Normal Cascade
-                      tbs2    YES                   YES              NO                YES        12             ${ENDED_NOT_OK}
+                      tbs2    YES                   YES              NO                YES        231            ${ENDED_NOT_OK}
 
 *** Keywords ***
 Drop Tablespace Template
