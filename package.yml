@@ -17,4 +17,4 @@ binaries:
   - name: ORACLEDBTOOL.JAR
     type: BINARY
     path: tools/oracle-db-tool/target/oracle-db-tool.jar
-    version: 1.0.0
+    version: 1.0.3
