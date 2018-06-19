@@ -7,18 +7,18 @@ Default Tags      ALL
 Test Template     Drop Tablespace Template
 Resource          ../../resources/keywords.txt
 
-*** Test Cases ***    NAME    FAIL IF NOT EXISTS    DROP CONTENTS    DROP DATAFILES    CASCADE    DATAFILE PATH                 RETURN CODE    RETURN STATUS
+*** Test Cases ***    NAME    FAIL IF NOT EXISTS    DROP CONTENTS    DROP DATAFILES    CASCADE    DATAFILE PATH                       RETURN CODE    RETURN STATUS
 Drop Tablespace Normal Drop Data Files
-                      tbs2    NO                    YES              YES               NO         ${DATAFILE_PATH1} size 10m    0              ${ENDED_OK}
+                      tbs2    NO                    YES              YES               NO         ${DATAFILE_PATH1} size 10m reuse    0              ${ENDED_OK}
 
 Drop Tablespace Normal Drop Contents
-                      tbs2    NO                    YES              YES               YES        ${DATAFILE_PATH2} size 10m    0              ${ENDED_OK}
+                      tbs2    NO                    YES              YES               YES        ${DATAFILE_PATH2} size 10m reuse    0              ${ENDED_OK}
 
 Drop Tablespace Normal Cascade
-                      tbs2    NO                    YES              NO                YES        ${DATAFILE_PATH3} size 10m    0              ${ENDED_OK}
+                      tbs2    NO                    YES              NO                YES        ${DATAFILE_PATH3} size 10m reuse    0              ${ENDED_OK}
 
 Drop Tablespace Normal Not Drop Contents
-                      tbs2    NO                    NO               NO                NO         ${DATAFILE_PATH4} size 10m    0              ${ENDED_OK}
+                      tbs2    NO                    NO               NO                NO         ${DATAFILE_PATH4} size 10m reuse    0              ${ENDED_OK}
 
 *** Keywords ***
 Drop Tablespace Template
