@@ -119,6 +119,18 @@
 !:INC PCK.ITPA_SHARED.PUB.INCLUDE.ATTACH
 :INCLUDE PCK.ITPA_SHARED.PRV.INCLUDE.LOGGING.HEADER.PARAM_VALIDATION
 
+! -------set double quotes in to handle spaced/non-spaced file name-----------------------------
+:SET &POS# = STR_FIND(&UC4RB_DB_COMMAND#, "@")
+:IF &POS# > 0
+:  SET &POS# = &POS# + 1
+:  SET &SCRIPT_FILE# = SUBSTR(&UC4RB_DB_COMMAND#, &POS#)
+:  SET &SCRIPT_FILE# = STR_TRIM(&SCRIPT_FILE#)
+:  SET &SCRIPT_FILE# = STR_CAT('"', &SCRIPT_FILE#)
+:  SET &SCRIPT_FILE# = STR_CAT(&SCRIPT_FILE#, '"')
+:  SET &UC4RB_DB_COMMAND# = STR_CAT("@", &SCRIPT_FILE#)
+:ENDIF
+! ------------------------------------
+
 !Logging Params
 :SET &UC4RB_LOGGING_PARAMETER# = "Service Name"
 :INCLUDE PCK.ITPA_SHARED.PRV.INCLUDE.LOGGING.PARAM &UC4RB_LOGGING_PARAMETER_VAL# = &UC4RB_DB_SERVICE#
@@ -198,6 +210,13 @@ set /a errors=0 > nul
 :INCLUDE PCK.ITPA_SHARED.PRV.INCLUDE.LOGGING.ERROR.PARAMETER
      set /a errors=2 >nul
     )
+!-------------append additional parameters to script------------------------
+:SET &UC4RB_DB_COMMAND# = STR_CAT("@",&SCRIPT_FILE#)
+:SET &UC4RB_ADDITIONAL_PARAMS# = STR_TRIM(&UC4RB_ADDITIONAL_PARAMS#)
+:SET &UC4RB_DB_COMMAND# = STR_CAT(&UC4RB_DB_COMMAND#, " &UC4RB_ADDITIONAL_PARAMS#")
+:SET &UC4RB_DB_COMMAND# = STR_TRIM(&UC4RB_DB_COMMAND#)
+!-------------------------------------
+
 :ENDIF
 
 ! Check EXT: in value
