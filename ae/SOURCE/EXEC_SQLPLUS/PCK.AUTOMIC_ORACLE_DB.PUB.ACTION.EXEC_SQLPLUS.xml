@@ -56,10 +56,10 @@
 <node content="1" id="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXEC_SQLPLUS" name="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXEC_SQLPLUS" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXEC_SQLPLUS">
 <PRPTBOX promptset="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXEC_SQLPLUS">
-<UC4RB_ADDITIONAL_PARAMSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_ADDITIONAL_PARAMS#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXEC_SQLPLUS"/>
+<UC4RB_ADDITIONAL_PARAMSs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_ADDITIONAL_PARAMS#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXEC_SQLPLUS"/>
 <UC4RB_DB_COMMANDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_COMMAND#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXEC_SQLPLUS"/>
 <UC4RB_DB_HOSTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_HOST#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXEC_SQLPLUS"/>
-<UC4RB_DB_PASSs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_PASS#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXEC_SQLPLUS">--10</UC4RB_DB_PASSs.00>
+<UC4RB_DB_PASSs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_PASS#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXEC_SQLPLUS">--10A61C94D6737EB659</UC4RB_DB_PASSs.00>
 <UC4RB_DB_PORTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_PORT#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXEC_SQLPLUS"/>
 <UC4RB_DB_SERVICEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_SERVICE#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXEC_SQLPLUS"/>
 <UC4RB_DB_SQLPLUS_FULL_PATHs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_SQLPLUS_FULL_PATH#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXEC_SQLPLUS">sqlplus</UC4RB_DB_SQLPLUS_FULL_PATHs.00>
@@ -122,10 +122,10 @@
 <node content="1" id="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXEC_SQLPLUS" name="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXEC_SQLPLUS" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXEC_SQLPLUS">
 <PRPTBOX promptset="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXEC_SQLPLUS">
-<UC4RB_ADDITIONAL_PARAMSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_ADDITIONAL_PARAMS#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXEC_SQLPLUS"/>
+<UC4RB_ADDITIONAL_PARAMSs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_ADDITIONAL_PARAMS#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXEC_SQLPLUS"/>
 <UC4RB_DB_COMMANDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_COMMAND#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXEC_SQLPLUS"/>
 <UC4RB_DB_HOSTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_HOST#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXEC_SQLPLUS"/>
-<UC4RB_DB_PASSs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_PASS#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXEC_SQLPLUS">--10</UC4RB_DB_PASSs.00>
+<UC4RB_DB_PASSs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_PASS#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXEC_SQLPLUS">--10A61C94D6737EB659</UC4RB_DB_PASSs.00>
 <UC4RB_DB_PORTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_PORT#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXEC_SQLPLUS"/>
 <UC4RB_DB_SERVICEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_SERVICE#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXEC_SQLPLUS"/>
 <UC4RB_DB_SQLPLUS_FULL_PATHs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_SQLPLUS_FULL_PATH#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXEC_SQLPLUS">sqlplus</UC4RB_DB_SQLPLUS_FULL_PATHs.00>
@@ -188,10 +188,10 @@
 <node content="1" id="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXEC_SQLPLUS" name="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXEC_SQLPLUS" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXEC_SQLPLUS">
 <PRPTBOX promptset="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXEC_SQLPLUS">
-<UC4RB_ADDITIONAL_PARAMSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_ADDITIONAL_PARAMS#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXEC_SQLPLUS"/>
+<UC4RB_ADDITIONAL_PARAMSs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_ADDITIONAL_PARAMS#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXEC_SQLPLUS"/>
 <UC4RB_DB_COMMANDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_COMMAND#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXEC_SQLPLUS"/>
 <UC4RB_DB_HOSTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_HOST#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXEC_SQLPLUS"/>
-<UC4RB_DB_PASSs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_PASS#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXEC_SQLPLUS">--10</UC4RB_DB_PASSs.00>
+<UC4RB_DB_PASSs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_PASS#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXEC_SQLPLUS">--10A61C94D6737EB659</UC4RB_DB_PASSs.00>
 <UC4RB_DB_PORTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_PORT#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXEC_SQLPLUS"/>
 <UC4RB_DB_SERVICEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_SERVICE#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXEC_SQLPLUS"/>
 <UC4RB_DB_SQLPLUS_FULL_PATHs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_SQLPLUS_FULL_PATH#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXEC_SQLPLUS">sqlplus</UC4RB_DB_SQLPLUS_FULL_PATHs.00>
@@ -238,10 +238,10 @@
 <node content="1" id="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXEC_SQLPLUS" name="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXEC_SQLPLUS" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXEC_SQLPLUS">
 <PRPTBOX promptset="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXEC_SQLPLUS">
-<UC4RB_ADDITIONAL_PARAMSs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_ADDITIONAL_PARAMS#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXEC_SQLPLUS"/>
+<UC4RB_ADDITIONAL_PARAMSs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_ADDITIONAL_PARAMS#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXEC_SQLPLUS"/>
 <UC4RB_DB_COMMANDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_COMMAND#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXEC_SQLPLUS"/>
 <UC4RB_DB_HOSTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_HOST#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXEC_SQLPLUS"/>
-<UC4RB_DB_PASSs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_PASS#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXEC_SQLPLUS">--10</UC4RB_DB_PASSs.00>
+<UC4RB_DB_PASSs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_PASS#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXEC_SQLPLUS">--10A61C94D6737EB659</UC4RB_DB_PASSs.00>
 <UC4RB_DB_PORTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_PORT#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXEC_SQLPLUS"/>
 <UC4RB_DB_SERVICEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_SERVICE#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXEC_SQLPLUS"/>
 <UC4RB_DB_SQLPLUS_FULL_PATHs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_SQLPLUS_FULL_PATH#" promptsetname="PCK.AUTOMIC_ORACLE_DB.PRV.PROMPTSET.EXEC_SQLPLUS">sqlplus</UC4RB_DB_SQLPLUS_FULL_PATHs.00>
@@ -323,10 +323,11 @@
 <UC4RB_DB_HOSTs.00 altview="0" haslist="0"/>
 <UC4RB_DB_PORTs.00 altview="0" haslist="0"/>
 <UC4RB_DB_USERs.00 altview="0" haslist="0"/>
-<UC4RB_DB_PASSs.00 altview="0" haslist="0">--10</UC4RB_DB_PASSs.00>
+<UC4RB_DB_PASSs.00 altview="0" haslist="0">--10A61C94D6737EB659</UC4RB_DB_PASSs.00>
 <UC4RB_DB_USE_ADMIN_PRIVs.00 altview="0" haslist="0">No</UC4RB_DB_USE_ADMIN_PRIVs.00>
 <UC4RB_DB_SQLPLUS_FULL_PATHs.00 altview="0" haslist="0">sqlplus</UC4RB_DB_SQLPLUS_FULL_PATHs.00>
 <UC4RB_DB_COMMANDs.00 altview="0" haslist="0"/>
+<UC4RB_ADDITIONAL_PARAMSs.00 altview="0" haslist="0"/>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -367,6 +368,8 @@ Executes a command script or file using SQLPlus. The command is piped into the S
  - to execute a select-statetement set the parameter e.g. to "select * from dual;"
  - start the DB by setting the parameter to "startup;"
  - stop the DB by setting the parameter to "shutdown immediate;"
+ - Additional parameters to be passed in the 'Additional Parameters' input field if the command input has sql-script file. 
+   The parameters can be specified as single quote, space separated strings. e.g,- 'PARAM_1' 'PARAM_2'
 
 Note: Filepath containing a $ sign and few special characters is not allowed in oracle. More info-
  https://asktom.oracle.com/pls/apex/asktom.search?tag=sql-plus-doesnt-consider-special-characters
