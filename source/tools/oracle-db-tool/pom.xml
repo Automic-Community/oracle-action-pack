@@ -96,42 +96,7 @@
 							<goal>single</goal>
 						</goals>
 					</execution>
-					<execution>
-						<id>make-clm-zip</id>
-						<!-- this is used for inheritance merges -->
-						<phase>package</phase>
-						<!-- bind to the packaging phase -->
-						<goals>
-							<goal>single</goal>
-						</goals>
-						<configuration>
-							<descriptors>
-								<descriptor>clm-libs-assembly.xml</descriptor>
-							</descriptors>
-						</configuration>
-					</execution>
 				</executions>
-			</plugin>
-			<plugin>
-				<groupId>org.sonatype.plugins</groupId>
-				<artifactId>nexus-staging-maven-plugin</artifactId>
-				<version>1.6.5</version>
-				<extensions>true</extensions>
-				<configuration>
-					<!-- The server "id" element from settings to use authentication from -->
-					<serverId>com.automic.nexusvie</serverId>
-					<!-- The Base URL of Nexus instance where we want to stage -->
-					<nexusUrl>https://nexusvie.automic.com/nexus</nexusUrl>
-					<stagingProfileId>${stagingProfileId}</stagingProfileId>
-					<!-- do NOT auto release after close as we need to retrieve CLM base url as long the staged repo exists -->
-					<!-- explicit release step in build script required (outside of POM) -->
-					<!-- <autoReleaseAfterClose>true</autoReleaseAfterClose>-->
-					<!-- staging will remain open to publish the full action pack bundle into the repository -->
-					<!-- beaware: staging repository needs to be closed within the buildsteps -->
-					<skipStagingRepositoryClose>true</skipStagingRepositoryClose>
-					<!-- will keep the deployed artifact even in case of errors for further debugging -->
-					<keepStagingRepositoryOnCloseRuleFailure>true</keepStagingRepositoryOnCloseRuleFailure>
-				</configuration>
 			</plugin>
 			<!-- <plugin>
 				<artifactId>maven-resources-plugin</artifactId>

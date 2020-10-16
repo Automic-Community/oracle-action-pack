@@ -1,3 +1,0 @@
-*** Settings ***
-Suite Setup       #_package_name_#
-Force Tags
